@@ -5,34 +5,13 @@ import matplotlib.pyplot as plt
 import torch
 # from transformers import BartModel, BartTokenizer
 from transformers import BertTokenizer, BertModel
-from graph_builder import GraphBuilder
-import argparse
 import pickle
 import numpy as np
-from tqdm import tqdm
-
-def parse_args():
-    parser = argparse.ArgumentParser(description="Process graph embeddings.")
-    parser.add_argument('--pretrain_model_path', type=str, default='/root/autodl-fs/zyq/bert-base-uncased', help='BART model name')
-    
-
-    parser.add_argument('--wikidata5m_path', type=str, default='/root/autodl-fs/zyq/rotate_wikidata5m.pkl', help='Path to save graph with embeddings')
-    parser.add_argument('--wikidata5m_entity_path', type=str, default='/root/autodl-fs/zyq/wikidata5m_entity.txt', help='Path to save graph with embeddings')
-    parser.add_argument('--wikidata5m_relation_path', type=str, default='/root/autodl-fs/zyq/wikidata5m_relation.txt', help='Path to save graph with embeddings')
-
-
-    parser.add_argument('--embedding_output_path', type=str, default='/root/autodl-tmp/graph_embedding/xsum/graph_with_embeddings0.json', help='Path to save graph with embeddings')
-    parser.add_argument('--input_path', type=str, default='/root/autodl-tmp/graph_embedding/xsum/blink_results_2-2.json', help='Path to save graph with embeddings')
-    parser.add_argument('--relation_file_path', type=str, default='/root/autodl-tmp/graph_embedding/xsum/dreeam_results_copy.json', help='Path to save graph with embeddings')
-    
-    args = parser.parse_args()
-    return args
 
 
 class GraphEmbeddingProcessor:
-    def __init__(self, graph,args):
-        self.G = graph
-        self.embeddings = {}
+    def __init__(self,args):
+        
         self.bart_model = BertModel.from_pretrained(args.pretrain_model_path)
         self.bart_tokenizer = BertTokenizer.from_pretrained(args.pretrain_model_path)
         self.wikidata5m_model=self.load_wikidata5m_model(args.wikidata5m_path)
@@ -117,7 +96,9 @@ class GraphEmbeddingProcessor:
         else:
             print(f"No relation found for alias '{relation}'.")
 
-    def process_graph_embeddings(self):
+    def process_graph_embeddings(self, graph):
+        self.G = graph
+        self.embeddings = {}
         for node, attr in self.G.nodes(data=True):
             label = attr.get('label')
             if label == "Token":
@@ -130,44 +111,15 @@ class GraphEmbeddingProcessor:
                 ent_name=attr.get('name')
                 wikidata_id = attr.get('wikidata_id')
                 self.embeddings[node] = self.get_wikidata5m_embedding(ent_name,wikidata_id)
-            if label == "Entity":
-                ent_name=attr.get('name')
-                wikidata_id = attr.get('wikidata_id')
-                self.embeddings[node] = self.get_wikidata5m_embedding(ent_name,wikidata_id)
-
-    def save_graph_with_embeddings(self, output_file_path):
-        # 将图保存为带有嵌入的 JSON 文件
+        
         data = nx.node_link_data(self.G)
         # 添加节点嵌入信息到节点属性中
         for node in data['nodes']:
             node_id = node['id']
             if node_id in self.embeddings:
                 node['embedding'] = self.embeddings[node_id].tolist()  # 将 tensor 转化为 list
-        
-        with open(output_file_path, 'w') as f:
-            json.dump(data, f)
+            else:
+                pass
 
-
-def load_data(file_path):
-    with open(file_path, 'r') as f:
-        data = json.load(f)
-    return data
-
-
-# 使用示例
-if __name__ == "__main__":
-    args = parse_args()
-
-    # 创建一个示例图（假设已经使用 GraphBuilder 构建了图 self.G）
-    data=load_data(args.input_path)[0]
-    entity_relationships_data=load_data(args.relation_file_path)
-    graph_builder = GraphBuilder(data, entity_relationships_data)
-    graph_builder.build_graph()
-    
-    # 处理图嵌入并保存
-    graph_processor = GraphEmbeddingProcessor(graph_builder.G,args)
-    graph_processor.process_graph_embeddings()
-    
-    graph_processor.save_graph_with_embeddings(args.embedding_output_path)
-    print(f"Graph with embeddings saved to {args.embedding_output_path}")
+        return data
     

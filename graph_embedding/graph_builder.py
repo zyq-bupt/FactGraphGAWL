@@ -4,14 +4,22 @@ import json
 import matplotlib.pyplot as plt
 
 class GraphBuilder:
-    def __init__(self, data,entity_relationships_data):
-        self.data = data
-        self.entity_relationships_data=entity_relationships_data
+    def __init__(self):
+        self.G = None  # 初始化时不创建图
+        
+
+    def build_graph(self, data):
         self.G = nx.DiGraph()  # 有向图，如果关系是双向的，可以改用 nx.Graph()
         self.entity_nodes = []
         self.mention_nodes = []
         self.token_nodes=[]
         self.article_node=[]
+
+        self.data = data
+        self.create_token_mention_entity_nodes_and_relations()
+        self.create_entity_relationships()
+        
+        return self.G
     
     def create_node(self,label,node_id,name,type=None):
         if type==None:
@@ -43,16 +51,8 @@ class GraphBuilder:
         return entity_id
     
     def create_token_mention_entity_nodes_and_relations(self):
-       
-        entry=self.data
-        # article_id = entry['title']  # 获取文章编号     
-        # article_text = entry['article']  # 获取文章内容
-        
-        # 创建 Article 节点
-        # self.create_node("Article",article_id,article_text)
-        
         # 创建 token 节点
-        for parse_tree in entry['parse_trees']:
+        for parse_tree in self.data['parse_trees']:
             head_idx = parse_tree['h_idx']
             child_idx = parse_tree['t_idx']
             head_word = parse_tree['head']
@@ -61,7 +61,6 @@ class GraphBuilder:
             
             # 如果头 token 不在字典中，则创建并保存
             head_token_id=self.create_tokenNode(head_idx,head_word)
-            
             # 如果子 token 不在字典中，则创建并保存
             child_token_id=self.create_tokenNode(child_idx,child_word)
             
@@ -69,7 +68,7 @@ class GraphBuilder:
             self.G.add_edge(head_token_id, child_token_id, relationship=relation_type)
         
         # 创建 mentions 节点并关联到对应的 token 节点
-        for mention in entry['mentions']:
+        for mention in self.data['mentions']:
             mention_id = mention['mention_id']
             mention_name = mention['name']
             mention_type = mention['type']
@@ -84,7 +83,7 @@ class GraphBuilder:
                 if token_node_id in self.token_nodes:
                     self.G.add_edge(mention_node_id, token_node_id, relationship="RELATED_TO")
 
-        for ent_id, entity in enumerate(entry['vertexSet']):
+        for ent_id, entity in enumerate(self.data['vertexSet']):
             # 创建实体节点
             ent_name=entity[0]['name']
             wikipedia_id=entity[0]['wikipedia_id']
@@ -100,7 +99,8 @@ class GraphBuilder:
 
     def create_entity_relationships(self):
         related_entities = set()  # 用于跟踪已有关系的实体
-        for relation in self.entity_relationships_data:
+        entity_relationships_data=self.data['ent_relation']
+        for relation in entity_relationships_data:
 
             head_entity_idx = relation['h_idx']
             tail_entity_idx = relation['t_idx']
@@ -121,25 +121,6 @@ class GraphBuilder:
     def display_graph_info(self):
         print(nx.info(self.G))
 
-    def build_graph(self):
-        self.create_token_mention_entity_nodes_and_relations()
-        self.create_entity_relationships()
-        # self.display_graph_info()
 
-def load_data(file_path):
-    with open(file_path, 'r') as f:
-        data = json.load(f)
-    return data
 
-if __name__ == '__main__':
-   
-    s1 = "e1 was in e2 dated summer of 1938 along other dresses from this same period."
-    s2 = "e1 was in e2 dated summer of 1938 along with several other dresses from this same period."
-    #1.创建图
-    entity_file_path = '/root/autodl-tmp/graph_embedding/xsum/blink_results_2-2.json'
-    relation_file_path = '/root/autodl-tmp/graph_embedding/xsum/dreeam_results_copy.json'
-    data=load_data(entity_file_path)
-    entity_relationships_data=load_data(relation_file_path)
-    graph= GraphBuilder(data[0],entity_relationships_data)
-    graph.build_graph()
 
