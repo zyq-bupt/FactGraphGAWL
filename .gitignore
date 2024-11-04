@@ -1,0 +1,10 @@
+# 忽略编译生成的文件
+*.o
+*.class
+
+# 忽略日志文件
+logs/
+
+# 忽略特定文件
+secret.txt
+graph_embedding/xsum
