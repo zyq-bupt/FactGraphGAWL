@@ -14,7 +14,7 @@ def parse_arguments():
         "wikidata5m_path": '/root/autodl-fs/zyq/rotate_wikidata5m.pkl',
         "wikidata5m_entity_path": '/root/autodl-fs/zyq/wikidata5m_entity.txt',
         "wikidata5m_relation_path": '/root/autodl-fs/zyq/wikidata5m_relation.txt',
-        "graph_output_path": '/root/',
+        "graph_similarity_output_file_path": datafile+'/graph_similarity_result/val/',
         # "": '/root/',
 
     }

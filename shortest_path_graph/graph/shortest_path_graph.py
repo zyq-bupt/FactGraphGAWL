@@ -1,14 +1,9 @@
 import networkx as nx
 from networkx.classes.graph import Graph
-from words_of_graph import WordsOfGraph
-
 
 
 class ShortestPathGraph:
-    G = nx.Graph()
-    d = int()
-    C = nx.Graph()
-
+    
     def __init__(self, words_of_graph:Graph, d=2):
         self.G = words_of_graph
         self.d = d
