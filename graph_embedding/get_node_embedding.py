@@ -11,9 +11,10 @@ import numpy as np
 
 class GraphEmbeddingProcessor:
     def __init__(self,args):
-        
-        self.bart_model = BertModel.from_pretrained(args.pretrain_model_path)
-        self.bart_tokenizer = BertTokenizer.from_pretrained(args.pretrain_model_path)
+        # device = "cuda" if torch.cuda.is_available() else "cpu"
+
+        self.model = BertModel.from_pretrained(args.pretrain_model_path)
+        self.tokenizer = BertTokenizer.from_pretrained(args.pretrain_model_path)
         self.wikidata5m_model=self.load_wikidata5m_model(args.wikidata5m_path)
         self.entity2id = self.wikidata5m_model.graph.entity2id
         self.entity_embeddings = self.wikidata5m_model.solver.entity_embeddings
@@ -41,16 +42,16 @@ class GraphEmbeddingProcessor:
         return alias2entity
     
     def get_token_bart_embedding(self, text):
-        inputs = self.bart_tokenizer(text, return_tensors='pt', max_length=512, truncation=True)
+        inputs = self.tokenizer(text, return_tensors='pt', max_length=512, truncation=True)
         with torch.no_grad():
-            outputs = self.bart_model(**inputs) 
+            outputs = self.model(**inputs) 
         embedding = outputs.last_hidden_state.mean(dim=1).squeeze()  # 获取token嵌入
         return embedding
     
     def get_mention_bart_embedding(self, text):
-        inputs = self.bart_tokenizer(text, return_tensors='pt', max_length=512, truncation=True)
+        inputs = self.tokenizer(text, return_tensors='pt', max_length=512, truncation=True)
         with torch.no_grad():
-            outputs = self.bart_model(**inputs) 
+            outputs = self.model(**inputs) 
         embedding = outputs.pooler_output.squeeze()  # 获取句子嵌入
         return embedding
     

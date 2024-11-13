@@ -9,7 +9,7 @@ import os
 import json
 import networkx as nx
 import numpy as np
-
+from tqdm import tqdm
 
 def caculate_graphSim(g1, g2):
     
@@ -21,7 +21,7 @@ def caculate_graphSim(g1, g2):
 
 def main_graphSim(args):
     text_list=['article','abstract','candidate','humman_summary']
-    for filename in os.listdir(args.factgraph_output_file_path):
+    for filename in tqdm(os.listdir(args.factgraph_output_file_path)):
         if filename.endswith('.json'):
             file_path = os.path.join(args.factgraph_output_file_path, filename)
             graph_data = load_data(file_path)
@@ -44,7 +44,7 @@ def main(args):
     graph_builder= GraphBuilder()
     graph_processor = GraphEmbeddingProcessor(args)
     text_list=['article','abstract','candidate','humman_summary']
-    for filename in os.listdir(args.dreeam_output_file_path):
+    for filename in tqdm(os.listdir(args.dreeam_output_file_path)):
         if filename.endswith('.json'):
             file_path = os.path.join(args.dreeam_output_file_path, filename)
             input_data = load_data(file_path)
@@ -65,7 +65,7 @@ def main(args):
             
 if __name__ == '__main__':
     args = parse_arguments()
-    # main(args)
+    main(args)
     main_graphSim(args)
 
 
