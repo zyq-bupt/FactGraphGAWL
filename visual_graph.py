@@ -18,8 +18,7 @@ graph_builder= GraphBuilder()
 G2=graph_builder.build_graph(input_data["humman_summary"])
     
 
-                    
-
+                
 
 # 2. 连接到 Neo4j 数据库
 graph = Graph("bolt://localhost:7687", auth=("neo4j", "zhuyingqi"))

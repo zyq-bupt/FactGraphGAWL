@@ -4,11 +4,13 @@ from networkx.classes.graph import Graph
 
 class ShortestPathGraph:
     
-    def __init__(self, words_of_graph:Graph, d=2):
+    def __init__(self, words_of_graph:Graph, d):
         self.G = words_of_graph
         self.d = d
         self.C = self.construct_graph(self.G, self.d)
-    
+    def delet_graph_node(self):
+        
+        self.G
     def construct_graph(self, words_of_graph, d):
         path_length = dict(nx.all_pairs_dijkstra_path_length(words_of_graph))
         node_pair = list()
@@ -16,13 +18,16 @@ class ShortestPathGraph:
             for m,n in v.items():
                 if n <= d and n >=0:
                     node_pair.append([k, m, n])
+        cc=0
         for i in node_pair:
             if i[0]==i[1]:
-                words_of_graph.add_edge(i[0], i[1], weight=1/100000)
-                # pass
+                words_of_graph.add_edge(i[0], i[1], weight=1)
+                cc+=1
             else:
                 words_of_graph.add_edge(i[0], i[1], weight=1/i[2])
+        # print(cc,len(node_pair))
         return words_of_graph
     
     def get_graph(self):
+        # self.delet_graph_node(self.G)
         return self.C

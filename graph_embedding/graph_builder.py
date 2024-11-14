@@ -46,7 +46,7 @@ class GraphBuilder:
     def create_entityNode(self,id,name, wikipedia_id,wikidata_id):
         entity_id = f"Entity_{id}"
         if entity_id not in self.entity_nodes:
-            self.G.add_node(entity_id, label="Entity", name=name,wikipedia_id=wikipedia_id, wikidata_id=wikidata_id)
+            self.G.add_node(entity_id, label="Entity", name=wikipedia_id, wikidata_id=wikidata_id)
             self.entity_nodes.append(entity_id) 
         return entity_id
     

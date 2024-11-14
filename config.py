@@ -5,7 +5,7 @@ def parse_arguments():
     datafile = '/root/autodl-fs/zyq/DeFacto/data'
     # blink_models_path = '/root/autodl-fs/zyq/BLINK/models'
     # kb_data_path = '/root/autodl-fs/zyq/BLINK/data/KB_data'
-    file = 'train'
+    file = 'test'
     config = {
         "spacy_model_name": 'en_core_web_trf',
         "dreeam_output_file_path":datafile+'/dreeam_result/%s/'%(file),
