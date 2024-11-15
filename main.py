@@ -13,8 +13,9 @@ from tqdm import tqdm
 
 def caculate_graphSim(g1, g2):
     d = 50
-    c1 = ShortestPathGraph(g1, d).get_graph()
-    c2 = ShortestPathGraph(g2, d).get_graph()
+    init_w=1/100000
+    c1 = ShortestPathGraph(g1, d, init_w).get_graph()
+    c2 = ShortestPathGraph(g2, d, init_w).get_graph()
     similarity = KCounter(c1, c2).get_k_score()
 
     return similarity
