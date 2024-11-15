@@ -4,7 +4,7 @@
 # main.py
 主函数，三个功能：从dreeam结果构建图结构（GraphBuilder）、为token、mention、entity节点得到embedding（GraphEmbeddingProcessor）、计算两个图的相似性（最短路径图核方法ShortestPathGraph、KCounter）
 
-# mian_without_embedding.py ！！！！
+# main_without_embedding.py ！！！！
 没有embedding功能的主函数。这个运行的快一点，因为后期才用到embedding，这里为了试验各种参数的效果，可以不得到embedding。
 在下面的函数里修改参数：
 ```
