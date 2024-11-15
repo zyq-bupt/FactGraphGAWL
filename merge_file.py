@@ -25,7 +25,7 @@ def remove_embedding(data):
 
 # 设置文件夹路径
 # folder_path = "/root/autodl-fs/zyq/DeFacto/data/graph_similarity_result/"  # 请将此路径替换为你的文件夹路径
-output_file = "/root/autodl-fs/zyq/DeFacto/data/graph_similarity_result/merged_data1.json"
+output_file = "/root/autodl-fs/zyq/DeFacto/data/merged_data3.json"
 
 # 存储所有 JSON 数据的列表
 merged_data = []
@@ -33,7 +33,7 @@ merged_data = []
 # 遍历文件夹中的所有 JSON 文件
 file_list = ['test','val','train']
 for file in file_list:
-    factgraph_output_file_path = '/root/autodl-fs/zyq/DeFacto/data/graph_similarity_result/%s/'%(file)
+    factgraph_output_file_path = '/root/autodl-fs/zyq/DeFacto/data/graph_similarity_result_3/%s/'%(file)
     filenames = os.listdir(factgraph_output_file_path)
     for filename in tqdm(filenames):
         if filename.endswith('.json'):

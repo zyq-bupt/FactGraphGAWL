@@ -13,21 +13,27 @@ from tqdm import tqdm
 
 def caculate_graphSim(g1, g2):
     d = 50
-    c1 = ShortestPathGraph(g1, d).get_graph()
-    c2 = ShortestPathGraph(g2, d).get_graph()
+    init_w=1/100000
+    c1 = ShortestPathGraph(g1, d, init_w).get_graph()
+    c2 = ShortestPathGraph(g2, d, init_w).get_graph()
     similarity = KCounter(c1, c2).get_k_score()
 
     return similarity
 
 def main_graphSim(args):
+    # right_list = ['522','266','1218','1712','2042','2611']##'1448',139, '1196'
     text_list=['article','abstract','candidate','humman_summary']
     for filename in tqdm(os.listdir(args.factgraph_output_file_path)):
         
+        # docid = filename.split('.')[0]
+        # if docid in right_list:
+        #     print(filename)
         if filename.endswith('.json'):
             file_path = os.path.join(args.factgraph_output_file_path, filename)
             graph_data = load_data(file_path)
             new_data = graph_data.copy()
             new_data['graph_sim'] = {}
+
             
             for k1 in range(len(text_list)):
                 key1 = text_list[k1]
@@ -44,32 +50,38 @@ def main_graphSim(args):
 
 def main(args):
     graph_builder= GraphBuilder()
-    graph_processor = GraphEmbeddingProcessor(args)
 
     text_list=['article','abstract','candidate','humman_summary']
     for filename in tqdm(os.listdir(args.dreeam_output_file_path)):
         if filename.endswith('.json'):
 
+            # docid = filename.split('.')[0]
+            # if docid in right_list:
+
             file_path = os.path.join(args.dreeam_output_file_path, filename)
             input_data = load_data(file_path)
 
             new_data = input_data.copy()
-            print(input_data['doc_id'])
+            # print(input_data['doc_id'])
             for key,item in input_data.items():
                 if key in text_list:
                     graph=graph_builder.build_graph(item)
-                    graph_with_emb = graph_processor.process_graph_embeddings(graph)
-                    new_data[key]['graph_with_emb'] = graph_with_emb
+                    gdata = nx.node_link_data(graph)
+                    new_data[key]['graph_with_emb'] = gdata
+
+                    # graph_with_emb = graph_processor.process_graph_embeddings(graph)
+                    # new_data[key]['graph_with_emb'] = graph_with_emb
 
             data_save(new_data, args.factgraph_output_file_path)
 
-            #下面可以接着算两两之间的sp相似度，先跑完上面的，然后把存储屏蔽了，save放在最后，把相似度也存进去。
+            #下面可以接着算两两之间的sp相似度.
             
 if __name__ == '__main__':
-    
-    args = parse_arguments()
-    main(args)
-    main_graphSim(args)
+    flist=['test','val','train']
+    for f in flist:
+        args = parse_arguments(f)
+        main(args)
+        main_graphSim(args)
 
 
     

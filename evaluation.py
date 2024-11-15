@@ -5,14 +5,35 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 from scipy import stats
-
+from scipy.stats import friedmanchisquare
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
-
+from scipy.stats import wilcoxon
+import scikit_posthocs as sp
+from scipy.stats import shapiro
 from data_loader_saver import load_data
 import json
 from tqdm import tqdm
+import logging
+import sys
+
+
+# Step 2: 创建一个类来重定向 print() 的输出
+class LoggerWriter:
+    def __init__(self, level):
+        self.level = level
+
+    def write(self, message):
+        # 只记录非空的消息
+        if message.strip() != "":
+            self.level(message)
+
+    def flush(self):
+        pass  # 此方法保持空即可
+
+
+
 
 #方差分析检验三组数据的显著性，ANOVA
 def anova(data1,data2,data3):
@@ -81,52 +102,172 @@ def evaluate_factgraph(fs, data, save_path):
     #         print("NaN 值的位置:", nan_indices,v[nan_indices])
     #     has_none = None in graph_sims[k]
     #     print("数组中是否有None值:", has_none,k)
+        
     data1 = data['article_abstract']
     data2 = data['article_candidate']
     data3 = data['article_humman_summary']   
+    #画箱线图
     draw_fig(fs, data, save_path)
-    f, p = anova(data1, data2, data3)
-    anova_table, tukey = tukey_HSD(data1, data2, data3)
+    graphsim_list = ['article_abstract', 'article_candidate', 'article_humman_summary']
+    #判断每组数据是否服从正态假设
+    for gs in graphsim_list:
+        d = data[gs]
+        stat_shapiro, p_shapiro = shapiro(d)
+        print(f"Statistic: {stat_shapiro}, P-value: {p_shapiro}")
+        if p_shapiro > 0.05:
+            print(gs+"数据服从正态分布 (p_shapiro > 0.05)")
+        else:
+            print(gs+"数据不服从正态分布 (p_shapiro <= 0.05)")
+    print()
+    #计算中位数和四分位数
+    # 计算中位数
+    median_list = []
+    q1_list = []
+    q3_list = []
+    iqr_list = []
+    for d in [data1,data2,data3]:
+        median_list.append(np.median(d))
+        # 计算四分位数 Q1 和 Q3
+        q1 = np.percentile(d, 25)
+        q3 = np.percentile(d, 75)
+        q1_list.append(q1)
+        q3_list.append(q3)
+        # 计算四分位距 IQR
+        iqr_list.append(q3 - q1)
 
-    return f, p, anova_table, tukey 
+    print(f"中位数: {median_list}")
+    print(f"下四分位数 (Q1): {q1_list}")
+    print(f"上四分位数 (Q3): {q3_list}")
+    print(f"四分位距 (IQR): {iqr_list}")
+    print()
+
+    # 判断非正态分布数据的显著性
+    stat_friedm, p_friedm = friedmanchisquare(data1, data2, data3)
+    print(f"Friedman Statistic: {stat_friedm}")
+    print(f"P-value: {p_friedm}")
+
+    if p_friedm > 0.05:
+        print("三组之间没有显著差异 (p_friedm > 0.05)")
+    else:
+        print("三组之间存在显著差异 (p_friedm <= 0.05)")
+    print()
+
+    #判断两两之间的显著性
+    stat12, p12 = wilcoxon(data1, data2)
+    print(f"Wilcoxon Statistic: {stat12}")
+    print(f"P-value: {p12}")
+    if p12 > 0.05:
+        print("1,2两组之间没有显著差异 (p > 0.05)")
+    else:
+        print("1,2两组之间存在显著差异 (p <= 0.05)")
+
+    stat13, p13 = wilcoxon(data1, data3)
+    print(f"Wilcoxon Statistic: {stat13}")
+    print(f"P-value: {p13}")
+    if p13 > 0.05:
+        print("1,3两组之间没有显著差异 (p > 0.05)")
+    else:
+        print("1,3两组之间存在显著差异 (p <= 0.05)")
+
+    stat23, p23 = wilcoxon(data2, data3)
+    print(f"Wilcoxon Statistic: {stat23}")
+    print(f"P-value: {p23}")
+    if p23 > 0.05:
+        print("2,3两组之间没有显著差异 (p > 0.05)")
+    else:
+        print("2,3两组之间存在显著差异 (p <= 0.05)")
+    
 
 def evaluate_factscore( data, save_path, fact_score_list):
-    f_list = []
-    p_list = []
-    anova_table_list = []
-    tukey_list = []
-    hum_larger_than_cand_list = []
 
     for fs in fact_score_list:
         all_type_summary_score = data[fs]
+        print('----'*30)
         print(fs)
-        
-        hum_larger_than_cand = 0
 
         for k, v in all_type_summary_score.items():
             all_type_summary_score[k] = np.array(v)
         data1 = all_type_summary_score['abstract_score']
         data2 = all_type_summary_score['candidate_score']
         data3 = all_type_summary_score['humman_summary_score']
-
+        #画箱线图
         draw_fig(fs, all_type_summary_score, save_path)
 
-        f, p = anova(data1, data2, data3)
-        anova_table, tukey = tukey_HSD(data1, data2, data3)
-        hum_larger_than_cand = np.sum(data3 > data2)
+        graphsim_list = ['abstract_score', 'candidate_score', 'humman_summary_score']
+        #判断每组数据是否服从正态假设
+        for gs in graphsim_list:
+            d = all_type_summary_score[gs]
+            stat_shapiro, p_shapiro = shapiro(d)
+            print(f"Statistic: {stat_shapiro}, P-value: {p_shapiro}")
+            if p_shapiro > 0.05:
+                print(gs+"数据服从正态分布 (p_shapiro > 0.05)")
+            else:
+                print(gs+"数据不服从正态分布 (p_shapiro <= 0.05)")
+        print('^^^^'*10)
 
-        f_list.append(f)
-        p_list.append(p)
-        anova_table_list.append(anova_table)
-        tukey_list.append(tukey)
-        hum_larger_than_cand_list.append(hum_larger_than_cand)
+        #计算中位数和四分位数
+        # 计算中位数
+        median_list = []
+        q1_list = []
+        q3_list = []
+        iqr_list = []
+        for d in [data1,data2,data3]:
+            median_list.append(np.median(d))
+            # 计算四分位数 Q1 和 Q3
+            q1 = np.percentile(d, 25)
+            q3 = np.percentile(d, 75)
+            q1_list.append(q1)
+            q3_list.append(q3)
+            # 计算四分位距 IQR
+            iqr_list.append(q3 - q1)
+
+        print(f"中位数: {median_list}")
+        print(f"下四分位数 (Q1): {q1_list}")
+        print(f"上四分位数 (Q3): {q3_list}")
+        print(f"四分位距 (IQR): {iqr_list}")
+        print('^^^^'*10)
+
+        # 判断非正态分布数据的显著性
+        stat_friedm, p_friedm = friedmanchisquare(data1, data2, data3)
+        print(f"Friedman Statistic: {stat_friedm}")
+        print(f"P-value: {p_friedm}")
+
+        if p_friedm > 0.05:
+            print("三组之间没有显著差异 (p_friedm > 0.05)")
+        else:
+            print("三组之间存在显著差异 (p_friedm <= 0.05)")
+        print('^^^^'*10)
+
+        #判断两两之间的显著性
+        stat12, p12 = wilcoxon(data1, data2)
+        print(f"Wilcoxon Statistic: {stat12}")
+        print(f"P-value: {p12}")
+        if p12 > 0.05:
+            print("1,2两组之间没有显著差异 (p > 0.05)")
+        else:
+            print("1,2两组之间存在显著差异 (p <= 0.05)")
+
+        stat13, p13 = wilcoxon(data1, data3)
+        print(f"Wilcoxon Statistic: {stat13}")
+        print(f"P-value: {p13}")
+        if p13 > 0.05:
+            print("1,3两组之间没有显著差异 (p > 0.05)")
+        else:
+            print("1,3两组之间存在显著差异 (p <= 0.05)")
+
+        stat23, p23 = wilcoxon(data2, data3)
+        print(f"Wilcoxon Statistic: {stat23}")
+        print(f"P-value: {p23}")
+        if p23 > 0.05:
+            print("2,3两组之间没有显著差异 (p > 0.05)")
+        else:
+            print("2,3两组之间存在显著差异 (p <= 0.05)")
 
 
-    return f_list, p_list, anova_table_list, tukey_list, hum_larger_than_cand_list, len(data2)
 
 def factgraph():
 
-    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig/'
+    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig_1_1/'
     text_list=['abstract','candidate','humman_summary']
     graph_sims_ins = {}
     graph_sims_ext = {}
@@ -135,7 +276,8 @@ def factgraph():
     hum_larger_than_cand_ext = 0
     count_ext = 0
 
-    factgraph_output_file_path = "/root/autodl-fs/zyq/DeFacto/data/graph_similarity_result/merged_data1.json"
+    factgraph_output_file_path = "/root/autodl-fs/zyq/DeFacto/data/merged_data1.json"
+    
     all_data = load_data(factgraph_output_file_path)
 
     for graph_data in tqdm(all_data):
@@ -154,11 +296,14 @@ def factgraph():
                 if has_nan:
                     # print("数组中有NaN值:", graph_data['doc_id'],len(graph_sims_ins[key]))
                     graph_sims_ins[key].append(0)
+                    # print(graph_data['doc_id'])
                 else:
                     graph_sims_ins[key].append(graph_data['graph_sim'][key])
 
             if graph_data['graph_sim']['article_humman_summary'] > graph_data['graph_sim']['article_candidate']:
                 hum_larger_than_cand_ins += 1
+            else:
+                pass
             count_ins += 1
 
 
@@ -183,28 +328,15 @@ def factgraph():
 
 
     print('********内部错误********')
-    f, p, anova_table, tukey  = evaluate_factgraph('factgraph in intrinsic error', graph_sims_ins, save_path)
-    ins_eva_list = [f, p, anova_table, tukey, hum_larger_than_cand_ins, count_ins]
-
+    evaluate_factgraph('factgraph in intrinsic error', graph_sims_ins, save_path+'intrinsic/')
+    
     print('********外部错误********')
-    fe, pe, anova_tablee, tukeye  = evaluate_factgraph('factgraph in extrinsic error', graph_sims_ext, save_path)
-    ext_eva_list = [fe, pe, anova_tablee, tukeye, hum_larger_than_cand_ext, count_ext]
-   
-    # 写入文件
-    with open('/root/autodl-fs/zyq/DeFacto/data/fig/factgraph_eval.txt', "w", encoding="utf-8") as file:
-        # 写入 f_list
-        file.write("ins:\n")
-        for item in ins_eva_list:
-            file.write(f"{item}\n")
-
-        file.write("ext:\n")
-        for item in ext_eva_list:
-            file.write(f"{item}\n")
+    evaluate_factgraph('factgraph in extrinsic error', graph_sims_ext, save_path+'extrinsic/')
 
 def otherfactscore():
 
     factgraph_output_file_path = '/root/autodl-fs/zyq/DeFacto/data/merged_data1_evaluate.json'
-    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig/'
+    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig_1_1/'
     text_list=['abstract','candidate','humman_summary']
     summary_type_list = ['abstract_score','candidate_score','humman_summary_score']
     fact_score_list=['cloze','dae_doc','factcc','summacconv','quals','feqa']
@@ -237,42 +369,42 @@ def otherfactscore():
                         fact_summary_score_ext[fs][st]=[]
                     fact_summary_score_ext[fs][st].append(factscore)
 
-    f_list, p_list, anova_table_list, tukey_list, hum_larger_than_cand_list, count = evaluate_factscore(fact_summary_score_ins, save_path, fact_score_list)
-    # f_list, p_list, anova_table_list, tukey_list, hum_larger_than_cand_list, count = evaluate_factscore(fact_summary_score_ext, save_path, fact_score_list)
-
-    # 写入文件
-    with open('/root/autodl-fs/zyq/DeFacto/data/fig/instract/factscore_ext_ins.txt', "w", encoding="utf-8") as file:
-        # 写入 f_list
-        file.write("f_list:\n")
-        for item, fs in zip(f_list, fact_score_list):
-            file.write(fs+'\n')
-            file.write(f"{item}\n")
-        
-        # 写入 p_list
-        file.write("\np_list:\n")
-        for item, fs in zip(p_list, fact_score_list):
-            file.write(fs+'\n')
-            file.write(f"{item}\n")
-        
-        # 写入 anova_table_list
-        file.write("\nanova_table_list:\n")
-        for item, fs in zip(anova_table_list, fact_score_list):
-            file.write(fs)
-            file.write(f"{item}\n")
-        
-        # 写入 tukey_list
-        file.write("\ntukey_list:\n")
-        for item, fs in zip(tukey_list, fact_score_list):
-            file.write(fs+'\n')
-            file.write(f"{item}\n")
-        
-        # 写入 hum_larger_than_cand_list
-        file.write("\nhum_larger_than_cand_list:\n")
-        for item, fs in zip(hum_larger_than_cand_list, fact_score_list):
-            file.write(fs+'\n')
-            file.write(f"{item}\n")
+    print('********内部错误********')
+    evaluate_factscore(fact_summary_score_ins, save_path+'intrinsic/', fact_score_list)
+    print('----'*30)
+    print('********外部错误********')
+    evaluate_factscore(fact_summary_score_ext, save_path+'extrinsic/', fact_score_list)
 
 
 
-# factgraph()
-otherfactscore()
+if __name__ == '__main__':
+    
+   
+    # Step 1: 配置日志记录器
+    logging.basicConfig(
+        filename='/root/autodl-fs/zyq/DeFacto/data/factgraph_evaluation.log',                # 日志文件名
+        level=logging.INFO,                # 设置日志级别为 INFO
+        format='%(asctime)s - %(levelname)s - %(message)s'  # 日志格式
+    )
+    # Step 3: 重定向标准输出到日志文件
+    sys.stdout = LoggerWriter(logging.info)
+
+    factgraph()#用于评估事实图结果
+
+    sys.stdout = sys.__stdout__
+    # 检查日志文件内容
+    print("日志已保存到 'factgraph_evaluation.log' 文件中，请查看以了解详细内容。")
+
+
+
+    logging.basicConfig(
+        filename='/root/autodl-fs/zyq/DeFacto/data/factscores_evaluation.log',                # 日志文件名
+        level=logging.INFO,                # 设置日志级别为 INFO
+        format='%(asctime)s - %(levelname)s - %(message)s'  # 日志格式
+    )
+    sys.stdout = LoggerWriter(logging.info)
+
+    otherfactscore()#用于评估factscores
+
+    sys.stdout = sys.__stdout__
+    print("日志已保存到 'factscores_evaluation.log' 文件中，请查看以了解详细内容。")

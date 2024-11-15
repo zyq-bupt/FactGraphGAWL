@@ -23,9 +23,9 @@ class GraphBuilder:
     
     def create_node(self,label,node_id,name,type=None):
         if type==None:
-            self.G.add_node(node_id, label=label, name=name)
+            self.G.add_node(node_id,node_id=node_id, label=label, name=name)
         else:
-            self.G.add_node(node_id, label=label, name=name,type=type)
+            self.G.add_node(node_id,node_id=node_id, label=label, name=name,type=type)
 
     def create_tokenNode(self,id,name):
         token_id = f"Token_{id}"
@@ -46,7 +46,7 @@ class GraphBuilder:
     def create_entityNode(self,id,name, wikipedia_id,wikidata_id):
         entity_id = f"Entity_{id}"
         if entity_id not in self.entity_nodes:
-            self.G.add_node(entity_id, label="Entity", name=wikipedia_id, wikidata_id=wikidata_id)
+            self.G.add_node(entity_id, node_id=entity_id,label="Entity",name=wikipedia_id, wikidata_id=wikidata_id)
             self.entity_nodes.append(entity_id) 
         return entity_id
     
