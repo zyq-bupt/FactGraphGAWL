@@ -6,7 +6,12 @@
 
 # mian_without_embedding.py ！！！！
 没有embedding功能的主函数。这个运行的快一点，因为后期才用到embedding，这里为了试验各种参数的效果，可以不得到embedding。
-
+在下面的函数里修改参数：
+```
+def caculate_graphSim(g1, g2):
+    d = 50
+    init_w=1/100000
+```
 # merge_file.py
 把train、test、val都合并到一个文件中，为了运行速度快。
 
