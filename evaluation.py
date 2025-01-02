@@ -33,8 +33,6 @@ class LoggerWriter:
         pass  # 此方法保持空即可
 
 
-
-
 #方差分析检验三组数据的显著性，ANOVA
 def anova(data1,data2,data3):
     # 进行单因素方差分析
@@ -73,18 +71,43 @@ def tukey_HSD(data1, data2, data3):
 def draw_fig(fs, data, save_path):
     # 将数据转换为 DataFrame
     df = pd.DataFrame(data)
-
+    if 'article_abstract' in data.keys():
+        draw_df = {'reference':df['article_abstract'],
+                'candidate':df['article_candidate'],
+                    'human-generated':df['article_humman_summary']}
+    else:
+        draw_df = {'reference':df['abstract_score'],
+                'candidate':df['candidate_score'],
+                    'human-generated':df['humman_summary_score']}
     # 设置 Seaborn 样式
     sns.set(style="whitegrid")
 
     # 绘制箱形图
     plt.figure(figsize=(10, 6))
     # sns.boxplot(data=df, palette='viridis')
-    sns.boxplot(data=df, palette=['#1f77b4', '#ff7f0e', '#2ca02c'])
-    # 添加标题和标签
-    plt.title('Box Plot of Sample Distribution')
-    plt.xlabel('three types of summary score')
-    plt.ylabel('%s score'%(fs))
+    sns.boxplot(data=draw_df, palette=['#1f77b4', '#ff7f0e', '#2ca02c'])
+    
+    # plt.xlabel('three types of summary')
+    if fs == 'factgraph in intrinsic error' or fs == 'factgraph in extrinsic error':
+        plt.title('WL-FSP Sample Distribution ')
+    elif fs == 'summacconv':
+        plt.title('SummaC Sample Distribution')
+    
+    elif fs == 'quals':
+        plt.title('QUALs Sample Distribution')
+    elif fs == 'feqa':
+        plt.title('FEQA Sample Distribution')
+
+    elif fs == 'factcc':
+        plt.title('FactCC Sample Distribution')
+
+    elif fs == 'dae_doc':
+        plt.title('DAE Sample Distribution')
+
+    elif fs == 'cloze':
+        plt.title('ClozE Sample Distribution')
+    
+
     plt.savefig(save_path+fs+'.jpg', dpi=None, bbox_inches='tight', pad_inches=0.1)
     # 显示图形
     plt.tight_layout()
@@ -265,9 +288,9 @@ def evaluate_factscore( data, save_path, fact_score_list):
 
 
 
-def factgraph():
+def factgraph(save_path, factgraph_output_file_path):
 
-    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig_1_1/'
+    
     text_list=['abstract','candidate','humman_summary']
     graph_sims_ins = {}
     graph_sims_ext = {}
@@ -275,8 +298,7 @@ def factgraph():
     count_ins = 0
     hum_larger_than_cand_ext = 0
     count_ext = 0
-
-    factgraph_output_file_path = "/root/autodl-fs/zyq/DeFacto/data/merged_data1.json"
+    
     
     all_data = load_data(factgraph_output_file_path)
 
@@ -333,10 +355,9 @@ def factgraph():
     print('********外部错误********')
     evaluate_factgraph('factgraph in extrinsic error', graph_sims_ext, save_path+'extrinsic/')
 
-def otherfactscore():
+def otherfactscore(save_path):
 
     factgraph_output_file_path = '/root/autodl-fs/zyq/DeFacto/data/merged_data1_evaluate.json'
-    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig_1_1/'
     text_list=['abstract','candidate','humman_summary']
     summary_type_list = ['abstract_score','candidate_score','humman_summary_score']
     fact_score_list=['cloze','dae_doc','factcc','summacconv','quals','feqa']
@@ -379,32 +400,33 @@ def otherfactscore():
 
 if __name__ == '__main__':
     
-   
-    # Step 1: 配置日志记录器
+    save_path = '/root/autodl-fs/zyq/DeFacto/data/fig_1_3/'
+    # # Step 1: 配置日志记录器
+    # logging.basicConfig(
+    #     filename=save_path+'factgraph_evaluation_1_3.log',                # 日志文件名
+    #     level=logging.INFO,                # 设置日志级别为 INFO
+    #     format='%(asctime)s - %(levelname)s - %(message)s'  # 日志格式
+    # )
+    # # Step 3: 重定向标准输出到日志文件
+    # sys.stdout = LoggerWriter(logging.info)
+    
+    # factgraph_output_file_path = "/root/autodl-fs/zyq/DeFacto/data/merged_data1.json"
+    # factgraph(save_path, factgraph_output_file_path)#用于评估事实图结果
+
+    # sys.stdout = sys.__stdout__
+    # # 检查日志文件内容
+    # print(f"日志已保存到 {save_path} 文件中，请查看以了解详细内容。")
+
+
+
     logging.basicConfig(
-        filename='/root/autodl-fs/zyq/DeFacto/data/factgraph_evaluation.log',                # 日志文件名
+        filename=save_path+'factscores_evaluation.log',                # 日志文件名
         level=logging.INFO,                # 设置日志级别为 INFO
         format='%(asctime)s - %(levelname)s - %(message)s'  # 日志格式
     )
-    # Step 3: 重定向标准输出到日志文件
     sys.stdout = LoggerWriter(logging.info)
 
-    factgraph()#用于评估事实图结果
+    otherfactscore(save_path)#用于评估factscores
 
     sys.stdout = sys.__stdout__
-    # 检查日志文件内容
-    print("日志已保存到 'factgraph_evaluation.log' 文件中，请查看以了解详细内容。")
-
-
-
-    logging.basicConfig(
-        filename='/root/autodl-fs/zyq/DeFacto/data/factscores_evaluation.log',                # 日志文件名
-        level=logging.INFO,                # 设置日志级别为 INFO
-        format='%(asctime)s - %(levelname)s - %(message)s'  # 日志格式
-    )
-    sys.stdout = LoggerWriter(logging.info)
-
-    otherfactscore()#用于评估factscores
-
-    sys.stdout = sys.__stdout__
-    print("日志已保存到 'factscores_evaluation.log' 文件中，请查看以了解详细内容。")
+    print(f"日志已保存到 {save_path} 文件中，请查看以了解详细内容。")
