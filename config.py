@@ -2,14 +2,15 @@
 import argparse
 
 def parse_arguments(file):
-    datafile = '/root/autodl-fs/zyq/DeFacto/data'
+    datafile = '/root/autodl-tmp/data_gawl'
     # blink_models_path = '/root/autodl-fs/zyq/BLINK/models'
     # kb_data_path = '/root/autodl-fs/zyq/BLINK/data/KB_data'
 
     config = {
         "spacy_model_name": 'en_core_web_trf',
+        # "dreeam_output_file_path":datafile+'/dreeam_result/%s/'%(file),
         "dreeam_output_file_path":datafile+'/dreeam_result/%s/'%(file),
-        "factgraph_output_file_path": datafile+'/factgraph_result_1/%s/'%(file),
+        "factgraph_output_file_path": datafile+'/factgraph_result/%s/'%(file),
 
         "pretrain_model_path": '/root/autodl-fs/zyq/bert-base-uncased',
         "wikidata5m_path": '/root/autodl-fs/zyq/rotate_wikidata5m.pkl',
