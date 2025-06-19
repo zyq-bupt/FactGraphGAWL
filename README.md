@@ -1,5 +1,5 @@
-# FactGraphSP
-摘要，事实图，short path改进
+# FactGraphGAWL
+摘要，事实图，GAWL改进
 
 # construc_graph.py 
 这个函数主要用于将dreeam_result变成图结构factgraph_result。
