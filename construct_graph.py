@@ -12,11 +12,12 @@ from tqdm import tqdm
 
 def main(args):
     graph_builder= GraphBuilder()
-
+    # graph_processor = GraphEmbeddingProcessor(args)
+    
     text_list=['article','abstract','candidate','humman_summary']
     for filename in tqdm(os.listdir(args.dreeam_output_file_path)):
         if filename.endswith('.json'):
-
+            # filename = '2214.json'
             # docid = filename.split('.')[0]
             # if docid in right_list:
 
@@ -28,9 +29,12 @@ def main(args):
             for key,item in input_data.items():
                 if key in text_list:
                     graph=graph_builder.build_graph(item)
+                    ##1 如果不要节点embedding，直接用下面两行代码，屏蔽掉2
                     gdata = nx.node_link_data(graph)
                     new_data[key]['graph_without_emb'] = gdata
 
+
+                    ##2 如果要节点embedding，那么就运行下面代码且屏蔽掉1
                     # graph_with_emb = graph_processor.process_graph_embeddings(graph)
                     # new_data[key]['graph_with_emb'] = graph_with_emb
 
@@ -40,6 +44,7 @@ def main(args):
             
 if __name__ == '__main__':
     flist=['test','val','train']
+    # flist = ['test']
     for f in flist:
         args = parse_arguments(f)
         main(args)

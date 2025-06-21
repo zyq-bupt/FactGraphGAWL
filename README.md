@@ -2,11 +2,29 @@
 摘要，事实图，GAWL改进
 
 # construc_graph.py 
+输入：autodl-fs/zyq/data_gawl/dreeam_result/
+输出：autodl-fs/zyq/data_gawl/factgraph_result/
+功能：
 这个函数主要用于将dreeam_result变成图结构factgraph_result。
 dreeam结束后，token、mention、entity、以及他们之间的relation，都有了，但是不是图结构，所以要重新组织一下，得到graph_without_emb。
 ```
 
 ```
+# get_token_EMB.py
+输入：autodl-fs/zyq/data_gawl/factgraph_result/
+输出：autodl-fs/zyq/data_gawl/factgraph_result_withemb/
+功能：
+给节点增加embedding，加载了pegasus-xsum预训练模型，节点emb是所在句子的上下文嵌入。例如：原文和摘要中包含同一个词，但是其emb却可能不一样。可用于PT图核相似度方法。
+
+ps：学习到了一个新的方法，可以将自己的分词和模型tokenizer的分词map起来。见代码63行-77行。
+
+sents = [["I", "love", "programming"]]
+
+假设 tokenizer 把 "programming" 分成 "program" + "ming"，[["I", "love", "program", "ming"]]
+
+encoding['input_ids'] = [101, 146, 1568, 30767， 2561, 102]
+
+encoding.word_ids(batch_index=0) [None, 0, 1, 2, 3, 3, None]，意思是编码出的低4和第5个embedding，映射到我自己分割的sents的第3个。
 
 # gawl.py
 主函数，计算两个图的相似性。

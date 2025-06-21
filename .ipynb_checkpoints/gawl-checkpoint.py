@@ -357,6 +357,7 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                         m1 = node_label_freq[j][edge[0]]
                         m2 = node_label_freq[j][edge[1]]
                         
+
                         emb_uv_i = edges_node_emb[i][edge]
                         emb_uv_j = edges_node_emb[j][edge]
                         
@@ -390,7 +391,7 @@ def is_graph_file_empty(input_path: Path, graph_keys: list[str]) -> bool:
 
     return False
 if __name__ == '__main__':
-    flist=['test','val','train']
+    flist=['val','train']
     # flist=['test']
     use_node_labels = True
     use_emb_labels = True

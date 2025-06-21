@@ -35,7 +35,7 @@ def convert_json_graph(
     edge_labels: list[str] = []
     edge_types: list[str] = []    # 新增：记录每条边的大类
     graph_labels = ['0'] * len(graph_keys)
-    
+    node_emb_labels_list = []
 
     # 统一全局名字到标签（可选）
     name2label: dict[str, int] = {}
@@ -56,6 +56,7 @@ def convert_json_graph(
 
 
         G = data[key]['graph_without_emb']
+       
         # 本地节点->name 映射
         local_name_map = {n['node_id']: n.get('name', '') for n in G.get('nodes', [])}
 
@@ -73,7 +74,21 @@ def convert_json_graph(
                 name2label[name] = len(name2label) + 1
             node_name_labels.append(str(name2label[name]))
 
+            # --- 提取 embedding ---
+            node = next((n for n in G['nodes'] if n['node_id'] == lid), None)
+            if node is None:
+                print(f"⚠️ 没找到 node_id={lid} 的 embedding", file=sys.stderr)
+                emb = [0.0] * 1024   # 也可以改成 raise error
+            else:
+                emb = node['embedding']
+            
+            node_emb_labels_list.append(emb)
+         
+
             current_node_id += 1
+
+        
+
 
         # 辅助函数：根据节点 ID 前缀判断节点类型
         def node_category(nid: str) -> str:
@@ -134,12 +149,15 @@ def convert_json_graph(
         '\n'.join(graph_labels), encoding='utf-8')
     (out_dir / f"{prefix}node_name_labels.txt").write_text(
         '\n'.join(node_name_labels), encoding='utf-8')
+   
     (out_dir / f"{prefix}edge_labels.txt").write_text(
         '\n'.join(edge_labels), encoding='utf-8')
     # 新增：写入每条边的粗分类（大类）
     (out_dir / f"{prefix}edge_label_type.txt").write_text(
         '\n'.join(edge_types), encoding='utf-8')
 
+    with (output_dir / f"{output_prefix}node_emb_labels.json").open("w", encoding="utf-8") as fout:
+        json.dump(node_emb_labels_list, fout, indent=2)
     
     # print("✔ 输出完成：",
     #       f"{prefix}graph_indicator.txt,",
@@ -152,16 +170,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="转换 JSON 子图为全局节点/边，输出统一节点名标签和边类型标签"
     )
-    parser.add_argument("-i", "--input", default='100.json',
+    parser.add_argument("-i", "--input", default='/root/autodl-fs/zyq/data_gawl/factgraph_result_withemb/tt/100.json',
                         help="输入 JSON 文件路径")
     parser.add_argument("-k", "--keys", nargs="+",
-                        default=["article", "abstract", "candidate", "humman_summary"],
+                        default=["article", "candidate", "humman_summary"],
                         help="子图 key 列表，顺序决定 graph_indicator 编号")
     parser.add_argument("-p", "--prefix", default="",
                         help="输出文件名前缀（可选）")
     parser.add_argument("-u", "--undirected", action="store_true",
                         help="写入反向边，将有向图当作无向图处理")
-    parser.add_argument("-o", "--outdir", default='.',           # ← 新增：输出目录参数
+    parser.add_argument("-o", "--outdir", default='/root/autodl-fs/zyq/data_gawl/factgraph_result_withemb/tt/',           # ← 新增：输出目录参数
                         help="输出文件所在目录 (默认当前目录)")
     args = parser.parse_args()
 
