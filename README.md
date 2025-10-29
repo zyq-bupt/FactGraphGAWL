@@ -1,60 +1,146 @@
 # FactGraphGAWL
-摘要，事实图，GAWL改进
 
-# construc_graph.py 
-输入：autodl-fs/zyq/data_gawl/dreeam_result/
-输出：autodl-fs/zyq/data_gawl/factgraph_result/
-功能：
-这个函数主要用于将dreeam_result变成图结构factgraph_result。
-dreeam结束后，token、mention、entity、以及他们之间的relation，都有了，但是不是图结构，所以要重新组织一下，得到graph_without_emb。
+## 摘要
+事实图构建与 GAWL 方法改进。
+
+---
+
+## 🧩 `construc_graph.py`
+**输入：**
+```
+autodl-fs/zyq/data_gawl/dreeam_result/
 ```
 
+**输出：**
 ```
-# get_token_EMB.py
-输入：autodl-fs/zyq/data_gawl/factgraph_result/
-输出：autodl-fs/zyq/data_gawl/factgraph_result_withemb/
-功能：
-给节点增加embedding，加载了pegasus-xsum预训练模型，节点emb是所在句子的上下文嵌入。例如：原文和摘要中包含同一个词，但是其emb却可能不一样。可用于PT图核相似度方法。
+autodl-fs/zyq/data_gawl/factgraph_result/
+```
 
-ps：学习到了一个新的方法，可以将自己的分词和模型tokenizer的分词map起来。见代码63行-77行。
+**功能说明：**  
+该脚本用于将 `dreeam_result` 转换为图结构 `factgraph_result`。  
+在 dreeam 阶段，虽然已经得到了 token、mention、entity 及其间的 relation，但尚未形成完整的图结构。  
+本脚本重新组织这些信息，生成 `graph_without_emb`。
 
+---
+
+## 🔠 `get_token_EMB.py`
+**输入：**
+```
+autodl-fs/zyq/data_gawl/factgraph_result/
+```
+
+**输出：**
+```
+autodl-fs/zyq/data_gawl/factgraph_result_withemb/
+```
+
+**功能说明：**  
+为节点添加 embedding，加载 `pegasus-xsum` 预训练模型。  
+节点 embedding 取自其所在句子的上下文嵌入。  
+同一词汇在原文与摘要中可能有不同的 embedding，可用于 PT 图核相似度方法。
+
+**小技巧：**  
+学习到一个新的映射方法，可将自定义分词与模型 tokenizer 的分词对应起来（见代码 63–77 行）：
+
+```python
 sents = [["I", "love", "programming"]]
 
-假设 tokenizer 把 "programming" 分成 "program" + "ming"，[["I", "love", "program", "ming"]]
+# 假设 tokenizer 将 "programming" 分成 "program" + "ming"
+# [["I", "love", "program", "ming"]]
+encoding['input_ids'] = [101, 146, 1568, 30767, 2561, 102]
+encoding.word_ids(batch_index=0)
+# 输出: [None, 0, 1, 2, 3, 3, None]
+# 表示编码出的第4和第5个 embedding 映射到 sents 的第3个单词。
+```
 
-encoding['input_ids'] = [101, 146, 1568, 30767， 2561, 102]
+---
 
-encoding.word_ids(batch_index=0) [None, 0, 1, 2, 3, 3, None]，意思是编码出的低4和第5个embedding，映射到我自己分割的sents的第3个。
+## 🧮 `gawl.py`
+主函数，用于计算两个图的相似性。
 
-# gawl.py
-主函数，计算两个图的相似性。
+### 一、GAWL 改进内容
+在原始 GAWL 方法基础上，进行了三项改进：
 
-一、在GAWL方法的基础上进行了3种改进：
+1. **节点标签改进**  
+   将节点 label 由度数替换为单词。  
+   （注意：未剔除停用词，因为方法对结构敏感，涉及多层邻居聚合，若删除中间关系或单词可能影响性能。）  
+   → 对应函数：`compute_gawl_kernel`
 
-1、将度变为单词形式，即把节点label变成单词。（注意，这里使用了全部单词和关系，没有剔除停用词，因为本方法对结构敏感，而且涉及多层邻居聚合，如果失去了某些中间关系和单词，方法性能会下降。）【对应compute_gawl_kernel函数】
+2. **小图标签频率改进**  
+   直接使用小图 *j* 的 label 频率。  
+   虽然提升不大，但该修改更符合摘要任务逻辑。  
+   原因：原本的 `min()` 函数已默认以小图为基准。
 
-2、直接用小图 j 的 label 频率。（这个方法提升效果小，但是改进目前完全符合摘要任务，提升效果小的原因是，原本的min函数就是以小图为基准，因此大多数情况下，都会以摘要为基准。）
+3. **边类型加权改进（关键）**  
+   → 对应函数：`compute_gawl_kernel_v2`
 
-3、【关键改进】增加2种边类型加权：【对应compute_gawl_kernel_v2函数】
+#### 边类型设计
+| 类型 | 描述 |
+|------|------|
+| **大类** | T-T = 1，T-M = 2，M-E = 3，E-E = 1.5。<br>其中：<br>nsubj、obj 属于 token-token；<br>RELATED_TO 属于 token-mention；<br>BELONGS_TO 属于 mention-entity；<br>P17、P27 属于 entity-entity。<br>文件：`edge_label_type.txt` 记录每条边的大类。 |
+| **小类** | `edge_label.txt` 中存储了具体子类型（如 nsubj、obj、RELATED_TO、BELONGS_TO、P17、P27 等）。目前每个小类出现一次计权重为 1。 |
 
-    3.1 两种边类型：大类是：
+> 📎 方法细节见论文附录或飞书文档：[FactGraphGAWL文档](https://mu85k14jge.feishu.cn/docx/LDNvdEKL7oh3itxnC4WcK87OnId?from=from_copylink)  
+> 参考原论文：[Nikolentzos & Vazirgiannis, 2023](https://github.com/giannisnik/gawl)(Nikolentzos G, Vazirgiannis M. Graph alignment kernels using weisfeiler and leman hierarchies[C]//International Conference on Artificial Intelligence and Statistics. PMLR, 2023: 2019-2034.)
 
-    | 边类型   | 方法描述   | 
-    | ------- | :-----: |
-    | 大类  |T-T = 1，T-M=2，M-E=3，E-E=1.5。nsubj、obj属于token-token大类、RELATED_TO属于token-mention大类、BELONGS_TO属于mention-entity大类、P17、P27属于entity-entity大类，文件edge_label_type.txt，记录每条边的大类。| 
-    | 小类  |  edge_label.txt中存储的是nsubj、obj、RELATED_TO、BELONGS_TO、P17、P27等等这种每条边的子类型。目前每个小类，出现一次就算权重是1，| 
+---
 
-4、方法描述见论文附录or飞书文档（https://mu85k14jge.feishu.cn/docx/LDNvdEKL7oh3itxnC4WcK87OnId?from=from_copylink）
+### 二、函数流程与参数说明
+```python
+use_node_labels = True  # True 表示使用单词作为节点 label。后续可继续改进，用embedding作为label。
+use_edge_labels = 1     # 0: 不使用边权重；1: 使用小类权重(edge_minor_type_weights)；2: 使用大类权重(edge_major_type_weights)
+```
 
-注：（https://github.com/giannisnik/gawl） Nikolentzos G, Vazirgiannis M. Graph alignment kernels using weisfeiler and leman hierarchies[C]//International Conference on Artificial Intelligence and Statistics. PMLR, 2023: 2019-2034.
+---
 
-二、函数流程和关键参数解释
+## 📁 输入文件说明
+**Defacto 数据集：**
+```
+data_gawl
+```
 
-1、use_node_labels = True，true表示用单词作为节点label。后续可继续改进，用embedding作为label。
+下载链接（百度网盘）：
+> 链接：[https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw](https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw)  
+> 提取码：`2tns`
 
-2、use_edge_labels = 1  #0:不使用边权重；1:edge_minor_type_weights, 2:edge_major_type_weights
+---
 
+## ⚙️ 其他注意事项
+```python
+keys = ["article", "candidate", "humman_summary"]
+# 注意！UniSum 的键名不同！
+```
 
-# 输入文件
+---
 
-defacto数据集：data_gawl (通过网盘分享的文件：Defacto_data_gawl.zip  链接: https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw 提取码: 2tns )
+## 📊 UniSumEval上与人类得分的相关性评估
+
+### `gawl.py`
+**输出路径：**
+```
+/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL/test
+```
+
+---
+
+## 🧾 `edit2.py`
+**输入：**
+```python
+merged_file = "/root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2.jsonl"
+docs_directory = "/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL/test/"
+```
+
+**输出：**
+```
+/root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2_processed.jsonl
+```
+
+**功能：**  
+将上一步得到的得分与原始文件进行合并。
+
+---
+
+## 📈 `evaluators_benchmark.py`
+评估脚本，用于验证模型在不同任务上的表现。
+
+---
