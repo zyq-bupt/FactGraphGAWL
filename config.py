@@ -2,7 +2,7 @@
 import argparse
 
 def parse_arguments(file):
-    datafile = '/root/autodl-fs/zyq/data_gawl'
+    datafile = '/root/autodl-fs/zyq/unisumeval_data_gawl'
     # blink_models_path = '/root/autodl-fs/zyq/BLINK/models'
     # kb_data_path = '/root/autodl-fs/zyq/BLINK/data/KB_data'
 
@@ -18,7 +18,6 @@ def parse_arguments(file):
         "wikidata5m_relation_path": '/root/autodl-fs/zyq/wikidata5m_relation.txt',
         "graph_similarity_output_file_path": datafile+'/graph_similarity_result_1/%s/'%(file),
         # "": '/root/',
-
     }
     # 返回 argparse.Namespace 对象
     return argparse.Namespace(**config)

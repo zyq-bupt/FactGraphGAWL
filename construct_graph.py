@@ -14,7 +14,8 @@ def main(args):
     graph_builder= GraphBuilder()
     # graph_processor = GraphEmbeddingProcessor(args)
     
-    text_list=['article','abstract','candidate','humman_summary']
+    # text_list=['article','abstract','candidate','humman_summary']#defacto
+    text_list=['article','abstract','candidate']#unisumeval
     for filename in tqdm(os.listdir(args.dreeam_output_file_path)):
         if filename.endswith('.json'):
             # filename = '2214.json'
@@ -43,8 +44,8 @@ def main(args):
             #下面可以接着算两两之间的sp相似度.
             
 if __name__ == '__main__':
-    flist=['test','val','train']
-    # flist = ['test']
+    # flist=['test','val','train']
+    flist = ['test']
     for f in flist:
         args = parse_arguments(f)
         main(args)

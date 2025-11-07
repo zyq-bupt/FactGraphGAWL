@@ -16,12 +16,12 @@ def is_graph_file_empty(input_path: Path, graph_keys: list[str]) -> bool:
                 return False
     return True
 
-
 def convert_json_graph(
     input_path: Path,
     graph_keys: list[str],
     output_prefix: str = "",
     undirected: bool = False,
+    use_emb_labels: bool = False,
     output_dir: Path = Path(".") 
 ):
     # 1. 读取 JSON
@@ -36,6 +36,7 @@ def convert_json_graph(
     edge_types: list[str] = []    # 新增：记录每条边的大类
     graph_labels = ['0'] * len(graph_keys)
     node_emb_labels_list = []
+  
 
     # 统一全局名字到标签（可选）
     name2label: dict[str, int] = {}
@@ -68,22 +69,28 @@ def convert_json_graph(
             local2global[lid] = current_node_id
             graph_indicator.append(str(gid))
 
+            # #记录name和id的映射
+            # node_name = local_name_map.get(lid, "")
+            # node_id_name_map.append((current_node_id, node_name))
+
             # 记录名字标签
             name = local_name_map[lid]
             if name not in name2label:
-                name2label[name] = len(name2label) + 1
+                name2label[name] = len(name2label)
+         
             node_name_labels.append(str(name2label[name]))
 
-            # --- 提取 embedding ---
-            node = next((n for n in G['nodes'] if n['node_id'] == lid), None)
-            if node is None:
-                print(f"⚠️ 没找到 node_id={lid} 的 embedding", file=sys.stderr)
-                emb = [0.0] * 1024   # 也可以改成 raise error
-            else:
-                emb = node['embedding']
+            if use_emb_labels:
+                # --- 提取 embedding ---
+                node = next((n for n in G['nodes'] if n['node_id'] == lid), None)
+                if node is None:
+                    print(f"⚠️ 没找到 node_id={lid} 的 embedding", file=sys.stderr)
+                    emb = [0.0] * 1024   # 也可以改成 raise error
+                else:
+                    emb = node['embedding']
+                
+                node_emb_labels_list.append(emb)
             
-            node_emb_labels_list.append(emb)
-         
 
             current_node_id += 1
 
@@ -156,9 +163,15 @@ def convert_json_graph(
     (out_dir / f"{prefix}edge_label_type.txt").write_text(
         '\n'.join(edge_types), encoding='utf-8')
 
-    with (output_dir / f"{output_prefix}node_emb_labels.json").open("w", encoding="utf-8") as fout:
-        json.dump(node_emb_labels_list, fout, indent=2)
+
+    if use_emb_labels:
+        with (output_dir / f"{output_prefix}node_emb_labels.json").open("w", encoding="utf-8") as fout:
+            json.dump(node_emb_labels_list, fout, indent=2)
     
+    # 写入节点编号和名称映射
+    node_map_path = output_dir / f"{output_prefix}node_id_name_mapping.json"
+    with node_map_path.open("w", encoding="utf-8") as fout:
+        json.dump(name2label, fout, indent=2)
     # print("✔ 输出完成：",
     #       f"{prefix}graph_indicator.txt,",
     #       f"{prefix}A.txt,",

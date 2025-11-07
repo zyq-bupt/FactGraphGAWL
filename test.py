@@ -51,3 +51,4 @@ def import_networkx_to_neo4j(G, graph):
 import_networkx_to_neo4j(G1, graph)
 # import_networkx_to_neo4j(G2, graph)
 print("NetworkX 图已成功导入到 Neo4j 数据库中。")
+

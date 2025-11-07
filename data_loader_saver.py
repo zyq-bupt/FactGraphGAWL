@@ -11,7 +11,10 @@ def load_data(dataset_path):
     return data
 
 def data_save(data: dict, outputfile: str):
-    doc_id = data['doc_id']
+    if 'doc_name' in data.keys():
+        doc_id = data['doc_name']
+    else:
+        doc_id = data['doc_id']
     with open(outputfile+str(doc_id)+'.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 

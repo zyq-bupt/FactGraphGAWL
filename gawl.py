@@ -3,9 +3,19 @@ import networkx as nx
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import time
+from data_loader_saver import load_data, data_save
 from math import sqrt
-from edge_weights import edge_minor_type_weights, edge_major_type_weights
+# from edge_weights import edge_minor_type_weights, edge_major_type_weights
+import os, json, shutil
+from pathlib import Path
 
+edge_major_type_weights = {
+  "token-token": 1,
+  "token-mention":2,
+  "mention-entity":3,
+  "entity-entity ":0,
+  "shortest-path":0.1,
+}
 
 # Argument parser
 parser = argparse.ArgumentParser(description='GAWL')
@@ -13,10 +23,11 @@ parser.add_argument('--dataset', default='sample', help='Dataset name')#IMDB-BIN
 parser.add_argument('--T', type=int, default=1, help='Iterations of WL algorithm')
 args = parser.parse_args()
 
+
 def cos_sim(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-8)
 
-def load_data(ds_name, use_node_labels, use_emb_labels, use_edge_labels):
+def load_graph_data(ds_name, use_node_labels, use_emb_labels, use_edge_labels):
     node2graph = {}
     Gs = []
     edge_type_weights = []
@@ -273,7 +284,48 @@ def cos_sim(emb_uv_i, emb_uv_j):
         avg_sim_u = total_sim_u / total_count
         avg_sim_v = total_sim_v / total_count
         return avg_sim_u, avg_sim_v
-    
+
+# pip install torch  (确保CUDA版)
+import torch
+import torch.nn.functional as F
+
+def gpu_cos_sim(emb_uv_i, emb_uv_j, device="cuda"):
+    """
+    emb_uv_i / emb_uv_j: List[Tuple[np.ndarray, np.ndarray]]
+    返回: (avg_sim_u, avg_sim_v)
+    """
+    if len(emb_uv_i) == 0 or len(emb_uv_j) == 0:
+        return 1.0, 1.0
+
+    # 组装为矩阵: [Ni, D], [Nj, D]
+    Ui = torch.from_numpy(
+        np.stack([u for (u, v) in emb_uv_i], axis=0)
+    ).to(device=device, dtype=torch.float32)
+    Vi = torch.from_numpy(
+        np.stack([v for (u, v) in emb_uv_i], axis=0)
+    ).to(device=device, dtype=torch.float32)
+
+    Uj = torch.from_numpy(
+        np.stack([u for (u, v) in emb_uv_j], axis=0)
+    ).to(device=device, dtype=torch.float32)
+    Vj = torch.from_numpy(
+        np.stack([v for (u, v) in emb_uv_j], axis=0)
+    ).to(device=device, dtype=torch.float32)
+
+    # 归一化
+    Ui = F.normalize(Ui, dim=1)
+    Vi = F.normalize(Vi, dim=1)
+    Uj = F.normalize(Uj, dim=1)
+    Vj = F.normalize(Vj, dim=1)
+
+    # 两两相似度 = 矩阵乘： [Ni, D] @ [D, Nj] -> [Ni, Nj]
+    # 取平均即可（等价于你原先的双重循环取平均）
+    sim_u = torch.clamp(Ui @ Uj.T, min=0).mean()  # 截断负值为0
+    sim_v = torch.clamp(Vi @ Vj.T, min=0).mean()
+
+    return float(sim_u), float(sim_v)
+
+
 def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels):
     '''
     GAWL kernel 版本 2 ：考虑了边
@@ -307,9 +359,7 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                 v1 = node_labels[i][node_to_idx[edge[0]], it]
                 v2 = node_labels[i][node_to_idx[edge[1]], it]
                 
-                emb_v1 = G.nodes[edge[0]]['emb_label']
-                emb_v2 = G.nodes[edge[1]]['emb_label']
-
+                
                 etype = G.edges[edge].get('type', None)
                 w = edge_type_weights.get(etype, 1.0)
 
@@ -331,16 +381,20 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                     edges_node_emb[i][key] = list()
 
                 #为了计算边相似性，需要把相应的节点emb存进去。
+                if use_emb_labels:
+                    emb_v1 = G.nodes[edge[0]]['emb_label']
+                    emb_v2 = G.nodes[edge[1]]['emb_label']
 
-                edges_node_emb[i][key].append((emb_v1,emb_v2))    
+                    edges_node_emb[i][key].append((emb_v1,emb_v2))    
         
                 
 
         # === 相似度计算 ===
+        edge_contributions_j = dict()
         for i in range(len(Gs)):
-            for j in range(i, len(Gs)):
-                for edge in edges[i]:
-                    if edge in edges[j]:
+            for j in range(i+1, len(Gs)):
+                for edge in edges[j]:
+                    if edge in edges[i]:
                         etype = edge[2]
                         count_i = edge_type_count[i].get(etype, 1)
                         count_j = edge_type_count[j].get(etype, 1)
@@ -357,19 +411,44 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                         m1 = node_label_freq[j][edge[0]]
                         m2 = node_label_freq[j][edge[1]]
                         
-                        emb_uv_i = edges_node_emb[i][edge]
-                        emb_uv_j = edges_node_emb[j][edge]
-                        
-                        sim_u, sim_v = cos_sim(emb_uv_i, emb_uv_j) 
-
                         if use_emb_labels: 
-                            K[i,j] += sqrt(ei) * sqrt(ej) * m1 * m2 * sim_u * sim_v
+                            emb_uv_i = edges_node_emb[i][edge]
+                            emb_uv_j = edges_node_emb[j][edge]
+                            
+                            sim_u, sim_v = gpu_cos_sim(emb_uv_i, emb_uv_j) 
+                            kij = sqrt(ei) * sqrt(ej) * m1 * m2 * sim_u * sim_v
+                            # if etype == 'mention-entity':
+                            #     if kij > 0:
+                            #         print(etype,edge)
+                                
+                            # if etype == etype == 'entity-entity':
+                            #     if kij > 0:
+                            #         print(edge)
+                                
                         else:
-                            K[i, j] += sqrt(ei) * sqrt(ej) * m1 * m2
-
+                            kij = sqrt(ei) * sqrt(ej) * m1 * m2
+                        edge_contributions_j[edge] = kij
+                        K[i, j] += kij
+                    else:
+                        edge_contributions_j[edge] = -1
                 K[j, i] = K[i, j]
 
-    return K
+                # —— 你原本的 K 计算完毕之后 —— #
+
+                # 1. 先取出对角线，得到每个样本的自相似度
+                diag = np.sqrt(np.diag(K))            # shape (n,)
+
+                # 2. 构造归一化分母矩阵：diag[i] * diag[j]
+                denom = np.outer(diag, diag)          # shape (n, n)
+
+                # 3. 防止除零（如果某些 diag 为零，可以在它们对应位置上加个微小常数）
+                denom[denom == 0] = 1e-12
+
+                # 4. 最终归一化
+                K_norm = K / denom
+    
+    # return K
+    return K_norm
 
 
 import os
@@ -377,6 +456,7 @@ import json
 from pathlib import Path
 from dfc2 import convert_json_graph
 from tqdm import tqdm
+
 def is_graph_file_empty(input_path: Path, graph_keys: list[str]) -> bool:
     with input_path.open('r', encoding='utf-8') as fin:
         data = json.load(fin)
@@ -390,16 +470,29 @@ def is_graph_file_empty(input_path: Path, graph_keys: list[str]) -> bool:
 
     return False
 if __name__ == '__main__':
-    flist=['test','val','train']
-    # flist=['test']
+    # 
+    
     use_node_labels = True
     use_emb_labels = True
     use_edge_labels = 2  #0:不使用边权重；1:edge_minor_type_weights, 2:edge_major_type_weights
+    dataset = 'DeFacto'#  UniSumEval
 
-    keys = ["article", "candidate", "humman_summary"]
+    if dataset== 'DeFacto':
+        keys = ["article", "candidate", "humman_summary"]
+        data_path = 'defacto_data_gawl'
+        flist=['test','val','train']
+    else:
+        keys = ["article", "candidate"] 
+        data_path = 'unisumeval_data_gawl'
+        flist=['test']
+    
+    if use_emb_labels:
+        outd = 'factgraph_result_withemb'
+    else:
+        outd = 'factgraph_result'
     prefix = ""
     undirected = False
-    outdir = "/root/autodl-fs/zyq/data_gawl/factgraph_result_withemb/"
+    outdir = "/root/autodl-fs/zyq/%s/%s/"%(data_path,outd)
 
     right_in = 0
     equ_in = 0
@@ -408,95 +501,118 @@ if __name__ == '__main__':
     equ_ex = 0
     allcount_ex = 0
     
+    kongc = 0
+   
     for f in flist:
         # 读文件，然后转化
-        input_path = "/root/autodl-fs/zyq/data_gawl/factgraph_result_withemb/%s/"%(f)
+        # input_path = "/root/autodl-fs/zyq/%s/hgmaedata/factgraph_result_HGMAE_3_1_4/%s/"%(data_path,f)
         # input_path = "/root/autodl-fs/zyq/data_gawl/factgraph_result_withemb/"
+        input_path = os.path.join(outdir,f)
+        
+        tmp_root = Path(outdir)  # 原 outdir 只是作为根目录
+        tmp_root.mkdir(parents=True, exist_ok=True)
         for filename in tqdm(os.listdir(input_path)):
             if filename.endswith('.json'):
-
                 # print(filename)
-                # filename = '1109.json'
-                # if filename == '229.json' or filename == '648.json':
+                # if filename != '1244.json':
                 #     continue
-
-                # start_time = time.time()  # 记录开始时间
-
                 input_file = os.path.join(input_path, filename)
 
                 if is_graph_file_empty(Path(input_file), keys):
-                    print(filename)
+                    kongc+=1
                     continue
+                # 1) 为当前样本建立唯一化工作区：样本名 + 进程ID
+                stem = Path(filename).stem
+                work_dir = tmp_root / f"{stem}__pid{os.getpid()}"
+                if work_dir.exists():
+                    shutil.rmtree(work_dir)
+                work_dir.mkdir(parents=True, exist_ok=True)
                 
                 convert_json_graph(
                     input_path=Path(input_file),
                     graph_keys=keys,
                     output_prefix=prefix,
                     undirected=undirected,
-                    output_dir=Path(outdir)
+                    use_emb_labels=use_emb_labels,
+                    output_dir=work_dir
                 )
-                # end_time = time.time()    # 记录结束时间
-
+           
                 # print(f"代码11执行时间：{end_time - start_time:.6f} 秒")
                 
                 # start_time = time.time()  # 记录开始时间
                 #调用gawl
-                Gs, y, edge_type_weights= load_data(outdir, use_node_labels, use_emb_labels, use_edge_labels)
+                Gs, y, edge_type_weights= load_graph_data(str(work_dir) + '/', use_node_labels, use_emb_labels, use_edge_labels)
                 
-                # end_time = time.time()    # 记录结束时间
+                # 如果是defacto，那么是要比较正确摘要和错误摘要的事实性评估得分
+                if dataset== 'DeFacto':
+                    K_all = []
+                    for gidx in range(1,3):
+                        compare_Gs= [Gs[0],Gs[gidx]]
+                        node_labels = get_wl_labels(compare_Gs, args.T, use_node_labels)
 
-                # print(f"代码22执行时间：{end_time - start_time:.6f} 秒")
-                # start_time = time.time()  # 记录开始时间
-                K_all = []
-                for gidx in range(1,3):
-                    compare_Gs= [Gs[0],Gs[gidx]]
+                        if use_edge_labels == 0:  #
+                            K = compute_gawl_kernel(compare_Gs, args.T, node_labels)
+                        else:
+                            K = compute_gawl_kernel_v2(compare_Gs, args.T, node_labels, edge_type_weights, use_emb_labels)
+                        K_all.append(K[0,1])
+
+                    with open(input_file, 'r', encoding='utf-8') as file:
+                        try:
+                            input_data = json.load(file)
+                        except json.JSONDecodeError as e:
+                            print(f"读取文件 {input_file} 时出错: {e}")
+
+                    if input_data['intrinsic_error'] == True and input_data['extrinsic_error'] == False:
+                        if K_all[1] > K_all[0]:
+                            right_in += 1
+                            # with open('log_in_lager.txt', 'a', encoding='utf-8') as f:
+                            #     f.write('in：'+filename+'\n')
+                            
+                        if K_all[1] == K_all[0]:
+                            equ_in += 1
+                            # with open('log_in_equl.txt', 'a', encoding='utf-8') as f:
+                            #     f.write('in：'+filename+'\n')
+                            
+                        allcount_in +=1
+                    elif input_data['intrinsic_error'] == False and input_data['extrinsic_error'] == True:
+                        if K_all[1] > K_all[0]:
+                            right_ex += 1
+                            # with open('log_ex_lager.txt', 'a', encoding='utf-8') as f:
+                            #     f.write('ex：'+filename+'\n')
+                        if K_all[1] == K_all[0]:
+                            equ_ex += 1
+                            # with open('log_ex_equl.txt', 'a', encoding='utf-8') as f:
+                            #     f.write('ex：'+filename+'\n')
+                        allcount_ex +=1
+                    
+                else:
+                    compare_Gs= Gs
                     node_labels = get_wl_labels(compare_Gs, args.T, use_node_labels)
 
                     if use_edge_labels == 0:  #
                         K = compute_gawl_kernel(compare_Gs, args.T, node_labels)
                     else:
                         K = compute_gawl_kernel_v2(compare_Gs, args.T, node_labels, edge_type_weights, use_emb_labels)
-                    K_all.append(K[0,1])
+                    # print(K[0,1])
 
-                # end_time = time.time()    # 记录结束时间
+                    orig_data = load_data(os.path.join('/root/autodl-fs/zyq/unisumeval_data_gawl/dreeam_result/test/', filename))
 
-                # print(f"代码11执行时间：{end_time - start_time:.6f} 秒")
+                    new_data = orig_data.copy()
 
-                with open(input_file, 'r', encoding='utf-8') as file:
-                    try:
-                        input_data = json.load(file)
-                    except json.JSONDecodeError as e:
-                        print(f"读取文件 {input_file} 时出错: {e}")
+                    new_data['graph_sim']={'WL-GAWL':K[0,1]}
 
-                if input_data['intrinsic_error'] == True and input_data['extrinsic_error'] == False:
-                    if K_all[1] > K_all[0]:
-                        right_in += 1
-                        # with open('log_in_lager.txt', 'a', encoding='utf-8') as f:
-                        #     f.write('in：'+filename+'\n')
-                           
+                    saveSim_path = "/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL_WL_PT/%s/"%(f)
+                    # saveSim_file = os.path.join(saveSim_path, filename)
+                    data_save(new_data, saveSim_path)
+                # 计算完可以选择清理
+                shutil.rmtree(work_dir, ignore_errors=True)    
 
-                    if K_all[1] == K_all[0]:
-                        equ_in += 1
-                        # with open('log_in_equl.txt', 'a', encoding='utf-8') as f:
-                        #     f.write('in：'+filename+'\n')
-                           
-                    allcount_in +=1
-                elif input_data['intrinsic_error'] == False and input_data['extrinsic_error'] == True:
-                    if K_all[1] > K_all[0]:
-                        right_ex += 1
-                        # with open('log_ex_lager.txt', 'a', encoding='utf-8') as f:
-                        #     f.write('ex：'+filename+'\n')
-                    if K_all[1] == K_all[0]:
-                        equ_ex += 1
-                        # with open('log_ex_equl.txt', 'a', encoding='utf-8') as f:
-                        #     f.write('ex：'+filename+'\n')
-                    allcount_ex +=1
-
+    print(dataset)
     print(right_in,equ_in)
     print(right_ex,equ_ex)
-    with open('PTresult.txt', 'a', encoding='utf-8') as f:
-        f.write('in: ' + str(right_in) + ', ' + str(equ_in) + '\n' + 'in: ' + str(right_ex) + ', ' + str(equ_ex) + '\n')
-
+    print(right_in+right_ex)
+    # with open('PTresult.txt', 'a', encoding='utf-8') as f:
+    #     f.write('in: ' + str(right_in) + ', ' + str(equ_in) + '\n' + 'in: ' + str(right_ex) + ', ' + str(equ_ex) + '\n')   
 
 
 
