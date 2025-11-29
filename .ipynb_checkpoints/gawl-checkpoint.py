@@ -8,21 +8,31 @@ from math import sqrt
 # from edge_weights import edge_minor_type_weights, edge_major_type_weights
 import os, json, shutil
 from pathlib import Path
+# gawl.py（在文件顶部或入口处加入）
+import argparse
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="GAWL Weight Configuration")
+
+    # 定义参数（名称要和命令行一致）
+    parser.add_argument("--wTT", type=float, default=1.0, help="weight for token-token")
+    parser.add_argument("--wTM", type=float, default=1.0, help="weight for token-mention")
+    parser.add_argument("--wME", type=float, default=1.0, help="weight for mention-entity")
+    parser.add_argument("--wEE", type=float, default=1.0, help="weight for entity-entity")
+    parser.add_argument('--dataset', default='sample', help='Dataset name')#IMDB-BINARY  
+    parser.add_argument('--T', type=int, default=1, help='Iterations of WL algorithm')
+    # 如果还要接别的参数，也可以继续 add_argument
+    # parser.add_argument("--dataset", type=str, default="sample", help="Dataset name")
+
+    return parser.parse_args()
+
+args = parse_args()
 edge_major_type_weights = {
-  "token-token": 1,
-  "token-mention":2,
-  "mention-entity":3,
-  "entity-entity ":0,
-  "shortest-path":0.1,
-}
-
-# Argument parser
-parser = argparse.ArgumentParser(description='GAWL')
-parser.add_argument('--dataset', default='sample', help='Dataset name')#IMDB-BINARY  
-parser.add_argument('--T', type=int, default=1, help='Iterations of WL algorithm')
-args = parser.parse_args()
-
+        "token-token": args.wTT,
+        "token-mention": args.wTM,
+        "mention-entity": args.wME,
+        "entity-entity": args.wEE,
+    }
 
 def cos_sim(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-8)
@@ -79,6 +89,7 @@ def load_graph_data(ds_name, use_node_labels, use_emb_labels, use_edge_labels):
                 idx += 1
         edge_type_weights = edge_minor_type_weights
     elif use_edge_labels == 2:
+        
         edge_types = []
         with open(ds_name + "edge_label_type.txt", "r") as f:
             edge_types = [line.strip() for line in f]
@@ -417,13 +428,6 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                             
                             sim_u, sim_v = gpu_cos_sim(emb_uv_i, emb_uv_j) 
                             kij = sqrt(ei) * sqrt(ej) * m1 * m2 * sim_u * sim_v
-                            # if etype == 'mention-entity':
-                            #     if kij > 0:
-                            #         print(etype,edge)
-                                
-                            # if etype == etype == 'entity-entity':
-                            #     if kij > 0:
-                            #         print(edge)
                                 
                         else:
                             kij = sqrt(ei) * sqrt(ej) * m1 * m2
@@ -433,19 +437,19 @@ def compute_gawl_kernel_v2(Gs, h, node_labels, edge_type_weights, use_emb_labels
                         edge_contributions_j[edge] = -1
                 K[j, i] = K[i, j]
 
-                # —— 你原本的 K 计算完毕之后 —— #
+    # —— 你原本的 K 计算完毕之后 —— #
 
-                # 1. 先取出对角线，得到每个样本的自相似度
-                diag = np.sqrt(np.diag(K))            # shape (n,)
+    # 1. 先取出对角线，得到每个样本的自相似度
+    diag = np.sqrt(np.diag(K))            # shape (n,)
 
-                # 2. 构造归一化分母矩阵：diag[i] * diag[j]
-                denom = np.outer(diag, diag)          # shape (n, n)
+    # 2. 构造归一化分母矩阵：diag[i] * diag[j]
+    denom = np.outer(diag, diag)          # shape (n, n)
 
-                # 3. 防止除零（如果某些 diag 为零，可以在它们对应位置上加个微小常数）
-                denom[denom == 0] = 1e-12
+    # 3. 防止除零（如果某些 diag 为零，可以在它们对应位置上加个微小常数）
+    denom[denom == 0] = 1e-12
 
-                # 4. 最终归一化
-                K_norm = K / denom
+    # 4. 最终归一化
+    K_norm = K / denom
     
     # return K
     return K_norm
@@ -475,15 +479,15 @@ if __name__ == '__main__':
     use_node_labels = True
     use_emb_labels = True
     use_edge_labels = 2  #0:不使用边权重；1:edge_minor_type_weights, 2:edge_major_type_weights
-    dataset = 'DeFacto'#  UniSumEval
-
+    dataset = 'UniSumEval'#  UniSumEval
+    
     if dataset== 'DeFacto':
         keys = ["article", "candidate", "humman_summary"]
         data_path = 'defacto_data_gawl'
         flist=['test','val','train']
     else:
         keys = ["article", "candidate"] 
-        data_path = 'unisumeval_data_gawl'
+        data_path = 'UniSumEval'
         flist=['test']
     
     if use_emb_labels:
@@ -541,6 +545,7 @@ if __name__ == '__main__':
                 
                 # start_time = time.time()  # 记录开始时间
                 #调用gawl
+                
                 Gs, y, edge_type_weights= load_graph_data(str(work_dir) + '/', use_node_labels, use_emb_labels, use_edge_labels)
                 
                 # 如果是defacto，那么是要比较正确摘要和错误摘要的事实性评估得分
@@ -595,22 +600,41 @@ if __name__ == '__main__':
                         K = compute_gawl_kernel_v2(compare_Gs, args.T, node_labels, edge_type_weights, use_emb_labels)
                     # print(K[0,1])
 
-                    orig_data = load_data(os.path.join('/root/autodl-fs/zyq/unisumeval_data_gawl/dreeam_result/test/', filename))
+                    params=[edge_major_type_weights["token-token"],edge_major_type_weights["token-mention"],edge_major_type_weights["mention-entity"],edge_major_type_weights["entity-entity"]]
 
-                    new_data = orig_data.copy()
-
-                    new_data['graph_sim']={'WL-GAWL':K[0,1]}
-
-                    saveSim_path = "/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL_WL_PT/%s/"%(f)
-                    # saveSim_file = os.path.join(saveSim_path, filename)
-                    data_save(new_data, saveSim_path)
+                    new_data = {
+                        "doc_id": filename.strip(".json"),
+                        f"GAWL_PT_{params[0]}_{params[1]}_{params[2]}_{params[3]}": K[0][1]
+                    }
+                    
+                    saveSim_path = "/root/autodl-fs/zyq/UniSumEval/factgraph_result_withemb/result/"
+                    os.makedirs(saveSim_path, exist_ok=True)
+                    
+                    save_file = os.path.join(saveSim_path, f"{filename}")  # 每个文件单独保存
+                    
+                    # 如果文件存在，先读入旧数据
+                    if os.path.exists(save_file):
+                        try:
+                            with open(save_file, "r", encoding="utf-8") as f:
+                                existing_data = json.load(f)
+                            if not isinstance(existing_data, dict):
+                                existing_data = {}
+                        except json.JSONDecodeError:
+                            existing_data = {}
+                    else:
+                        existing_data = {}
+                    
+                    # 合并新数据
+                    existing_data.update(new_data)
+                    
+                    data_save(existing_data, saveSim_path)
                 # 计算完可以选择清理
                 shutil.rmtree(work_dir, ignore_errors=True)    
 
-    print(dataset)
-    print(right_in,equ_in)
-    print(right_ex,equ_ex)
-    print(right_in+right_ex)
+    # print(dataset)
+    # print(right_in,equ_in)
+    # print(right_ex,equ_ex)
+    # print(right_in+right_ex)
     # with open('PTresult.txt', 'a', encoding='utf-8') as f:
     #     f.write('in: ' + str(right_in) + ', ' + str(equ_in) + '\n' + 'in: ' + str(right_ex) + ', ' + str(equ_ex) + '\n')   
 

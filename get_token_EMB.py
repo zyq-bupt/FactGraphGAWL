@@ -127,7 +127,7 @@ def add_graph_embeddings(data,sections,need_tme_emb, tokenizer, model, embed_dim
     return data
 def process_all_splits(input_base_dir,
                        output_base_dir,
-                       pegasus_model_path='/root/autodl-fs/zyq/models/pegasus-xsum'
+                       pegasus_model_path='/root/autodl-fs/zyq/pegasus-xsum'
                      ):
     """
     Process all .json files under test, train, val splits.
@@ -141,7 +141,17 @@ def process_all_splits(input_base_dir,
     need_tme_emb = [True, True, True]
 
     count = 0
+    
+    ##******************unisumeval专用，开始******************
+    _data = []
+    with open('/root/autodl-fs/zyq/UniSumEval/merged_file2.jsonl', 'r') as f:
+        for line in f:
+            _data.append(json.loads(line))
 
+    haserror_list = [item['doc_id'] for item in _data if item['summary_success_state'] == 'success' and item['faithfulness_score'] !=1]
+    print(haserror_list)
+    ##******************unisumeval专用，结束******************
+    
     for split in splits:
         in_dir = os.path.join(input_base_dir, split)
         out_dir = os.path.join(output_base_dir, split)
@@ -152,6 +162,11 @@ def process_all_splits(input_base_dir,
             #     break
             if not fname.lower().endswith('.json'):
                 continue
+                
+            ##******************unisumeval专用，开始******************
+            if fname.strip('.json') not in haserror_list:
+                continue
+            ##******************unisumeval专用，结束******************
             
             in_path = os.path.join(in_dir, fname)
             out_path = os.path.join(out_dir, fname)
@@ -161,7 +176,7 @@ def process_all_splits(input_base_dir,
             save_data(out_data, out_path)
 
 if __name__ == '__main__':
-    BASE_INPUT = '/root/autodl-fs/zyq/unisumeval_data_gawl/factgraph_result'#unisumeval_data_gawl
-    BASE_OUTPUT = '/root/autodl-fs/zyq/unisumeval_data_gawl/factgraph_result_withemb'
+    BASE_INPUT = '/root/autodl-fs/zyq/UniSumEval/factgraph_result'#unisumeval_data_gawl
+    BASE_OUTPUT = '/root/autodl-fs/zyq/UniSumEval/factgraph_result_withemb'
     process_all_splits(BASE_INPUT, BASE_OUTPUT)  
     print('All graphs processed.')
