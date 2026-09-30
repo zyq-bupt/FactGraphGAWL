@@ -1,0 +1,7 @@
+event_id,system_name,candidate_summary
+storm,sysA,Hurricane Harvey killed 12 people in Texas. 100 people need shelter after the flood.
+storm,sysB,A storm happened somewhere and people talked online.
+storm,sysC,Hurricane Harvey killed 12 people. See URL for donations.
+quake,sysA,A 7.1 magnitude earthquake hit Mexico City. Rescue teams search buildings. 165 dead.
+quake,sysB,Something shook and then nothing else was reported.
+quake,sysC,Earthquake hits Mexico City. Army deployed after the earthquake overnight.

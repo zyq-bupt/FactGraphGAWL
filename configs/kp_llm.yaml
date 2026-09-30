@@ -1,0 +1,29 @@
+# KP-LLM baseline config
+keyphrase_extractor:
+  backend: dist5
+  model_name: /root/autodl-fs/zyq/models/DisT5
+  max_keyphrases: 8
+  max_input_tokens: 512
+  max_new_tokens: 96
+  num_beams: 4
+  do_sample: false
+  seed: 42
+
+checker:
+  provider: openai   # openai | ernie
+  model: gpt-3.5-turbo
+  api_key_env: OPENAI_API_KEY
+  base_url: https://api.zhizengzeng.com/v1
+  temperature: 0
+  top_p: 1
+  max_output_tokens: 160
+  seed: 42
+  max_source_chars: 12000
+
+retrieval:
+  enabled_only_when_needed: true
+  top_k: 5
+
+runtime:
+  cache_dir: experiments/results/kp_llm/cache
+  output_dir: experiments/results/kp_llm

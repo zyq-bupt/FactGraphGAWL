@@ -1,0 +1,8 @@
+event_id,tweet_id,timestamp,tweet_text
+storm,t3,2020-01-03,Later update: 100 people need shelter after the flood.
+storm,t1,2020-01-01,Breaking: #HurricaneHarvey killed 12 people in Texas.
+storm,t2,2020-01-02,Breaking: #HurricaneHarvey killed 12 people in Texas.
+storm,t4,2020-01-04,See https://example.com/news @alice for donations.
+quake,q1,2019-06-01,Magnitude 7.1 earthquake hits Mexico City.
+quake,q2,2019-06-02,Rescue teams search collapsed buildings. 165 dead.
+quake,q3,,Army deployed after the earthquake overnight.

@@ -1,0 +1,51 @@
+{
+  "n_events": 13,
+  "n_events_with_tweets": 13,
+  "n_systems": 2,
+  "systems": [
+    "pegasus-large",
+    "t5-large"
+  ],
+  "n_candidates": 26,
+  "n_references": 13,
+  "n_events_with_reference": 13,
+  "duplicate_event_system_pairs": [],
+  "candidates_missing_source": [],
+  "events_missing_reference": [],
+  "events_without_tweets": [],
+  "ok": true,
+  "errors": [],
+  "input_sha256": {
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/CyclonePam_input_data.csv": "b2578ce5c5d04c18f87c6374c5bd42ae03358797ca08158e88b5c7a2d309a8b8",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_CyclonePam.txt": "8168c764c0155e09708f70b11e0bb36bf8bb06bf21407950444ae1268e6f42da",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/Greece_wildfires_input_data.csv": "73999305d8486650d47dacbd2b7856e2caaf92bbb0526fbae07d3bfb9b3939f5",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_GreeceWildfire.txt": "900d6d58101d087ddc1d0d0c91a0a62d5b6927bd96792cdaab6c6a7a5ed6a0d4",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/hagupit_input_data.csv": "66d79bd64400f1c58839ecf22fe96eeeb32ae5b162d5fdb46af69645304b05f4",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_Hagupit.txt": "3b7ecda4f06f0d65c21d2e200ac70e150ad22995fc9e7df3940be3c3034e65bf",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/Harda_Derail_input_data.csv": "f529e64e3aa44907c60e038a96276b382a3ae9be60a2c3b8b4462c41b767701f",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_Harda.txt": "bf2a7f1748ac8fdc1fdb588bdff1b5bf8e7d145b9d88585259556413f4c5decb",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/hblast_input_data.csv": "fabf07a457669b788c7febfef66304851d2655a299d2a54b41d6d5aca104d41c",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_Hblast.txt": "7102b536030d1d025d385899a656bc1f82034b59f159bdfaf3c5fa8076aee5d3",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/kaikoura_earthquake_input_data.csv": "46f78f67d7b45b8ba1291aff3358c01b182956698837e0181cef14a762fc63b7",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_KaikouraQuake.txt": "43e611fddd723247a4c0ba78f26b5073fe41d87d3ccdefaeea75c3e53b7288d2",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/LAShoot_input_data.csv": "56959a4983b16642147249e3bc06b340af0d57a3baae57ada5c9571b735c0f9c",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_LAShooting.txt": "1c906d568851b9d52f5c0573033282b531c3118a9195af1a7189fc8b8dbdf55f",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/Matthew_input_data.csv": "a01b126ff211dd4b37100498fda2a3f67ef9191495e93d2cfc3f47926cd0dbc7",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_Matthew.txt": "d7b336e71d6457ae99ab0ad678c8d3fc8e4b192c79d138ef9130669ce19bd009",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/MexicoQuake_input_data.csv": "ea949c972f295a7b8dcf754f2e69f3c13c18a8c188f49eeb586ce3bc670f7551",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_MexicoQuake.txt": "9eb0fcfdecce082f523244a14fed4fbe7f0fa07d5892f5c4662373a5b603ca9f",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/PakQuake_input_data.csv": "1f711f49d148c655c875f3b280ce34e16dd3951f3a096e68e738d2bcbe77e42d",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_PakQuake.txt": "13d97d41b4aebdd126254889b9af24df4799350e3a4a15df1f52747b6b3fa6e6",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/sandyhook_input_data.csv": "3bf75b4fbd84899788c08d98aefd4b7516702904d5218fa3f5920b2003328411",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_SHShooting.txt": "1925549737a80ca1f5c1f419111949fef0a5655c0b77a882f00833771ed8b8a1",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/USFlood_input_data.csv": "8c6bd7b4c2c607c46e8002f1e6a03092b5c3f5ad61d2e17253eb67bd2429926c",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_USFlood.txt": "5ac6c715cb77450f752c8dbe6abc9c5d7f3069f27ec430b7b9d1ea1a9c28d3f5",
+    "/autodl-fs/data/zyq/BD2TSumm/Input_datasets/uflood_input_data.csv": "c25db543a9279e5a7974e67b05cf25a49257ca6cdc7db20828e92a54b74e6c90",
+    "/autodl-fs/data/zyq/BD2TSumm/Gold_summary/Summary_Uflood.txt": "e6c4beb0a58f9a02c9bc1ce9575eb6f6f54ab17d6edbf0a4d1fde209917ae92f"
+  },
+  "placeholder_style": "plain",
+  "url_user_placeholders": [
+    "URL",
+    "USER"
+  ]
+}

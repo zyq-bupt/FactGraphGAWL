@@ -1,0 +1,4 @@
+rouge_metric,spearman_rank,spearman_p,kendall_tau_b_rank,kendall_p,mean_abs_rank_diff,top1_compkg,top1_rouge,top1_match,top3_overlap,top3_jaccard,n_systems,status
+rouge1,0.99999999999999989,,1,1,0,pegasus-large,pegasus-large,True,,,2,ok
+rouge2,0.99999999999999989,,1,1,0,pegasus-large,pegasus-large,True,,,2,ok
+rougeL,0.99999999999999989,,1,1,0,pegasus-large,pegasus-large,True,,,2,ok

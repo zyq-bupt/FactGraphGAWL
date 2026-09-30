@@ -1,0 +1,27 @@
+# Direct LLM baselines (ChatGPT / ERNIE)
+methods:
+  - ChatGPT-ZS
+  - ChatGPT-Star
+  - ERNIE-ZS
+  - ERNIE-Star
+
+chatgpt:
+  provider: openai
+  model: gpt-3.5-turbo
+  api_key_env: OPENAI_API_KEY
+  # 智增增 OpenAI 兼容网关：https://api.zhizengzeng.com/v1
+  base_url: https://api.zhizengzeng.com/v1
+
+ernie:
+  # 与 ChatGPT 一样走智增增；默认 ernie-3.5-128k（对齐 gpt-3.5 档）
+  provider: openai
+  model: ernie-3.5-128k
+  api_key_env: OPENAI_API_KEY
+  base_url: https://api.zhizengzeng.com/v1
+
+runtime:
+  temperature: 0.0
+  top_p: 1.0
+  seed: 42
+  cache_dir: experiments/results/llm_baselines/cache
+  output_dir: experiments/results/llm_baselines

@@ -1,0 +1,581 @@
+{
+  "doc_name": "CyclonePam",
+  "doc_id": "CyclonePam",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "CyclonePam",
+  "system_name": "t5-large",
+  "article": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "CyclonePam",
+    "text": "cyclone Pam has left about 65,000 people homeless in vanuatu. more than 2,800 people are in evacuation centres after tcpam. uk to contribute â 500,000 to help people of the country.",
+    "sents": [
+      [
+        "cyclone",
+        "Pam",
+        "has",
+        "left",
+        "about",
+        "65,000",
+        "people",
+        "homeless",
+        "in",
+        "vanuatu",
+        "."
+      ],
+      [
+        "more",
+        "than",
+        "2,800",
+        "people",
+        "are",
+        "in",
+        "evacuation",
+        "centres",
+        "after",
+        "tcpam",
+        ".",
+        "uk",
+        "to",
+        "contribute",
+        "â",
+        "500,000",
+        "to",
+        "help",
+        "people",
+        "of",
+        "the",
+        "country",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Pam",
+        "sent_id": 0,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          1
+        ],
+        "preceding_text": "cyclone",
+        "following_text": "has left about 65,000 people homeless in vanuatu .",
+        "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "about 65,000",
+        "sent_id": 0,
+        "pos": [
+          4,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          4,
+          5
+        ],
+        "preceding_text": "cyclone Pam has left",
+        "following_text": "people homeless in vanuatu .",
+        "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "vanuatu",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "cyclone Pam has left about 65,000 people homeless in",
+        "following_text": ".",
+        "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "more than 2,800",
+        "sent_id": 1,
+        "pos": [
+          0,
+          3
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          11,
+          12,
+          13
+        ],
+        "preceding_text": "",
+        "following_text": "people are in evacuation centres after tcpam . uk to contribute â 500,000 to help people of the country .",
+        "full_sentence": "more than 2,800 people are in evacuation centres after tcpam . uk to contribute â 500,000 to help people of the country .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "tcpam",
+        "sent_id": 1,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "ORG",
+        "token_index": [
+          20
+        ],
+        "preceding_text": "more than 2,800 people are in evacuation centres after",
+        "following_text": ". uk to contribute â 500,000 to help people of the country .",
+        "full_sentence": "more than 2,800 people are in evacuation centres after tcpam . uk to contribute â 500,000 to help people of the country .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "â 500,000",
+        "sent_id": 1,
+        "pos": [
+          14,
+          16
+        ],
+        "type": "MONEY",
+        "token_index": [
+          25,
+          26
+        ],
+        "preceding_text": "more than 2,800 people are in evacuation centres after tcpam . uk to contribute",
+        "following_text": "to help people of the country .",
+        "full_sentence": "more than 2,800 people are in evacuation centres after tcpam . uk to contribute â 500,000 to help people of the country .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "CyclonePam",
+        "head": "Pam",
+        "h_idx": 1,
+        "child": "cyclone",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "Pam",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "has",
+        "t_idx": 2,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "left",
+        "t_idx": 3,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "65,000",
+        "h_idx": 5,
+        "child": "about",
+        "t_idx": 4,
+        "r": "quantmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "people",
+        "h_idx": 6,
+        "child": "65,000",
+        "t_idx": 5,
+        "r": "nummod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "people",
+        "t_idx": 6,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "homeless",
+        "t_idx": 7,
+        "r": "oprd"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": "in",
+        "t_idx": 8,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "in",
+        "h_idx": 8,
+        "child": "vanuatu",
+        "t_idx": 9,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "left",
+        "h_idx": 3,
+        "child": ".",
+        "t_idx": 10,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "2,800",
+        "h_idx": 13,
+        "child": "more",
+        "t_idx": 11,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "2,800",
+        "h_idx": 13,
+        "child": "than",
+        "t_idx": 12,
+        "r": "quantmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "people",
+        "h_idx": 14,
+        "child": "2,800",
+        "t_idx": 13,
+        "r": "nummod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "are",
+        "h_idx": 15,
+        "child": "people",
+        "t_idx": 14,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "are",
+        "h_idx": 15,
+        "child": "are",
+        "t_idx": 15,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "are",
+        "h_idx": 15,
+        "child": "in",
+        "t_idx": 16,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "centres",
+        "h_idx": 18,
+        "child": "evacuation",
+        "t_idx": 17,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "in",
+        "h_idx": 16,
+        "child": "centres",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "are",
+        "h_idx": 15,
+        "child": "after",
+        "t_idx": 19,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "uk",
+        "h_idx": 22,
+        "child": "tcpam",
+        "t_idx": 20,
+        "r": "nmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "uk",
+        "h_idx": 22,
+        "child": ".",
+        "t_idx": 21,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "after",
+        "h_idx": 19,
+        "child": "uk",
+        "t_idx": 22,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "contribute",
+        "h_idx": 24,
+        "child": "to",
+        "t_idx": 23,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "uk",
+        "h_idx": 22,
+        "child": "contribute",
+        "t_idx": 24,
+        "r": "relcl"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "500,000",
+        "h_idx": 26,
+        "child": "â",
+        "t_idx": 25,
+        "r": "quantmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "contribute",
+        "h_idx": 24,
+        "child": "500,000",
+        "t_idx": 26,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "help",
+        "h_idx": 28,
+        "child": "to",
+        "t_idx": 27,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "contribute",
+        "h_idx": 24,
+        "child": "help",
+        "t_idx": 28,
+        "r": "advcl"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "help",
+        "h_idx": 28,
+        "child": "people",
+        "t_idx": 29,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "people",
+        "h_idx": 29,
+        "child": "of",
+        "t_idx": 30,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "country",
+        "h_idx": 32,
+        "child": "the",
+        "t_idx": 31,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 30,
+        "child": "country",
+        "t_idx": 32,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "are",
+        "h_idx": 15,
+        "child": ".",
+        "t_idx": 33,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "Pam",
+        "sent_id": 0,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          1
+        ],
+        "preceding_text": "cyclone",
+        "following_text": "has left about 65,000 people homeless in vanuatu .",
+        "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "cyclone",
+        "mention": "Pam",
+        "context_right": "has left about 65,000 people homeless in vanuatu .",
+        "wikipedia_id": 34132047,
+        "entity_name": "Cyclone Pam",
+        "score": 11.245123863220215,
+        "url": "https://en.wikipedia.org/wiki?curid=34132047",
+        "wikidata_id": "Q19567333"
+      },
+      {
+        "mention_id": 2,
+        "name": "vanuatu",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "cyclone Pam has left about 65,000 people homeless in",
+        "following_text": ".",
+        "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "cyclone pam has left about 65,000 people homeless in",
+        "mention": "vanuatu",
+        "context_right": ".",
+        "wikipedia_id": 32443,
+        "entity_name": "Vanuatu",
+        "score": 9.140176773071289,
+        "url": "https://en.wikipedia.org/wiki?curid=32443",
+        "wikidata_id": "Q686"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "Pam",
+          "sent_id": 0,
+          "pos": [
+            1,
+            2
+          ],
+          "type": "EVENT",
+          "token_index": [
+            1
+          ],
+          "preceding_text": "cyclone",
+          "following_text": "has left about 65,000 people homeless in vanuatu .",
+          "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "cyclone",
+          "mention": "Pam",
+          "context_right": "has left about 65,000 people homeless in vanuatu .",
+          "wikipedia_id": 34132047,
+          "entity_name": "Cyclone Pam",
+          "score": 11.245123863220215,
+          "url": "https://en.wikipedia.org/wiki?curid=34132047",
+          "wikidata_id": "Q19567333"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "vanuatu",
+          "sent_id": 0,
+          "pos": [
+            9,
+            10
+          ],
+          "type": "GPE",
+          "token_index": [
+            9
+          ],
+          "preceding_text": "cyclone Pam has left about 65,000 people homeless in",
+          "following_text": ".",
+          "full_sentence": "cyclone Pam has left about 65,000 people homeless in vanuatu .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "cyclone pam has left about 65,000 people homeless in",
+          "mention": "vanuatu",
+          "context_right": ".",
+          "wikipedia_id": 32443,
+          "entity_name": "Vanuatu",
+          "score": 9.140176773071289,
+          "url": "https://en.wikipedia.org/wiki?curid=32443",
+          "wikidata_id": "Q686"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

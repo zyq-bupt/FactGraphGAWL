@@ -1,0 +1,3 @@
+dataset,drop_ratio,n_repeats,seeds,n_correct_mean,n_correct_std,accuracy_mean,accuracy_std,fn_rate_mean,fn_rate_std,n_eval_mean,n_eval_std,n_tie_mean,n_tie_std,right_intrinsic_mean,right_intrinsic_std,right_extrinsic_mean,right_extrinsic_std,n_intrinsic_mean,n_intrinsic_std,n_extrinsic_mean,n_extrinsic_std,n_success_entities_mean,n_success_entities_std,n_dropped_entities_mean,n_dropped_entities_std,n_mention_entity_removed_mean,n_mention_entity_removed_std,n_entity_entity_removed_mean,n_entity_entity_removed_std
+DeFacto,0.0,1,[42],1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+DeFacto,0.5,1,[42],1.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.0,33.0,0.0,18.0,0.0,30.0,0.0,1.0,0.0

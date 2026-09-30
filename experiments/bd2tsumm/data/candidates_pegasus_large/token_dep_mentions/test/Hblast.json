@@ -1,0 +1,1005 @@
+{
+  "doc_name": "Hblast",
+  "doc_id": "Hblast",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Hblast",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "Hblast",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "Hblast",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "Hblast",
+    "text": "Hyderabad blast: Andhra Pradesh Police register case USER URL Hyderabad bomb blasts: US condemns attack, offers assistance in probe URL Hyderabad blast witness: Had to leave those we figured dead on the road URL riazpakistan India police say were warned about Hyderabad bomb threat URL RT USER: Special prayers held in Moradabad mosque for Hyderabadblast victims URL USER RT: Hyderabad blast blasts: young man's dream of being a cop killed URL via USER.",
+    "sents": [
+      [
+        "Hyderabad",
+        "blast",
+        ":"
+      ],
+      [
+        "Andhra",
+        "Pradesh",
+        "Police",
+        "register",
+        "case",
+        "USER",
+        "URL"
+      ],
+      [
+        "Hyderabad",
+        "bomb",
+        "blasts",
+        ":"
+      ],
+      [
+        "US",
+        "condemns",
+        "attack",
+        ",",
+        "offers",
+        "assistance",
+        "in",
+        "probe",
+        "URL"
+      ],
+      [
+        "Hyderabad",
+        "blast",
+        "witness",
+        ":",
+        "Had",
+        "to",
+        "leave",
+        "those",
+        "we",
+        "figured",
+        "dead",
+        "on",
+        "the",
+        "road",
+        "URL"
+      ],
+      [
+        "riazpakistan"
+      ],
+      [
+        "India"
+      ],
+      [
+        "police",
+        "say",
+        "were",
+        "warned",
+        "about",
+        "Hyderabad",
+        "bomb",
+        "threat"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "RT"
+      ],
+      [
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "Special",
+        "prayers",
+        "held",
+        "in",
+        "Moradabad",
+        "mosque",
+        "for",
+        "Hyderabadblast",
+        "victims",
+        "URL"
+      ],
+      [
+        "USER",
+        "RT",
+        ":",
+        "Hyderabad",
+        "blast",
+        "blasts",
+        ":",
+        "young",
+        "man",
+        "'s",
+        "dream",
+        "of",
+        "being",
+        "a",
+        "cop",
+        "killed",
+        "URL",
+        "via",
+        "USER",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Hyderabad",
+        "sent_id": 0,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          0
+        ],
+        "preceding_text": "",
+        "following_text": "blast :",
+        "full_sentence": "Hyderabad blast :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Andhra Pradesh",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          3,
+          4
+        ],
+        "preceding_text": "",
+        "following_text": "Police register case USER URL",
+        "full_sentence": "Andhra Pradesh Police register case USER URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Hyderabad",
+        "sent_id": 2,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          10
+        ],
+        "preceding_text": "",
+        "following_text": "bomb blasts :",
+        "full_sentence": "Hyderabad bomb blasts :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "US",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          14
+        ],
+        "preceding_text": "",
+        "following_text": "condemns attack , offers assistance in probe URL",
+        "full_sentence": "US condemns attack , offers assistance in probe URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Hyderabad",
+        "sent_id": 4,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          23
+        ],
+        "preceding_text": "",
+        "following_text": "blast witness : Had to leave those we figured dead on the road URL",
+        "full_sentence": "Hyderabad blast witness : Had to leave those we figured dead on the road URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "riazpakistan",
+        "sent_id": 5,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          38
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "riazpakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "India",
+        "sent_id": 6,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          39
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "India",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Hyderabad",
+        "sent_id": 7,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          45
+        ],
+        "preceding_text": "police say were warned about",
+        "following_text": "bomb threat",
+        "full_sentence": "police say were warned about Hyderabad bomb threat",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "Moradabad",
+        "sent_id": 12,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "GPE",
+        "token_index": [
+          56
+        ],
+        "preceding_text": "Special prayers held in",
+        "following_text": "mosque for Hyderabadblast victims URL",
+        "full_sentence": "Special prayers held in Moradabad mosque for Hyderabadblast victims URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "Hyderabadblast",
+        "sent_id": 12,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          59
+        ],
+        "preceding_text": "Special prayers held in Moradabad mosque for",
+        "following_text": "victims URL",
+        "full_sentence": "Special prayers held in Moradabad mosque for Hyderabadblast victims URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Hyderabad",
+        "sent_id": 13,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          65
+        ],
+        "preceding_text": "USER RT :",
+        "following_text": "blast blasts : young man 's dream of being a cop killed URL via USER .",
+        "full_sentence": "USER RT : Hyderabad blast blasts : young man 's dream of being a cop killed URL via USER .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Hblast",
+        "head": "blast",
+        "h_idx": 1,
+        "child": "Hyderabad",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "blast",
+        "h_idx": 1,
+        "child": "blast",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "blast",
+        "h_idx": 1,
+        "child": ":",
+        "t_idx": 2,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "Pradesh",
+        "h_idx": 4,
+        "child": "Andhra",
+        "t_idx": 3,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "Police",
+        "h_idx": 5,
+        "child": "Pradesh",
+        "t_idx": 4,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "register",
+        "h_idx": 6,
+        "child": "Police",
+        "t_idx": 5,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hblast",
+        "head": "register",
+        "h_idx": 6,
+        "child": "register",
+        "t_idx": 6,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "register",
+        "h_idx": 6,
+        "child": "case",
+        "t_idx": 7,
+        "r": "dobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "register",
+        "h_idx": 6,
+        "child": "USER",
+        "t_idx": 8,
+        "r": "npadvmod"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 8,
+        "child": "URL",
+        "t_idx": 9,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 12,
+        "child": "Hyderabad",
+        "t_idx": 10,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 12,
+        "child": "bomb",
+        "t_idx": 11,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 12,
+        "child": "blasts",
+        "t_idx": 12,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 12,
+        "child": ":",
+        "t_idx": 13,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": "US",
+        "t_idx": 14,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": "condemns",
+        "t_idx": 15,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": "attack",
+        "t_idx": 16,
+        "r": "dobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": ",",
+        "t_idx": 17,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": "offers",
+        "t_idx": 18,
+        "r": "conj"
+      },
+      {
+        "title": "Hblast",
+        "head": "offers",
+        "h_idx": 18,
+        "child": "assistance",
+        "t_idx": 19,
+        "r": "dobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "assistance",
+        "h_idx": 19,
+        "child": "in",
+        "t_idx": 20,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "in",
+        "h_idx": 20,
+        "child": "probe",
+        "t_idx": 21,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "condemns",
+        "h_idx": 15,
+        "child": "URL",
+        "t_idx": 22,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "blast",
+        "h_idx": 24,
+        "child": "Hyderabad",
+        "t_idx": 23,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "witness",
+        "h_idx": 25,
+        "child": "blast",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "Had",
+        "h_idx": 27,
+        "child": "witness",
+        "t_idx": 25,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hblast",
+        "head": "witness",
+        "h_idx": 25,
+        "child": ":",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "Had",
+        "h_idx": 27,
+        "child": "Had",
+        "t_idx": 27,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "leave",
+        "h_idx": 29,
+        "child": "to",
+        "t_idx": 28,
+        "r": "aux"
+      },
+      {
+        "title": "Hblast",
+        "head": "Had",
+        "h_idx": 27,
+        "child": "leave",
+        "t_idx": 29,
+        "r": "xcomp"
+      },
+      {
+        "title": "Hblast",
+        "head": "leave",
+        "h_idx": 29,
+        "child": "those",
+        "t_idx": 30,
+        "r": "dobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "figured",
+        "h_idx": 32,
+        "child": "we",
+        "t_idx": 31,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hblast",
+        "head": "those",
+        "h_idx": 30,
+        "child": "figured",
+        "t_idx": 32,
+        "r": "relcl"
+      },
+      {
+        "title": "Hblast",
+        "head": "figured",
+        "h_idx": 32,
+        "child": "dead",
+        "t_idx": 33,
+        "r": "oprd"
+      },
+      {
+        "title": "Hblast",
+        "head": "leave",
+        "h_idx": 29,
+        "child": "on",
+        "t_idx": 34,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "road",
+        "h_idx": 36,
+        "child": "the",
+        "t_idx": 35,
+        "r": "det"
+      },
+      {
+        "title": "Hblast",
+        "head": "on",
+        "h_idx": 34,
+        "child": "road",
+        "t_idx": 36,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "Had",
+        "h_idx": 27,
+        "child": "URL",
+        "t_idx": 37,
+        "r": "dep"
+      },
+      {
+        "title": "Hblast",
+        "head": "riazpakistan",
+        "h_idx": 38,
+        "child": "riazpakistan",
+        "t_idx": 38,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "India",
+        "h_idx": 39,
+        "child": "India",
+        "t_idx": 39,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "say",
+        "h_idx": 41,
+        "child": "police",
+        "t_idx": 40,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hblast",
+        "head": "say",
+        "h_idx": 41,
+        "child": "say",
+        "t_idx": 41,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "warned",
+        "h_idx": 43,
+        "child": "were",
+        "t_idx": 42,
+        "r": "auxpass"
+      },
+      {
+        "title": "Hblast",
+        "head": "say",
+        "h_idx": 41,
+        "child": "warned",
+        "t_idx": 43,
+        "r": "ccomp"
+      },
+      {
+        "title": "Hblast",
+        "head": "warned",
+        "h_idx": 43,
+        "child": "about",
+        "t_idx": 44,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "threat",
+        "h_idx": 47,
+        "child": "Hyderabad",
+        "t_idx": 45,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "threat",
+        "h_idx": 47,
+        "child": "bomb",
+        "t_idx": 46,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "about",
+        "h_idx": 44,
+        "child": "threat",
+        "t_idx": 47,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "URL",
+        "h_idx": 48,
+        "child": "URL",
+        "t_idx": 48,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "RT",
+        "h_idx": 49,
+        "child": "RT",
+        "t_idx": 49,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 50,
+        "child": "USER",
+        "t_idx": 50,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": ":",
+        "h_idx": 51,
+        "child": ":",
+        "t_idx": 51,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "prayers",
+        "h_idx": 53,
+        "child": "Special",
+        "t_idx": 52,
+        "r": "amod"
+      },
+      {
+        "title": "Hblast",
+        "head": "prayers",
+        "h_idx": 53,
+        "child": "prayers",
+        "t_idx": 53,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "prayers",
+        "h_idx": 53,
+        "child": "held",
+        "t_idx": 54,
+        "r": "acl"
+      },
+      {
+        "title": "Hblast",
+        "head": "held",
+        "h_idx": 54,
+        "child": "in",
+        "t_idx": 55,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "mosque",
+        "h_idx": 57,
+        "child": "Moradabad",
+        "t_idx": 56,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "in",
+        "h_idx": 55,
+        "child": "mosque",
+        "t_idx": 57,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "held",
+        "h_idx": 54,
+        "child": "for",
+        "t_idx": 58,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "victims",
+        "h_idx": 60,
+        "child": "Hyderabadblast",
+        "t_idx": 59,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "for",
+        "h_idx": 58,
+        "child": "victims",
+        "t_idx": 60,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "prayers",
+        "h_idx": 53,
+        "child": "URL",
+        "t_idx": 61,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 62,
+        "child": "USER",
+        "t_idx": 62,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 62,
+        "child": "RT",
+        "t_idx": 63,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "RT",
+        "h_idx": 63,
+        "child": ":",
+        "t_idx": 64,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "blast",
+        "h_idx": 66,
+        "child": "Hyderabad",
+        "t_idx": 65,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 67,
+        "child": "blast",
+        "t_idx": 66,
+        "r": "compound"
+      },
+      {
+        "title": "Hblast",
+        "head": "RT",
+        "h_idx": 63,
+        "child": "blasts",
+        "t_idx": 67,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 67,
+        "child": ":",
+        "t_idx": 68,
+        "r": "punct"
+      },
+      {
+        "title": "Hblast",
+        "head": "man",
+        "h_idx": 70,
+        "child": "young",
+        "t_idx": 69,
+        "r": "amod"
+      },
+      {
+        "title": "Hblast",
+        "head": "dream",
+        "h_idx": 72,
+        "child": "man",
+        "t_idx": 70,
+        "r": "poss"
+      },
+      {
+        "title": "Hblast",
+        "head": "man",
+        "h_idx": 70,
+        "child": "'s",
+        "t_idx": 71,
+        "r": "case"
+      },
+      {
+        "title": "Hblast",
+        "head": "blasts",
+        "h_idx": 67,
+        "child": "dream",
+        "t_idx": 72,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "dream",
+        "h_idx": 72,
+        "child": "of",
+        "t_idx": 73,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "of",
+        "h_idx": 73,
+        "child": "being",
+        "t_idx": 74,
+        "r": "pcomp"
+      },
+      {
+        "title": "Hblast",
+        "head": "cop",
+        "h_idx": 76,
+        "child": "a",
+        "t_idx": 75,
+        "r": "det"
+      },
+      {
+        "title": "Hblast",
+        "head": "being",
+        "h_idx": 74,
+        "child": "cop",
+        "t_idx": 76,
+        "r": "attr"
+      },
+      {
+        "title": "Hblast",
+        "head": "dream",
+        "h_idx": 72,
+        "child": "killed",
+        "t_idx": 77,
+        "r": "acl"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 62,
+        "child": "URL",
+        "t_idx": 78,
+        "r": "appos"
+      },
+      {
+        "title": "Hblast",
+        "head": "URL",
+        "h_idx": 78,
+        "child": "via",
+        "t_idx": 79,
+        "r": "prep"
+      },
+      {
+        "title": "Hblast",
+        "head": "via",
+        "h_idx": 79,
+        "child": "USER",
+        "t_idx": 80,
+        "r": "pobj"
+      },
+      {
+        "title": "Hblast",
+        "head": "USER",
+        "h_idx": 62,
+        "child": ".",
+        "t_idx": 81,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "Hblast",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

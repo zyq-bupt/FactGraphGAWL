@@ -1,0 +1,88 @@
+seed: 42
+
+dataset:
+  layout: tabular
+  data_root: tests/fixtures/bd2tsumm
+  tweets_file: tests/fixtures/bd2tsumm/tweets.csv
+  candidates_file: tests/fixtures/bd2tsumm/candidates.csv
+  references_file: tests/fixtures/bd2tsumm/references.csv
+  event_id_col: event_id
+  tweet_id_col: tweet_id
+  tweet_text_col: tweet_text
+  timestamp_col: timestamp
+  system_col: system_name
+  candidate_col: candidate_summary
+  reference_col: reference_summary
+  reference_id_col: reference_id
+
+cleaning:
+  unicode_form: NFKC
+  collapse_whitespace: true
+  dedup_exact: true
+  replace_urls: true
+  replace_mentions: true
+  placeholder_style: plain
+  keep_hashtag_text: true
+  strip_rt_prefix: false
+  strip_emoji: false
+  drop_empty_after_clean: true
+
+long_context:
+  mode: sliding_window
+  allow_prefix_truncation: false
+  max_model_tokens: 32
+  overlap_tokens: 8
+  sentence_boundary: true
+  merge_entities_by_kb_id: true
+  infer_cross_window_relations: false
+  tokenizer_path: mock
+  allow_mock_tokenizer: true
+
+compkg:
+  variant: S2-K_PT
+  backend: mock
+  higher_is_better: true
+  treat_as_distance: false
+  wTT: 1.0
+  wTM: 1.0
+  wME: 0.5
+  wEE: 0.0
+  wl_t: 1
+  use_emb_labels: false
+  use_node_labels: true
+  use_edge_labels: 2
+  dreeam_source_dir: null
+  dreeam_candidate_dir: null
+  cache_source_graphs: true
+  cache_candidate_graphs: true
+
+rouge:
+  package: rouge-score
+  use_stemmer: true
+  metrics: [rouge1, rouge2, rougeL]
+  multi_reference_aggregation: mean
+
+analysis:
+  min_systems_for_event_corr: 3
+  min_n_for_corr: 3
+  min_event_coverage: 1.0
+  bootstrap_n: 200
+  bootstrap_min_n: 3
+  dpi: 120
+
+output:
+  prepared_sources: prepared_sources.jsonl
+  prepared_candidates: prepared_candidates.jsonl
+  prepared_references: prepared_references.jsonl
+  data_validation: data_validation.json
+  compkg_scores: compkg_scores.csv
+  rouge_reference_level: rouge_reference_level.csv
+  rouge_scores: rouge_scores.csv
+  all_sample_scores: all_sample_scores.csv
+  failure_report: failure_report.csv
+  correlation_results: correlation_results.csv
+  per_event_correlations: per_event_correlations.csv
+  system_ranking: system_ranking.csv
+  ranking_agreement: ranking_agreement.csv
+  summary_report: summary_report.md
+  run_metadata: run_metadata.json

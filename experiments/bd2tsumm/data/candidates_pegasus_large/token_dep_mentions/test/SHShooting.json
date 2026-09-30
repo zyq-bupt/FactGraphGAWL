@@ -1,0 +1,507 @@
+{
+  "doc_name": "SHShooting",
+  "doc_id": "SHShooting",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "SHShooting",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "SHShooting",
+    "text": "RT USER reported teacher reportedly wounded in CT elementary school shooting URL RT USER: ALERT: Teacher reportedly wounded at elementary school URL BREAKING NEWS: Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown.",
+    "sents": [
+      [
+        "RT",
+        "USER",
+        "reported",
+        "teacher",
+        "reportedly",
+        "wounded",
+        "in",
+        "CT",
+        "elementary",
+        "school",
+        "shooting",
+        "URL"
+      ],
+      [
+        "RT",
+        "USER",
+        ":",
+        "ALERT",
+        ":",
+        "Teacher",
+        "reportedly",
+        "wounded",
+        "at",
+        "elementary",
+        "school",
+        "URL",
+        "BREAKING",
+        "NEWS",
+        ":",
+        "Connecticut",
+        "police",
+        "respond",
+        "to",
+        "shooting",
+        "at",
+        "Sandy",
+        "Hook",
+        "Elementary",
+        "School",
+        "URL",
+        "USER",
+        "Newtown",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "CT",
+        "sent_id": 0,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          7
+        ],
+        "preceding_text": "RT USER reported teacher reportedly wounded in",
+        "following_text": "elementary school shooting URL",
+        "full_sentence": "RT USER reported teacher reportedly wounded in CT elementary school shooting URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "BREAKING NEWS",
+        "sent_id": 1,
+        "pos": [
+          12,
+          14
+        ],
+        "type": "WORK_OF_ART",
+        "token_index": [
+          24,
+          25
+        ],
+        "preceding_text": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL",
+        "following_text": ": Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "full_sentence": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Connecticut",
+        "sent_id": 1,
+        "pos": [
+          15,
+          16
+        ],
+        "type": "GPE",
+        "token_index": [
+          27
+        ],
+        "preceding_text": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS :",
+        "following_text": "police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "full_sentence": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Sandy Hook Elementary School",
+        "sent_id": 1,
+        "pos": [
+          21,
+          25
+        ],
+        "type": "FAC",
+        "token_index": [
+          33,
+          34,
+          35,
+          36
+        ],
+        "preceding_text": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at",
+        "following_text": "URL USER Newtown .",
+        "full_sentence": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Newtown",
+        "sent_id": 1,
+        "pos": [
+          27,
+          28
+        ],
+        "type": "GPE",
+        "token_index": [
+          39
+        ],
+        "preceding_text": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at Sandy Hook Elementary School URL USER",
+        "following_text": ".",
+        "full_sentence": "RT USER : ALERT : Teacher reportedly wounded at elementary school URL BREAKING NEWS : Connecticut police respond to shooting at Sandy Hook Elementary School URL USER Newtown .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 1,
+        "child": "RT",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "reported",
+        "h_idx": 2,
+        "child": "USER",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "reported",
+        "h_idx": 2,
+        "child": "reported",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "SHShooting",
+        "head": "wounded",
+        "h_idx": 5,
+        "child": "teacher",
+        "t_idx": 3,
+        "r": "nsubj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "wounded",
+        "h_idx": 5,
+        "child": "reportedly",
+        "t_idx": 4,
+        "r": "advmod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "reported",
+        "h_idx": 2,
+        "child": "wounded",
+        "t_idx": 5,
+        "r": "ccomp"
+      },
+      {
+        "title": "SHShooting",
+        "head": "wounded",
+        "h_idx": 5,
+        "child": "in",
+        "t_idx": 6,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shooting",
+        "h_idx": 10,
+        "child": "CT",
+        "t_idx": 7,
+        "r": "nmod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "school",
+        "h_idx": 9,
+        "child": "elementary",
+        "t_idx": 8,
+        "r": "amod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shooting",
+        "h_idx": 10,
+        "child": "school",
+        "t_idx": 9,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "in",
+        "h_idx": 6,
+        "child": "shooting",
+        "t_idx": 10,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "reported",
+        "h_idx": 2,
+        "child": "URL",
+        "t_idx": 11,
+        "r": "dep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "RT",
+        "t_idx": 12,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "USER",
+        "t_idx": 13,
+        "r": "ROOT"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": ":",
+        "t_idx": 14,
+        "r": "punct"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "ALERT",
+        "t_idx": 15,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "ALERT",
+        "h_idx": 15,
+        "child": ":",
+        "t_idx": 16,
+        "r": "punct"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "Teacher",
+        "t_idx": 17,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "wounded",
+        "h_idx": 19,
+        "child": "reportedly",
+        "t_idx": 18,
+        "r": "advmod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "Teacher",
+        "h_idx": 17,
+        "child": "wounded",
+        "t_idx": 19,
+        "r": "acl"
+      },
+      {
+        "title": "SHShooting",
+        "head": "wounded",
+        "h_idx": 19,
+        "child": "at",
+        "t_idx": 20,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "school",
+        "h_idx": 22,
+        "child": "elementary",
+        "t_idx": 21,
+        "r": "amod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "at",
+        "h_idx": 20,
+        "child": "school",
+        "t_idx": 22,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "URL",
+        "t_idx": 23,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "NEWS",
+        "h_idx": 25,
+        "child": "BREAKING",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "URL",
+        "h_idx": 23,
+        "child": "NEWS",
+        "t_idx": 25,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "NEWS",
+        "h_idx": 25,
+        "child": ":",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "SHShooting",
+        "head": "police",
+        "h_idx": 28,
+        "child": "Connecticut",
+        "t_idx": 27,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "respond",
+        "h_idx": 29,
+        "child": "police",
+        "t_idx": 28,
+        "r": "nsubj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "NEWS",
+        "h_idx": 25,
+        "child": "respond",
+        "t_idx": 29,
+        "r": "acl"
+      },
+      {
+        "title": "SHShooting",
+        "head": "respond",
+        "h_idx": 29,
+        "child": "to",
+        "t_idx": 30,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "to",
+        "h_idx": 30,
+        "child": "shooting",
+        "t_idx": 31,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shooting",
+        "h_idx": 31,
+        "child": "at",
+        "t_idx": 32,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "Hook",
+        "h_idx": 34,
+        "child": "Sandy",
+        "t_idx": 33,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "School",
+        "h_idx": 36,
+        "child": "Hook",
+        "t_idx": 34,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "School",
+        "h_idx": 36,
+        "child": "Elementary",
+        "t_idx": 35,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "at",
+        "h_idx": 32,
+        "child": "School",
+        "t_idx": 36,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "URL",
+        "t_idx": 37,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "URL",
+        "h_idx": 37,
+        "child": "USER",
+        "t_idx": 38,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 38,
+        "child": "Newtown",
+        "t_idx": 39,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "USER",
+        "h_idx": 13,
+        "child": ".",
+        "t_idx": 40,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

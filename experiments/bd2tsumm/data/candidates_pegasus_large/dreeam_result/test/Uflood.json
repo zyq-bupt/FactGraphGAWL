@@ -1,0 +1,2100 @@
+{
+  "doc_name": "Uflood",
+  "doc_id": "Uflood",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Uflood",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "Uflood",
+    "text": "URL RT USER: Uttarakhand flood death toll increases, heavy rains may hit rescue operations URL Uttarakhand Flood: Sonia Gandhi to flag off relief material on Monday URL Uttarakhand flood: Death toll may cross 1,000, more than 22K awaiting rescue URL USER Uttarakhand - IYC Members Providing Relief to Stranded People &amp; Pilgrims USER Salute to SpiritOfIndia URL USER Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India: URLRT USER: Best explanation so far of the geological features that caused the destruction at Kedarnath URL USER: With Shri USER Narendra Modi's statement on Shri KedarNathJi Temple re-development, we can expect to revisit our Dream Holy p....",
+    "sents": [
+      [
+        "URL",
+        "RT",
+        "USER",
+        ":"
+      ],
+      [
+        "Uttarakhand",
+        "flood",
+        "death",
+        "toll",
+        "increases",
+        ",",
+        "heavy",
+        "rains",
+        "may",
+        "hit",
+        "rescue",
+        "operations"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "Uttarakhand",
+        "Flood",
+        ":",
+        "Sonia",
+        "Gandhi",
+        "to",
+        "flag",
+        "off",
+        "relief",
+        "material",
+        "on",
+        "Monday",
+        "URL"
+      ],
+      [
+        "Uttarakhand",
+        "flood",
+        ":",
+        "Death",
+        "toll",
+        "may",
+        "cross",
+        "1,000",
+        ",",
+        "more",
+        "than",
+        "22",
+        "K",
+        "awaiting",
+        "rescue",
+        "URL"
+      ],
+      [
+        "USER",
+        "Uttarakhand",
+        "-",
+        "IYC",
+        "Members",
+        "Providing",
+        "Relief",
+        "to",
+        "Stranded",
+        "People",
+        "&",
+        "amp"
+      ],
+      [
+        ";",
+        "Pilgrims",
+        "USER",
+        "Salute",
+        "to",
+        "SpiritOfIndia",
+        "URL"
+      ],
+      [
+        "USER"
+      ],
+      [
+        "Breakage",
+        "of",
+        "the",
+        "glacier",
+        "and",
+        "the",
+        "surrounding",
+        "rock",
+        "due",
+        "to",
+        "the",
+        "cloudburst",
+        "caused",
+        "the",
+        "Kedarnath",
+        "disaster",
+        "in",
+        "India",
+        ":"
+      ],
+      [
+        "URLRT",
+        "USER",
+        ":",
+        "Best",
+        "explanation",
+        "so",
+        "far",
+        "of",
+        "the",
+        "geological",
+        "features",
+        "that",
+        "caused",
+        "the",
+        "destruction",
+        "at",
+        "Kedarnath"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "With",
+        "Shri",
+        "USER",
+        "Narendra",
+        "Modi",
+        "'s",
+        "statement",
+        "on",
+        "Shri",
+        "KedarNathJi",
+        "Temple",
+        "re",
+        "-",
+        "development",
+        ",",
+        "we",
+        "can",
+        "expect",
+        "to",
+        "revisit",
+        "our",
+        "Dream",
+        "Holy",
+        "p",
+        "...."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Uttarakhand",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          4
+        ],
+        "preceding_text": "",
+        "following_text": "flood death toll increases , heavy rains may hit rescue operations",
+        "full_sentence": "Uttarakhand flood death toll increases , heavy rains may hit rescue operations",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Uttarakhand",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Sonia Gandhi",
+        "sent_id": 3,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          20,
+          21
+        ],
+        "preceding_text": "Uttarakhand Flood :",
+        "following_text": "to flag off relief material on Monday URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Monday",
+        "sent_id": 3,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "DATE",
+        "token_index": [
+          28
+        ],
+        "preceding_text": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on",
+        "following_text": "URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Uttarakhand",
+        "sent_id": 4,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "",
+        "following_text": "flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "full_sentence": "Uttarakhand flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "1,000",
+        "sent_id": 4,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          37
+        ],
+        "preceding_text": "Uttarakhand flood : Death toll may cross",
+        "following_text": ", more than 22 K awaiting rescue URL",
+        "full_sentence": "Uttarakhand flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "more than 22",
+        "sent_id": 4,
+        "pos": [
+          9,
+          12
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          39,
+          40,
+          41
+        ],
+        "preceding_text": "Uttarakhand flood : Death toll may cross 1,000 ,",
+        "following_text": "K awaiting rescue URL",
+        "full_sentence": "Uttarakhand flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Uttarakhand",
+        "sent_id": 5,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          47
+        ],
+        "preceding_text": "USER",
+        "following_text": "- IYC Members Providing Relief to Stranded People & amp",
+        "full_sentence": "USER Uttarakhand - IYC Members Providing Relief to Stranded People & amp",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "Kedarnath",
+        "sent_id": 8,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          80
+        ],
+        "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the",
+        "following_text": "disaster in India :",
+        "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "India",
+        "sent_id": 8,
+        "pos": [
+          17,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          83
+        ],
+        "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in",
+        "following_text": ":",
+        "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Kedarnath",
+        "sent_id": 9,
+        "pos": [
+          16,
+          17
+        ],
+        "type": "GPE",
+        "token_index": [
+          101
+        ],
+        "preceding_text": "URLRT USER : Best explanation so far of the geological features that caused the destruction at",
+        "following_text": "",
+        "full_sentence": "URLRT USER : Best explanation so far of the geological features that caused the destruction at Kedarnath",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "Narendra Modi",
+        "sent_id": 13,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          108,
+          109
+        ],
+        "preceding_text": "With Shri USER",
+        "following_text": "'s statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+        "full_sentence": "With Shri USER Narendra Modi 's statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "Shri KedarNathJi Temple",
+        "sent_id": 13,
+        "pos": [
+          8,
+          11
+        ],
+        "type": "FAC",
+        "token_index": [
+          113,
+          114,
+          115
+        ],
+        "preceding_text": "With Shri USER Narendra Modi 's statement on",
+        "following_text": "re - development , we can expect to revisit our Dream Holy p ....",
+        "full_sentence": "With Shri USER Narendra Modi 's statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "URL",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "RT",
+        "t_idx": 1,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "USER",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 2,
+        "child": ":",
+        "t_idx": 3,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 7,
+        "child": "Uttarakhand",
+        "t_idx": 4,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 7,
+        "child": "flood",
+        "t_idx": 5,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 7,
+        "child": "death",
+        "t_idx": 6,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "increases",
+        "h_idx": 8,
+        "child": "toll",
+        "t_idx": 7,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": "increases",
+        "t_idx": 8,
+        "r": "ccomp"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": ",",
+        "t_idx": 9,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "rains",
+        "h_idx": 11,
+        "child": "heavy",
+        "t_idx": 10,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": "rains",
+        "t_idx": 11,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": "may",
+        "t_idx": 12,
+        "r": "aux"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": "hit",
+        "t_idx": 13,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "operations",
+        "h_idx": 15,
+        "child": "rescue",
+        "t_idx": 14,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "hit",
+        "h_idx": 13,
+        "child": "operations",
+        "t_idx": 15,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "URL",
+        "h_idx": 16,
+        "child": "URL",
+        "t_idx": 16,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "Flood",
+        "h_idx": 18,
+        "child": "Uttarakhand",
+        "t_idx": 17,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "Flood",
+        "t_idx": 18,
+        "r": "dep"
+      },
+      {
+        "title": "Uflood",
+        "head": "Flood",
+        "h_idx": 18,
+        "child": ":",
+        "t_idx": 19,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "Gandhi",
+        "h_idx": 21,
+        "child": "Sonia",
+        "t_idx": 20,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "Gandhi",
+        "t_idx": 21,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "to",
+        "t_idx": 22,
+        "r": "aux"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "flag",
+        "t_idx": 23,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "off",
+        "t_idx": 24,
+        "r": "prt"
+      },
+      {
+        "title": "Uflood",
+        "head": "material",
+        "h_idx": 26,
+        "child": "relief",
+        "t_idx": 25,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "material",
+        "t_idx": 26,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "on",
+        "t_idx": 27,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "on",
+        "h_idx": 27,
+        "child": "Monday",
+        "t_idx": 28,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "flag",
+        "h_idx": 23,
+        "child": "URL",
+        "t_idx": 29,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "flood",
+        "h_idx": 31,
+        "child": "Uttarakhand",
+        "t_idx": 30,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "flood",
+        "h_idx": 31,
+        "child": "flood",
+        "t_idx": 31,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "flood",
+        "h_idx": 31,
+        "child": ":",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 34,
+        "child": "Death",
+        "t_idx": 33,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "cross",
+        "h_idx": 36,
+        "child": "toll",
+        "t_idx": 34,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "cross",
+        "h_idx": 36,
+        "child": "may",
+        "t_idx": 35,
+        "r": "aux"
+      },
+      {
+        "title": "Uflood",
+        "head": "awaiting",
+        "h_idx": 43,
+        "child": "cross",
+        "t_idx": 36,
+        "r": "ccomp"
+      },
+      {
+        "title": "Uflood",
+        "head": "cross",
+        "h_idx": 36,
+        "child": "1,000",
+        "t_idx": 37,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "awaiting",
+        "h_idx": 43,
+        "child": ",",
+        "t_idx": 38,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "22",
+        "h_idx": 41,
+        "child": "more",
+        "t_idx": 39,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "22",
+        "h_idx": 41,
+        "child": "than",
+        "t_idx": 40,
+        "r": "quantmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "K",
+        "h_idx": 42,
+        "child": "22",
+        "t_idx": 41,
+        "r": "nummod"
+      },
+      {
+        "title": "Uflood",
+        "head": "awaiting",
+        "h_idx": 43,
+        "child": "K",
+        "t_idx": 42,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "flood",
+        "h_idx": 31,
+        "child": "awaiting",
+        "t_idx": 43,
+        "r": "acl"
+      },
+      {
+        "title": "Uflood",
+        "head": "awaiting",
+        "h_idx": 43,
+        "child": "rescue",
+        "t_idx": 44,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "flood",
+        "h_idx": 31,
+        "child": "URL",
+        "t_idx": 45,
+        "r": "appos"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "USER",
+        "t_idx": 46,
+        "r": "dep"
+      },
+      {
+        "title": "Uflood",
+        "head": "IYC",
+        "h_idx": 49,
+        "child": "Uttarakhand",
+        "t_idx": 47,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "IYC",
+        "h_idx": 49,
+        "child": "-",
+        "t_idx": 48,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "Members",
+        "h_idx": 50,
+        "child": "IYC",
+        "t_idx": 49,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "Members",
+        "t_idx": 50,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "Providing",
+        "t_idx": 51,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "Relief",
+        "t_idx": 52,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "to",
+        "t_idx": 53,
+        "r": "dative"
+      },
+      {
+        "title": "Uflood",
+        "head": "People",
+        "h_idx": 55,
+        "child": "Stranded",
+        "t_idx": 54,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "to",
+        "h_idx": 53,
+        "child": "People",
+        "t_idx": 55,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "People",
+        "h_idx": 55,
+        "child": "&",
+        "t_idx": 56,
+        "r": "cc"
+      },
+      {
+        "title": "Uflood",
+        "head": "Providing",
+        "h_idx": 51,
+        "child": "amp",
+        "t_idx": 57,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": ";",
+        "t_idx": 58,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": "Pilgrims",
+        "t_idx": 59,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": "USER",
+        "t_idx": 60,
+        "r": "dep"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": "Salute",
+        "t_idx": 61,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": "to",
+        "t_idx": 62,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "to",
+        "h_idx": 62,
+        "child": "SpiritOfIndia",
+        "t_idx": 63,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Salute",
+        "h_idx": 61,
+        "child": "URL",
+        "t_idx": 64,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 65,
+        "child": "USER",
+        "t_idx": 65,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 78,
+        "child": "Breakage",
+        "t_idx": 66,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Breakage",
+        "h_idx": 66,
+        "child": "of",
+        "t_idx": 67,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "glacier",
+        "h_idx": 69,
+        "child": "the",
+        "t_idx": 68,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "of",
+        "h_idx": 67,
+        "child": "glacier",
+        "t_idx": 69,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "glacier",
+        "h_idx": 69,
+        "child": "and",
+        "t_idx": 70,
+        "r": "cc"
+      },
+      {
+        "title": "Uflood",
+        "head": "rock",
+        "h_idx": 73,
+        "child": "the",
+        "t_idx": 71,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "rock",
+        "h_idx": 73,
+        "child": "surrounding",
+        "t_idx": 72,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "glacier",
+        "h_idx": 69,
+        "child": "rock",
+        "t_idx": 73,
+        "r": "conj"
+      },
+      {
+        "title": "Uflood",
+        "head": "Breakage",
+        "h_idx": 66,
+        "child": "due",
+        "t_idx": 74,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "due",
+        "h_idx": 74,
+        "child": "to",
+        "t_idx": 75,
+        "r": "pcomp"
+      },
+      {
+        "title": "Uflood",
+        "head": "cloudburst",
+        "h_idx": 77,
+        "child": "the",
+        "t_idx": 76,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "due",
+        "h_idx": 74,
+        "child": "cloudburst",
+        "t_idx": 77,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 78,
+        "child": "caused",
+        "t_idx": 78,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "disaster",
+        "h_idx": 81,
+        "child": "the",
+        "t_idx": 79,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "disaster",
+        "h_idx": 81,
+        "child": "Kedarnath",
+        "t_idx": 80,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 78,
+        "child": "disaster",
+        "t_idx": 81,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "disaster",
+        "h_idx": 81,
+        "child": "in",
+        "t_idx": 82,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "in",
+        "h_idx": 82,
+        "child": "India",
+        "t_idx": 83,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 78,
+        "child": ":",
+        "t_idx": 84,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 86,
+        "child": "URLRT",
+        "t_idx": 85,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 86,
+        "child": "USER",
+        "t_idx": 86,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 86,
+        "child": ":",
+        "t_idx": 87,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "explanation",
+        "h_idx": 89,
+        "child": "Best",
+        "t_idx": 88,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 86,
+        "child": "explanation",
+        "t_idx": 89,
+        "r": "appos"
+      },
+      {
+        "title": "Uflood",
+        "head": "far",
+        "h_idx": 91,
+        "child": "so",
+        "t_idx": 90,
+        "r": "advmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "explanation",
+        "h_idx": 89,
+        "child": "far",
+        "t_idx": 91,
+        "r": "advmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "explanation",
+        "h_idx": 89,
+        "child": "of",
+        "t_idx": 92,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "features",
+        "h_idx": 95,
+        "child": "the",
+        "t_idx": 93,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "features",
+        "h_idx": 95,
+        "child": "geological",
+        "t_idx": 94,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "of",
+        "h_idx": 92,
+        "child": "features",
+        "t_idx": 95,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 97,
+        "child": "that",
+        "t_idx": 96,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "features",
+        "h_idx": 95,
+        "child": "caused",
+        "t_idx": 97,
+        "r": "relcl"
+      },
+      {
+        "title": "Uflood",
+        "head": "destruction",
+        "h_idx": 99,
+        "child": "the",
+        "t_idx": 98,
+        "r": "det"
+      },
+      {
+        "title": "Uflood",
+        "head": "caused",
+        "h_idx": 97,
+        "child": "destruction",
+        "t_idx": 99,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "destruction",
+        "h_idx": 99,
+        "child": "at",
+        "t_idx": 100,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "at",
+        "h_idx": 100,
+        "child": "Kedarnath",
+        "t_idx": 101,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "URL",
+        "h_idx": 102,
+        "child": "URL",
+        "t_idx": 102,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 103,
+        "child": "USER",
+        "t_idx": 103,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": ":",
+        "h_idx": 104,
+        "child": ":",
+        "t_idx": 104,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "With",
+        "t_idx": 105,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "USER",
+        "h_idx": 107,
+        "child": "Shri",
+        "t_idx": 106,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "Modi",
+        "h_idx": 109,
+        "child": "USER",
+        "t_idx": 107,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "Modi",
+        "h_idx": 109,
+        "child": "Narendra",
+        "t_idx": 108,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "statement",
+        "h_idx": 111,
+        "child": "Modi",
+        "t_idx": 109,
+        "r": "poss"
+      },
+      {
+        "title": "Uflood",
+        "head": "Modi",
+        "h_idx": 109,
+        "child": "'s",
+        "t_idx": 110,
+        "r": "case"
+      },
+      {
+        "title": "Uflood",
+        "head": "With",
+        "h_idx": 105,
+        "child": "statement",
+        "t_idx": 111,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "statement",
+        "h_idx": 111,
+        "child": "on",
+        "t_idx": 112,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "Temple",
+        "h_idx": 115,
+        "child": "Shri",
+        "t_idx": 113,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "Temple",
+        "h_idx": 115,
+        "child": "KedarNathJi",
+        "t_idx": 114,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "re",
+        "h_idx": 116,
+        "child": "Temple",
+        "t_idx": 115,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "on",
+        "h_idx": 112,
+        "child": "re",
+        "t_idx": 116,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "on",
+        "h_idx": 112,
+        "child": "-",
+        "t_idx": 117,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "on",
+        "h_idx": 112,
+        "child": "development",
+        "t_idx": 118,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": ",",
+        "t_idx": 119,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "we",
+        "t_idx": 120,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "can",
+        "t_idx": 121,
+        "r": "aux"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "expect",
+        "t_idx": 122,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "revisit",
+        "h_idx": 124,
+        "child": "to",
+        "t_idx": 123,
+        "r": "aux"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "revisit",
+        "t_idx": 124,
+        "r": "xcomp"
+      },
+      {
+        "title": "Uflood",
+        "head": "p",
+        "h_idx": 128,
+        "child": "our",
+        "t_idx": 125,
+        "r": "poss"
+      },
+      {
+        "title": "Uflood",
+        "head": "p",
+        "h_idx": 128,
+        "child": "Dream",
+        "t_idx": 126,
+        "r": "nmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "p",
+        "h_idx": 128,
+        "child": "Holy",
+        "t_idx": 127,
+        "r": "nmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "revisit",
+        "h_idx": 124,
+        "child": "p",
+        "t_idx": 128,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "expect",
+        "h_idx": 122,
+        "child": "....",
+        "t_idx": 129,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "Uttarakhand",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          4
+        ],
+        "preceding_text": "",
+        "following_text": "flood death toll increases , heavy rains may hit rescue operations",
+        "full_sentence": "Uttarakhand flood death toll increases , heavy rains may hit rescue operations",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "",
+        "mention": "Uttarakhand",
+        "context_right": "flood death toll increases , heavy rains may hit rescue operations",
+        "wikipedia_id": 1429154,
+        "entity_name": "Uttarakhand",
+        "score": 10.189299583435059,
+        "url": "https://en.wikipedia.org/wiki?curid=1429154",
+        "wikidata_id": "Q1499"
+      },
+      {
+        "mention_id": 1,
+        "name": "Uttarakhand",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "",
+        "mention": "Uttarakhand",
+        "context_right": "flood : sonia gandhi to flag off relief material on monday url",
+        "wikipedia_id": 1429154,
+        "entity_name": "Uttarakhand",
+        "score": 10.253129959106445,
+        "url": "https://en.wikipedia.org/wiki?curid=1429154",
+        "wikidata_id": "Q1499"
+      },
+      {
+        "mention_id": 2,
+        "name": "Sonia Gandhi",
+        "sent_id": 3,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          20,
+          21
+        ],
+        "preceding_text": "Uttarakhand Flood :",
+        "following_text": "to flag off relief material on Monday URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "uttarakhand flood :",
+        "mention": "Sonia Gandhi",
+        "context_right": "to flag off relief material on monday url",
+        "wikipedia_id": 169798,
+        "entity_name": "Sonia Gandhi",
+        "score": 12.510188102722168,
+        "url": "https://en.wikipedia.org/wiki?curid=169798",
+        "wikidata_id": "Q163225"
+      },
+      {
+        "mention_id": 3,
+        "name": "Monday",
+        "sent_id": 3,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "DATE",
+        "token_index": [
+          28
+        ],
+        "preceding_text": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on",
+        "following_text": "URL",
+        "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "uttarakhand flood : sonia gandhi to flag off relief material on",
+        "mention": "Monday",
+        "context_right": "url",
+        "wikipedia_id": 54406,
+        "entity_name": "Monday",
+        "score": 8.06929874420166,
+        "url": "https://en.wikipedia.org/wiki?curid=54406",
+        "wikidata_id": "Q105"
+      },
+      {
+        "mention_id": 4,
+        "name": "Uttarakhand",
+        "sent_id": 4,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "",
+        "following_text": "flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "full_sentence": "Uttarakhand flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "",
+        "mention": "Uttarakhand",
+        "context_right": "flood : death toll may cross 1,000 , more than 22 k awaiting rescue url",
+        "wikipedia_id": 1429154,
+        "entity_name": "Uttarakhand",
+        "score": 10.039416313171387,
+        "url": "https://en.wikipedia.org/wiki?curid=1429154",
+        "wikidata_id": "Q1499"
+      },
+      {
+        "mention_id": 7,
+        "name": "Uttarakhand",
+        "sent_id": 5,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          47
+        ],
+        "preceding_text": "USER",
+        "following_text": "- IYC Members Providing Relief to Stranded People & amp",
+        "full_sentence": "USER Uttarakhand - IYC Members Providing Relief to Stranded People & amp",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "user",
+        "mention": "Uttarakhand",
+        "context_right": "- iyc members providing relief to stranded people & amp",
+        "wikipedia_id": 1429154,
+        "entity_name": "Uttarakhand",
+        "score": 8.722503662109375,
+        "url": "https://en.wikipedia.org/wiki?curid=1429154",
+        "wikidata_id": "Q1499"
+      },
+      {
+        "mention_id": 8,
+        "name": "Kedarnath",
+        "sent_id": 8,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          80
+        ],
+        "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the",
+        "following_text": "disaster in India :",
+        "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 8,
+        "context_left": "breakage of the glacier and the surrounding rock due to the cloudburst caused the",
+        "mention": "Kedarnath",
+        "context_right": "disaster in india :",
+        "wikipedia_id": 679514,
+        "entity_name": "Kedarnath",
+        "score": 8.856244087219238,
+        "url": "https://en.wikipedia.org/wiki?curid=679514",
+        "wikidata_id": "Q740167"
+      },
+      {
+        "mention_id": 9,
+        "name": "India",
+        "sent_id": 8,
+        "pos": [
+          17,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          83
+        ],
+        "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in",
+        "following_text": ":",
+        "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 9,
+        "context_left": "breakage of the glacier and the surrounding rock due to the cloudburst caused the kedarnath disaster in",
+        "mention": "India",
+        "context_right": ":",
+        "wikipedia_id": 14533,
+        "entity_name": "India",
+        "score": 8.904572486877441,
+        "url": "https://en.wikipedia.org/wiki?curid=14533",
+        "wikidata_id": "Q668"
+      },
+      {
+        "mention_id": 10,
+        "name": "Kedarnath",
+        "sent_id": 9,
+        "pos": [
+          16,
+          17
+        ],
+        "type": "GPE",
+        "token_index": [
+          101
+        ],
+        "preceding_text": "URLRT USER : Best explanation so far of the geological features that caused the destruction at",
+        "following_text": "",
+        "full_sentence": "URLRT USER : Best explanation so far of the geological features that caused the destruction at Kedarnath",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 10,
+        "context_left": "urlrt user : best explanation so far of the geological features that caused the destruction at",
+        "mention": "Kedarnath",
+        "context_right": "",
+        "wikipedia_id": 679514,
+        "entity_name": "Kedarnath",
+        "score": 9.715409278869629,
+        "url": "https://en.wikipedia.org/wiki?curid=679514",
+        "wikidata_id": "Q740167"
+      },
+      {
+        "mention_id": 11,
+        "name": "Narendra Modi",
+        "sent_id": 13,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          108,
+          109
+        ],
+        "preceding_text": "With Shri USER",
+        "following_text": "'s statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+        "full_sentence": "With Shri USER Narendra Modi 's statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 11,
+        "context_left": "with shri user",
+        "mention": "Narendra Modi",
+        "context_right": "'s statement on shri kedarnathji temple re - development , we can expect to revisit our dream holy p ....",
+        "wikipedia_id": 444222,
+        "entity_name": "Narendra Modi",
+        "score": 12.421534538269043,
+        "url": "https://en.wikipedia.org/wiki?curid=444222",
+        "wikidata_id": "Q1058"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "Uttarakhand",
+          "sent_id": 1,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            4
+          ],
+          "preceding_text": "",
+          "following_text": "flood death toll increases , heavy rains may hit rescue operations",
+          "full_sentence": "Uttarakhand flood death toll increases , heavy rains may hit rescue operations",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "",
+          "mention": "Uttarakhand",
+          "context_right": "flood death toll increases , heavy rains may hit rescue operations",
+          "wikipedia_id": 1429154,
+          "entity_name": "Uttarakhand",
+          "score": 10.189299583435059,
+          "url": "https://en.wikipedia.org/wiki?curid=1429154",
+          "wikidata_id": "Q1499"
+        },
+        {
+          "mention_id": 1,
+          "name": "Uttarakhand",
+          "sent_id": 3,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            17
+          ],
+          "preceding_text": "",
+          "following_text": "Flood : Sonia Gandhi to flag off relief material on Monday URL",
+          "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "",
+          "mention": "Uttarakhand",
+          "context_right": "flood : sonia gandhi to flag off relief material on monday url",
+          "wikipedia_id": 1429154,
+          "entity_name": "Uttarakhand",
+          "score": 10.253129959106445,
+          "url": "https://en.wikipedia.org/wiki?curid=1429154",
+          "wikidata_id": "Q1499"
+        },
+        {
+          "mention_id": 4,
+          "name": "Uttarakhand",
+          "sent_id": 4,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            30
+          ],
+          "preceding_text": "",
+          "following_text": "flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+          "full_sentence": "Uttarakhand flood : Death toll may cross 1,000 , more than 22 K awaiting rescue URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "",
+          "mention": "Uttarakhand",
+          "context_right": "flood : death toll may cross 1,000 , more than 22 k awaiting rescue url",
+          "wikipedia_id": 1429154,
+          "entity_name": "Uttarakhand",
+          "score": 10.039416313171387,
+          "url": "https://en.wikipedia.org/wiki?curid=1429154",
+          "wikidata_id": "Q1499"
+        },
+        {
+          "mention_id": 7,
+          "name": "Uttarakhand",
+          "sent_id": 5,
+          "pos": [
+            1,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            47
+          ],
+          "preceding_text": "USER",
+          "following_text": "- IYC Members Providing Relief to Stranded People & amp",
+          "full_sentence": "USER Uttarakhand - IYC Members Providing Relief to Stranded People & amp",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "user",
+          "mention": "Uttarakhand",
+          "context_right": "- iyc members providing relief to stranded people & amp",
+          "wikipedia_id": 1429154,
+          "entity_name": "Uttarakhand",
+          "score": 8.722503662109375,
+          "url": "https://en.wikipedia.org/wiki?curid=1429154",
+          "wikidata_id": "Q1499"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "Sonia Gandhi",
+          "sent_id": 3,
+          "pos": [
+            3,
+            5
+          ],
+          "type": "PERSON",
+          "token_index": [
+            20,
+            21
+          ],
+          "preceding_text": "Uttarakhand Flood :",
+          "following_text": "to flag off relief material on Monday URL",
+          "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "uttarakhand flood :",
+          "mention": "Sonia Gandhi",
+          "context_right": "to flag off relief material on monday url",
+          "wikipedia_id": 169798,
+          "entity_name": "Sonia Gandhi",
+          "score": 12.510188102722168,
+          "url": "https://en.wikipedia.org/wiki?curid=169798",
+          "wikidata_id": "Q163225"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "Monday",
+          "sent_id": 3,
+          "pos": [
+            11,
+            12
+          ],
+          "type": "DATE",
+          "token_index": [
+            28
+          ],
+          "preceding_text": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on",
+          "following_text": "URL",
+          "full_sentence": "Uttarakhand Flood : Sonia Gandhi to flag off relief material on Monday URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "uttarakhand flood : sonia gandhi to flag off relief material on",
+          "mention": "Monday",
+          "context_right": "url",
+          "wikipedia_id": 54406,
+          "entity_name": "Monday",
+          "score": 8.06929874420166,
+          "url": "https://en.wikipedia.org/wiki?curid=54406",
+          "wikidata_id": "Q105"
+        }
+      ],
+      [
+        {
+          "mention_id": 8,
+          "name": "Kedarnath",
+          "sent_id": 8,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            80
+          ],
+          "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the",
+          "following_text": "disaster in India :",
+          "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 8,
+          "context_left": "breakage of the glacier and the surrounding rock due to the cloudburst caused the",
+          "mention": "Kedarnath",
+          "context_right": "disaster in india :",
+          "wikipedia_id": 679514,
+          "entity_name": "Kedarnath",
+          "score": 8.856244087219238,
+          "url": "https://en.wikipedia.org/wiki?curid=679514",
+          "wikidata_id": "Q740167"
+        },
+        {
+          "mention_id": 10,
+          "name": "Kedarnath",
+          "sent_id": 9,
+          "pos": [
+            16,
+            17
+          ],
+          "type": "GPE",
+          "token_index": [
+            101
+          ],
+          "preceding_text": "URLRT USER : Best explanation so far of the geological features that caused the destruction at",
+          "following_text": "",
+          "full_sentence": "URLRT USER : Best explanation so far of the geological features that caused the destruction at Kedarnath",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 10,
+          "context_left": "urlrt user : best explanation so far of the geological features that caused the destruction at",
+          "mention": "Kedarnath",
+          "context_right": "",
+          "wikipedia_id": 679514,
+          "entity_name": "Kedarnath",
+          "score": 9.715409278869629,
+          "url": "https://en.wikipedia.org/wiki?curid=679514",
+          "wikidata_id": "Q740167"
+        }
+      ],
+      [
+        {
+          "mention_id": 9,
+          "name": "India",
+          "sent_id": 8,
+          "pos": [
+            17,
+            18
+          ],
+          "type": "GPE",
+          "token_index": [
+            83
+          ],
+          "preceding_text": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in",
+          "following_text": ":",
+          "full_sentence": "Breakage of the glacier and the surrounding rock due to the cloudburst caused the Kedarnath disaster in India :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 9,
+          "context_left": "breakage of the glacier and the surrounding rock due to the cloudburst caused the kedarnath disaster in",
+          "mention": "India",
+          "context_right": ":",
+          "wikipedia_id": 14533,
+          "entity_name": "India",
+          "score": 8.904572486877441,
+          "url": "https://en.wikipedia.org/wiki?curid=14533",
+          "wikidata_id": "Q668"
+        }
+      ],
+      [
+        {
+          "mention_id": 11,
+          "name": "Narendra Modi",
+          "sent_id": 13,
+          "pos": [
+            3,
+            5
+          ],
+          "type": "PERSON",
+          "token_index": [
+            108,
+            109
+          ],
+          "preceding_text": "With Shri USER",
+          "following_text": "'s statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+          "full_sentence": "With Shri USER Narendra Modi 's statement on Shri KedarNathJi Temple re - development , we can expect to revisit our Dream Holy p ....",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 11,
+          "context_left": "with shri user",
+          "mention": "Narendra Modi",
+          "context_right": "'s statement on shri kedarnathji temple re - development , we can expect to revisit our dream holy p ....",
+          "wikipedia_id": 444222,
+          "entity_name": "Narendra Modi",
+          "score": 12.421534538269043,
+          "url": "https://en.wikipedia.org/wiki?curid=444222",
+          "wikidata_id": "Q1058"
+        }
+      ]
+    ],
+    "ent_relation": [
+      {
+        "title": "Uflood",
+        "h_idx": 0,
+        "t_idx": 4,
+        "r": "P131",
+        "evidence": [
+          1,
+          8
+        ],
+        "score": 1.5797195434570312
+      },
+      {
+        "title": "Uflood",
+        "h_idx": 0,
+        "t_idx": 4,
+        "r": "P17",
+        "evidence": [
+          1,
+          8
+        ],
+        "score": 1.541604995727539
+      },
+      {
+        "title": "Uflood",
+        "h_idx": 3,
+        "t_idx": 4,
+        "r": "P17",
+        "evidence": [
+          8
+        ],
+        "score": 3.007662773132324
+      },
+      {
+        "title": "Uflood",
+        "h_idx": 4,
+        "t_idx": 0,
+        "r": "P150",
+        "evidence": [
+          1,
+          8
+        ],
+        "score": 3.777254104614258
+      },
+      {
+        "title": "Uflood",
+        "h_idx": 5,
+        "t_idx": 4,
+        "r": "P27",
+        "evidence": [
+          8,
+          13
+        ],
+        "score": 1.2474603652954102
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

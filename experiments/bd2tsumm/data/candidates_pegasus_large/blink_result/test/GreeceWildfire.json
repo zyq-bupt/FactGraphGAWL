@@ -1,0 +1,1651 @@
+{
+  "doc_name": "GreeceWildfire",
+  "doc_id": "GreeceWildfire",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "GreeceWildfire",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "GreeceWildfire",
+    "text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade GREEK PM: Arson responsible for deadly wildfires Greece news Athens wildfires: 79 dead, dozens of people still missing Greece news Greece fires LIVE: 60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires Greecefire USER go donate to unbocholics who are doing a charity livestream for Greece wildfires.",
+    "sents": [
+      [
+        "Read",
+        "my",
+        "latest",
+        "USER",
+        "Greece",
+        "Mati",
+        "at",
+        "least",
+        "74",
+        "people",
+        "have",
+        "died",
+        "and",
+        "188",
+        "have",
+        "been",
+        "injured",
+        "in",
+        "the",
+        "worst",
+        "forest",
+        "fires",
+        "to",
+        "hit",
+        "Greece",
+        "in",
+        "more",
+        "than",
+        "a",
+        "decade"
+      ],
+      [
+        "GREEK",
+        "PM",
+        ":",
+        "Arson",
+        "responsible",
+        "for",
+        "deadly",
+        "wildfires",
+        "Greece",
+        "news",
+        "Athens",
+        "wildfires",
+        ":",
+        "79",
+        "dead",
+        ",",
+        "dozens",
+        "of",
+        "people",
+        "still",
+        "missing",
+        "Greece",
+        "news",
+        "Greece",
+        "fires",
+        "LIVE",
+        ":"
+      ],
+      [
+        "60",
+        "DEAD",
+        "and",
+        "150",
+        "injured",
+        "as",
+        "worst",
+        "FIRE",
+        "WILDFIRES",
+        "in",
+        "a",
+        "decade",
+        "destroy",
+        "Athensforestfires"
+      ],
+      [
+        "Greecefire",
+        "USER",
+        "go",
+        "donate",
+        "to",
+        "unbocholics",
+        "who",
+        "are",
+        "doing",
+        "a",
+        "charity",
+        "livestream",
+        "for",
+        "Greece",
+        "wildfires",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Greece Mati",
+        "sent_id": 0,
+        "pos": [
+          4,
+          6
+        ],
+        "type": "PERSON",
+        "token_index": [
+          4,
+          5
+        ],
+        "preceding_text": "Read my latest USER",
+        "following_text": "at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "at least 74",
+        "sent_id": 0,
+        "pos": [
+          6,
+          9
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          6,
+          7,
+          8
+        ],
+        "preceding_text": "Read my latest USER Greece Mati",
+        "following_text": "people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "188",
+        "sent_id": 0,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          13
+        ],
+        "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and",
+        "following_text": "have been injured in the worst forest fires to hit Greece in more than a decade",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Greece",
+        "sent_id": 0,
+        "pos": [
+          24,
+          25
+        ],
+        "type": "GPE",
+        "token_index": [
+          24
+        ],
+        "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit",
+        "following_text": "in more than a decade",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "more than a decade",
+        "sent_id": 0,
+        "pos": [
+          26,
+          30
+        ],
+        "type": "DATE",
+        "token_index": [
+          26,
+          27,
+          28,
+          29
+        ],
+        "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in",
+        "following_text": "",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "GREEK",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "",
+        "following_text": "PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          38
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires",
+        "following_text": "news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Athens",
+        "sent_id": 1,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          40
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news",
+        "following_text": "wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "79",
+        "sent_id": 1,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          43
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires :",
+        "following_text": "dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "dozens",
+        "sent_id": 1,
+        "pos": [
+          16,
+          17
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          46
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead ,",
+        "following_text": "of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          21,
+          22
+        ],
+        "type": "GPE",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing",
+        "following_text": "news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          23,
+          24
+        ],
+        "type": "GPE",
+        "token_index": [
+          53
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news",
+        "following_text": "fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "60",
+        "sent_id": 2,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          57
+        ],
+        "preceding_text": "",
+        "following_text": "DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "full_sentence": "60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 13,
+        "name": "150",
+        "sent_id": 2,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          60
+        ],
+        "preceding_text": "60 DEAD and",
+        "following_text": "injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "full_sentence": "60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 14,
+        "name": "a decade",
+        "sent_id": 2,
+        "pos": [
+          10,
+          12
+        ],
+        "type": "DATE",
+        "token_index": [
+          67,
+          68
+        ],
+        "preceding_text": "60 DEAD and 150 injured as worst FIRE WILDFIRES in",
+        "following_text": "destroy Athensforestfires",
+        "full_sentence": "60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 15,
+        "name": "Greecefire",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          71
+        ],
+        "preceding_text": "",
+        "following_text": "USER go donate to unbocholics who are doing a charity livestream for Greece wildfires .",
+        "full_sentence": "Greecefire USER go donate to unbocholics who are doing a charity livestream for Greece wildfires .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 16,
+        "name": "Greece",
+        "sent_id": 3,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          84
+        ],
+        "preceding_text": "Greecefire USER go donate to unbocholics who are doing a charity livestream for",
+        "following_text": "wildfires .",
+        "full_sentence": "Greecefire USER go donate to unbocholics who are doing a charity livestream for Greece wildfires .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "Read",
+        "t_idx": 0,
+        "r": "advcl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "USER",
+        "h_idx": 3,
+        "child": "my",
+        "t_idx": 1,
+        "r": "poss"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "USER",
+        "h_idx": 3,
+        "child": "latest",
+        "t_idx": 2,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "Read",
+        "h_idx": 0,
+        "child": "USER",
+        "t_idx": 3,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "Mati",
+        "h_idx": 5,
+        "child": "Greece",
+        "t_idx": 4,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "USER",
+        "h_idx": 3,
+        "child": "Mati",
+        "t_idx": 5,
+        "r": "appos"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "least",
+        "h_idx": 7,
+        "child": "at",
+        "t_idx": 6,
+        "r": "advmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "74",
+        "h_idx": 8,
+        "child": "least",
+        "t_idx": 7,
+        "r": "advmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "people",
+        "h_idx": 9,
+        "child": "74",
+        "t_idx": 8,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "people",
+        "t_idx": 9,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "have",
+        "t_idx": 10,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "died",
+        "t_idx": 11,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "and",
+        "t_idx": 12,
+        "r": "cc"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 16,
+        "child": "188",
+        "t_idx": 13,
+        "r": "nsubjpass"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 16,
+        "child": "have",
+        "t_idx": 14,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 16,
+        "child": "been",
+        "t_idx": 15,
+        "r": "auxpass"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "died",
+        "h_idx": 11,
+        "child": "injured",
+        "t_idx": 16,
+        "r": "conj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 16,
+        "child": "in",
+        "t_idx": 17,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 21,
+        "child": "the",
+        "t_idx": 18,
+        "r": "det"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 21,
+        "child": "worst",
+        "t_idx": 19,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 21,
+        "child": "forest",
+        "t_idx": 20,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "in",
+        "h_idx": 17,
+        "child": "fires",
+        "t_idx": 21,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hit",
+        "h_idx": 23,
+        "child": "to",
+        "t_idx": 22,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 21,
+        "child": "hit",
+        "t_idx": 23,
+        "r": "relcl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hit",
+        "h_idx": 23,
+        "child": "Greece",
+        "t_idx": 24,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hit",
+        "h_idx": 23,
+        "child": "in",
+        "t_idx": 25,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "a",
+        "h_idx": 28,
+        "child": "more",
+        "t_idx": 26,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "a",
+        "h_idx": 28,
+        "child": "than",
+        "t_idx": 27,
+        "r": "quantmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "decade",
+        "h_idx": 29,
+        "child": "a",
+        "t_idx": 28,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "in",
+        "h_idx": 25,
+        "child": "decade",
+        "t_idx": 29,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "PM",
+        "h_idx": 31,
+        "child": "GREEK",
+        "t_idx": 30,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "dead",
+        "h_idx": 44,
+        "child": "PM",
+        "t_idx": 31,
+        "r": "npadvmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "PM",
+        "h_idx": 31,
+        "child": ":",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "PM",
+        "h_idx": 31,
+        "child": "Arson",
+        "t_idx": 33,
+        "r": "appos"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "Arson",
+        "h_idx": 33,
+        "child": "responsible",
+        "t_idx": 34,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "responsible",
+        "h_idx": 34,
+        "child": "for",
+        "t_idx": 35,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 37,
+        "child": "deadly",
+        "t_idx": 36,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "for",
+        "h_idx": 35,
+        "child": "wildfires",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "news",
+        "h_idx": 39,
+        "child": "Greece",
+        "t_idx": 38,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 41,
+        "child": "news",
+        "t_idx": 39,
+        "r": "dep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 41,
+        "child": "Athens",
+        "t_idx": 40,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "PM",
+        "h_idx": 31,
+        "child": "wildfires",
+        "t_idx": 41,
+        "r": "appos"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 41,
+        "child": ":",
+        "t_idx": 42,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "dead",
+        "h_idx": 44,
+        "child": "79",
+        "t_idx": 43,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "missing",
+        "h_idx": 50,
+        "child": "dead",
+        "t_idx": 44,
+        "r": "ccomp"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "dead",
+        "h_idx": 44,
+        "child": ",",
+        "t_idx": 45,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "missing",
+        "h_idx": 50,
+        "child": "dozens",
+        "t_idx": 46,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "dozens",
+        "h_idx": 46,
+        "child": "of",
+        "t_idx": 47,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "of",
+        "h_idx": 47,
+        "child": "people",
+        "t_idx": 48,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "missing",
+        "h_idx": 50,
+        "child": "still",
+        "t_idx": 49,
+        "r": "advmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "missing",
+        "h_idx": 50,
+        "child": "missing",
+        "t_idx": 50,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "news",
+        "h_idx": 52,
+        "child": "Greece",
+        "t_idx": 51,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 54,
+        "child": "news",
+        "t_idx": 52,
+        "r": "dep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fires",
+        "h_idx": 54,
+        "child": "Greece",
+        "t_idx": 53,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "LIVE",
+        "h_idx": 55,
+        "child": "fires",
+        "t_idx": 54,
+        "r": "npadvmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "missing",
+        "h_idx": 50,
+        "child": "LIVE",
+        "t_idx": 55,
+        "r": "advmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "LIVE",
+        "h_idx": 55,
+        "child": ":",
+        "t_idx": 56,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "DEAD",
+        "h_idx": 58,
+        "child": "60",
+        "t_idx": 57,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "DEAD",
+        "h_idx": 58,
+        "child": "DEAD",
+        "t_idx": 58,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "DEAD",
+        "h_idx": 58,
+        "child": "and",
+        "t_idx": 59,
+        "r": "cc"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 61,
+        "child": "150",
+        "t_idx": 60,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "DEAD",
+        "h_idx": 58,
+        "child": "injured",
+        "t_idx": 61,
+        "r": "conj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "destroy",
+        "h_idx": 69,
+        "child": "as",
+        "t_idx": 62,
+        "r": "mark"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "WILDFIRES",
+        "h_idx": 65,
+        "child": "worst",
+        "t_idx": 63,
+        "r": "amod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "WILDFIRES",
+        "h_idx": 65,
+        "child": "FIRE",
+        "t_idx": 64,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "destroy",
+        "h_idx": 69,
+        "child": "WILDFIRES",
+        "t_idx": 65,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "WILDFIRES",
+        "h_idx": 65,
+        "child": "in",
+        "t_idx": 66,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "decade",
+        "h_idx": 68,
+        "child": "a",
+        "t_idx": 67,
+        "r": "det"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "in",
+        "h_idx": 66,
+        "child": "decade",
+        "t_idx": 68,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 61,
+        "child": "destroy",
+        "t_idx": 69,
+        "r": "advcl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "destroy",
+        "h_idx": 69,
+        "child": "Athensforestfires",
+        "t_idx": 70,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "donate",
+        "h_idx": 74,
+        "child": "Greecefire",
+        "t_idx": 71,
+        "r": "npadvmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "go",
+        "h_idx": 73,
+        "child": "USER",
+        "t_idx": 72,
+        "r": "npadvmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "donate",
+        "h_idx": 74,
+        "child": "go",
+        "t_idx": 73,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "donate",
+        "h_idx": 74,
+        "child": "donate",
+        "t_idx": 74,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "donate",
+        "h_idx": 74,
+        "child": "to",
+        "t_idx": 75,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "to",
+        "h_idx": 75,
+        "child": "unbocholics",
+        "t_idx": 76,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "doing",
+        "h_idx": 79,
+        "child": "who",
+        "t_idx": 77,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "doing",
+        "h_idx": 79,
+        "child": "are",
+        "t_idx": 78,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "unbocholics",
+        "h_idx": 76,
+        "child": "doing",
+        "t_idx": 79,
+        "r": "relcl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "livestream",
+        "h_idx": 82,
+        "child": "a",
+        "t_idx": 80,
+        "r": "det"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "livestream",
+        "h_idx": 82,
+        "child": "charity",
+        "t_idx": 81,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "doing",
+        "h_idx": 79,
+        "child": "livestream",
+        "t_idx": 82,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "livestream",
+        "h_idx": 82,
+        "child": "for",
+        "t_idx": 83,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 85,
+        "child": "Greece",
+        "t_idx": 84,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "for",
+        "h_idx": 83,
+        "child": "wildfires",
+        "t_idx": 85,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "donate",
+        "h_idx": 74,
+        "child": ".",
+        "t_idx": 86,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 3,
+        "name": "Greece",
+        "sent_id": 0,
+        "pos": [
+          24,
+          25
+        ],
+        "type": "GPE",
+        "token_index": [
+          24
+        ],
+        "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit",
+        "following_text": "in more than a decade",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "read my latest user greece mati at least 74 people have died and 188 have been injured in the worst forest fires to hit",
+        "mention": "Greece",
+        "context_right": "in more than a decade",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 8.319483757019043,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      },
+      {
+        "mention_id": 4,
+        "name": "more than a decade",
+        "sent_id": 0,
+        "pos": [
+          26,
+          30
+        ],
+        "type": "DATE",
+        "token_index": [
+          26,
+          27,
+          28,
+          29
+        ],
+        "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in",
+        "following_text": "",
+        "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "read my latest user greece mati at least 74 people have died and 188 have been injured in the worst forest fires to hit greece in",
+        "mention": "more than a decade",
+        "context_right": "",
+        "wikipedia_id": 695530,
+        "entity_name": "Decade",
+        "score": 0.2243848592042923,
+        "url": "https://en.wikipedia.org/wiki?curid=695530",
+        "wikidata_id": "Q39911"
+      },
+      {
+        "mention_id": 5,
+        "name": "GREEK",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "",
+        "following_text": "PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 5,
+        "context_left": "",
+        "mention": "GREEK",
+        "context_right": "pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 4.581699371337891,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      },
+      {
+        "mention_id": 6,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          38
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires",
+        "following_text": "news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "greek pm : arson responsible for deadly wildfires",
+        "mention": "Greece",
+        "context_right": "news athens wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 4.90411901473999,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      },
+      {
+        "mention_id": 7,
+        "name": "Athens",
+        "sent_id": 1,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          40
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news",
+        "following_text": "wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "greek pm : arson responsible for deadly wildfires greece news",
+        "mention": "Athens",
+        "context_right": "wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+        "wikipedia_id": 1216,
+        "entity_name": "Athens",
+        "score": 5.525454044342041,
+        "url": "https://en.wikipedia.org/wiki?curid=1216",
+        "wikidata_id": "Q1524"
+      },
+      {
+        "mention_id": 10,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          21,
+          22
+        ],
+        "type": "GPE",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing",
+        "following_text": "news Greece fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 10,
+        "context_left": "greek pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing",
+        "mention": "Greece",
+        "context_right": "news greece fires live :",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 4.993223190307617,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      },
+      {
+        "mention_id": 11,
+        "name": "Greece",
+        "sent_id": 1,
+        "pos": [
+          23,
+          24
+        ],
+        "type": "GPE",
+        "token_index": [
+          53
+        ],
+        "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news",
+        "following_text": "fires LIVE :",
+        "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 11,
+        "context_left": "greek pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing greece news",
+        "mention": "Greece",
+        "context_right": "fires live :",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 1.903587818145752,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      },
+      {
+        "mention_id": 14,
+        "name": "a decade",
+        "sent_id": 2,
+        "pos": [
+          10,
+          12
+        ],
+        "type": "DATE",
+        "token_index": [
+          67,
+          68
+        ],
+        "preceding_text": "60 DEAD and 150 injured as worst FIRE WILDFIRES in",
+        "following_text": "destroy Athensforestfires",
+        "full_sentence": "60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 14,
+        "context_left": "60 dead and 150 injured as worst fire wildfires in",
+        "mention": "a decade",
+        "context_right": "destroy athensforestfires",
+        "wikipedia_id": 695530,
+        "entity_name": "Decade",
+        "score": 5.758033275604248,
+        "url": "https://en.wikipedia.org/wiki?curid=695530",
+        "wikidata_id": "Q39911"
+      },
+      {
+        "mention_id": 16,
+        "name": "Greece",
+        "sent_id": 3,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          84
+        ],
+        "preceding_text": "Greecefire USER go donate to unbocholics who are doing a charity livestream for",
+        "following_text": "wildfires .",
+        "full_sentence": "Greecefire USER go donate to unbocholics who are doing a charity livestream for Greece wildfires .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 16,
+        "context_left": "greecefire user go donate to unbocholics who are doing a charity livestream for",
+        "mention": "Greece",
+        "context_right": "wildfires .",
+        "wikipedia_id": 12108,
+        "entity_name": "Greece",
+        "score": 8.2208833694458,
+        "url": "https://en.wikipedia.org/wiki?curid=12108",
+        "wikidata_id": "Q41"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 3,
+          "name": "Greece",
+          "sent_id": 0,
+          "pos": [
+            24,
+            25
+          ],
+          "type": "GPE",
+          "token_index": [
+            24
+          ],
+          "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit",
+          "following_text": "in more than a decade",
+          "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "read my latest user greece mati at least 74 people have died and 188 have been injured in the worst forest fires to hit",
+          "mention": "Greece",
+          "context_right": "in more than a decade",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 8.319483757019043,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        },
+        {
+          "mention_id": 5,
+          "name": "GREEK",
+          "sent_id": 1,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            30
+          ],
+          "preceding_text": "",
+          "following_text": "PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 5,
+          "context_left": "",
+          "mention": "GREEK",
+          "context_right": "pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 4.581699371337891,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        },
+        {
+          "mention_id": 6,
+          "name": "Greece",
+          "sent_id": 1,
+          "pos": [
+            8,
+            9
+          ],
+          "type": "GPE",
+          "token_index": [
+            38
+          ],
+          "preceding_text": "GREEK PM : Arson responsible for deadly wildfires",
+          "following_text": "news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "greek pm : arson responsible for deadly wildfires",
+          "mention": "Greece",
+          "context_right": "news athens wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 4.90411901473999,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        },
+        {
+          "mention_id": 10,
+          "name": "Greece",
+          "sent_id": 1,
+          "pos": [
+            21,
+            22
+          ],
+          "type": "GPE",
+          "token_index": [
+            51
+          ],
+          "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing",
+          "following_text": "news Greece fires LIVE :",
+          "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 10,
+          "context_left": "greek pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing",
+          "mention": "Greece",
+          "context_right": "news greece fires live :",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 4.993223190307617,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        },
+        {
+          "mention_id": 11,
+          "name": "Greece",
+          "sent_id": 1,
+          "pos": [
+            23,
+            24
+          ],
+          "type": "GPE",
+          "token_index": [
+            53
+          ],
+          "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news",
+          "following_text": "fires LIVE :",
+          "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 11,
+          "context_left": "greek pm : arson responsible for deadly wildfires greece news athens wildfires : 79 dead , dozens of people still missing greece news",
+          "mention": "Greece",
+          "context_right": "fires live :",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 1.903587818145752,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        },
+        {
+          "mention_id": 16,
+          "name": "Greece",
+          "sent_id": 3,
+          "pos": [
+            13,
+            14
+          ],
+          "type": "GPE",
+          "token_index": [
+            84
+          ],
+          "preceding_text": "Greecefire USER go donate to unbocholics who are doing a charity livestream for",
+          "following_text": "wildfires .",
+          "full_sentence": "Greecefire USER go donate to unbocholics who are doing a charity livestream for Greece wildfires .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 16,
+          "context_left": "greecefire user go donate to unbocholics who are doing a charity livestream for",
+          "mention": "Greece",
+          "context_right": "wildfires .",
+          "wikipedia_id": 12108,
+          "entity_name": "Greece",
+          "score": 8.2208833694458,
+          "url": "https://en.wikipedia.org/wiki?curid=12108",
+          "wikidata_id": "Q41"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "more than a decade",
+          "sent_id": 0,
+          "pos": [
+            26,
+            30
+          ],
+          "type": "DATE",
+          "token_index": [
+            26,
+            27,
+            28,
+            29
+          ],
+          "preceding_text": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in",
+          "following_text": "",
+          "full_sentence": "Read my latest USER Greece Mati at least 74 people have died and 188 have been injured in the worst forest fires to hit Greece in more than a decade",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "read my latest user greece mati at least 74 people have died and 188 have been injured in the worst forest fires to hit greece in",
+          "mention": "more than a decade",
+          "context_right": "",
+          "wikipedia_id": 695530,
+          "entity_name": "Decade",
+          "score": 0.2243848592042923,
+          "url": "https://en.wikipedia.org/wiki?curid=695530",
+          "wikidata_id": "Q39911"
+        },
+        {
+          "mention_id": 14,
+          "name": "a decade",
+          "sent_id": 2,
+          "pos": [
+            10,
+            12
+          ],
+          "type": "DATE",
+          "token_index": [
+            67,
+            68
+          ],
+          "preceding_text": "60 DEAD and 150 injured as worst FIRE WILDFIRES in",
+          "following_text": "destroy Athensforestfires",
+          "full_sentence": "60 DEAD and 150 injured as worst FIRE WILDFIRES in a decade destroy Athensforestfires",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 14,
+          "context_left": "60 dead and 150 injured as worst fire wildfires in",
+          "mention": "a decade",
+          "context_right": "destroy athensforestfires",
+          "wikipedia_id": 695530,
+          "entity_name": "Decade",
+          "score": 5.758033275604248,
+          "url": "https://en.wikipedia.org/wiki?curid=695530",
+          "wikidata_id": "Q39911"
+        }
+      ],
+      [
+        {
+          "mention_id": 7,
+          "name": "Athens",
+          "sent_id": 1,
+          "pos": [
+            10,
+            11
+          ],
+          "type": "GPE",
+          "token_index": [
+            40
+          ],
+          "preceding_text": "GREEK PM : Arson responsible for deadly wildfires Greece news",
+          "following_text": "wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "full_sentence": "GREEK PM : Arson responsible for deadly wildfires Greece news Athens wildfires : 79 dead , dozens of people still missing Greece news Greece fires LIVE :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "greek pm : arson responsible for deadly wildfires greece news",
+          "mention": "Athens",
+          "context_right": "wildfires : 79 dead , dozens of people still missing greece news greece fires live :",
+          "wikipedia_id": 1216,
+          "entity_name": "Athens",
+          "score": 5.525454044342041,
+          "url": "https://en.wikipedia.org/wiki?curid=1216",
+          "wikidata_id": "Q1524"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

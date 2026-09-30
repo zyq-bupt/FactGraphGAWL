@@ -1,0 +1,542 @@
+{
+  "doc_name": "MexicoQuake",
+  "doc_id": "MexicoQuake",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "MexicoQuake",
+  "system_name": "t5-large",
+  "article": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "MexicoQuake",
+    "text": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central mexico. frida the rescue dog became a symbol of hope following the earthquake. user is donating part of its Mexico concert proceeds to earthquake relief efforts.",
+    "sents": [
+      [
+        "death",
+        "toll",
+        "climbs",
+        "to",
+        "305",
+        "people",
+        "after",
+        "this",
+        "weeks",
+        "7.1",
+        "magnitude",
+        "earthquake",
+        "in",
+        "central",
+        "mexico",
+        "."
+      ],
+      [
+        "frida",
+        "the",
+        "rescue",
+        "dog",
+        "became",
+        "a",
+        "symbol",
+        "of",
+        "hope",
+        "following",
+        "the",
+        "earthquake",
+        "."
+      ],
+      [
+        "user",
+        "is",
+        "donating",
+        "part",
+        "of",
+        "its",
+        "Mexico",
+        "concert",
+        "proceeds",
+        "to",
+        "earthquake",
+        "relief",
+        "efforts",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "305",
+        "sent_id": 0,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          4
+        ],
+        "preceding_text": "death toll climbs to",
+        "following_text": "people after this weeks 7.1 magnitude earthquake in central mexico .",
+        "full_sentence": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central mexico .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "weeks",
+        "sent_id": 0,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "DATE",
+        "token_index": [
+          8
+        ],
+        "preceding_text": "death toll climbs to 305 people after this",
+        "following_text": "7.1 magnitude earthquake in central mexico .",
+        "full_sentence": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central mexico .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "7.1 magnitude",
+        "sent_id": 0,
+        "pos": [
+          9,
+          11
+        ],
+        "type": "QUANTITY",
+        "token_index": [
+          9,
+          10
+        ],
+        "preceding_text": "death toll climbs to 305 people after this weeks",
+        "following_text": "earthquake in central mexico .",
+        "full_sentence": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central mexico .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "mexico",
+        "sent_id": 0,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          14
+        ],
+        "preceding_text": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central",
+        "following_text": ".",
+        "full_sentence": "death toll climbs to 305 people after this weeks 7.1 magnitude earthquake in central mexico .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "frida",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          16
+        ],
+        "preceding_text": "",
+        "following_text": "the rescue dog became a symbol of hope following the earthquake .",
+        "full_sentence": "frida the rescue dog became a symbol of hope following the earthquake .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "Mexico",
+        "sent_id": 2,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          35
+        ],
+        "preceding_text": "user is donating part of its",
+        "following_text": "concert proceeds to earthquake relief efforts .",
+        "full_sentence": "user is donating part of its Mexico concert proceeds to earthquake relief efforts .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "MexicoQuake",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "death",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "climbs",
+        "h_idx": 2,
+        "child": "toll",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "climbs",
+        "h_idx": 2,
+        "child": "climbs",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "climbs",
+        "h_idx": 2,
+        "child": "to",
+        "t_idx": 3,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "people",
+        "h_idx": 5,
+        "child": "305",
+        "t_idx": 4,
+        "r": "nummod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "to",
+        "h_idx": 3,
+        "child": "people",
+        "t_idx": 5,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "climbs",
+        "h_idx": 2,
+        "child": "after",
+        "t_idx": 6,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "weeks",
+        "h_idx": 8,
+        "child": "this",
+        "t_idx": 7,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 11,
+        "child": "weeks",
+        "t_idx": 8,
+        "r": "nmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "magnitude",
+        "h_idx": 10,
+        "child": "7.1",
+        "t_idx": 9,
+        "r": "nummod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 11,
+        "child": "magnitude",
+        "t_idx": 10,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "after",
+        "h_idx": 6,
+        "child": "earthquake",
+        "t_idx": 11,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 11,
+        "child": "in",
+        "t_idx": 12,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "mexico",
+        "h_idx": 14,
+        "child": "central",
+        "t_idx": 13,
+        "r": "amod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "in",
+        "h_idx": 12,
+        "child": "mexico",
+        "t_idx": 14,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "climbs",
+        "h_idx": 2,
+        "child": ".",
+        "t_idx": 15,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "became",
+        "h_idx": 20,
+        "child": "frida",
+        "t_idx": 16,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "dog",
+        "h_idx": 19,
+        "child": "the",
+        "t_idx": 17,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "dog",
+        "h_idx": 19,
+        "child": "rescue",
+        "t_idx": 18,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "frida",
+        "h_idx": 16,
+        "child": "dog",
+        "t_idx": 19,
+        "r": "appos"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "became",
+        "h_idx": 20,
+        "child": "became",
+        "t_idx": 20,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "symbol",
+        "h_idx": 22,
+        "child": "a",
+        "t_idx": 21,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "became",
+        "h_idx": 20,
+        "child": "symbol",
+        "t_idx": 22,
+        "r": "attr"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "symbol",
+        "h_idx": 22,
+        "child": "of",
+        "t_idx": 23,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "of",
+        "h_idx": 23,
+        "child": "hope",
+        "t_idx": 24,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "became",
+        "h_idx": 20,
+        "child": "following",
+        "t_idx": 25,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 27,
+        "child": "the",
+        "t_idx": 26,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "following",
+        "h_idx": 25,
+        "child": "earthquake",
+        "t_idx": 27,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "became",
+        "h_idx": 20,
+        "child": ".",
+        "t_idx": 28,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "user",
+        "t_idx": 29,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "is",
+        "t_idx": 30,
+        "r": "aux"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "donating",
+        "t_idx": 31,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "part",
+        "t_idx": 32,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "part",
+        "h_idx": 32,
+        "child": "of",
+        "t_idx": 33,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "proceeds",
+        "h_idx": 37,
+        "child": "its",
+        "t_idx": 34,
+        "r": "poss"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "concert",
+        "h_idx": 36,
+        "child": "Mexico",
+        "t_idx": 35,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "proceeds",
+        "h_idx": 37,
+        "child": "concert",
+        "t_idx": 36,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "of",
+        "h_idx": 33,
+        "child": "proceeds",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "to",
+        "t_idx": 38,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "relief",
+        "h_idx": 40,
+        "child": "earthquake",
+        "t_idx": 39,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "efforts",
+        "h_idx": 41,
+        "child": "relief",
+        "t_idx": 40,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "to",
+        "h_idx": 38,
+        "child": "efforts",
+        "t_idx": 41,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donating",
+        "h_idx": 31,
+        "child": ".",
+        "t_idx": 42,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

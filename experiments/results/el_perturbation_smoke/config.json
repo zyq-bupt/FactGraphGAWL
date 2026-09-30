@@ -1,0 +1,23 @@
+{
+  "weights": {
+    "token-token": 1.0,
+    "token-mention": 1.0,
+    "mention-entity": 0.5,
+    "entity-entity": 0.0
+  },
+  "ratios": [
+    0.0,
+    0.5
+  ],
+  "repeats": 1,
+  "seed": 42,
+  "limit": 2,
+  "datasets": [
+    "DeFacto"
+  ],
+  "T": 1,
+  "defacto_root": "/root/autodl-fs/zyq/defacto_data_gawl/factgraph_result_withemb",
+  "unisum_root": "/root/autodl-fs/zyq/unisumeval_data_gawl/factgraph_result",
+  "unisum_jsonl": "/root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2_processed.jsonl",
+  "note": "0% 只跑 1 次（确定结果）。FNR = 1 - accuracy，把并列也算作未检出错误。UniSumEval Pearson 与 evaluators_benchmark 一致：summary_success_state==success 且 faithfulness_score!=1。"
+}

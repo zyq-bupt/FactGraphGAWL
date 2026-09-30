@@ -1,0 +1,2091 @@
+{
+  "doc_name": "KaikouraQuake",
+  "doc_id": "KaikouraQuake",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "KaikouraQuake",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "KaikouraQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "KaikouraQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "KaikouraQuake",
+    "text": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand RT USER: NO tsunami expected on the west coast of North America: Residents move to higher ground, tsunami feared after magnitude 7.8 earthquake occurs near Christchurch, New Zealand Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families John USER: Just drove through Wellington, eerily empty, ferries at anchor in harbour as aftershocks move to New Zealand shores: wrning New Zealand earthquake: New Zealand tsunami warning: we are evacuating Akita and Herbertville residents.",
+    "sents": [
+      [
+        "Really",
+        "lying",
+        "in",
+        "bed",
+        "and",
+        "wondering",
+        "when",
+        "the",
+        "next",
+        "earthquake",
+        "will",
+        "be",
+        "eqnz",
+        "wellington",
+        "Strong",
+        "Earthquake",
+        "Shakes",
+        "New",
+        "Zealand"
+      ],
+      [
+        "RT",
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "NO",
+        "tsunami",
+        "expected",
+        "on",
+        "the",
+        "west",
+        "coast",
+        "of",
+        "North",
+        "America",
+        ":"
+      ],
+      [
+        "Residents",
+        "move",
+        "to",
+        "higher",
+        "ground",
+        ",",
+        "tsunami",
+        "feared",
+        "after",
+        "magnitude",
+        "7.8",
+        "earthquake",
+        "occurs",
+        "near",
+        "Christchurch",
+        ",",
+        "New",
+        "Zealand"
+      ],
+      [
+        "Our",
+        "thoughts",
+        "and",
+        "prayers",
+        "are",
+        "with",
+        "those",
+        "affected",
+        "by",
+        "the",
+        "earthquake",
+        "in",
+        "New",
+        "Zealand",
+        "as",
+        "well",
+        "as",
+        "their",
+        "friends",
+        "and",
+        "families",
+        "John",
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "Just",
+        "drove",
+        "through",
+        "Wellington",
+        ",",
+        "eerily",
+        "empty",
+        ",",
+        "ferries",
+        "at",
+        "anchor",
+        "in",
+        "harbour",
+        "as",
+        "aftershocks",
+        "move",
+        "to",
+        "New",
+        "Zealand",
+        "shores",
+        ":"
+      ],
+      [
+        "wrning"
+      ],
+      [
+        "New",
+        "Zealand",
+        "earthquake",
+        ":"
+      ],
+      [
+        "New",
+        "Zealand",
+        "tsunami",
+        "warning",
+        ":",
+        "we",
+        "are",
+        "evacuating",
+        "Akita",
+        "and",
+        "Herbertville",
+        "residents",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "eqnz",
+        "sent_id": 0,
+        "pos": [
+          12,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          12
+        ],
+        "preceding_text": "Really lying in bed and wondering when the next earthquake will be",
+        "following_text": "wellington Strong Earthquake Shakes New Zealand",
+        "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "wellington",
+        "sent_id": 0,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          13
+        ],
+        "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz",
+        "following_text": "Strong Earthquake Shakes New Zealand",
+        "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "New Zealand",
+        "sent_id": 0,
+        "pos": [
+          17,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          17,
+          18
+        ],
+        "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes",
+        "following_text": "",
+        "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "RT USER",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "PERSON",
+        "token_index": [
+          19,
+          20
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "RT USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "North America",
+        "sent_id": 3,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "LOC",
+        "token_index": [
+          30,
+          31
+        ],
+        "preceding_text": "NO tsunami expected on the west coast of",
+        "following_text": ":",
+        "full_sentence": "NO tsunami expected on the west coast of North America :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "7.8",
+        "sent_id": 4,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          43
+        ],
+        "preceding_text": "Residents move to higher ground , tsunami feared after magnitude",
+        "following_text": "earthquake occurs near Christchurch , New Zealand",
+        "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Christchurch",
+        "sent_id": 4,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          47
+        ],
+        "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near",
+        "following_text": ", New Zealand",
+        "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "New Zealand",
+        "sent_id": 4,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          49,
+          50
+        ],
+        "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch ,",
+        "following_text": "",
+        "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "New Zealand",
+        "sent_id": 5,
+        "pos": [
+          12,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          63,
+          64
+        ],
+        "preceding_text": "Our thoughts and prayers are with those affected by the earthquake in",
+        "following_text": "as well as their friends and families John USER",
+        "full_sentence": "Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families John USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "John USER",
+        "sent_id": 5,
+        "pos": [
+          21,
+          23
+        ],
+        "type": "PERSON",
+        "token_index": [
+          72,
+          73
+        ],
+        "preceding_text": "Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families",
+        "following_text": "",
+        "full_sentence": "Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families John USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Wellington",
+        "sent_id": 7,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          78
+        ],
+        "preceding_text": "Just drove through",
+        "following_text": ", eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "New Zealand",
+        "sent_id": 7,
+        "pos": [
+          17,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          92,
+          93
+        ],
+        "preceding_text": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to",
+        "following_text": "shores :",
+        "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "New Zealand",
+        "sent_id": 9,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          97,
+          98
+        ],
+        "preceding_text": "",
+        "following_text": "earthquake :",
+        "full_sentence": "New Zealand earthquake :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 13,
+        "name": "New Zealand",
+        "sent_id": 10,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          101,
+          102
+        ],
+        "preceding_text": "",
+        "following_text": "tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 14,
+        "name": "Akita",
+        "sent_id": 10,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          109
+        ],
+        "preceding_text": "New Zealand tsunami warning : we are evacuating",
+        "following_text": "and Herbertville residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 15,
+        "name": "Herbertville",
+        "sent_id": 10,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          111
+        ],
+        "preceding_text": "New Zealand tsunami warning : we are evacuating Akita and",
+        "following_text": "residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "Really",
+        "t_idx": 0,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "lying",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "in",
+        "t_idx": 2,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "in",
+        "h_idx": 2,
+        "child": "bed",
+        "t_idx": 3,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "and",
+        "t_idx": 4,
+        "r": "cc"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "wondering",
+        "t_idx": 5,
+        "r": "conj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "be",
+        "h_idx": 11,
+        "child": "when",
+        "t_idx": 6,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 9,
+        "child": "the",
+        "t_idx": 7,
+        "r": "det"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 9,
+        "child": "next",
+        "t_idx": 8,
+        "r": "amod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "be",
+        "h_idx": 11,
+        "child": "earthquake",
+        "t_idx": 9,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "be",
+        "h_idx": 11,
+        "child": "will",
+        "t_idx": 10,
+        "r": "aux"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "wondering",
+        "h_idx": 5,
+        "child": "be",
+        "t_idx": 11,
+        "r": "ccomp"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "be",
+        "h_idx": 11,
+        "child": "eqnz",
+        "t_idx": 12,
+        "r": "npadvmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "wellington",
+        "t_idx": 13,
+        "r": "npadvmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Earthquake",
+        "h_idx": 15,
+        "child": "Strong",
+        "t_idx": 14,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Shakes",
+        "h_idx": 16,
+        "child": "Earthquake",
+        "t_idx": 15,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "lying",
+        "h_idx": 1,
+        "child": "Shakes",
+        "t_idx": 16,
+        "r": "dep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 18,
+        "child": "New",
+        "t_idx": 17,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Shakes",
+        "h_idx": 16,
+        "child": "Zealand",
+        "t_idx": 18,
+        "r": "npadvmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "USER",
+        "h_idx": 20,
+        "child": "RT",
+        "t_idx": 19,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "USER",
+        "h_idx": 20,
+        "child": "USER",
+        "t_idx": 20,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": ":",
+        "h_idx": 21,
+        "child": ":",
+        "t_idx": 21,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "tsunami",
+        "h_idx": 23,
+        "child": "NO",
+        "t_idx": 22,
+        "r": "det"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "expected",
+        "h_idx": 24,
+        "child": "tsunami",
+        "t_idx": 23,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "expected",
+        "h_idx": 24,
+        "child": "expected",
+        "t_idx": 24,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "expected",
+        "h_idx": 24,
+        "child": "on",
+        "t_idx": 25,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "coast",
+        "h_idx": 28,
+        "child": "the",
+        "t_idx": 26,
+        "r": "det"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "coast",
+        "h_idx": 28,
+        "child": "west",
+        "t_idx": 27,
+        "r": "amod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "on",
+        "h_idx": 25,
+        "child": "coast",
+        "t_idx": 28,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "coast",
+        "h_idx": 28,
+        "child": "of",
+        "t_idx": 29,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "America",
+        "h_idx": 31,
+        "child": "North",
+        "t_idx": 30,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "of",
+        "h_idx": 29,
+        "child": "America",
+        "t_idx": 31,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "expected",
+        "h_idx": 24,
+        "child": ":",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 34,
+        "child": "Residents",
+        "t_idx": 33,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "feared",
+        "h_idx": 40,
+        "child": "move",
+        "t_idx": 34,
+        "r": "ccomp"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 34,
+        "child": "to",
+        "t_idx": 35,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ground",
+        "h_idx": 37,
+        "child": "higher",
+        "t_idx": 36,
+        "r": "amod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "to",
+        "h_idx": 35,
+        "child": "ground",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 34,
+        "child": ",",
+        "t_idx": 38,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "feared",
+        "h_idx": 40,
+        "child": "tsunami",
+        "t_idx": 39,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "feared",
+        "h_idx": 40,
+        "child": "feared",
+        "t_idx": 40,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "occurs",
+        "h_idx": 45,
+        "child": "after",
+        "t_idx": 41,
+        "r": "mark"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 44,
+        "child": "magnitude",
+        "t_idx": 42,
+        "r": "nmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "magnitude",
+        "h_idx": 42,
+        "child": "7.8",
+        "t_idx": 43,
+        "r": "nummod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "occurs",
+        "h_idx": 45,
+        "child": "earthquake",
+        "t_idx": 44,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "feared",
+        "h_idx": 40,
+        "child": "occurs",
+        "t_idx": 45,
+        "r": "advcl"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "occurs",
+        "h_idx": 45,
+        "child": "near",
+        "t_idx": 46,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "near",
+        "h_idx": 46,
+        "child": "Christchurch",
+        "t_idx": 47,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Christchurch",
+        "h_idx": 47,
+        "child": ",",
+        "t_idx": 48,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 50,
+        "child": "New",
+        "t_idx": 49,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Christchurch",
+        "h_idx": 47,
+        "child": "Zealand",
+        "t_idx": 50,
+        "r": "appos"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "thoughts",
+        "h_idx": 52,
+        "child": "Our",
+        "t_idx": 51,
+        "r": "poss"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "are",
+        "h_idx": 55,
+        "child": "thoughts",
+        "t_idx": 52,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "thoughts",
+        "h_idx": 52,
+        "child": "and",
+        "t_idx": 53,
+        "r": "cc"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "thoughts",
+        "h_idx": 52,
+        "child": "prayers",
+        "t_idx": 54,
+        "r": "conj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "are",
+        "h_idx": 55,
+        "child": "are",
+        "t_idx": 55,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "are",
+        "h_idx": 55,
+        "child": "with",
+        "t_idx": 56,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "with",
+        "h_idx": 56,
+        "child": "those",
+        "t_idx": 57,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "those",
+        "h_idx": 57,
+        "child": "affected",
+        "t_idx": 58,
+        "r": "acl"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "affected",
+        "h_idx": 58,
+        "child": "by",
+        "t_idx": 59,
+        "r": "agent"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 61,
+        "child": "the",
+        "t_idx": 60,
+        "r": "det"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "by",
+        "h_idx": 59,
+        "child": "earthquake",
+        "t_idx": 61,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 61,
+        "child": "in",
+        "t_idx": 62,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 64,
+        "child": "New",
+        "t_idx": 63,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "in",
+        "h_idx": 62,
+        "child": "Zealand",
+        "t_idx": 64,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "as",
+        "h_idx": 67,
+        "child": "as",
+        "t_idx": 65,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "as",
+        "h_idx": 67,
+        "child": "well",
+        "t_idx": 66,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "those",
+        "h_idx": 57,
+        "child": "as",
+        "t_idx": 67,
+        "r": "cc"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "friends",
+        "h_idx": 69,
+        "child": "their",
+        "t_idx": 68,
+        "r": "poss"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "those",
+        "h_idx": 57,
+        "child": "friends",
+        "t_idx": 69,
+        "r": "conj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "friends",
+        "h_idx": 69,
+        "child": "and",
+        "t_idx": 70,
+        "r": "cc"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "friends",
+        "h_idx": 69,
+        "child": "families",
+        "t_idx": 71,
+        "r": "conj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "USER",
+        "h_idx": 73,
+        "child": "John",
+        "t_idx": 72,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "are",
+        "h_idx": 55,
+        "child": "USER",
+        "t_idx": 73,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": ":",
+        "h_idx": 74,
+        "child": ":",
+        "t_idx": 74,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": "Just",
+        "t_idx": 75,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": "drove",
+        "t_idx": 76,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": "through",
+        "t_idx": 77,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "through",
+        "h_idx": 77,
+        "child": "Wellington",
+        "t_idx": 78,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": ",",
+        "t_idx": 79,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "empty",
+        "h_idx": 81,
+        "child": "eerily",
+        "t_idx": 80,
+        "r": "advmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": "empty",
+        "t_idx": 81,
+        "r": "advcl"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ferries",
+        "h_idx": 83,
+        "child": ",",
+        "t_idx": 82,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "drove",
+        "h_idx": 76,
+        "child": "ferries",
+        "t_idx": 83,
+        "r": "parataxis"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ferries",
+        "h_idx": 83,
+        "child": "at",
+        "t_idx": 84,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "at",
+        "h_idx": 84,
+        "child": "anchor",
+        "t_idx": 85,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ferries",
+        "h_idx": 83,
+        "child": "in",
+        "t_idx": 86,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "in",
+        "h_idx": 86,
+        "child": "harbour",
+        "t_idx": 87,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 90,
+        "child": "as",
+        "t_idx": 88,
+        "r": "mark"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 90,
+        "child": "aftershocks",
+        "t_idx": 89,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ferries",
+        "h_idx": 83,
+        "child": "move",
+        "t_idx": 90,
+        "r": "advcl"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "move",
+        "h_idx": 90,
+        "child": "to",
+        "t_idx": 91,
+        "r": "prep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 93,
+        "child": "New",
+        "t_idx": 92,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "shores",
+        "h_idx": 94,
+        "child": "Zealand",
+        "t_idx": 93,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "to",
+        "h_idx": 91,
+        "child": "shores",
+        "t_idx": 94,
+        "r": "pobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "ferries",
+        "h_idx": 83,
+        "child": ":",
+        "t_idx": 95,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "wrning",
+        "h_idx": 96,
+        "child": "wrning",
+        "t_idx": 96,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 98,
+        "child": "New",
+        "t_idx": 97,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 99,
+        "child": "Zealand",
+        "t_idx": 98,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 99,
+        "child": "earthquake",
+        "t_idx": 99,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "earthquake",
+        "h_idx": 99,
+        "child": ":",
+        "t_idx": 100,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Zealand",
+        "h_idx": 102,
+        "child": "New",
+        "t_idx": 101,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "tsunami",
+        "h_idx": 103,
+        "child": "Zealand",
+        "t_idx": 102,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "warning",
+        "h_idx": 104,
+        "child": "tsunami",
+        "t_idx": 103,
+        "r": "compound"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": "warning",
+        "t_idx": 104,
+        "r": "dep"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": ":",
+        "t_idx": 105,
+        "r": "punct"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": "we",
+        "t_idx": 106,
+        "r": "nsubj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": "are",
+        "t_idx": 107,
+        "r": "aux"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": "evacuating",
+        "t_idx": 108,
+        "r": "ROOT"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "residents",
+        "h_idx": 112,
+        "child": "Akita",
+        "t_idx": 109,
+        "r": "nmod"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Akita",
+        "h_idx": 109,
+        "child": "and",
+        "t_idx": 110,
+        "r": "cc"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "Akita",
+        "h_idx": 109,
+        "child": "Herbertville",
+        "t_idx": 111,
+        "r": "conj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": "residents",
+        "t_idx": 112,
+        "r": "dobj"
+      },
+      {
+        "title": "KaikouraQuake",
+        "head": "evacuating",
+        "h_idx": 108,
+        "child": ".",
+        "t_idx": 113,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 1,
+        "name": "wellington",
+        "sent_id": 0,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          13
+        ],
+        "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz",
+        "following_text": "Strong Earthquake Shakes New Zealand",
+        "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "really lying in bed and wondering when the next earthquake will be eqnz",
+        "mention": "wellington",
+        "context_right": "strong earthquake shakes new zealand",
+        "wikipedia_id": 33804,
+        "entity_name": "Wellington",
+        "score": 3.951268434524536,
+        "url": "https://en.wikipedia.org/wiki?curid=33804",
+        "wikidata_id": "Q23661"
+      },
+      {
+        "mention_id": 2,
+        "name": "New Zealand",
+        "sent_id": 0,
+        "pos": [
+          17,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          17,
+          18
+        ],
+        "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes",
+        "following_text": "",
+        "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "really lying in bed and wondering when the next earthquake will be eqnz wellington strong earthquake shakes",
+        "mention": "New Zealand",
+        "context_right": "",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 10.02078628540039,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 4,
+        "name": "North America",
+        "sent_id": 3,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "LOC",
+        "token_index": [
+          30,
+          31
+        ],
+        "preceding_text": "NO tsunami expected on the west coast of",
+        "following_text": ":",
+        "full_sentence": "NO tsunami expected on the west coast of North America :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "no tsunami expected on the west coast of",
+        "mention": "North America",
+        "context_right": ":",
+        "wikipedia_id": 21139,
+        "entity_name": "North America",
+        "score": 9.4601411819458,
+        "url": "https://en.wikipedia.org/wiki?curid=21139",
+        "wikidata_id": "Q49"
+      },
+      {
+        "mention_id": 6,
+        "name": "Christchurch",
+        "sent_id": 4,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          47
+        ],
+        "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near",
+        "following_text": ", New Zealand",
+        "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near",
+        "mention": "Christchurch",
+        "context_right": ", new zealand",
+        "wikipedia_id": 628782,
+        "entity_name": "Christchurch",
+        "score": 10.837194442749023,
+        "url": "https://en.wikipedia.org/wiki?curid=628782",
+        "wikidata_id": "Q79990"
+      },
+      {
+        "mention_id": 7,
+        "name": "New Zealand",
+        "sent_id": 4,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          49,
+          50
+        ],
+        "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch ,",
+        "following_text": "",
+        "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near christchurch ,",
+        "mention": "New Zealand",
+        "context_right": "",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 9.499944686889648,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 8,
+        "name": "New Zealand",
+        "sent_id": 5,
+        "pos": [
+          12,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          63,
+          64
+        ],
+        "preceding_text": "Our thoughts and prayers are with those affected by the earthquake in",
+        "following_text": "as well as their friends and families John USER",
+        "full_sentence": "Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families John USER",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 8,
+        "context_left": "our thoughts and prayers are with those affected by the earthquake in",
+        "mention": "New Zealand",
+        "context_right": "as well as their friends and families john user",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 9.721607208251953,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 10,
+        "name": "Wellington",
+        "sent_id": 7,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          78
+        ],
+        "preceding_text": "Just drove through",
+        "following_text": ", eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 10,
+        "context_left": "just drove through",
+        "mention": "Wellington",
+        "context_right": ", eerily empty , ferries at anchor in harbour as aftershocks move to new zealand shores :",
+        "wikipedia_id": 33804,
+        "entity_name": "Wellington",
+        "score": 10.14849853515625,
+        "url": "https://en.wikipedia.org/wiki?curid=33804",
+        "wikidata_id": "Q23661"
+      },
+      {
+        "mention_id": 11,
+        "name": "New Zealand",
+        "sent_id": 7,
+        "pos": [
+          17,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          92,
+          93
+        ],
+        "preceding_text": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to",
+        "following_text": "shores :",
+        "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 11,
+        "context_left": "just drove through wellington , eerily empty , ferries at anchor in harbour as aftershocks move to",
+        "mention": "New Zealand",
+        "context_right": "shores :",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 9.789572715759277,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 12,
+        "name": "New Zealand",
+        "sent_id": 9,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          97,
+          98
+        ],
+        "preceding_text": "",
+        "following_text": "earthquake :",
+        "full_sentence": "New Zealand earthquake :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 12,
+        "context_left": "",
+        "mention": "New Zealand",
+        "context_right": "earthquake :",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 8.66878604888916,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 13,
+        "name": "New Zealand",
+        "sent_id": 10,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          101,
+          102
+        ],
+        "preceding_text": "",
+        "following_text": "tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 13,
+        "context_left": "",
+        "mention": "New Zealand",
+        "context_right": "tsunami warning : we are evacuating akita and herbertville residents .",
+        "wikipedia_id": 4913064,
+        "entity_name": "New Zealand",
+        "score": 7.9589924812316895,
+        "url": "https://en.wikipedia.org/wiki?curid=4913064",
+        "wikidata_id": "Q664"
+      },
+      {
+        "mention_id": 14,
+        "name": "Akita",
+        "sent_id": 10,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          109
+        ],
+        "preceding_text": "New Zealand tsunami warning : we are evacuating",
+        "following_text": "and Herbertville residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 14,
+        "context_left": "new zealand tsunami warning : we are evacuating",
+        "mention": "Akita",
+        "context_right": "and herbertville residents .",
+        "wikipedia_id": 61729,
+        "entity_name": "Akita Prefecture",
+        "score": 2.085245132446289,
+        "url": "https://en.wikipedia.org/wiki?curid=61729",
+        "wikidata_id": "Q81863"
+      },
+      {
+        "mention_id": 15,
+        "name": "Herbertville",
+        "sent_id": 10,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          111
+        ],
+        "preceding_text": "New Zealand tsunami warning : we are evacuating Akita and",
+        "following_text": "residents .",
+        "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 15,
+        "context_left": "new zealand tsunami warning : we are evacuating akita and",
+        "mention": "Herbertville",
+        "context_right": "residents .",
+        "wikipedia_id": 20285727,
+        "entity_name": "Herbertville",
+        "score": 10.26406192779541,
+        "url": "https://en.wikipedia.org/wiki?curid=20285727",
+        "wikidata_id": "Q5736059"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 1,
+          "name": "wellington",
+          "sent_id": 0,
+          "pos": [
+            13,
+            14
+          ],
+          "type": "GPE",
+          "token_index": [
+            13
+          ],
+          "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz",
+          "following_text": "Strong Earthquake Shakes New Zealand",
+          "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "really lying in bed and wondering when the next earthquake will be eqnz",
+          "mention": "wellington",
+          "context_right": "strong earthquake shakes new zealand",
+          "wikipedia_id": 33804,
+          "entity_name": "Wellington",
+          "score": 3.951268434524536,
+          "url": "https://en.wikipedia.org/wiki?curid=33804",
+          "wikidata_id": "Q23661"
+        },
+        {
+          "mention_id": 10,
+          "name": "Wellington",
+          "sent_id": 7,
+          "pos": [
+            3,
+            4
+          ],
+          "type": "GPE",
+          "token_index": [
+            78
+          ],
+          "preceding_text": "Just drove through",
+          "following_text": ", eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+          "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 10,
+          "context_left": "just drove through",
+          "mention": "Wellington",
+          "context_right": ", eerily empty , ferries at anchor in harbour as aftershocks move to new zealand shores :",
+          "wikipedia_id": 33804,
+          "entity_name": "Wellington",
+          "score": 10.14849853515625,
+          "url": "https://en.wikipedia.org/wiki?curid=33804",
+          "wikidata_id": "Q23661"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "New Zealand",
+          "sent_id": 0,
+          "pos": [
+            17,
+            19
+          ],
+          "type": "GPE",
+          "token_index": [
+            17,
+            18
+          ],
+          "preceding_text": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes",
+          "following_text": "",
+          "full_sentence": "Really lying in bed and wondering when the next earthquake will be eqnz wellington Strong Earthquake Shakes New Zealand",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "really lying in bed and wondering when the next earthquake will be eqnz wellington strong earthquake shakes",
+          "mention": "New Zealand",
+          "context_right": "",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 10.02078628540039,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        },
+        {
+          "mention_id": 7,
+          "name": "New Zealand",
+          "sent_id": 4,
+          "pos": [
+            16,
+            18
+          ],
+          "type": "GPE",
+          "token_index": [
+            49,
+            50
+          ],
+          "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch ,",
+          "following_text": "",
+          "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near christchurch ,",
+          "mention": "New Zealand",
+          "context_right": "",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 9.499944686889648,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        },
+        {
+          "mention_id": 8,
+          "name": "New Zealand",
+          "sent_id": 5,
+          "pos": [
+            12,
+            14
+          ],
+          "type": "GPE",
+          "token_index": [
+            63,
+            64
+          ],
+          "preceding_text": "Our thoughts and prayers are with those affected by the earthquake in",
+          "following_text": "as well as their friends and families John USER",
+          "full_sentence": "Our thoughts and prayers are with those affected by the earthquake in New Zealand as well as their friends and families John USER",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 8,
+          "context_left": "our thoughts and prayers are with those affected by the earthquake in",
+          "mention": "New Zealand",
+          "context_right": "as well as their friends and families john user",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 9.721607208251953,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        },
+        {
+          "mention_id": 11,
+          "name": "New Zealand",
+          "sent_id": 7,
+          "pos": [
+            17,
+            19
+          ],
+          "type": "GPE",
+          "token_index": [
+            92,
+            93
+          ],
+          "preceding_text": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to",
+          "following_text": "shores :",
+          "full_sentence": "Just drove through Wellington , eerily empty , ferries at anchor in harbour as aftershocks move to New Zealand shores :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 11,
+          "context_left": "just drove through wellington , eerily empty , ferries at anchor in harbour as aftershocks move to",
+          "mention": "New Zealand",
+          "context_right": "shores :",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 9.789572715759277,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        },
+        {
+          "mention_id": 12,
+          "name": "New Zealand",
+          "sent_id": 9,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            97,
+            98
+          ],
+          "preceding_text": "",
+          "following_text": "earthquake :",
+          "full_sentence": "New Zealand earthquake :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 12,
+          "context_left": "",
+          "mention": "New Zealand",
+          "context_right": "earthquake :",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 8.66878604888916,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        },
+        {
+          "mention_id": 13,
+          "name": "New Zealand",
+          "sent_id": 10,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            101,
+            102
+          ],
+          "preceding_text": "",
+          "following_text": "tsunami warning : we are evacuating Akita and Herbertville residents .",
+          "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 13,
+          "context_left": "",
+          "mention": "New Zealand",
+          "context_right": "tsunami warning : we are evacuating akita and herbertville residents .",
+          "wikipedia_id": 4913064,
+          "entity_name": "New Zealand",
+          "score": 7.9589924812316895,
+          "url": "https://en.wikipedia.org/wiki?curid=4913064",
+          "wikidata_id": "Q664"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "North America",
+          "sent_id": 3,
+          "pos": [
+            8,
+            10
+          ],
+          "type": "LOC",
+          "token_index": [
+            30,
+            31
+          ],
+          "preceding_text": "NO tsunami expected on the west coast of",
+          "following_text": ":",
+          "full_sentence": "NO tsunami expected on the west coast of North America :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "no tsunami expected on the west coast of",
+          "mention": "North America",
+          "context_right": ":",
+          "wikipedia_id": 21139,
+          "entity_name": "North America",
+          "score": 9.4601411819458,
+          "url": "https://en.wikipedia.org/wiki?curid=21139",
+          "wikidata_id": "Q49"
+        }
+      ],
+      [
+        {
+          "mention_id": 6,
+          "name": "Christchurch",
+          "sent_id": 4,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            47
+          ],
+          "preceding_text": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near",
+          "following_text": ", New Zealand",
+          "full_sentence": "Residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near Christchurch , New Zealand",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "residents move to higher ground , tsunami feared after magnitude 7.8 earthquake occurs near",
+          "mention": "Christchurch",
+          "context_right": ", new zealand",
+          "wikipedia_id": 628782,
+          "entity_name": "Christchurch",
+          "score": 10.837194442749023,
+          "url": "https://en.wikipedia.org/wiki?curid=628782",
+          "wikidata_id": "Q79990"
+        }
+      ],
+      [
+        {
+          "mention_id": 14,
+          "name": "Akita",
+          "sent_id": 10,
+          "pos": [
+            8,
+            9
+          ],
+          "type": "GPE",
+          "token_index": [
+            109
+          ],
+          "preceding_text": "New Zealand tsunami warning : we are evacuating",
+          "following_text": "and Herbertville residents .",
+          "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 14,
+          "context_left": "new zealand tsunami warning : we are evacuating",
+          "mention": "Akita",
+          "context_right": "and herbertville residents .",
+          "wikipedia_id": 61729,
+          "entity_name": "Akita Prefecture",
+          "score": 2.085245132446289,
+          "url": "https://en.wikipedia.org/wiki?curid=61729",
+          "wikidata_id": "Q81863"
+        }
+      ],
+      [
+        {
+          "mention_id": 15,
+          "name": "Herbertville",
+          "sent_id": 10,
+          "pos": [
+            10,
+            11
+          ],
+          "type": "GPE",
+          "token_index": [
+            111
+          ],
+          "preceding_text": "New Zealand tsunami warning : we are evacuating Akita and",
+          "following_text": "residents .",
+          "full_sentence": "New Zealand tsunami warning : we are evacuating Akita and Herbertville residents .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 15,
+          "context_left": "new zealand tsunami warning : we are evacuating akita and",
+          "mention": "Herbertville",
+          "context_right": "residents .",
+          "wikipedia_id": 20285727,
+          "entity_name": "Herbertville",
+          "score": 10.26406192779541,
+          "url": "https://en.wikipedia.org/wiki?curid=20285727",
+          "wikidata_id": "Q5736059"
+        }
+      ]
+    ],
+    "ent_relation": [
+      {
+        "title": "KaikouraQuake",
+        "h_idx": 3,
+        "t_idx": 1,
+        "r": "P17",
+        "evidence": [
+          4
+        ],
+        "score": 2.080843925476074
+      },
+      {
+        "title": "KaikouraQuake",
+        "h_idx": 4,
+        "t_idx": 1,
+        "r": "P17",
+        "evidence": [
+          10
+        ],
+        "score": 0.14466476440429688
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "KaikouraQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

@@ -1,0 +1,680 @@
+{
+  "doc_name": "SHShooting",
+  "doc_id": "SHShooting",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "SHShooting",
+  "system_name": "t5-large",
+  "article": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "SHShooting",
+    "text": "at least 27 people are dead after a shooting at an elementary school in newtown, ct. white house says president Obama has been briefed about conn. school shootings.",
+    "sents": [
+      [
+        "at",
+        "least",
+        "27",
+        "people",
+        "are",
+        "dead",
+        "after",
+        "a",
+        "shooting",
+        "at",
+        "an",
+        "elementary",
+        "school",
+        "in",
+        "newtown",
+        ",",
+        "ct",
+        "."
+      ],
+      [
+        "white",
+        "house",
+        "says",
+        "president",
+        "Obama",
+        "has",
+        "been",
+        "briefed",
+        "about",
+        "conn",
+        ".",
+        "school",
+        "shootings",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "at least 27",
+        "sent_id": 0,
+        "pos": [
+          0,
+          3
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          0,
+          1,
+          2
+        ],
+        "preceding_text": "",
+        "following_text": "people are dead after a shooting at an elementary school in newtown , ct .",
+        "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "newtown",
+        "sent_id": 0,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          14
+        ],
+        "preceding_text": "at least 27 people are dead after a shooting at an elementary school in",
+        "following_text": ", ct .",
+        "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "ct.",
+        "sent_id": 0,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "at least 27 people are dead after a shooting at an elementary school in newtown ,",
+        "following_text": "",
+        "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "white house",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "ORG",
+        "token_index": [
+          18,
+          19
+        ],
+        "preceding_text": "",
+        "following_text": "says president Obama has been briefed about conn . school shootings .",
+        "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Obama",
+        "sent_id": 1,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          22
+        ],
+        "preceding_text": "white house says president",
+        "following_text": "has been briefed about conn . school shootings .",
+        "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "conn.",
+        "sent_id": 1,
+        "pos": [
+          9,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          27,
+          28
+        ],
+        "preceding_text": "white house says president Obama has been briefed about",
+        "following_text": "school shootings .",
+        "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "SHShooting",
+        "head": "least",
+        "h_idx": 1,
+        "child": "at",
+        "t_idx": 0,
+        "r": "advmod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "27",
+        "h_idx": 2,
+        "child": "least",
+        "t_idx": 1,
+        "r": "advmod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "people",
+        "h_idx": 3,
+        "child": "27",
+        "t_idx": 2,
+        "r": "nummod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "are",
+        "h_idx": 4,
+        "child": "people",
+        "t_idx": 3,
+        "r": "nsubj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "are",
+        "h_idx": 4,
+        "child": "are",
+        "t_idx": 4,
+        "r": "ROOT"
+      },
+      {
+        "title": "SHShooting",
+        "head": "are",
+        "h_idx": 4,
+        "child": "dead",
+        "t_idx": 5,
+        "r": "acomp"
+      },
+      {
+        "title": "SHShooting",
+        "head": "are",
+        "h_idx": 4,
+        "child": "after",
+        "t_idx": 6,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shooting",
+        "h_idx": 8,
+        "child": "a",
+        "t_idx": 7,
+        "r": "det"
+      },
+      {
+        "title": "SHShooting",
+        "head": "after",
+        "h_idx": 6,
+        "child": "shooting",
+        "t_idx": 8,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shooting",
+        "h_idx": 8,
+        "child": "at",
+        "t_idx": 9,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "school",
+        "h_idx": 12,
+        "child": "an",
+        "t_idx": 10,
+        "r": "det"
+      },
+      {
+        "title": "SHShooting",
+        "head": "school",
+        "h_idx": 12,
+        "child": "elementary",
+        "t_idx": 11,
+        "r": "amod"
+      },
+      {
+        "title": "SHShooting",
+        "head": "at",
+        "h_idx": 9,
+        "child": "school",
+        "t_idx": 12,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "school",
+        "h_idx": 12,
+        "child": "in",
+        "t_idx": 13,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "in",
+        "h_idx": 13,
+        "child": "newtown",
+        "t_idx": 14,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "newtown",
+        "h_idx": 14,
+        "child": ",",
+        "t_idx": 15,
+        "r": "punct"
+      },
+      {
+        "title": "SHShooting",
+        "head": "newtown",
+        "h_idx": 14,
+        "child": "ct",
+        "t_idx": 16,
+        "r": "appos"
+      },
+      {
+        "title": "SHShooting",
+        "head": "are",
+        "h_idx": 4,
+        "child": ".",
+        "t_idx": 17,
+        "r": "punct"
+      },
+      {
+        "title": "SHShooting",
+        "head": "house",
+        "h_idx": 19,
+        "child": "white",
+        "t_idx": 18,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "says",
+        "h_idx": 20,
+        "child": "house",
+        "t_idx": 19,
+        "r": "nsubj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "says",
+        "h_idx": 20,
+        "child": "says",
+        "t_idx": 20,
+        "r": "ROOT"
+      },
+      {
+        "title": "SHShooting",
+        "head": "Obama",
+        "h_idx": 22,
+        "child": "president",
+        "t_idx": 21,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "briefed",
+        "h_idx": 25,
+        "child": "Obama",
+        "t_idx": 22,
+        "r": "nsubjpass"
+      },
+      {
+        "title": "SHShooting",
+        "head": "briefed",
+        "h_idx": 25,
+        "child": "has",
+        "t_idx": 23,
+        "r": "aux"
+      },
+      {
+        "title": "SHShooting",
+        "head": "briefed",
+        "h_idx": 25,
+        "child": "been",
+        "t_idx": 24,
+        "r": "auxpass"
+      },
+      {
+        "title": "SHShooting",
+        "head": "says",
+        "h_idx": 20,
+        "child": "briefed",
+        "t_idx": 25,
+        "r": "ccomp"
+      },
+      {
+        "title": "SHShooting",
+        "head": "briefed",
+        "h_idx": 25,
+        "child": "about",
+        "t_idx": 26,
+        "r": "prep"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shootings",
+        "h_idx": 30,
+        "child": "conn",
+        "t_idx": 27,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shootings",
+        "h_idx": 30,
+        "child": ".",
+        "t_idx": 28,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "shootings",
+        "h_idx": 30,
+        "child": "school",
+        "t_idx": 29,
+        "r": "compound"
+      },
+      {
+        "title": "SHShooting",
+        "head": "about",
+        "h_idx": 26,
+        "child": "shootings",
+        "t_idx": 30,
+        "r": "pobj"
+      },
+      {
+        "title": "SHShooting",
+        "head": "says",
+        "h_idx": 20,
+        "child": ".",
+        "t_idx": 31,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 1,
+        "name": "newtown",
+        "sent_id": 0,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          14
+        ],
+        "preceding_text": "at least 27 people are dead after a shooting at an elementary school in",
+        "following_text": ", ct .",
+        "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "at least 27 people are dead after a shooting at an elementary school in",
+        "mention": "newtown",
+        "context_right": ", ct .",
+        "wikipedia_id": 4073829,
+        "entity_name": "Newtown, Connecticut",
+        "score": 9.22563362121582,
+        "url": "https://en.wikipedia.org/wiki?curid=4073829",
+        "wikidata_id": "Q738356"
+      },
+      {
+        "mention_id": 2,
+        "name": "ct.",
+        "sent_id": 0,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "at least 27 people are dead after a shooting at an elementary school in newtown ,",
+        "following_text": "",
+        "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "at least 27 people are dead after a shooting at an elementary school in newtown ,",
+        "mention": "ct.",
+        "context_right": "",
+        "wikipedia_id": 6466,
+        "entity_name": "Connecticut",
+        "score": 6.485103607177734,
+        "url": "https://en.wikipedia.org/wiki?curid=6466",
+        "wikidata_id": "Q779"
+      },
+      {
+        "mention_id": 3,
+        "name": "white house",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "ORG",
+        "token_index": [
+          18,
+          19
+        ],
+        "preceding_text": "",
+        "following_text": "says president Obama has been briefed about conn . school shootings .",
+        "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "",
+        "mention": "white house",
+        "context_right": "says president obama has been briefed about conn . school shootings .",
+        "wikipedia_id": 33057,
+        "entity_name": "White House",
+        "score": 8.511310577392578,
+        "url": "https://en.wikipedia.org/wiki?curid=33057",
+        "wikidata_id": "Q35525"
+      },
+      {
+        "mention_id": 4,
+        "name": "Obama",
+        "sent_id": 1,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "PERSON",
+        "token_index": [
+          22
+        ],
+        "preceding_text": "white house says president",
+        "following_text": "has been briefed about conn . school shootings .",
+        "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "white house says president",
+        "mention": "Obama",
+        "context_right": "has been briefed about conn . school shootings .",
+        "wikipedia_id": 534366,
+        "entity_name": "Barack Obama",
+        "score": 9.787375450134277,
+        "url": "https://en.wikipedia.org/wiki?curid=534366",
+        "wikidata_id": "Q76"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 1,
+          "name": "newtown",
+          "sent_id": 0,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            14
+          ],
+          "preceding_text": "at least 27 people are dead after a shooting at an elementary school in",
+          "following_text": ", ct .",
+          "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "at least 27 people are dead after a shooting at an elementary school in",
+          "mention": "newtown",
+          "context_right": ", ct .",
+          "wikipedia_id": 4073829,
+          "entity_name": "Newtown, Connecticut",
+          "score": 9.22563362121582,
+          "url": "https://en.wikipedia.org/wiki?curid=4073829",
+          "wikidata_id": "Q738356"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "ct.",
+          "sent_id": 0,
+          "pos": [
+            16,
+            18
+          ],
+          "type": "GPE",
+          "token_index": [
+            16,
+            17
+          ],
+          "preceding_text": "at least 27 people are dead after a shooting at an elementary school in newtown ,",
+          "following_text": "",
+          "full_sentence": "at least 27 people are dead after a shooting at an elementary school in newtown , ct .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "at least 27 people are dead after a shooting at an elementary school in newtown ,",
+          "mention": "ct.",
+          "context_right": "",
+          "wikipedia_id": 6466,
+          "entity_name": "Connecticut",
+          "score": 6.485103607177734,
+          "url": "https://en.wikipedia.org/wiki?curid=6466",
+          "wikidata_id": "Q779"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "white house",
+          "sent_id": 1,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "ORG",
+          "token_index": [
+            18,
+            19
+          ],
+          "preceding_text": "",
+          "following_text": "says president Obama has been briefed about conn . school shootings .",
+          "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "",
+          "mention": "white house",
+          "context_right": "says president obama has been briefed about conn . school shootings .",
+          "wikipedia_id": 33057,
+          "entity_name": "White House",
+          "score": 8.511310577392578,
+          "url": "https://en.wikipedia.org/wiki?curid=33057",
+          "wikidata_id": "Q35525"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "Obama",
+          "sent_id": 1,
+          "pos": [
+            4,
+            5
+          ],
+          "type": "PERSON",
+          "token_index": [
+            22
+          ],
+          "preceding_text": "white house says president",
+          "following_text": "has been briefed about conn . school shootings .",
+          "full_sentence": "white house says president Obama has been briefed about conn . school shootings .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "white house says president",
+          "mention": "Obama",
+          "context_right": "has been briefed about conn . school shootings .",
+          "wikipedia_id": 534366,
+          "entity_name": "Barack Obama",
+          "score": 9.787375450134277,
+          "url": "https://en.wikipedia.org/wiki?curid=534366",
+          "wikidata_id": "Q76"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "SHShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

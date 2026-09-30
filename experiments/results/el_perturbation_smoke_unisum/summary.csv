@@ -1,0 +1,3 @@
+dataset,drop_ratio,n_repeats,seeds,pearson_mean,pearson_std,spearman_mean,spearman_std,n_used_mean,n_used_std,n_success_entities_mean,n_success_entities_std,n_dropped_entities_mean,n_dropped_entities_std,n_mention_entity_removed_mean,n_mention_entity_removed_std,n_entity_entity_removed_mean,n_entity_entity_removed_std
+UniSumEval,0.0,1,[42],0.9158842704343787,0.0,1.0,0.0,3.0,0.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+UniSumEval,0.5,1,[42],0.921530517744134,0.0,1.0,0.0,3.0,0.0,15.0,0.0,8.0,0.0,9.0,0.0,0.0,0.0

@@ -1,0 +1,52 @@
+=== Direct-LLM ZS ===
+Decide if the following summary is consistent with the corresponding article. Note that consistency means all information in the summary is supported by the article.
+Article: {article}
+Summary: {summary}
+Answer (yes or no):
+
+=== Direct-LLM Star ===
+Score the following news summarization given the corresponding news with respect to consistency with one to five stars, where one star means "inconsistency" and five stars means "perfect consistency". Note that consistency measures whether the facts in the summary are consistent with the facts in the original article. Consider whether the summary does reproduce all facts accurately and does not make up untrue information.
+Article: {article}
+Summary: {summary}
+Stars:
+
+=== KP-LLM Extractor ===
+Extract up to {max_keyphrases} salient factual keyphrases from the summary.
+Focus on entities, events, actions, dates, locations, numbers, quantities,
+causal relations, and other phrases that carry factual information.
+Return only the keyphrases separated by " | ". Do not explain.
+
+Summary:
+{generated_summary}
+
+Keyphrases:
+
+=== KP-LLM Checker System ===
+You are a factual consistency evaluator. Determine whether the factual
+information associated with a specified keyphrase in a summary sentence is
+supported by the source document. Use only the source document. Do not rely on
+outside knowledge. Distinguish lack of evidence from explicit contradiction.
+Return valid JSON only.
+
+=== KP-LLM Checker User ===
+SOURCE DOCUMENT:
+{source_document}
+
+SUMMARY SENTENCE:
+{containing_summary_sentence}
+
+KEYPHRASE TO CHECK:
+{keyphrase}
+
+Classify the factual information associated with the keyphrase as exactly one
+of the following:
+- SUPPORTED: it can be inferred from the source document;
+- CONTRADICTED: the source document provides conflicting information;
+- NOT_ENOUGH_INFORMATION: the source document does not provide enough evidence.
+
+Return this JSON object:
+{{
+  "label": "SUPPORTED | CONTRADICTED | NOT_ENOUGH_INFORMATION",
+  "evidence": "a short source excerpt or an empty string",
+  "reason": "a concise explanation"
+}}

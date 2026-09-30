@@ -1,0 +1,2477 @@
+{
+  "doc_name": "Matthew",
+  "doc_id": "Matthew",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Matthew",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "Matthew",
+    "text": "4 RT USER: Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew’s rampage: By Pierre Richard Luxam South Florida Collecting Donations To Help Hurricane-Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life-and-Death Situation for Haiti, Relief Workers Say RT USER BREAKING: The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew: Dire warning of possible massive damage MATTHEW: Clearwater nonprofit donates hurricane relief donations to Haiti: A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew.",
+    "sents": [
+      [
+        "4",
+        "RT",
+        "USER",
+        ":"
+      ],
+      [
+        "Sending",
+        "my",
+        "prayers",
+        "and",
+        "thoughts",
+        "to",
+        "the",
+        "people",
+        "of",
+        "Haiti",
+        "and",
+        "Cuba",
+        "and",
+        "to",
+        "those",
+        "in",
+        "the",
+        "southeast",
+        "preparing",
+        "for",
+        "Hurricane",
+        "Colorado",
+        "News",
+        "Haiti",
+        "starting",
+        "to",
+        "gauge",
+        "full",
+        "damage",
+        "from",
+        "Hurricane",
+        "Matthew",
+        "’s",
+        "rampage",
+        ":"
+      ],
+      [
+        "By",
+        "Pierre",
+        "Richard",
+        "Luxam"
+      ],
+      [
+        "South",
+        "Florida",
+        "Collecting",
+        "Donations",
+        "To",
+        "Help",
+        "Hurricane",
+        "-",
+        "Battered",
+        "Haiti",
+        "-",
+        "NBC",
+        "6",
+        "South",
+        "Florida",
+        "-",
+        "Hurricane",
+        "Matthew",
+        "Possible",
+        "Life",
+        "-",
+        "and",
+        "-",
+        "Death",
+        "Situation",
+        "for",
+        "Haiti",
+        ",",
+        "Relief",
+        "Workers",
+        "Say",
+        "RT",
+        "USER",
+        "BREAKING"
+      ],
+      [
+        ":"
+      ],
+      [
+        "The",
+        "Haiti",
+        "embassy",
+        "has",
+        "reported",
+        "5",
+        "deaths",
+        "from",
+        "the",
+        "Hurricane",
+        "Matthew",
+        "Hurricane",
+        "Matthew",
+        ":",
+        "Dire",
+        "warning",
+        "of",
+        "possible",
+        "massive",
+        "damage"
+      ],
+      [
+        "MATTHEW",
+        ":"
+      ],
+      [
+        "Clearwater",
+        "nonprofit",
+        "donates",
+        "hurricane",
+        "relief",
+        "donations",
+        "to",
+        "Haiti",
+        ":"
+      ],
+      [
+        "A",
+        "Clearwater",
+        "nonprofit",
+        "is",
+        "doing",
+        "what",
+        "it",
+        "Lets",
+        "all",
+        "get",
+        "together",
+        "to",
+        "help",
+        "Haiti",
+        "after",
+        "HurricaneMatthew",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Haiti",
+        "sent_id": 1,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          13
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of",
+        "following_text": "and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Cuba",
+        "sent_id": 1,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "GPE",
+        "token_index": [
+          15
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and",
+        "following_text": "and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Hurricane Colorado News",
+        "sent_id": 1,
+        "pos": [
+          20,
+          23
+        ],
+        "type": "EVENT",
+        "token_index": [
+          24,
+          25,
+          26
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for",
+        "following_text": "Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Haiti",
+        "sent_id": 1,
+        "pos": [
+          23,
+          24
+        ],
+        "type": "GPE",
+        "token_index": [
+          27
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News",
+        "following_text": "starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Hurricane Matthew",
+        "sent_id": 1,
+        "pos": [
+          30,
+          32
+        ],
+        "type": "EVENT",
+        "token_index": [
+          34,
+          35
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from",
+        "following_text": "’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "Pierre Richard Luxam",
+        "sent_id": 2,
+        "pos": [
+          1,
+          4
+        ],
+        "type": "PERSON",
+        "token_index": [
+          40,
+          41,
+          42
+        ],
+        "preceding_text": "By",
+        "following_text": "",
+        "full_sentence": "By Pierre Richard Luxam",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "South Florida",
+        "sent_id": 3,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          43,
+          44
+        ],
+        "preceding_text": "",
+        "following_text": "Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Haiti",
+        "sent_id": 3,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          52
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered",
+        "following_text": "- NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "NBC 6",
+        "sent_id": 3,
+        "pos": [
+          11,
+          13
+        ],
+        "type": "ORG",
+        "token_index": [
+          54,
+          55
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti -",
+        "following_text": "South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "Florida",
+        "sent_id": 3,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          57
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South",
+        "following_text": "- Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Hurricane Matthew",
+        "sent_id": 3,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "EVENT",
+        "token_index": [
+          59,
+          60
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida -",
+        "following_text": "Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "Haiti",
+        "sent_id": 3,
+        "pos": [
+          26,
+          27
+        ],
+        "type": "GPE",
+        "token_index": [
+          69
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for",
+        "following_text": ", Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "Haiti",
+        "sent_id": 5,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          79
+        ],
+        "preceding_text": "The",
+        "following_text": "embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 13,
+        "name": "5",
+        "sent_id": 5,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          83
+        ],
+        "preceding_text": "The Haiti embassy has reported",
+        "following_text": "deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 14,
+        "name": "Hurricane Matthew",
+        "sent_id": 5,
+        "pos": [
+          9,
+          11
+        ],
+        "type": "EVENT",
+        "token_index": [
+          87,
+          88
+        ],
+        "preceding_text": "The Haiti embassy has reported 5 deaths from the",
+        "following_text": "Hurricane Matthew : Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 15,
+        "name": "Hurricane Matthew",
+        "sent_id": 5,
+        "pos": [
+          11,
+          13
+        ],
+        "type": "EVENT",
+        "token_index": [
+          89,
+          90
+        ],
+        "preceding_text": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew",
+        "following_text": ": Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 16,
+        "name": "MATTHEW",
+        "sent_id": 6,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          98
+        ],
+        "preceding_text": "",
+        "following_text": ":",
+        "full_sentence": "MATTHEW :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 17,
+        "name": "Clearwater",
+        "sent_id": 7,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          100
+        ],
+        "preceding_text": "",
+        "following_text": "nonprofit donates hurricane relief donations to Haiti :",
+        "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 18,
+        "name": "Haiti",
+        "sent_id": 7,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          107
+        ],
+        "preceding_text": "Clearwater nonprofit donates hurricane relief donations to",
+        "following_text": ":",
+        "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 19,
+        "name": "Clearwater",
+        "sent_id": 8,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          110
+        ],
+        "preceding_text": "A",
+        "following_text": "nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 20,
+        "name": "Haiti",
+        "sent_id": 8,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          122
+        ],
+        "preceding_text": "A Clearwater nonprofit is doing what it Lets all get together to help",
+        "following_text": "after HurricaneMatthew .",
+        "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Matthew",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "4",
+        "t_idx": 0,
+        "r": "nummod"
+      },
+      {
+        "title": "Matthew",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "RT",
+        "t_idx": 1,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "USER",
+        "h_idx": 2,
+        "child": "USER",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "USER",
+        "h_idx": 2,
+        "child": ":",
+        "t_idx": 3,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Sending",
+        "h_idx": 4,
+        "child": "Sending",
+        "t_idx": 4,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "prayers",
+        "h_idx": 6,
+        "child": "my",
+        "t_idx": 5,
+        "r": "poss"
+      },
+      {
+        "title": "Matthew",
+        "head": "Sending",
+        "h_idx": 4,
+        "child": "prayers",
+        "t_idx": 6,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "prayers",
+        "h_idx": 6,
+        "child": "and",
+        "t_idx": 7,
+        "r": "cc"
+      },
+      {
+        "title": "Matthew",
+        "head": "prayers",
+        "h_idx": 6,
+        "child": "thoughts",
+        "t_idx": 8,
+        "r": "conj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Sending",
+        "h_idx": 4,
+        "child": "to",
+        "t_idx": 9,
+        "r": "dative"
+      },
+      {
+        "title": "Matthew",
+        "head": "people",
+        "h_idx": 11,
+        "child": "the",
+        "t_idx": 10,
+        "r": "det"
+      },
+      {
+        "title": "Matthew",
+        "head": "to",
+        "h_idx": 9,
+        "child": "people",
+        "t_idx": 11,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "people",
+        "h_idx": 11,
+        "child": "of",
+        "t_idx": 12,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "of",
+        "h_idx": 12,
+        "child": "Haiti",
+        "t_idx": 13,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Haiti",
+        "h_idx": 13,
+        "child": "and",
+        "t_idx": 14,
+        "r": "cc"
+      },
+      {
+        "title": "Matthew",
+        "head": "Haiti",
+        "h_idx": 13,
+        "child": "Cuba",
+        "t_idx": 15,
+        "r": "conj"
+      },
+      {
+        "title": "Matthew",
+        "head": "to",
+        "h_idx": 9,
+        "child": "and",
+        "t_idx": 16,
+        "r": "cc"
+      },
+      {
+        "title": "Matthew",
+        "head": "to",
+        "h_idx": 9,
+        "child": "to",
+        "t_idx": 17,
+        "r": "conj"
+      },
+      {
+        "title": "Matthew",
+        "head": "to",
+        "h_idx": 17,
+        "child": "those",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "those",
+        "h_idx": 18,
+        "child": "in",
+        "t_idx": 19,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "southeast",
+        "h_idx": 21,
+        "child": "the",
+        "t_idx": 20,
+        "r": "det"
+      },
+      {
+        "title": "Matthew",
+        "head": "in",
+        "h_idx": 19,
+        "child": "southeast",
+        "t_idx": 21,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "southeast",
+        "h_idx": 21,
+        "child": "preparing",
+        "t_idx": 22,
+        "r": "acl"
+      },
+      {
+        "title": "Matthew",
+        "head": "preparing",
+        "h_idx": 22,
+        "child": "for",
+        "t_idx": 23,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "News",
+        "h_idx": 26,
+        "child": "Hurricane",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "News",
+        "h_idx": 26,
+        "child": "Colorado",
+        "t_idx": 25,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "for",
+        "h_idx": 23,
+        "child": "News",
+        "t_idx": 26,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "starting",
+        "h_idx": 28,
+        "child": "Haiti",
+        "t_idx": 27,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "those",
+        "h_idx": 18,
+        "child": "starting",
+        "t_idx": 28,
+        "r": "acl"
+      },
+      {
+        "title": "Matthew",
+        "head": "gauge",
+        "h_idx": 30,
+        "child": "to",
+        "t_idx": 29,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "starting",
+        "h_idx": 28,
+        "child": "gauge",
+        "t_idx": 30,
+        "r": "xcomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "damage",
+        "h_idx": 32,
+        "child": "full",
+        "t_idx": 31,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "gauge",
+        "h_idx": 30,
+        "child": "damage",
+        "t_idx": 32,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "damage",
+        "h_idx": 32,
+        "child": "from",
+        "t_idx": 33,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 35,
+        "child": "Hurricane",
+        "t_idx": 34,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "rampage",
+        "h_idx": 37,
+        "child": "Matthew",
+        "t_idx": 35,
+        "r": "poss"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 35,
+        "child": "’s",
+        "t_idx": 36,
+        "r": "case"
+      },
+      {
+        "title": "Matthew",
+        "head": "from",
+        "h_idx": 33,
+        "child": "rampage",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Sending",
+        "h_idx": 4,
+        "child": ":",
+        "t_idx": 38,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "By",
+        "h_idx": 39,
+        "child": "By",
+        "t_idx": 39,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "Luxam",
+        "h_idx": 42,
+        "child": "Pierre",
+        "t_idx": 40,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "Luxam",
+        "h_idx": 42,
+        "child": "Richard",
+        "t_idx": 41,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "By",
+        "h_idx": 39,
+        "child": "Luxam",
+        "t_idx": 42,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Florida",
+        "h_idx": 44,
+        "child": "South",
+        "t_idx": 43,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "Florida",
+        "t_idx": 44,
+        "r": "npadvmod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Say",
+        "h_idx": 73,
+        "child": "Collecting",
+        "t_idx": 45,
+        "r": "ccomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "Donations",
+        "t_idx": 46,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Help",
+        "h_idx": 48,
+        "child": "To",
+        "t_idx": 47,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "Help",
+        "t_idx": 48,
+        "r": "advcl"
+      },
+      {
+        "title": "Matthew",
+        "head": "Battered",
+        "h_idx": 51,
+        "child": "Hurricane",
+        "t_idx": 49,
+        "r": "npadvmod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Battered",
+        "h_idx": 51,
+        "child": "-",
+        "t_idx": 50,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Haiti",
+        "h_idx": 52,
+        "child": "Battered",
+        "t_idx": 51,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Help",
+        "h_idx": 48,
+        "child": "Haiti",
+        "t_idx": 52,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "-",
+        "t_idx": 53,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "NBC",
+        "t_idx": 54,
+        "r": "dep"
+      },
+      {
+        "title": "Matthew",
+        "head": "NBC",
+        "h_idx": 54,
+        "child": "6",
+        "t_idx": 55,
+        "r": "nummod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Florida",
+        "h_idx": 57,
+        "child": "South",
+        "t_idx": 56,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "NBC",
+        "h_idx": 54,
+        "child": "Florida",
+        "t_idx": 57,
+        "r": "appos"
+      },
+      {
+        "title": "Matthew",
+        "head": "NBC",
+        "h_idx": 54,
+        "child": "-",
+        "t_idx": 58,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 60,
+        "child": "Hurricane",
+        "t_idx": 59,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "NBC",
+        "h_idx": 54,
+        "child": "Matthew",
+        "t_idx": 60,
+        "r": "appos"
+      },
+      {
+        "title": "Matthew",
+        "head": "Situation",
+        "h_idx": 67,
+        "child": "Possible",
+        "t_idx": 61,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Situation",
+        "h_idx": 67,
+        "child": "Life",
+        "t_idx": 62,
+        "r": "nmod"
+      },
+      {
+        "title": "Matthew",
+        "head": "Life",
+        "h_idx": 62,
+        "child": "-",
+        "t_idx": 63,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Life",
+        "h_idx": 62,
+        "child": "and",
+        "t_idx": 64,
+        "r": "cc"
+      },
+      {
+        "title": "Matthew",
+        "head": "Death",
+        "h_idx": 66,
+        "child": "-",
+        "t_idx": 65,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Life",
+        "h_idx": 62,
+        "child": "Death",
+        "t_idx": 66,
+        "r": "conj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Collecting",
+        "h_idx": 45,
+        "child": "Situation",
+        "t_idx": 67,
+        "r": "dep"
+      },
+      {
+        "title": "Matthew",
+        "head": "Situation",
+        "h_idx": 67,
+        "child": "for",
+        "t_idx": 68,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "for",
+        "h_idx": 68,
+        "child": "Haiti",
+        "t_idx": 69,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Say",
+        "h_idx": 73,
+        "child": ",",
+        "t_idx": 70,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "Workers",
+        "h_idx": 72,
+        "child": "Relief",
+        "t_idx": 71,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "Say",
+        "h_idx": 73,
+        "child": "Workers",
+        "t_idx": 72,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Say",
+        "h_idx": 73,
+        "child": "Say",
+        "t_idx": 73,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "USER",
+        "h_idx": 75,
+        "child": "RT",
+        "t_idx": 74,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "BREAKING",
+        "h_idx": 76,
+        "child": "USER",
+        "t_idx": 75,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "Say",
+        "h_idx": 73,
+        "child": "BREAKING",
+        "t_idx": 76,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": ":",
+        "h_idx": 77,
+        "child": ":",
+        "t_idx": 77,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "embassy",
+        "h_idx": 80,
+        "child": "The",
+        "t_idx": 78,
+        "r": "det"
+      },
+      {
+        "title": "Matthew",
+        "head": "embassy",
+        "h_idx": 80,
+        "child": "Haiti",
+        "t_idx": 79,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "embassy",
+        "t_idx": 80,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "has",
+        "t_idx": 81,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "reported",
+        "t_idx": 82,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "deaths",
+        "h_idx": 84,
+        "child": "5",
+        "t_idx": 83,
+        "r": "nummod"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "deaths",
+        "t_idx": 84,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "deaths",
+        "h_idx": 84,
+        "child": "from",
+        "t_idx": 85,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 88,
+        "child": "the",
+        "t_idx": 86,
+        "r": "det"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 88,
+        "child": "Hurricane",
+        "t_idx": 87,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "from",
+        "h_idx": 85,
+        "child": "Matthew",
+        "t_idx": 88,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "Matthew",
+        "h_idx": 90,
+        "child": "Hurricane",
+        "t_idx": 89,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "Matthew",
+        "t_idx": 90,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": ":",
+        "t_idx": 91,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "warning",
+        "h_idx": 93,
+        "child": "Dire",
+        "t_idx": 92,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "reported",
+        "h_idx": 82,
+        "child": "warning",
+        "t_idx": 93,
+        "r": "dep"
+      },
+      {
+        "title": "Matthew",
+        "head": "warning",
+        "h_idx": 93,
+        "child": "of",
+        "t_idx": 94,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "damage",
+        "h_idx": 97,
+        "child": "possible",
+        "t_idx": 95,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "damage",
+        "h_idx": 97,
+        "child": "massive",
+        "t_idx": 96,
+        "r": "amod"
+      },
+      {
+        "title": "Matthew",
+        "head": "of",
+        "h_idx": 94,
+        "child": "damage",
+        "t_idx": 97,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "MATTHEW",
+        "h_idx": 98,
+        "child": "MATTHEW",
+        "t_idx": 98,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "MATTHEW",
+        "h_idx": 98,
+        "child": ":",
+        "t_idx": 99,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "nonprofit",
+        "h_idx": 101,
+        "child": "Clearwater",
+        "t_idx": 100,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "donates",
+        "h_idx": 102,
+        "child": "nonprofit",
+        "t_idx": 101,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "donates",
+        "h_idx": 102,
+        "child": "donates",
+        "t_idx": 102,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "relief",
+        "h_idx": 104,
+        "child": "hurricane",
+        "t_idx": 103,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "donations",
+        "h_idx": 105,
+        "child": "relief",
+        "t_idx": 104,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "donates",
+        "h_idx": 102,
+        "child": "donations",
+        "t_idx": 105,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "donates",
+        "h_idx": 102,
+        "child": "to",
+        "t_idx": 106,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "to",
+        "h_idx": 106,
+        "child": "Haiti",
+        "t_idx": 107,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "donates",
+        "h_idx": 102,
+        "child": ":",
+        "t_idx": 108,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "nonprofit",
+        "h_idx": 111,
+        "child": "A",
+        "t_idx": 109,
+        "r": "det"
+      },
+      {
+        "title": "Matthew",
+        "head": "nonprofit",
+        "h_idx": 111,
+        "child": "Clearwater",
+        "t_idx": 110,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "doing",
+        "h_idx": 113,
+        "child": "nonprofit",
+        "t_idx": 111,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "doing",
+        "h_idx": 113,
+        "child": "is",
+        "t_idx": 112,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "doing",
+        "h_idx": 113,
+        "child": "doing",
+        "t_idx": 113,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "Lets",
+        "h_idx": 116,
+        "child": "what",
+        "t_idx": 114,
+        "r": "dep"
+      },
+      {
+        "title": "Matthew",
+        "head": "Lets",
+        "h_idx": 116,
+        "child": "it",
+        "t_idx": 115,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "doing",
+        "h_idx": 113,
+        "child": "Lets",
+        "t_idx": 116,
+        "r": "ccomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "get",
+        "h_idx": 118,
+        "child": "all",
+        "t_idx": 117,
+        "r": "dep"
+      },
+      {
+        "title": "Matthew",
+        "head": "Lets",
+        "h_idx": 116,
+        "child": "get",
+        "t_idx": 118,
+        "r": "ccomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "get",
+        "h_idx": 118,
+        "child": "together",
+        "t_idx": 119,
+        "r": "advmod"
+      },
+      {
+        "title": "Matthew",
+        "head": "help",
+        "h_idx": 121,
+        "child": "to",
+        "t_idx": 120,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "get",
+        "h_idx": 118,
+        "child": "help",
+        "t_idx": 121,
+        "r": "advcl"
+      },
+      {
+        "title": "Matthew",
+        "head": "help",
+        "h_idx": 121,
+        "child": "Haiti",
+        "t_idx": 122,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "help",
+        "h_idx": 121,
+        "child": "after",
+        "t_idx": 123,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "after",
+        "h_idx": 123,
+        "child": "HurricaneMatthew",
+        "t_idx": 124,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "doing",
+        "h_idx": 113,
+        "child": ".",
+        "t_idx": 125,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "Haiti",
+        "sent_id": 1,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          13
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of",
+        "following_text": "and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "sending my prayers and thoughts to the people of",
+        "mention": "Haiti",
+        "context_right": "and cuba and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from hurricane matthew ’s rampage :",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 9.503402709960938,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 1,
+        "name": "Cuba",
+        "sent_id": 1,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "GPE",
+        "token_index": [
+          15
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and",
+        "following_text": "and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "sending my prayers and thoughts to the people of haiti and",
+        "mention": "Cuba",
+        "context_right": "and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from hurricane matthew ’s rampage :",
+        "wikipedia_id": 5042481,
+        "entity_name": "Cuba",
+        "score": 7.916836261749268,
+        "url": "https://en.wikipedia.org/wiki?curid=5042481",
+        "wikidata_id": "Q241"
+      },
+      {
+        "mention_id": 3,
+        "name": "Haiti",
+        "sent_id": 1,
+        "pos": [
+          23,
+          24
+        ],
+        "type": "GPE",
+        "token_index": [
+          27
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News",
+        "following_text": "starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "sending my prayers and thoughts to the people of haiti and cuba and to those in the southeast preparing for hurricane colorado news",
+        "mention": "Haiti",
+        "context_right": "starting to gauge full damage from hurricane matthew ’s rampage :",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 5.013373851776123,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 4,
+        "name": "Hurricane Matthew",
+        "sent_id": 1,
+        "pos": [
+          30,
+          32
+        ],
+        "type": "EVENT",
+        "token_index": [
+          34,
+          35
+        ],
+        "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from",
+        "following_text": "’s rampage :",
+        "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "sending my prayers and thoughts to the people of haiti and cuba and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from",
+        "mention": "Hurricane Matthew",
+        "context_right": "’s rampage :",
+        "wikipedia_id": 51730127,
+        "entity_name": "Hurricane Matthew",
+        "score": 11.894644737243652,
+        "url": "https://en.wikipedia.org/wiki?curid=51730127",
+        "wikidata_id": "Q27058656"
+      },
+      {
+        "mention_id": 6,
+        "name": "South Florida",
+        "sent_id": 3,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          43,
+          44
+        ],
+        "preceding_text": "",
+        "following_text": "Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "",
+        "mention": "South Florida",
+        "context_right": "collecting donations to help hurricane - battered haiti - nbc 6 south florida - hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+        "wikipedia_id": 996451,
+        "entity_name": "South Florida",
+        "score": 9.504236221313477,
+        "url": "https://en.wikipedia.org/wiki?curid=996451",
+        "wikidata_id": "Q7567226"
+      },
+      {
+        "mention_id": 7,
+        "name": "Haiti",
+        "sent_id": 3,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          52
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered",
+        "following_text": "- NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "south florida collecting donations to help hurricane - battered",
+        "mention": "Haiti",
+        "context_right": "- nbc 6 south florida - hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 5.244699001312256,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 9,
+        "name": "Florida",
+        "sent_id": 3,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          57
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South",
+        "following_text": "- Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 9,
+        "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south",
+        "mention": "Florida",
+        "context_right": "- hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+        "wikipedia_id": 18933066,
+        "entity_name": "Florida",
+        "score": 8.189013481140137,
+        "url": "https://en.wikipedia.org/wiki?curid=18933066",
+        "wikidata_id": "Q812"
+      },
+      {
+        "mention_id": 10,
+        "name": "Hurricane Matthew",
+        "sent_id": 3,
+        "pos": [
+          16,
+          18
+        ],
+        "type": "EVENT",
+        "token_index": [
+          59,
+          60
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida -",
+        "following_text": "Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 10,
+        "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south florida -",
+        "mention": "Hurricane Matthew",
+        "context_right": "possible life - and - death situation for haiti , relief workers say rt user breaking",
+        "wikipedia_id": 51730127,
+        "entity_name": "Hurricane Matthew",
+        "score": 11.624043464660645,
+        "url": "https://en.wikipedia.org/wiki?curid=51730127",
+        "wikidata_id": "Q27058656"
+      },
+      {
+        "mention_id": 11,
+        "name": "Haiti",
+        "sent_id": 3,
+        "pos": [
+          26,
+          27
+        ],
+        "type": "GPE",
+        "token_index": [
+          69
+        ],
+        "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for",
+        "following_text": ", Relief Workers Say RT USER BREAKING",
+        "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 11,
+        "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south florida - hurricane matthew possible life - and - death situation for",
+        "mention": "Haiti",
+        "context_right": ", relief workers say rt user breaking",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 5.419290065765381,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 12,
+        "name": "Haiti",
+        "sent_id": 5,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          79
+        ],
+        "preceding_text": "The",
+        "following_text": "embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 12,
+        "context_left": "the",
+        "mention": "Haiti",
+        "context_right": "embassy has reported 5 deaths from the hurricane matthew hurricane matthew : dire warning of possible massive damage",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 8.000452041625977,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 14,
+        "name": "Hurricane Matthew",
+        "sent_id": 5,
+        "pos": [
+          9,
+          11
+        ],
+        "type": "EVENT",
+        "token_index": [
+          87,
+          88
+        ],
+        "preceding_text": "The Haiti embassy has reported 5 deaths from the",
+        "following_text": "Hurricane Matthew : Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 14,
+        "context_left": "the haiti embassy has reported 5 deaths from the",
+        "mention": "Hurricane Matthew",
+        "context_right": "hurricane matthew : dire warning of possible massive damage",
+        "wikipedia_id": 51730127,
+        "entity_name": "Hurricane Matthew",
+        "score": 12.154732704162598,
+        "url": "https://en.wikipedia.org/wiki?curid=51730127",
+        "wikidata_id": "Q27058656"
+      },
+      {
+        "mention_id": 15,
+        "name": "Hurricane Matthew",
+        "sent_id": 5,
+        "pos": [
+          11,
+          13
+        ],
+        "type": "EVENT",
+        "token_index": [
+          89,
+          90
+        ],
+        "preceding_text": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew",
+        "following_text": ": Dire warning of possible massive damage",
+        "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 15,
+        "context_left": "the haiti embassy has reported 5 deaths from the hurricane matthew",
+        "mention": "Hurricane Matthew",
+        "context_right": ": dire warning of possible massive damage",
+        "wikipedia_id": 51730127,
+        "entity_name": "Hurricane Matthew",
+        "score": 12.154265403747559,
+        "url": "https://en.wikipedia.org/wiki?curid=51730127",
+        "wikidata_id": "Q27058656"
+      },
+      {
+        "mention_id": 17,
+        "name": "Clearwater",
+        "sent_id": 7,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          100
+        ],
+        "preceding_text": "",
+        "following_text": "nonprofit donates hurricane relief donations to Haiti :",
+        "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 17,
+        "context_left": "",
+        "mention": "Clearwater",
+        "context_right": "nonprofit donates hurricane relief donations to haiti :",
+        "wikipedia_id": 109665,
+        "entity_name": "Clearwater, Florida",
+        "score": 0.694041907787323,
+        "url": "https://en.wikipedia.org/wiki?curid=109665",
+        "wikidata_id": "Q244146"
+      },
+      {
+        "mention_id": 18,
+        "name": "Haiti",
+        "sent_id": 7,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          107
+        ],
+        "preceding_text": "Clearwater nonprofit donates hurricane relief donations to",
+        "following_text": ":",
+        "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 18,
+        "context_left": "clearwater nonprofit donates hurricane relief donations to",
+        "mention": "Haiti",
+        "context_right": ":",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 8.487763404846191,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 19,
+        "name": "Clearwater",
+        "sent_id": 8,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          110
+        ],
+        "preceding_text": "A",
+        "following_text": "nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 19,
+        "context_left": "a",
+        "mention": "Clearwater",
+        "context_right": "nonprofit is doing what it lets all get together to help haiti after hurricanematthew .",
+        "wikipedia_id": 109665,
+        "entity_name": "Clearwater, Florida",
+        "score": 3.378652334213257,
+        "url": "https://en.wikipedia.org/wiki?curid=109665",
+        "wikidata_id": "Q244146"
+      },
+      {
+        "mention_id": 20,
+        "name": "Haiti",
+        "sent_id": 8,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "GPE",
+        "token_index": [
+          122
+        ],
+        "preceding_text": "A Clearwater nonprofit is doing what it Lets all get together to help",
+        "following_text": "after HurricaneMatthew .",
+        "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 20,
+        "context_left": "a clearwater nonprofit is doing what it lets all get together to help",
+        "mention": "Haiti",
+        "context_right": "after hurricanematthew .",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 4.609415531158447,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "Haiti",
+          "sent_id": 1,
+          "pos": [
+            9,
+            10
+          ],
+          "type": "GPE",
+          "token_index": [
+            13
+          ],
+          "preceding_text": "Sending my prayers and thoughts to the people of",
+          "following_text": "and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "sending my prayers and thoughts to the people of",
+          "mention": "Haiti",
+          "context_right": "and cuba and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from hurricane matthew ’s rampage :",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 9.503402709960938,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 3,
+          "name": "Haiti",
+          "sent_id": 1,
+          "pos": [
+            23,
+            24
+          ],
+          "type": "GPE",
+          "token_index": [
+            27
+          ],
+          "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News",
+          "following_text": "starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "sending my prayers and thoughts to the people of haiti and cuba and to those in the southeast preparing for hurricane colorado news",
+          "mention": "Haiti",
+          "context_right": "starting to gauge full damage from hurricane matthew ’s rampage :",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 5.013373851776123,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 7,
+          "name": "Haiti",
+          "sent_id": 3,
+          "pos": [
+            9,
+            10
+          ],
+          "type": "GPE",
+          "token_index": [
+            52
+          ],
+          "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered",
+          "following_text": "- NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "south florida collecting donations to help hurricane - battered",
+          "mention": "Haiti",
+          "context_right": "- nbc 6 south florida - hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 5.244699001312256,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 11,
+          "name": "Haiti",
+          "sent_id": 3,
+          "pos": [
+            26,
+            27
+          ],
+          "type": "GPE",
+          "token_index": [
+            69
+          ],
+          "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for",
+          "following_text": ", Relief Workers Say RT USER BREAKING",
+          "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 11,
+          "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south florida - hurricane matthew possible life - and - death situation for",
+          "mention": "Haiti",
+          "context_right": ", relief workers say rt user breaking",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 5.419290065765381,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 12,
+          "name": "Haiti",
+          "sent_id": 5,
+          "pos": [
+            1,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            79
+          ],
+          "preceding_text": "The",
+          "following_text": "embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+          "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 12,
+          "context_left": "the",
+          "mention": "Haiti",
+          "context_right": "embassy has reported 5 deaths from the hurricane matthew hurricane matthew : dire warning of possible massive damage",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 8.000452041625977,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 18,
+          "name": "Haiti",
+          "sent_id": 7,
+          "pos": [
+            7,
+            8
+          ],
+          "type": "GPE",
+          "token_index": [
+            107
+          ],
+          "preceding_text": "Clearwater nonprofit donates hurricane relief donations to",
+          "following_text": ":",
+          "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 18,
+          "context_left": "clearwater nonprofit donates hurricane relief donations to",
+          "mention": "Haiti",
+          "context_right": ":",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 8.487763404846191,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        },
+        {
+          "mention_id": 20,
+          "name": "Haiti",
+          "sent_id": 8,
+          "pos": [
+            13,
+            14
+          ],
+          "type": "GPE",
+          "token_index": [
+            122
+          ],
+          "preceding_text": "A Clearwater nonprofit is doing what it Lets all get together to help",
+          "following_text": "after HurricaneMatthew .",
+          "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 20,
+          "context_left": "a clearwater nonprofit is doing what it lets all get together to help",
+          "mention": "Haiti",
+          "context_right": "after hurricanematthew .",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 4.609415531158447,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        }
+      ],
+      [
+        {
+          "mention_id": 1,
+          "name": "Cuba",
+          "sent_id": 1,
+          "pos": [
+            11,
+            12
+          ],
+          "type": "GPE",
+          "token_index": [
+            15
+          ],
+          "preceding_text": "Sending my prayers and thoughts to the people of Haiti and",
+          "following_text": "and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "sending my prayers and thoughts to the people of haiti and",
+          "mention": "Cuba",
+          "context_right": "and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from hurricane matthew ’s rampage :",
+          "wikipedia_id": 5042481,
+          "entity_name": "Cuba",
+          "score": 7.916836261749268,
+          "url": "https://en.wikipedia.org/wiki?curid=5042481",
+          "wikidata_id": "Q241"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "Hurricane Matthew",
+          "sent_id": 1,
+          "pos": [
+            30,
+            32
+          ],
+          "type": "EVENT",
+          "token_index": [
+            34,
+            35
+          ],
+          "preceding_text": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from",
+          "following_text": "’s rampage :",
+          "full_sentence": "Sending my prayers and thoughts to the people of Haiti and Cuba and to those in the southeast preparing for Hurricane Colorado News Haiti starting to gauge full damage from Hurricane Matthew ’s rampage :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "sending my prayers and thoughts to the people of haiti and cuba and to those in the southeast preparing for hurricane colorado news haiti starting to gauge full damage from",
+          "mention": "Hurricane Matthew",
+          "context_right": "’s rampage :",
+          "wikipedia_id": 51730127,
+          "entity_name": "Hurricane Matthew",
+          "score": 11.894644737243652,
+          "url": "https://en.wikipedia.org/wiki?curid=51730127",
+          "wikidata_id": "Q27058656"
+        },
+        {
+          "mention_id": 10,
+          "name": "Hurricane Matthew",
+          "sent_id": 3,
+          "pos": [
+            16,
+            18
+          ],
+          "type": "EVENT",
+          "token_index": [
+            59,
+            60
+          ],
+          "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida -",
+          "following_text": "Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 10,
+          "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south florida -",
+          "mention": "Hurricane Matthew",
+          "context_right": "possible life - and - death situation for haiti , relief workers say rt user breaking",
+          "wikipedia_id": 51730127,
+          "entity_name": "Hurricane Matthew",
+          "score": 11.624043464660645,
+          "url": "https://en.wikipedia.org/wiki?curid=51730127",
+          "wikidata_id": "Q27058656"
+        },
+        {
+          "mention_id": 14,
+          "name": "Hurricane Matthew",
+          "sent_id": 5,
+          "pos": [
+            9,
+            11
+          ],
+          "type": "EVENT",
+          "token_index": [
+            87,
+            88
+          ],
+          "preceding_text": "The Haiti embassy has reported 5 deaths from the",
+          "following_text": "Hurricane Matthew : Dire warning of possible massive damage",
+          "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 14,
+          "context_left": "the haiti embassy has reported 5 deaths from the",
+          "mention": "Hurricane Matthew",
+          "context_right": "hurricane matthew : dire warning of possible massive damage",
+          "wikipedia_id": 51730127,
+          "entity_name": "Hurricane Matthew",
+          "score": 12.154732704162598,
+          "url": "https://en.wikipedia.org/wiki?curid=51730127",
+          "wikidata_id": "Q27058656"
+        },
+        {
+          "mention_id": 15,
+          "name": "Hurricane Matthew",
+          "sent_id": 5,
+          "pos": [
+            11,
+            13
+          ],
+          "type": "EVENT",
+          "token_index": [
+            89,
+            90
+          ],
+          "preceding_text": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew",
+          "following_text": ": Dire warning of possible massive damage",
+          "full_sentence": "The Haiti embassy has reported 5 deaths from the Hurricane Matthew Hurricane Matthew : Dire warning of possible massive damage",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 15,
+          "context_left": "the haiti embassy has reported 5 deaths from the hurricane matthew",
+          "mention": "Hurricane Matthew",
+          "context_right": ": dire warning of possible massive damage",
+          "wikipedia_id": 51730127,
+          "entity_name": "Hurricane Matthew",
+          "score": 12.154265403747559,
+          "url": "https://en.wikipedia.org/wiki?curid=51730127",
+          "wikidata_id": "Q27058656"
+        }
+      ],
+      [
+        {
+          "mention_id": 6,
+          "name": "South Florida",
+          "sent_id": 3,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            43,
+            44
+          ],
+          "preceding_text": "",
+          "following_text": "Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "",
+          "mention": "South Florida",
+          "context_right": "collecting donations to help hurricane - battered haiti - nbc 6 south florida - hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+          "wikipedia_id": 996451,
+          "entity_name": "South Florida",
+          "score": 9.504236221313477,
+          "url": "https://en.wikipedia.org/wiki?curid=996451",
+          "wikidata_id": "Q7567226"
+        }
+      ],
+      [
+        {
+          "mention_id": 9,
+          "name": "Florida",
+          "sent_id": 3,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            57
+          ],
+          "preceding_text": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South",
+          "following_text": "- Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "full_sentence": "South Florida Collecting Donations To Help Hurricane - Battered Haiti - NBC 6 South Florida - Hurricane Matthew Possible Life - and - Death Situation for Haiti , Relief Workers Say RT USER BREAKING",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 9,
+          "context_left": "south florida collecting donations to help hurricane - battered haiti - nbc 6 south",
+          "mention": "Florida",
+          "context_right": "- hurricane matthew possible life - and - death situation for haiti , relief workers say rt user breaking",
+          "wikipedia_id": 18933066,
+          "entity_name": "Florida",
+          "score": 8.189013481140137,
+          "url": "https://en.wikipedia.org/wiki?curid=18933066",
+          "wikidata_id": "Q812"
+        }
+      ],
+      [
+        {
+          "mention_id": 17,
+          "name": "Clearwater",
+          "sent_id": 7,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            100
+          ],
+          "preceding_text": "",
+          "following_text": "nonprofit donates hurricane relief donations to Haiti :",
+          "full_sentence": "Clearwater nonprofit donates hurricane relief donations to Haiti :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 17,
+          "context_left": "",
+          "mention": "Clearwater",
+          "context_right": "nonprofit donates hurricane relief donations to haiti :",
+          "wikipedia_id": 109665,
+          "entity_name": "Clearwater, Florida",
+          "score": 0.694041907787323,
+          "url": "https://en.wikipedia.org/wiki?curid=109665",
+          "wikidata_id": "Q244146"
+        },
+        {
+          "mention_id": 19,
+          "name": "Clearwater",
+          "sent_id": 8,
+          "pos": [
+            1,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            110
+          ],
+          "preceding_text": "A",
+          "following_text": "nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+          "full_sentence": "A Clearwater nonprofit is doing what it Lets all get together to help Haiti after HurricaneMatthew .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 19,
+          "context_left": "a",
+          "mention": "Clearwater",
+          "context_right": "nonprofit is doing what it lets all get together to help haiti after hurricanematthew .",
+          "wikipedia_id": 109665,
+          "entity_name": "Clearwater, Florida",
+          "score": 3.378652334213257,
+          "url": "https://en.wikipedia.org/wiki?curid=109665",
+          "wikidata_id": "Q244146"
+        }
+      ]
+    ],
+    "ent_relation": []
+  },
+  "humman_summary": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

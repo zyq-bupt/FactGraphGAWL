@@ -1,10 +1,31 @@
-# 忽略编译生成的文件
+# 编译 / 缓存
 *.o
 *.class
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# 忽略日志文件
+# Jupyter / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# 日志与临时产物
 logs/
+experiments/logs/
+experiments/results/**/cache/
+experiments/results/**/tmp_gawl/
+*.log
 
-# 忽略特定文件
+# 原始语料与数据包（体积大，可重新下载或生成）
+experiments/bd2tsumm/test/
+experiments/bd2tsumm/data.zip
+experiments/bd2tsumm/sources_dreeam_result_test.tar.gz
+data/samples/updated_processed_with_factgraph_filled.jsonl
+
+# 敏感 / 本地配置
 secret.txt
+
+# 历史路径残留
 graph_embedding/xsum

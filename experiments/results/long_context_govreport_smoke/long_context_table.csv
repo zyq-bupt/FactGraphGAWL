@@ -1,0 +1,3 @@
+Graph construction,Token coverage (%),Entity nodes,Entity-relation edges,Pearson r,p-value,Time/sample
+Prefix truncation,18.591654247391954,13.0,0.0,,,0.5871822834014893
+Sliding window,100.0,45.0,0.0,,,1.9403129443526268

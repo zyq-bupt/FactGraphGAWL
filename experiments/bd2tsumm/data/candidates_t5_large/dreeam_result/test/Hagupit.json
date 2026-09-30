@@ -1,0 +1,761 @@
+{
+  "doc_name": "Hagupit",
+  "doc_id": "Hagupit",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Hagupit",
+  "system_name": "t5-large",
+  "article": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "Hagupit",
+    "text": "maximum storm surge height is 0.1m in colonia, micronesia. landfall is expected over the eastern Visayas by Saturday PM. at least 100,000 people have fled coastal areas of the philippines ahead of the storm.",
+    "sents": [
+      [
+        "maximum",
+        "storm",
+        "surge",
+        "height",
+        "is",
+        "0.1",
+        "m",
+        "in",
+        "colonia",
+        ",",
+        "micronesia",
+        "."
+      ],
+      [
+        "landfall",
+        "is",
+        "expected",
+        "over",
+        "the",
+        "eastern",
+        "Visayas",
+        "by",
+        "Saturday",
+        "PM",
+        "."
+      ],
+      [
+        "at",
+        "least",
+        "100,000",
+        "people",
+        "have",
+        "fled",
+        "coastal",
+        "areas",
+        "of",
+        "the",
+        "philippines",
+        "ahead",
+        "of",
+        "the",
+        "storm",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "0.1",
+        "sent_id": 0,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          5
+        ],
+        "preceding_text": "maximum storm surge height is",
+        "following_text": "m in colonia , micronesia .",
+        "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "colonia",
+        "sent_id": 0,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          8
+        ],
+        "preceding_text": "maximum storm surge height is 0.1 m in",
+        "following_text": ", micronesia .",
+        "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "micronesia",
+        "sent_id": 0,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          10
+        ],
+        "preceding_text": "maximum storm surge height is 0.1 m in colonia ,",
+        "following_text": ".",
+        "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Visayas",
+        "sent_id": 1,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "LOC",
+        "token_index": [
+          18
+        ],
+        "preceding_text": "landfall is expected over the eastern",
+        "following_text": "by Saturday PM .",
+        "full_sentence": "landfall is expected over the eastern Visayas by Saturday PM .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Saturday PM",
+        "sent_id": 1,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "TIME",
+        "token_index": [
+          20,
+          21
+        ],
+        "preceding_text": "landfall is expected over the eastern Visayas by",
+        "following_text": ".",
+        "full_sentence": "landfall is expected over the eastern Visayas by Saturday PM .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "at least 100,000",
+        "sent_id": 2,
+        "pos": [
+          0,
+          3
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          23,
+          24,
+          25
+        ],
+        "preceding_text": "",
+        "following_text": "people have fled coastal areas of the philippines ahead of the storm .",
+        "full_sentence": "at least 100,000 people have fled coastal areas of the philippines ahead of the storm .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "philippines",
+        "sent_id": 2,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          33
+        ],
+        "preceding_text": "at least 100,000 people have fled coastal areas of the",
+        "following_text": "ahead of the storm .",
+        "full_sentence": "at least 100,000 people have fled coastal areas of the philippines ahead of the storm .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Hagupit",
+        "head": "height",
+        "h_idx": 3,
+        "child": "maximum",
+        "t_idx": 0,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "surge",
+        "h_idx": 2,
+        "child": "storm",
+        "t_idx": 1,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "height",
+        "h_idx": 3,
+        "child": "surge",
+        "t_idx": 2,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "is",
+        "h_idx": 4,
+        "child": "height",
+        "t_idx": 3,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "is",
+        "h_idx": 4,
+        "child": "is",
+        "t_idx": 4,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "m",
+        "h_idx": 6,
+        "child": "0.1",
+        "t_idx": 5,
+        "r": "nummod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "is",
+        "h_idx": 4,
+        "child": "m",
+        "t_idx": 6,
+        "r": "attr"
+      },
+      {
+        "title": "Hagupit",
+        "head": "is",
+        "h_idx": 4,
+        "child": "in",
+        "t_idx": 7,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "in",
+        "h_idx": 7,
+        "child": "colonia",
+        "t_idx": 8,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "colonia",
+        "h_idx": 8,
+        "child": ",",
+        "t_idx": 9,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "colonia",
+        "h_idx": 8,
+        "child": "micronesia",
+        "t_idx": 10,
+        "r": "appos"
+      },
+      {
+        "title": "Hagupit",
+        "head": "is",
+        "h_idx": 4,
+        "child": ".",
+        "t_idx": 11,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": "landfall",
+        "t_idx": 12,
+        "r": "nsubjpass"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": "is",
+        "t_idx": 13,
+        "r": "auxpass"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": "expected",
+        "t_idx": 14,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": "over",
+        "t_idx": 15,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Visayas",
+        "h_idx": 18,
+        "child": "the",
+        "t_idx": 16,
+        "r": "det"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Visayas",
+        "h_idx": 18,
+        "child": "eastern",
+        "t_idx": 17,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "over",
+        "h_idx": 15,
+        "child": "Visayas",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": "by",
+        "t_idx": 19,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "PM",
+        "h_idx": 21,
+        "child": "Saturday",
+        "t_idx": 20,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "by",
+        "h_idx": 19,
+        "child": "PM",
+        "t_idx": 21,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "expected",
+        "h_idx": 14,
+        "child": ".",
+        "t_idx": 22,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "least",
+        "h_idx": 24,
+        "child": "at",
+        "t_idx": 23,
+        "r": "advmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "100,000",
+        "h_idx": 25,
+        "child": "least",
+        "t_idx": 24,
+        "r": "advmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "people",
+        "h_idx": 26,
+        "child": "100,000",
+        "t_idx": 25,
+        "r": "nummod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": "people",
+        "t_idx": 26,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": "have",
+        "t_idx": 27,
+        "r": "aux"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": "fled",
+        "t_idx": 28,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "areas",
+        "h_idx": 30,
+        "child": "coastal",
+        "t_idx": 29,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": "areas",
+        "t_idx": 30,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "areas",
+        "h_idx": 30,
+        "child": "of",
+        "t_idx": 31,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "philippines",
+        "h_idx": 33,
+        "child": "the",
+        "t_idx": 32,
+        "r": "det"
+      },
+      {
+        "title": "Hagupit",
+        "head": "of",
+        "h_idx": 31,
+        "child": "philippines",
+        "t_idx": 33,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": "ahead",
+        "t_idx": 34,
+        "r": "advmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "ahead",
+        "h_idx": 34,
+        "child": "of",
+        "t_idx": 35,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "storm",
+        "h_idx": 37,
+        "child": "the",
+        "t_idx": 36,
+        "r": "det"
+      },
+      {
+        "title": "Hagupit",
+        "head": "of",
+        "h_idx": 35,
+        "child": "storm",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "fled",
+        "h_idx": 28,
+        "child": ".",
+        "t_idx": 38,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 1,
+        "name": "colonia",
+        "sent_id": 0,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          8
+        ],
+        "preceding_text": "maximum storm surge height is 0.1 m in",
+        "following_text": ", micronesia .",
+        "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "maximum storm surge height is 0.1 m in",
+        "mention": "colonia",
+        "context_right": ", micronesia .",
+        "wikipedia_id": 2778566,
+        "entity_name": "Colonia, Yap",
+        "score": 6.317643642425537,
+        "url": "https://en.wikipedia.org/wiki?curid=2778566",
+        "wikidata_id": "Q631152"
+      },
+      {
+        "mention_id": 2,
+        "name": "micronesia",
+        "sent_id": 0,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          10
+        ],
+        "preceding_text": "maximum storm surge height is 0.1 m in colonia ,",
+        "following_text": ".",
+        "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "maximum storm surge height is 0.1 m in colonia ,",
+        "mention": "micronesia",
+        "context_right": ".",
+        "wikipedia_id": 19231,
+        "entity_name": "Micronesia",
+        "score": 9.460768699645996,
+        "url": "https://en.wikipedia.org/wiki?curid=19231",
+        "wikidata_id": "Q3359409"
+      },
+      {
+        "mention_id": 3,
+        "name": "Visayas",
+        "sent_id": 1,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "LOC",
+        "token_index": [
+          18
+        ],
+        "preceding_text": "landfall is expected over the eastern",
+        "following_text": "by Saturday PM .",
+        "full_sentence": "landfall is expected over the eastern Visayas by Saturday PM .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "landfall is expected over the eastern",
+        "mention": "Visayas",
+        "context_right": "by saturday pm .",
+        "wikipedia_id": 72418,
+        "entity_name": "Visayas",
+        "score": 9.361651420593262,
+        "url": "https://en.wikipedia.org/wiki?curid=72418",
+        "wikidata_id": "Q211436"
+      },
+      {
+        "mention_id": 6,
+        "name": "philippines",
+        "sent_id": 2,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          33
+        ],
+        "preceding_text": "at least 100,000 people have fled coastal areas of the",
+        "following_text": "ahead of the storm .",
+        "full_sentence": "at least 100,000 people have fled coastal areas of the philippines ahead of the storm .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "at least 100,000 people have fled coastal areas of the",
+        "mention": "philippines",
+        "context_right": "ahead of the storm .",
+        "wikipedia_id": 23440,
+        "entity_name": "Philippines",
+        "score": 8.86338996887207,
+        "url": "https://en.wikipedia.org/wiki?curid=23440",
+        "wikidata_id": "Q928"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 1,
+          "name": "colonia",
+          "sent_id": 0,
+          "pos": [
+            8,
+            9
+          ],
+          "type": "GPE",
+          "token_index": [
+            8
+          ],
+          "preceding_text": "maximum storm surge height is 0.1 m in",
+          "following_text": ", micronesia .",
+          "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "maximum storm surge height is 0.1 m in",
+          "mention": "colonia",
+          "context_right": ", micronesia .",
+          "wikipedia_id": 2778566,
+          "entity_name": "Colonia, Yap",
+          "score": 6.317643642425537,
+          "url": "https://en.wikipedia.org/wiki?curid=2778566",
+          "wikidata_id": "Q631152"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "micronesia",
+          "sent_id": 0,
+          "pos": [
+            10,
+            11
+          ],
+          "type": "GPE",
+          "token_index": [
+            10
+          ],
+          "preceding_text": "maximum storm surge height is 0.1 m in colonia ,",
+          "following_text": ".",
+          "full_sentence": "maximum storm surge height is 0.1 m in colonia , micronesia .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "maximum storm surge height is 0.1 m in colonia ,",
+          "mention": "micronesia",
+          "context_right": ".",
+          "wikipedia_id": 19231,
+          "entity_name": "Micronesia",
+          "score": 9.460768699645996,
+          "url": "https://en.wikipedia.org/wiki?curid=19231",
+          "wikidata_id": "Q3359409"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "Visayas",
+          "sent_id": 1,
+          "pos": [
+            6,
+            7
+          ],
+          "type": "LOC",
+          "token_index": [
+            18
+          ],
+          "preceding_text": "landfall is expected over the eastern",
+          "following_text": "by Saturday PM .",
+          "full_sentence": "landfall is expected over the eastern Visayas by Saturday PM .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "landfall is expected over the eastern",
+          "mention": "Visayas",
+          "context_right": "by saturday pm .",
+          "wikipedia_id": 72418,
+          "entity_name": "Visayas",
+          "score": 9.361651420593262,
+          "url": "https://en.wikipedia.org/wiki?curid=72418",
+          "wikidata_id": "Q211436"
+        }
+      ],
+      [
+        {
+          "mention_id": 6,
+          "name": "philippines",
+          "sent_id": 2,
+          "pos": [
+            10,
+            11
+          ],
+          "type": "GPE",
+          "token_index": [
+            33
+          ],
+          "preceding_text": "at least 100,000 people have fled coastal areas of the",
+          "following_text": "ahead of the storm .",
+          "full_sentence": "at least 100,000 people have fled coastal areas of the philippines ahead of the storm .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "at least 100,000 people have fled coastal areas of the",
+          "mention": "philippines",
+          "context_right": "ahead of the storm .",
+          "wikipedia_id": 23440,
+          "entity_name": "Philippines",
+          "score": 8.86338996887207,
+          "url": "https://en.wikipedia.org/wiki?curid=23440",
+          "wikidata_id": "Q928"
+        }
+      ]
+    ],
+    "ent_relation": []
+  },
+  "humman_summary": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

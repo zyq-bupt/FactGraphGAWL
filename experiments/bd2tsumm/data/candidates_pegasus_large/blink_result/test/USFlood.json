@@ -1,0 +1,866 @@
+{
+  "doc_name": "USFlood",
+  "doc_id": "USFlood",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "USFlood",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "USFlood",
+    "text": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball The World’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa, Nebraska, South Dakota and several other states,” says this article on.",
+    "sents": [
+      [
+        "Nebraska",
+        "fires",
+        "Tim",
+        "MilesWelcome",
+        "the",
+        "Husker",
+        "fans",
+        "to",
+        "Hoiball"
+      ],
+      [
+        "The",
+        "World",
+        "’s",
+        "Greatest",
+        "Agricultural",
+        "Disaster",
+        "Record",
+        "floods",
+        "devastated",
+        "a",
+        "wide",
+        "swath",
+        "of",
+        "the",
+        "Farm",
+        "Belt",
+        "across",
+        "Iowa",
+        ",",
+        "Nebraska",
+        ",",
+        "South",
+        "Dakota",
+        "and",
+        "several",
+        "other",
+        "states",
+        ",",
+        "”",
+        "says",
+        "this",
+        "article",
+        "on",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Nebraska",
+        "sent_id": 0,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "ORG",
+        "token_index": [
+          0
+        ],
+        "preceding_text": "",
+        "following_text": "fires Tim MilesWelcome the Husker fans to Hoiball",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Tim MilesWelcome",
+        "sent_id": 0,
+        "pos": [
+          2,
+          4
+        ],
+        "type": "PERSON",
+        "token_index": [
+          2,
+          3
+        ],
+        "preceding_text": "Nebraska fires",
+        "following_text": "the Husker fans to Hoiball",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Husker",
+        "sent_id": 0,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "ORG",
+        "token_index": [
+          5
+        ],
+        "preceding_text": "Nebraska fires Tim MilesWelcome the",
+        "following_text": "fans to Hoiball",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Hoiball",
+        "sent_id": 0,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          8
+        ],
+        "preceding_text": "Nebraska fires Tim MilesWelcome the Husker fans to",
+        "following_text": "",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "the Farm Belt",
+        "sent_id": 1,
+        "pos": [
+          13,
+          16
+        ],
+        "type": "LOC",
+        "token_index": [
+          22,
+          23,
+          24
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of",
+        "following_text": "across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "Iowa",
+        "sent_id": 1,
+        "pos": [
+          17,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          26
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across",
+        "following_text": ", Nebraska , South Dakota and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Nebraska",
+        "sent_id": 1,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "GPE",
+        "token_index": [
+          28
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa ,",
+        "following_text": ", South Dakota and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "South Dakota",
+        "sent_id": 1,
+        "pos": [
+          21,
+          23
+        ],
+        "type": "GPE",
+        "token_index": [
+          30,
+          31
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska ,",
+        "following_text": "and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "USFlood",
+        "head": "fires",
+        "h_idx": 1,
+        "child": "Nebraska",
+        "t_idx": 0,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "fires",
+        "h_idx": 1,
+        "child": "fires",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "USFlood",
+        "head": "MilesWelcome",
+        "h_idx": 3,
+        "child": "Tim",
+        "t_idx": 2,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "fires",
+        "h_idx": 1,
+        "child": "MilesWelcome",
+        "t_idx": 3,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "fans",
+        "h_idx": 6,
+        "child": "the",
+        "t_idx": 4,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "fans",
+        "h_idx": 6,
+        "child": "Husker",
+        "t_idx": 5,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "MilesWelcome",
+        "h_idx": 3,
+        "child": "fans",
+        "t_idx": 6,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "MilesWelcome",
+        "h_idx": 3,
+        "child": "to",
+        "t_idx": 7,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "to",
+        "h_idx": 7,
+        "child": "Hoiball",
+        "t_idx": 8,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "World",
+        "h_idx": 10,
+        "child": "The",
+        "t_idx": 9,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "Disaster",
+        "h_idx": 14,
+        "child": "World",
+        "t_idx": 10,
+        "r": "poss"
+      },
+      {
+        "title": "USFlood",
+        "head": "World",
+        "h_idx": 10,
+        "child": "’s",
+        "t_idx": 11,
+        "r": "case"
+      },
+      {
+        "title": "USFlood",
+        "head": "Disaster",
+        "h_idx": 14,
+        "child": "Greatest",
+        "t_idx": 12,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "Disaster",
+        "h_idx": 14,
+        "child": "Agricultural",
+        "t_idx": 13,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "Record",
+        "h_idx": 15,
+        "child": "Disaster",
+        "t_idx": 14,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "floods",
+        "h_idx": 16,
+        "child": "Record",
+        "t_idx": 15,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "devastated",
+        "h_idx": 17,
+        "child": "floods",
+        "t_idx": 16,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": "devastated",
+        "t_idx": 17,
+        "r": "ccomp"
+      },
+      {
+        "title": "USFlood",
+        "head": "swath",
+        "h_idx": 20,
+        "child": "a",
+        "t_idx": 18,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "swath",
+        "h_idx": 20,
+        "child": "wide",
+        "t_idx": 19,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "devastated",
+        "h_idx": 17,
+        "child": "swath",
+        "t_idx": 20,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "swath",
+        "h_idx": 20,
+        "child": "of",
+        "t_idx": 21,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "Belt",
+        "h_idx": 24,
+        "child": "the",
+        "t_idx": 22,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "Belt",
+        "h_idx": 24,
+        "child": "Farm",
+        "t_idx": 23,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "of",
+        "h_idx": 21,
+        "child": "Belt",
+        "t_idx": 24,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "swath",
+        "h_idx": 20,
+        "child": "across",
+        "t_idx": 25,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "across",
+        "h_idx": 25,
+        "child": "Iowa",
+        "t_idx": 26,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "Iowa",
+        "h_idx": 26,
+        "child": ",",
+        "t_idx": 27,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "Iowa",
+        "h_idx": 26,
+        "child": "Nebraska",
+        "t_idx": 28,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "Nebraska",
+        "h_idx": 28,
+        "child": ",",
+        "t_idx": 29,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "Dakota",
+        "h_idx": 31,
+        "child": "South",
+        "t_idx": 30,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "Nebraska",
+        "h_idx": 28,
+        "child": "Dakota",
+        "t_idx": 31,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "Dakota",
+        "h_idx": 31,
+        "child": "and",
+        "t_idx": 32,
+        "r": "cc"
+      },
+      {
+        "title": "USFlood",
+        "head": "states",
+        "h_idx": 35,
+        "child": "several",
+        "t_idx": 33,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "states",
+        "h_idx": 35,
+        "child": "other",
+        "t_idx": 34,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "Dakota",
+        "h_idx": 31,
+        "child": "states",
+        "t_idx": 35,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": ",",
+        "t_idx": 36,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": "”",
+        "t_idx": 37,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": "says",
+        "t_idx": 38,
+        "r": "ROOT"
+      },
+      {
+        "title": "USFlood",
+        "head": "article",
+        "h_idx": 40,
+        "child": "this",
+        "t_idx": 39,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": "article",
+        "t_idx": 40,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "article",
+        "h_idx": 40,
+        "child": "on",
+        "t_idx": 41,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "says",
+        "h_idx": 38,
+        "child": ".",
+        "t_idx": 42,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "Nebraska",
+        "sent_id": 0,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "ORG",
+        "token_index": [
+          0
+        ],
+        "preceding_text": "",
+        "following_text": "fires Tim MilesWelcome the Husker fans to Hoiball",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "",
+        "mention": "Nebraska",
+        "context_right": "fires tim mileswelcome the husker fans to hoiball",
+        "wikipedia_id": 21647,
+        "entity_name": "Nebraska",
+        "score": 7.646524906158447,
+        "url": "https://en.wikipedia.org/wiki?curid=21647",
+        "wikidata_id": "Q1553"
+      },
+      {
+        "mention_id": 2,
+        "name": "Husker",
+        "sent_id": 0,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "ORG",
+        "token_index": [
+          5
+        ],
+        "preceding_text": "Nebraska fires Tim MilesWelcome the",
+        "following_text": "fans to Hoiball",
+        "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "nebraska fires tim mileswelcome the",
+        "mention": "Husker",
+        "context_right": "fans to hoiball",
+        "wikipedia_id": 159450,
+        "entity_name": "Nebraska Cornhuskers",
+        "score": 4.5676445960998535,
+        "url": "https://en.wikipedia.org/wiki?curid=159450",
+        "wikidata_id": "Q691912"
+      },
+      {
+        "mention_id": 5,
+        "name": "Iowa",
+        "sent_id": 1,
+        "pos": [
+          17,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          26
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across",
+        "following_text": ", Nebraska , South Dakota and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 5,
+        "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across",
+        "mention": "Iowa",
+        "context_right": ", nebraska , south dakota and several other states , ” says this article on .",
+        "wikipedia_id": 26810748,
+        "entity_name": "Iowa",
+        "score": 10.71650218963623,
+        "url": "https://en.wikipedia.org/wiki?curid=26810748",
+        "wikidata_id": "Q1546"
+      },
+      {
+        "mention_id": 6,
+        "name": "Nebraska",
+        "sent_id": 1,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "GPE",
+        "token_index": [
+          28
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa ,",
+        "following_text": ", South Dakota and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across iowa ,",
+        "mention": "Nebraska",
+        "context_right": ", south dakota and several other states , ” says this article on .",
+        "wikipedia_id": 21647,
+        "entity_name": "Nebraska",
+        "score": 10.145577430725098,
+        "url": "https://en.wikipedia.org/wiki?curid=21647",
+        "wikidata_id": "Q1553"
+      },
+      {
+        "mention_id": 7,
+        "name": "South Dakota",
+        "sent_id": 1,
+        "pos": [
+          21,
+          23
+        ],
+        "type": "GPE",
+        "token_index": [
+          30,
+          31
+        ],
+        "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska ,",
+        "following_text": "and several other states , ” says this article on .",
+        "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across iowa , nebraska ,",
+        "mention": "South Dakota",
+        "context_right": "and several other states , ” says this article on .",
+        "wikipedia_id": 26746,
+        "entity_name": "South Dakota",
+        "score": 10.050487518310547,
+        "url": "https://en.wikipedia.org/wiki?curid=26746",
+        "wikidata_id": "Q1211"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "Nebraska",
+          "sent_id": 0,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "ORG",
+          "token_index": [
+            0
+          ],
+          "preceding_text": "",
+          "following_text": "fires Tim MilesWelcome the Husker fans to Hoiball",
+          "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "",
+          "mention": "Nebraska",
+          "context_right": "fires tim mileswelcome the husker fans to hoiball",
+          "wikipedia_id": 21647,
+          "entity_name": "Nebraska",
+          "score": 7.646524906158447,
+          "url": "https://en.wikipedia.org/wiki?curid=21647",
+          "wikidata_id": "Q1553"
+        },
+        {
+          "mention_id": 6,
+          "name": "Nebraska",
+          "sent_id": 1,
+          "pos": [
+            19,
+            20
+          ],
+          "type": "GPE",
+          "token_index": [
+            28
+          ],
+          "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa ,",
+          "following_text": ", South Dakota and several other states , ” says this article on .",
+          "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across iowa ,",
+          "mention": "Nebraska",
+          "context_right": ", south dakota and several other states , ” says this article on .",
+          "wikipedia_id": 21647,
+          "entity_name": "Nebraska",
+          "score": 10.145577430725098,
+          "url": "https://en.wikipedia.org/wiki?curid=21647",
+          "wikidata_id": "Q1553"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "Husker",
+          "sent_id": 0,
+          "pos": [
+            5,
+            6
+          ],
+          "type": "ORG",
+          "token_index": [
+            5
+          ],
+          "preceding_text": "Nebraska fires Tim MilesWelcome the",
+          "following_text": "fans to Hoiball",
+          "full_sentence": "Nebraska fires Tim MilesWelcome the Husker fans to Hoiball",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "nebraska fires tim mileswelcome the",
+          "mention": "Husker",
+          "context_right": "fans to hoiball",
+          "wikipedia_id": 159450,
+          "entity_name": "Nebraska Cornhuskers",
+          "score": 4.5676445960998535,
+          "url": "https://en.wikipedia.org/wiki?curid=159450",
+          "wikidata_id": "Q691912"
+        }
+      ],
+      [
+        {
+          "mention_id": 5,
+          "name": "Iowa",
+          "sent_id": 1,
+          "pos": [
+            17,
+            18
+          ],
+          "type": "GPE",
+          "token_index": [
+            26
+          ],
+          "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across",
+          "following_text": ", Nebraska , South Dakota and several other states , ” says this article on .",
+          "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 5,
+          "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across",
+          "mention": "Iowa",
+          "context_right": ", nebraska , south dakota and several other states , ” says this article on .",
+          "wikipedia_id": 26810748,
+          "entity_name": "Iowa",
+          "score": 10.71650218963623,
+          "url": "https://en.wikipedia.org/wiki?curid=26810748",
+          "wikidata_id": "Q1546"
+        }
+      ],
+      [
+        {
+          "mention_id": 7,
+          "name": "South Dakota",
+          "sent_id": 1,
+          "pos": [
+            21,
+            23
+          ],
+          "type": "GPE",
+          "token_index": [
+            30,
+            31
+          ],
+          "preceding_text": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska ,",
+          "following_text": "and several other states , ” says this article on .",
+          "full_sentence": "The World ’s Greatest Agricultural Disaster Record floods devastated a wide swath of the Farm Belt across Iowa , Nebraska , South Dakota and several other states , ” says this article on .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "the world ’s greatest agricultural disaster record floods devastated a wide swath of the farm belt across iowa , nebraska ,",
+          "mention": "South Dakota",
+          "context_right": "and several other states , ” says this article on .",
+          "wikipedia_id": 26746,
+          "entity_name": "South Dakota",
+          "score": 10.050487518310547,
+          "url": "https://en.wikipedia.org/wiki?curid=26746",
+          "wikidata_id": "Q1211"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

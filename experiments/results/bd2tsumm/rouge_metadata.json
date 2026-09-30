@@ -1,0 +1,11 @@
+{
+  "package": "rouge-score",
+  "package_version": "0.1.2",
+  "use_stemmer": true,
+  "multi_reference_aggregation": "mean",
+  "official_protocol": false,
+  "note": "BD2TSumm 数据目录中未发现官方 ROUGE 脚本；多参考使用算术平均 F1。",
+  "n_candidate_rows": 26,
+  "n_ok": 26,
+  "n_failed": 0
+}

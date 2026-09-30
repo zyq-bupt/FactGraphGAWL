@@ -1,0 +1,11 @@
+{
+  "model": "/root/autodl-fs/zyq/models/t5-large",
+  "system_name": "t5-large",
+  "max_input_tokens": 450,
+  "max_new_tokens": 200,
+  "min_new_tokens": 30,
+  "num_beams": 4,
+  "seed": 42,
+  "elapsed_seconds": 2909.991226747632,
+  "n_events": 13
+}

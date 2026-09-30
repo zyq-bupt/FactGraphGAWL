@@ -1,0 +1,164 @@
+{
+  "seed": 42,
+  "dataset": {
+    "layout": "bd2tsumm_dirs",
+    "data_root": "/autodl-fs/data/zyq/BD2TSumm",
+    "tweets_dir": "Input_datasets",
+    "references_dir": "Gold_summary",
+    "candidates_file": "/root/autodl-tmp/FactGraphGAWL/experiments/results/bd2tsumm/candidates_merged.csv",
+    "candidates_dir": null,
+    "tweets_file": null,
+    "references_file": null,
+    "event_id_col": "event_id",
+    "tweet_id_col": "tweet_id",
+    "tweet_text_col": "text",
+    "timestamp_col": "timestamp",
+    "system_col": "system_name",
+    "candidate_col": "candidate_summary",
+    "reference_col": "reference_summary",
+    "reference_id_col": "reference_id",
+    "events": [
+      {
+        "event_id": "CyclonePam",
+        "tweets_file": "Input_datasets/CyclonePam_input_data.csv",
+        "reference_file": "Gold_summary/Summary_CyclonePam.txt"
+      },
+      {
+        "event_id": "GreeceWildfire",
+        "tweets_file": "Input_datasets/Greece_wildfires_input_data.csv",
+        "reference_file": "Gold_summary/Summary_GreeceWildfire.txt"
+      },
+      {
+        "event_id": "Hagupit",
+        "tweets_file": "Input_datasets/hagupit_input_data.csv",
+        "reference_file": "Gold_summary/Summary_Hagupit.txt"
+      },
+      {
+        "event_id": "Harda",
+        "tweets_file": "Input_datasets/Harda_Derail_input_data.csv",
+        "reference_file": "Gold_summary/Summary_Harda.txt"
+      },
+      {
+        "event_id": "Hblast",
+        "tweets_file": "Input_datasets/hblast_input_data.csv",
+        "reference_file": "Gold_summary/Summary_Hblast.txt"
+      },
+      {
+        "event_id": "KaikouraQuake",
+        "tweets_file": "Input_datasets/kaikoura_earthquake_input_data.csv",
+        "reference_file": "Gold_summary/Summary_KaikouraQuake.txt"
+      },
+      {
+        "event_id": "LAShooting",
+        "tweets_file": "Input_datasets/LAShoot_input_data.csv",
+        "reference_file": "Gold_summary/Summary_LAShooting.txt"
+      },
+      {
+        "event_id": "Matthew",
+        "tweets_file": "Input_datasets/Matthew_input_data.csv",
+        "reference_file": "Gold_summary/Summary_Matthew.txt"
+      },
+      {
+        "event_id": "MexicoQuake",
+        "tweets_file": "Input_datasets/MexicoQuake_input_data.csv",
+        "reference_file": "Gold_summary/Summary_MexicoQuake.txt"
+      },
+      {
+        "event_id": "PakQuake",
+        "tweets_file": "Input_datasets/PakQuake_input_data.csv",
+        "reference_file": "Gold_summary/Summary_PakQuake.txt"
+      },
+      {
+        "event_id": "SHShooting",
+        "tweets_file": "Input_datasets/sandyhook_input_data.csv",
+        "reference_file": "Gold_summary/Summary_SHShooting.txt"
+      },
+      {
+        "event_id": "USFlood",
+        "tweets_file": "Input_datasets/USFlood_input_data.csv",
+        "reference_file": "Gold_summary/Summary_USFlood.txt"
+      },
+      {
+        "event_id": "Uflood",
+        "tweets_file": "Input_datasets/uflood_input_data.csv",
+        "reference_file": "Gold_summary/Summary_Uflood.txt"
+      }
+    ]
+  },
+  "cleaning": {
+    "unicode_form": "NFKC",
+    "collapse_whitespace": true,
+    "dedup_exact": true,
+    "replace_urls": true,
+    "replace_mentions": true,
+    "placeholder_style": "plain",
+    "keep_hashtag_text": true,
+    "strip_rt_prefix": false,
+    "strip_emoji": false,
+    "drop_empty_after_clean": true
+  },
+  "long_context": {
+    "mode": "sliding_window",
+    "allow_prefix_truncation": false,
+    "max_model_tokens": 1024,
+    "overlap_tokens": 256,
+    "sentence_boundary": true,
+    "merge_entities_by_kb_id": true,
+    "infer_cross_window_relations": false,
+    "tokenizer_path": "/root/autodl-fs/zyq/models/t5-large",
+    "allow_mock_tokenizer": false
+  },
+  "compkg": {
+    "variant": "S2-K_PT",
+    "backend": "real",
+    "higher_is_better": true,
+    "treat_as_distance": false,
+    "wTT": 1.0,
+    "wTM": 1.0,
+    "wME": 0.5,
+    "wEE": 0.0,
+    "wl_t": 1,
+    "use_emb_labels": false,
+    "use_node_labels": true,
+    "use_edge_labels": 2,
+    "dreeam_source_dir": "/root/autodl-tmp/FactGraphGAWL/experiments/bd2tsumm/test",
+    "dreeam_candidate_dir": "/root/autodl-tmp/FactGraphGAWL/experiments/bd2tsumm/dreeam_candidates",
+    "cache_source_graphs": true,
+    "cache_candidate_graphs": true
+  },
+  "rouge": {
+    "package": "rouge-score",
+    "use_stemmer": true,
+    "metrics": [
+      "rouge1",
+      "rouge2",
+      "rougeL"
+    ],
+    "multi_reference_aggregation": "mean"
+  },
+  "analysis": {
+    "min_systems_for_event_corr": 3,
+    "min_n_for_corr": 3,
+    "min_event_coverage": 1.0,
+    "bootstrap_n": 10000,
+    "bootstrap_min_n": 3,
+    "dpi": 300
+  },
+  "output": {
+    "prepared_sources": "prepared_sources.jsonl",
+    "prepared_candidates": "prepared_candidates.jsonl",
+    "prepared_references": "prepared_references.jsonl",
+    "data_validation": "data_validation.json",
+    "compkg_scores": "compkg_scores.csv",
+    "rouge_reference_level": "rouge_reference_level.csv",
+    "rouge_scores": "rouge_scores.csv",
+    "all_sample_scores": "all_sample_scores.csv",
+    "failure_report": "failure_report.csv",
+    "correlation_results": "correlation_results.csv",
+    "per_event_correlations": "per_event_correlations.csv",
+    "system_ranking": "system_ranking.csv",
+    "ranking_agreement": "ranking_agreement.csv",
+    "summary_report": "summary_report.md",
+    "run_metadata": "run_metadata.json"
+  }
+}

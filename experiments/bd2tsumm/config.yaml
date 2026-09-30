@@ -1,0 +1,137 @@
+# BD2TSumm × CompKG-FactEval vs ROUGE
+# 所有数据路径集中在此文件；代码中不硬编码绝对路径。
+
+seed: 42
+
+dataset:
+  layout: bd2tsumm_dirs   # bd2tsumm_dirs | tabular
+  data_root: /autodl-fs/data/zyq/BD2TSumm
+  tweets_dir: Input_datasets
+  references_dir: Gold_summary
+  # 摘要系统输出：本仓库解压的 BD2TSumm 只有推文与人工参考摘要。
+  # 未提供时 prepare 仍可运行；ROUGE/CompKG 会报错，不会把参考摘要当作候选。
+  candidates_file: null
+  candidates_dir: null
+  tweets_file: null
+  references_file: null
+  event_id_col: event_id
+  tweet_id_col: tweet_id
+  tweet_text_col: text
+  timestamp_col: timestamp
+  system_col: system_name
+  candidate_col: candidate_summary
+  reference_col: reference_summary
+  reference_id_col: reference_id
+  events:
+    - event_id: CyclonePam
+      tweets_file: Input_datasets/CyclonePam_input_data.csv
+      reference_file: Gold_summary/Summary_CyclonePam.txt
+    - event_id: GreeceWildfire
+      tweets_file: Input_datasets/Greece_wildfires_input_data.csv
+      reference_file: Gold_summary/Summary_GreeceWildfire.txt
+    - event_id: Hagupit
+      tweets_file: Input_datasets/hagupit_input_data.csv
+      reference_file: Gold_summary/Summary_Hagupit.txt
+    - event_id: Harda
+      tweets_file: Input_datasets/Harda_Derail_input_data.csv
+      reference_file: Gold_summary/Summary_Harda.txt
+    - event_id: Hblast
+      tweets_file: Input_datasets/hblast_input_data.csv
+      reference_file: Gold_summary/Summary_Hblast.txt
+    - event_id: KaikouraQuake
+      tweets_file: Input_datasets/kaikoura_earthquake_input_data.csv
+      reference_file: Gold_summary/Summary_KaikouraQuake.txt
+    - event_id: LAShooting
+      tweets_file: Input_datasets/LAShoot_input_data.csv
+      reference_file: Gold_summary/Summary_LAShooting.txt
+    - event_id: Matthew
+      tweets_file: Input_datasets/Matthew_input_data.csv
+      reference_file: Gold_summary/Summary_Matthew.txt
+    - event_id: MexicoQuake
+      tweets_file: Input_datasets/MexicoQuake_input_data.csv
+      reference_file: Gold_summary/Summary_MexicoQuake.txt
+    - event_id: PakQuake
+      tweets_file: Input_datasets/PakQuake_input_data.csv
+      reference_file: Gold_summary/Summary_PakQuake.txt
+    - event_id: SHShooting
+      tweets_file: Input_datasets/sandyhook_input_data.csv
+      reference_file: Gold_summary/Summary_SHShooting.txt
+    - event_id: USFlood
+      tweets_file: Input_datasets/USFlood_input_data.csv
+      reference_file: Gold_summary/Summary_USFlood.txt
+    - event_id: Uflood
+      tweets_file: Input_datasets/uflood_input_data.csv
+      reference_file: Gold_summary/Summary_Uflood.txt
+
+cleaning:
+  unicode_form: NFKC
+  collapse_whitespace: true
+  dedup_exact: true
+  replace_urls: true
+  replace_mentions: true
+  # spaCy/DREEAM 对尖括号占位符不稳定时用 plain：URL / USER
+  placeholder_style: plain   # plain | angle
+  keep_hashtag_text: true
+  strip_rt_prefix: false
+  strip_emoji: false
+  drop_empty_after_clean: true
+
+long_context:
+  mode: sliding_window     # 禁止默认截断；prefix_1024 仅当 allow_prefix_truncation=true
+  allow_prefix_truncation: false
+  max_model_tokens: 1024
+  overlap_tokens: 256
+  sentence_boundary: true
+  merge_entities_by_kb_id: true
+  infer_cross_window_relations: false
+  tokenizer_path: /root/autodl-fs/zyq/models/t5-large
+  allow_mock_tokenizer: false
+
+compkg:
+  variant: S2-K_PT         # 论文主实验：kernel.gawl.compute_gawl_kernel_v2
+  backend: real            # real | mock
+  higher_is_better: true
+  treat_as_distance: false
+  wTT: 1.0
+  wTM: 1.0
+  wME: 0.5
+  wEE: 0.0
+  wl_t: 1
+  use_emb_labels: false
+  use_node_labels: true
+  use_edge_labels: 2
+  dreeam_source_dir: null    # {event_id}.json，含 article
+  dreeam_candidate_dir: null # {event_id}__{system_name}.json，含 candidate
+  cache_source_graphs: true
+  cache_candidate_graphs: true
+
+rouge:
+  package: rouge-score
+  use_stemmer: true
+  metrics: [rouge1, rouge2, rougeL]
+  multi_reference_aggregation: mean   # mean（无官方多参考协议时）
+
+analysis:
+  min_systems_for_event_corr: 3
+  min_n_for_corr: 3
+  min_event_coverage: 1.0
+  bootstrap_n: 10000
+  bootstrap_min_n: 3
+  dpi: 300
+
+output:
+  prepared_sources: prepared_sources.jsonl
+  prepared_candidates: prepared_candidates.jsonl
+  prepared_references: prepared_references.jsonl
+  data_validation: data_validation.json
+  compkg_scores: compkg_scores.csv
+  rouge_reference_level: rouge_reference_level.csv
+  rouge_scores: rouge_scores.csv
+  all_sample_scores: all_sample_scores.csv
+  failure_report: failure_report.csv
+  correlation_results: correlation_results.csv
+  per_event_correlations: per_event_correlations.csv
+  system_ranking: system_ranking.csv
+  ranking_agreement: ranking_agreement.csv
+  summary_report: summary_report.md
+  run_metadata: run_metadata.json

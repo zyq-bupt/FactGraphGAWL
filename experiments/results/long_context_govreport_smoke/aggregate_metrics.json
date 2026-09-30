@@ -1,0 +1,101 @@
+{
+  "n_original": 225,
+  "n_paired": 1,
+  "n_failed": 0,
+  "tokenizer_note": "/root/autodl-fs/zyq/models/t5-large; model_max_length=1000000000000000019884624838656; effective cap=1024",
+  "baseline": {
+    "pearson_r": null,
+    "p_value": null,
+    "mean_token_coverage": 0.18591654247391953,
+    "std_token_coverage": [
+      0.18591654247391953,
+      0.0
+    ],
+    "median_token_coverage": 0.18591654247391953,
+    "mean_entity_nodes": 13.0,
+    "std_entity_nodes": [
+      13.0,
+      0.0
+    ],
+    "median_entity_nodes": 13.0,
+    "mean_relation_edges": 0.0,
+    "std_relation_edges": [
+      0.0,
+      0.0
+    ],
+    "median_relation_edges": 0.0,
+    "mean_token_nodes": 812.0,
+    "mean_mention_nodes": 40.0,
+    "mean_E_tt": 812.0,
+    "mean_E_tm": 78.0,
+    "mean_E_me": 25.0,
+    "mean_graph_build_seconds": 0.5496652349829674,
+    "std_graph_build_seconds": [
+      0.5496652349829674,
+      0.0
+    ],
+    "median_graph_build_seconds": 0.5496652349829674,
+    "mean_total_seconds": 0.5871822834014893,
+    "std_total_seconds": [
+      0.5871822834014893,
+      0.0
+    ],
+    "median_total_seconds": 0.5871822834014893
+  },
+  "sliding_window": {
+    "pearson_r": null,
+    "p_value": null,
+    "mean_token_coverage": 1.0,
+    "std_token_coverage": [
+      1.0,
+      0.0
+    ],
+    "median_token_coverage": 1.0,
+    "mean_entity_nodes": 45.0,
+    "std_entity_nodes": [
+      45.0,
+      0.0
+    ],
+    "median_entity_nodes": 45.0,
+    "mean_relation_edges": 0.0,
+    "std_relation_edges": [
+      0.0,
+      0.0
+    ],
+    "median_relation_edges": 0.0,
+    "mean_token_nodes": 4461.0,
+    "mean_mention_nodes": 310.0,
+    "mean_E_tt": 4461.0,
+    "mean_E_tm": 580.0,
+    "mean_E_me": 195.0,
+    "mean_graph_build_seconds": 1.7823765575885773,
+    "std_graph_build_seconds": [
+      1.7823765575885773,
+      0.0
+    ],
+    "median_graph_build_seconds": 1.7823765575885773,
+    "mean_total_seconds": 1.9403129443526268,
+    "std_total_seconds": [
+      1.9403129443526268,
+      0.0
+    ],
+    "median_total_seconds": 1.9403129443526268
+  },
+  "comparison": {
+    "delta_r": null,
+    "delta_r_ci95_low": null,
+    "delta_r_ci95_high": null,
+    "runtime_multiplier": 3.3044473568115587,
+    "wording_case": "insufficient_stats",
+    "exploratory_spearman_coverage_vs_score_delta": null,
+    "exploratory_spearman_p": null,
+    "bootstrap_valid": 0,
+    "bootstrap_skipped": 10000
+  },
+  "stat_convention": {
+    "entity_nodes": "mean (also report median in report.md)",
+    "entity_relation_edges": "mean of E_ee",
+    "time_per_sample": "mean of total_seconds",
+    "token_coverage": "mean of unique content-token coverage; overlap counted once; ratio capped at 1"
+  }
+}

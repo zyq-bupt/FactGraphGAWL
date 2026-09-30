@@ -1,0 +1,13 @@
+{"event_id": "CyclonePam", "n_paragraphs": 1508, "levels": [{"level": 0, "n_chunks": 36}, {"level": 1, "n_chunks": 4}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 684}
+{"event_id": "GreeceWildfire", "n_paragraphs": 1281, "levels": [{"level": 0, "n_chunks": 46}, {"level": 1, "n_chunks": 7}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 482}
+{"event_id": "Hagupit", "n_paragraphs": 1440, "levels": [{"level": 0, "n_chunks": 37}, {"level": 1, "n_chunks": 6}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 513}
+{"event_id": "Harda", "n_paragraphs": 1295, "levels": [{"level": 0, "n_chunks": 35}, {"level": 1, "n_chunks": 4}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 636}
+{"event_id": "Hblast", "n_paragraphs": 1391, "levels": [{"level": 0, "n_chunks": 35}, {"level": 1, "n_chunks": 5}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 453}
+{"event_id": "KaikouraQuake", "n_paragraphs": 2195, "levels": [{"level": 0, "n_chunks": 55}, {"level": 1, "n_chunks": 7}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 661}
+{"event_id": "LAShooting", "n_paragraphs": 1382, "levels": [{"level": 0, "n_chunks": 33}, {"level": 1, "n_chunks": 5}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 411}
+{"event_id": "Matthew", "n_paragraphs": 1654, "levels": [{"level": 0, "n_chunks": 39}, {"level": 1, "n_chunks": 6}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 729}
+{"event_id": "MexicoQuake", "n_paragraphs": 2015, "levels": [{"level": 0, "n_chunks": 50}, {"level": 1, "n_chunks": 7}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 502}
+{"event_id": "PakQuake", "n_paragraphs": 1956, "levels": [{"level": 0, "n_chunks": 70}, {"level": 1, "n_chunks": 11}, {"level": 2, "n_chunks": 2}, {"level": 3, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 533}
+{"event_id": "SHShooting", "n_paragraphs": 2040, "levels": [{"level": 0, "n_chunks": 50}, {"level": 1, "n_chunks": 7}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 252}
+{"event_id": "USFlood", "n_paragraphs": 1880, "levels": [{"level": 0, "n_chunks": 77}, {"level": 1, "n_chunks": 12}, {"level": 2, "n_chunks": 2}, {"level": 3, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 241}
+{"event_id": "Uflood", "n_paragraphs": 1986, "levels": [{"level": 0, "n_chunks": 50}, {"level": 1, "n_chunks": 7}, {"level": 2, "n_chunks": 1, "note": "final_merge"}], "n_final_chars": 724}

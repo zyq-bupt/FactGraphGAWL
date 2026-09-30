@@ -1,0 +1,469 @@
+{
+  "doc_name": "Uflood",
+  "doc_id": "Uflood",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Uflood",
+  "system_name": "t5-large",
+  "article": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "Uflood",
+    "text": "death toll in north india and uttrakhand floods crosses 200. 500+ people got stuck between Kedarnath &amp; Gaurikund. air rescue ops suspended due to ongoing bad weather.",
+    "sents": [
+      [
+        "death",
+        "toll",
+        "in",
+        "north",
+        "india",
+        "and",
+        "uttrakhand",
+        "floods",
+        "crosses",
+        "200",
+        "."
+      ],
+      [
+        "500",
+        "+",
+        "people",
+        "got",
+        "stuck",
+        "between",
+        "Kedarnath",
+        "&",
+        "amp",
+        ";",
+        "Gaurikund",
+        "."
+      ],
+      [
+        "air",
+        "rescue",
+        "ops",
+        "suspended",
+        "due",
+        "to",
+        "ongoing",
+        "bad",
+        "weather",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "india",
+        "sent_id": 0,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "GPE",
+        "token_index": [
+          4
+        ],
+        "preceding_text": "death toll in north",
+        "following_text": "and uttrakhand floods crosses 200 .",
+        "full_sentence": "death toll in north india and uttrakhand floods crosses 200 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "uttrakhand",
+        "sent_id": 0,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          6
+        ],
+        "preceding_text": "death toll in north india and",
+        "following_text": "floods crosses 200 .",
+        "full_sentence": "death toll in north india and uttrakhand floods crosses 200 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "200",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "death toll in north india and uttrakhand floods crosses",
+        "following_text": ".",
+        "full_sentence": "death toll in north india and uttrakhand floods crosses 200 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "500",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          11
+        ],
+        "preceding_text": "",
+        "following_text": "+ people got stuck between Kedarnath & amp ; Gaurikund .",
+        "full_sentence": "500 + people got stuck between Kedarnath & amp ; Gaurikund .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Kedarnath",
+        "sent_id": 1,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          17
+        ],
+        "preceding_text": "500 + people got stuck between",
+        "following_text": "& amp ; Gaurikund .",
+        "full_sentence": "500 + people got stuck between Kedarnath & amp ; Gaurikund .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "amp",
+        "sent_id": 1,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          19
+        ],
+        "preceding_text": "500 + people got stuck between Kedarnath &",
+        "following_text": "; Gaurikund .",
+        "full_sentence": "500 + people got stuck between Kedarnath & amp ; Gaurikund .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Gaurikund",
+        "sent_id": 1,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "GPE",
+        "token_index": [
+          21
+        ],
+        "preceding_text": "500 + people got stuck between Kedarnath & amp ;",
+        "following_text": ".",
+        "full_sentence": "500 + people got stuck between Kedarnath & amp ; Gaurikund .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "death",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "crosses",
+        "h_idx": 8,
+        "child": "toll",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "in",
+        "t_idx": 2,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "india",
+        "h_idx": 4,
+        "child": "north",
+        "t_idx": 3,
+        "r": "nmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "floods",
+        "h_idx": 7,
+        "child": "india",
+        "t_idx": 4,
+        "r": "nmod"
+      },
+      {
+        "title": "Uflood",
+        "head": "india",
+        "h_idx": 4,
+        "child": "and",
+        "t_idx": 5,
+        "r": "cc"
+      },
+      {
+        "title": "Uflood",
+        "head": "india",
+        "h_idx": 4,
+        "child": "uttrakhand",
+        "t_idx": 6,
+        "r": "conj"
+      },
+      {
+        "title": "Uflood",
+        "head": "in",
+        "h_idx": 2,
+        "child": "floods",
+        "t_idx": 7,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "crosses",
+        "h_idx": 8,
+        "child": "crosses",
+        "t_idx": 8,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "crosses",
+        "h_idx": 8,
+        "child": "200",
+        "t_idx": 9,
+        "r": "dobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "crosses",
+        "h_idx": 8,
+        "child": ".",
+        "t_idx": 10,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "people",
+        "h_idx": 13,
+        "child": "500",
+        "t_idx": 11,
+        "r": "nummod"
+      },
+      {
+        "title": "Uflood",
+        "head": "500",
+        "h_idx": 11,
+        "child": "+",
+        "t_idx": 12,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": "people",
+        "t_idx": 13,
+        "r": "nsubjpass"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": "got",
+        "t_idx": 14,
+        "r": "auxpass"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": "stuck",
+        "t_idx": 15,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": "between",
+        "t_idx": 16,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "&",
+        "h_idx": 18,
+        "child": "Kedarnath",
+        "t_idx": 17,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "between",
+        "h_idx": 16,
+        "child": "&",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "between",
+        "h_idx": 16,
+        "child": "amp",
+        "t_idx": 19,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": ";",
+        "t_idx": 20,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": "Gaurikund",
+        "t_idx": 21,
+        "r": "dep"
+      },
+      {
+        "title": "Uflood",
+        "head": "stuck",
+        "h_idx": 15,
+        "child": ".",
+        "t_idx": 22,
+        "r": "punct"
+      },
+      {
+        "title": "Uflood",
+        "head": "rescue",
+        "h_idx": 24,
+        "child": "air",
+        "t_idx": 23,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "ops",
+        "h_idx": 25,
+        "child": "rescue",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "Uflood",
+        "head": "suspended",
+        "h_idx": 26,
+        "child": "ops",
+        "t_idx": 25,
+        "r": "nsubj"
+      },
+      {
+        "title": "Uflood",
+        "head": "suspended",
+        "h_idx": 26,
+        "child": "suspended",
+        "t_idx": 26,
+        "r": "ROOT"
+      },
+      {
+        "title": "Uflood",
+        "head": "suspended",
+        "h_idx": 26,
+        "child": "due",
+        "t_idx": 27,
+        "r": "prep"
+      },
+      {
+        "title": "Uflood",
+        "head": "due",
+        "h_idx": 27,
+        "child": "to",
+        "t_idx": 28,
+        "r": "pcomp"
+      },
+      {
+        "title": "Uflood",
+        "head": "weather",
+        "h_idx": 31,
+        "child": "ongoing",
+        "t_idx": 29,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "weather",
+        "h_idx": 31,
+        "child": "bad",
+        "t_idx": 30,
+        "r": "amod"
+      },
+      {
+        "title": "Uflood",
+        "head": "due",
+        "h_idx": 27,
+        "child": "weather",
+        "t_idx": 31,
+        "r": "pobj"
+      },
+      {
+        "title": "Uflood",
+        "head": "suspended",
+        "h_idx": 26,
+        "child": ".",
+        "t_idx": 32,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "Uflood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

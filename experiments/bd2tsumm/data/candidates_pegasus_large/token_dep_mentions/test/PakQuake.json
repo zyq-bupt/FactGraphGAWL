@@ -1,0 +1,1277 @@
+{
+  "doc_name": "PakQuake",
+  "doc_id": "PakQuake",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "PakQuake",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "PakQuake",
+    "text": "We hope that the earthquake RIP,A powerful 5.8-life earthquake jolted several cities &amp; northern parts of the country on Tuesday afternoon,leaving at least 23 people dead andamp; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan Wednesday Quake RT USER: 19 dead, more than 300 wounded as powerful earthquake jolts parts of Pakistan USER Read more: G Death toll from quake climbs to 38 as relief operations continue.",
+    "sents": [
+      [
+        "We",
+        "hope",
+        "that",
+        "the",
+        "earthquake",
+        "RIP",
+        ",",
+        "A",
+        "powerful",
+        "5.8",
+        "-",
+        "life",
+        "earthquake",
+        "jolted",
+        "several",
+        "cities",
+        "&",
+        "amp",
+        ";",
+        "northern",
+        "parts",
+        "of",
+        "the",
+        "country",
+        "on",
+        "Tuesday",
+        "afternoon",
+        ",",
+        "leaving",
+        "at",
+        "least",
+        "23",
+        "people",
+        "dead",
+        "andamp",
+        ";",
+        "over",
+        "300",
+        "others",
+        "just",
+        "to",
+        "give",
+        "more",
+        "relief",
+        "to",
+        "india",
+        "and",
+        "their",
+        "conspirancies",
+        "against",
+        "pakistan",
+        "Army",
+        "USER",
+        "needs",
+        "to",
+        "take",
+        "a",
+        "strong",
+        "dialogue",
+        "rather",
+        "dn",
+        "using",
+        "force",
+        "ImranKhan"
+      ],
+      [
+        "Wednesday",
+        "Quake",
+        "RT",
+        "USER",
+        ":",
+        "19",
+        "dead",
+        ",",
+        "more",
+        "than",
+        "300",
+        "wounded",
+        "as",
+        "powerful",
+        "earthquake",
+        "jolts",
+        "parts",
+        "of",
+        "Pakistan"
+      ],
+      [
+        "USER"
+      ],
+      [
+        "Read",
+        "more",
+        ":",
+        "G",
+        "Death",
+        "toll",
+        "from",
+        "quake",
+        "climbs",
+        "to",
+        "38",
+        "as",
+        "relief",
+        "operations",
+        "continue",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "5.8",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful",
+        "following_text": "- life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "&",
+        "sent_id": 0,
+        "pos": [
+          16,
+          17
+        ],
+        "type": "GPE",
+        "token_index": [
+          16
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities",
+        "following_text": "amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "amp",
+        "sent_id": 0,
+        "pos": [
+          17,
+          18
+        ],
+        "type": "GPE",
+        "token_index": [
+          17
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities &",
+        "following_text": "; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Tuesday",
+        "sent_id": 0,
+        "pos": [
+          25,
+          26
+        ],
+        "type": "DATE",
+        "token_index": [
+          25
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on",
+        "following_text": "afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "afternoon",
+        "sent_id": 0,
+        "pos": [
+          26,
+          27
+        ],
+        "type": "TIME",
+        "token_index": [
+          26
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday",
+        "following_text": ", leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "at least 23",
+        "sent_id": 0,
+        "pos": [
+          29,
+          32
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          29,
+          30,
+          31
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving",
+        "following_text": "people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "over 300",
+        "sent_id": 0,
+        "pos": [
+          36,
+          38
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          36,
+          37
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ;",
+        "following_text": "others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "india",
+        "sent_id": 0,
+        "pos": [
+          45,
+          46
+        ],
+        "type": "GPE",
+        "token_index": [
+          45
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to",
+        "following_text": "and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "pakistan",
+        "sent_id": 0,
+        "pos": [
+          50,
+          51
+        ],
+        "type": "GPE",
+        "token_index": [
+          50
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against",
+        "following_text": "Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "USER",
+        "sent_id": 0,
+        "pos": [
+          52,
+          53
+        ],
+        "type": "GPE",
+        "token_index": [
+          52
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army",
+        "following_text": "needs to take a strong dialogue rather dn using force ImranKhan",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "ImranKhan",
+        "sent_id": 0,
+        "pos": [
+          63,
+          64
+        ],
+        "type": "PERSON",
+        "token_index": [
+          63
+        ],
+        "preceding_text": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force",
+        "following_text": "",
+        "full_sentence": "We hope that the earthquake RIP , A powerful 5.8 - life earthquake jolted several cities & amp ; northern parts of the country on Tuesday afternoon , leaving at least 23 people dead andamp ; over 300 others just to give more relief to india and their conspirancies against pakistan Army USER needs to take a strong dialogue rather dn using force ImranKhan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "Wednesday",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "DATE",
+        "token_index": [
+          64
+        ],
+        "preceding_text": "",
+        "following_text": "Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "full_sentence": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "USER",
+        "sent_id": 1,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "PERSON",
+        "token_index": [
+          67
+        ],
+        "preceding_text": "Wednesday Quake RT",
+        "following_text": ": 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "full_sentence": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 13,
+        "name": "19",
+        "sent_id": 1,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          69
+        ],
+        "preceding_text": "Wednesday Quake RT USER :",
+        "following_text": "dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "full_sentence": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 14,
+        "name": "more than 300",
+        "sent_id": 1,
+        "pos": [
+          8,
+          11
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          72,
+          73,
+          74
+        ],
+        "preceding_text": "Wednesday Quake RT USER : 19 dead ,",
+        "following_text": "wounded as powerful earthquake jolts parts of Pakistan",
+        "full_sentence": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 15,
+        "name": "Pakistan",
+        "sent_id": 1,
+        "pos": [
+          18,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          82
+        ],
+        "preceding_text": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of",
+        "following_text": "",
+        "full_sentence": "Wednesday Quake RT USER : 19 dead , more than 300 wounded as powerful earthquake jolts parts of Pakistan",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 16,
+        "name": "USER",
+        "sent_id": 2,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          83
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 17,
+        "name": "38",
+        "sent_id": 3,
+        "pos": [
+          10,
+          11
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          94
+        ],
+        "preceding_text": "Read more : G Death toll from quake climbs to",
+        "following_text": "as relief operations continue .",
+        "full_sentence": "Read more : G Death toll from quake climbs to 38 as relief operations continue .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "PakQuake",
+        "head": "hope",
+        "h_idx": 1,
+        "child": "We",
+        "t_idx": 0,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "needs",
+        "h_idx": 53,
+        "child": "hope",
+        "t_idx": 1,
+        "r": "ccomp"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "that",
+        "t_idx": 2,
+        "r": "mark"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 4,
+        "child": "the",
+        "t_idx": 3,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "earthquake",
+        "t_idx": 4,
+        "r": "npadvmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 4,
+        "child": "RIP",
+        "t_idx": 5,
+        "r": "appos"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 4,
+        "child": ",",
+        "t_idx": 6,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 12,
+        "child": "A",
+        "t_idx": 7,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 12,
+        "child": "powerful",
+        "t_idx": 8,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "life",
+        "h_idx": 11,
+        "child": "5.8",
+        "t_idx": 9,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "life",
+        "h_idx": 11,
+        "child": "-",
+        "t_idx": 10,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 12,
+        "child": "life",
+        "t_idx": 11,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "earthquake",
+        "t_idx": 12,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "hope",
+        "h_idx": 1,
+        "child": "jolted",
+        "t_idx": 13,
+        "r": "ccomp"
+      },
+      {
+        "title": "PakQuake",
+        "head": "cities",
+        "h_idx": 15,
+        "child": "several",
+        "t_idx": 14,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "cities",
+        "t_idx": 15,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 20,
+        "child": "&",
+        "t_idx": 16,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 20,
+        "child": "amp",
+        "t_idx": 17,
+        "r": "nmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "amp",
+        "h_idx": 17,
+        "child": ";",
+        "t_idx": 18,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 20,
+        "child": "northern",
+        "t_idx": 19,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "cities",
+        "h_idx": 15,
+        "child": "parts",
+        "t_idx": 20,
+        "r": "appos"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 20,
+        "child": "of",
+        "t_idx": 21,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "country",
+        "h_idx": 23,
+        "child": "the",
+        "t_idx": 22,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "of",
+        "h_idx": 21,
+        "child": "country",
+        "t_idx": 23,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "on",
+        "t_idx": 24,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "afternoon",
+        "h_idx": 26,
+        "child": "Tuesday",
+        "t_idx": 25,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "on",
+        "h_idx": 24,
+        "child": "afternoon",
+        "t_idx": 26,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": ",",
+        "t_idx": 27,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "leaving",
+        "t_idx": 28,
+        "r": "advcl"
+      },
+      {
+        "title": "PakQuake",
+        "head": "least",
+        "h_idx": 30,
+        "child": "at",
+        "t_idx": 29,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "23",
+        "h_idx": 31,
+        "child": "least",
+        "t_idx": 30,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "people",
+        "h_idx": 32,
+        "child": "23",
+        "t_idx": 31,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "leaving",
+        "h_idx": 28,
+        "child": "people",
+        "t_idx": 32,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "leaving",
+        "h_idx": 28,
+        "child": "dead",
+        "t_idx": 33,
+        "r": "oprd"
+      },
+      {
+        "title": "PakQuake",
+        "head": "leaving",
+        "h_idx": 28,
+        "child": "andamp",
+        "t_idx": 34,
+        "r": "npadvmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": ";",
+        "t_idx": 35,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "300",
+        "h_idx": 37,
+        "child": "over",
+        "t_idx": 36,
+        "r": "quantmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "others",
+        "h_idx": 38,
+        "child": "300",
+        "t_idx": 37,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolted",
+        "h_idx": 13,
+        "child": "others",
+        "t_idx": 38,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "give",
+        "h_idx": 41,
+        "child": "just",
+        "t_idx": 39,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "give",
+        "h_idx": 41,
+        "child": "to",
+        "t_idx": 40,
+        "r": "aux"
+      },
+      {
+        "title": "PakQuake",
+        "head": "others",
+        "h_idx": 38,
+        "child": "give",
+        "t_idx": 41,
+        "r": "advcl"
+      },
+      {
+        "title": "PakQuake",
+        "head": "relief",
+        "h_idx": 43,
+        "child": "more",
+        "t_idx": 42,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "give",
+        "h_idx": 41,
+        "child": "relief",
+        "t_idx": 43,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "give",
+        "h_idx": 41,
+        "child": "to",
+        "t_idx": 44,
+        "r": "dative"
+      },
+      {
+        "title": "PakQuake",
+        "head": "to",
+        "h_idx": 44,
+        "child": "india",
+        "t_idx": 45,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "india",
+        "h_idx": 45,
+        "child": "and",
+        "t_idx": 46,
+        "r": "cc"
+      },
+      {
+        "title": "PakQuake",
+        "head": "conspirancies",
+        "h_idx": 48,
+        "child": "their",
+        "t_idx": 47,
+        "r": "poss"
+      },
+      {
+        "title": "PakQuake",
+        "head": "india",
+        "h_idx": 45,
+        "child": "conspirancies",
+        "t_idx": 48,
+        "r": "conj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "conspirancies",
+        "h_idx": 48,
+        "child": "against",
+        "t_idx": 49,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "Army",
+        "h_idx": 51,
+        "child": "pakistan",
+        "t_idx": 50,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "USER",
+        "h_idx": 52,
+        "child": "Army",
+        "t_idx": 51,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "needs",
+        "h_idx": 53,
+        "child": "USER",
+        "t_idx": 52,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "needs",
+        "h_idx": 53,
+        "child": "needs",
+        "t_idx": 53,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "take",
+        "h_idx": 55,
+        "child": "to",
+        "t_idx": 54,
+        "r": "aux"
+      },
+      {
+        "title": "PakQuake",
+        "head": "needs",
+        "h_idx": 53,
+        "child": "take",
+        "t_idx": 55,
+        "r": "xcomp"
+      },
+      {
+        "title": "PakQuake",
+        "head": "dialogue",
+        "h_idx": 58,
+        "child": "a",
+        "t_idx": 56,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "dialogue",
+        "h_idx": 58,
+        "child": "strong",
+        "t_idx": 57,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "take",
+        "h_idx": 55,
+        "child": "dialogue",
+        "t_idx": 58,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "dn",
+        "h_idx": 60,
+        "child": "rather",
+        "t_idx": 59,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "take",
+        "h_idx": 55,
+        "child": "dn",
+        "t_idx": 60,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "dn",
+        "h_idx": 60,
+        "child": "using",
+        "t_idx": 61,
+        "r": "pcomp"
+      },
+      {
+        "title": "PakQuake",
+        "head": "using",
+        "h_idx": 61,
+        "child": "force",
+        "t_idx": 62,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "needs",
+        "h_idx": 53,
+        "child": "ImranKhan",
+        "t_idx": 63,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "Quake",
+        "h_idx": 65,
+        "child": "Wednesday",
+        "t_idx": 64,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "USER",
+        "h_idx": 67,
+        "child": "Quake",
+        "t_idx": 65,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "USER",
+        "h_idx": 67,
+        "child": "RT",
+        "t_idx": 66,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": "USER",
+        "t_idx": 67,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "USER",
+        "h_idx": 67,
+        "child": ":",
+        "t_idx": 68,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": "19",
+        "t_idx": 69,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "19",
+        "h_idx": 69,
+        "child": "dead",
+        "t_idx": 70,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": ",",
+        "t_idx": 71,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "300",
+        "h_idx": 74,
+        "child": "more",
+        "t_idx": 72,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "300",
+        "h_idx": 74,
+        "child": "than",
+        "t_idx": 73,
+        "r": "quantmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": "300",
+        "t_idx": 74,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": "wounded",
+        "t_idx": 75,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolts",
+        "h_idx": 79,
+        "child": "as",
+        "t_idx": 76,
+        "r": "mark"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 78,
+        "child": "powerful",
+        "t_idx": 77,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolts",
+        "h_idx": 79,
+        "child": "earthquake",
+        "t_idx": 78,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "wounded",
+        "h_idx": 75,
+        "child": "jolts",
+        "t_idx": 79,
+        "r": "advcl"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jolts",
+        "h_idx": 79,
+        "child": "parts",
+        "t_idx": 80,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 80,
+        "child": "of",
+        "t_idx": 81,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "of",
+        "h_idx": 81,
+        "child": "Pakistan",
+        "t_idx": 82,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "USER",
+        "h_idx": 83,
+        "child": "USER",
+        "t_idx": 83,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "toll",
+        "h_idx": 89,
+        "child": "Read",
+        "t_idx": 84,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "Read",
+        "h_idx": 84,
+        "child": "more",
+        "t_idx": 85,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "Read",
+        "h_idx": 84,
+        "child": ":",
+        "t_idx": 86,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "Read",
+        "h_idx": 84,
+        "child": "G",
+        "t_idx": 87,
+        "r": "dep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "toll",
+        "h_idx": 89,
+        "child": "Death",
+        "t_idx": 88,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "climbs",
+        "h_idx": 92,
+        "child": "toll",
+        "t_idx": 89,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "toll",
+        "h_idx": 89,
+        "child": "from",
+        "t_idx": 90,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "from",
+        "h_idx": 90,
+        "child": "quake",
+        "t_idx": 91,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "climbs",
+        "h_idx": 92,
+        "child": "climbs",
+        "t_idx": 92,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "climbs",
+        "h_idx": 92,
+        "child": "to",
+        "t_idx": 93,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "to",
+        "h_idx": 93,
+        "child": "38",
+        "t_idx": 94,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "continue",
+        "h_idx": 98,
+        "child": "as",
+        "t_idx": 95,
+        "r": "mark"
+      },
+      {
+        "title": "PakQuake",
+        "head": "operations",
+        "h_idx": 97,
+        "child": "relief",
+        "t_idx": 96,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "continue",
+        "h_idx": 98,
+        "child": "operations",
+        "t_idx": 97,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "climbs",
+        "h_idx": 92,
+        "child": "continue",
+        "t_idx": 98,
+        "r": "advcl"
+      },
+      {
+        "title": "PakQuake",
+        "head": "climbs",
+        "h_idx": 92,
+        "child": ".",
+        "t_idx": 99,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

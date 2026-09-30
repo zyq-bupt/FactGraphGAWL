@@ -1,0 +1,1082 @@
+{
+  "doc_name": "PakQuake",
+  "doc_id": "PakQuake",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "PakQuake",
+  "system_name": "t5-large",
+  "article": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "PakQuake",
+    "text": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people. earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir (AJK) to subs of lahore. priority is restoring power from mangla and repairing damage to this main road.",
+    "sents": [
+      [
+        "death",
+        "toll",
+        "from",
+        "yesterday",
+        "earthquake",
+        "has",
+        "rose",
+        "to",
+        "37",
+        "with",
+        "more",
+        "than",
+        "500",
+        "people",
+        "injured",
+        "so",
+        "far",
+        "in",
+        "AJK",
+        "3",
+        "prayers",
+        "are",
+        "with",
+        "the",
+        "affected",
+        "people",
+        "."
+      ],
+      [
+        "earthquake",
+        "of",
+        "5.8",
+        "magnitude",
+        "s",
+        "shook",
+        "different",
+        "parts",
+        "of",
+        "azad",
+        "jammu",
+        "and",
+        "Kashmir",
+        "(",
+        "AJK",
+        ")",
+        "to",
+        "subs",
+        "of",
+        "lahore",
+        "."
+      ],
+      [
+        "priority",
+        "is",
+        "restoring",
+        "power",
+        "from",
+        "mangla",
+        "and",
+        "repairing",
+        "damage",
+        "to",
+        "this",
+        "main",
+        "road",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "yesterday",
+        "sent_id": 0,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "DATE",
+        "token_index": [
+          3
+        ],
+        "preceding_text": "death toll from",
+        "following_text": "earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "37",
+        "sent_id": 0,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          8
+        ],
+        "preceding_text": "death toll from yesterday earthquake has rose to",
+        "following_text": "with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "more than 500",
+        "sent_id": 0,
+        "pos": [
+          10,
+          13
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          10,
+          11,
+          12
+        ],
+        "preceding_text": "death toll from yesterday earthquake has rose to 37 with",
+        "following_text": "people injured so far in AJK 3 prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "AJK",
+        "sent_id": 0,
+        "pos": [
+          18,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          18
+        ],
+        "preceding_text": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in",
+        "following_text": "3 prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "3",
+        "sent_id": 0,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          19
+        ],
+        "preceding_text": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK",
+        "following_text": "prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "5.8",
+        "sent_id": 1,
+        "pos": [
+          2,
+          3
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          29
+        ],
+        "preceding_text": "earthquake of",
+        "following_text": "magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "azad jammu and Kashmir",
+        "sent_id": 1,
+        "pos": [
+          9,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          36,
+          37,
+          38,
+          39
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of",
+        "following_text": "( AJK ) to subs of lahore .",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "AJK",
+        "sent_id": 1,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          41
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir (",
+        "following_text": ") to subs of lahore .",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "lahore",
+        "sent_id": 1,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "GPE",
+        "token_index": [
+          46
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of",
+        "following_text": ".",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "mangla",
+        "sent_id": 2,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          53
+        ],
+        "preceding_text": "priority is restoring power from",
+        "following_text": "and repairing damage to this main road .",
+        "full_sentence": "priority is restoring power from mangla and repairing damage to this main road .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "PakQuake",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "death",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "rose",
+        "h_idx": 6,
+        "child": "toll",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "from",
+        "t_idx": 2,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 4,
+        "child": "yesterday",
+        "t_idx": 3,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "from",
+        "h_idx": 2,
+        "child": "earthquake",
+        "t_idx": 4,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "rose",
+        "h_idx": 6,
+        "child": "has",
+        "t_idx": 5,
+        "r": "aux"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "rose",
+        "t_idx": 6,
+        "r": "ccomp"
+      },
+      {
+        "title": "PakQuake",
+        "head": "rose",
+        "h_idx": 6,
+        "child": "to",
+        "t_idx": 7,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "to",
+        "h_idx": 7,
+        "child": "37",
+        "t_idx": 8,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "with",
+        "t_idx": 9,
+        "r": "mark"
+      },
+      {
+        "title": "PakQuake",
+        "head": "500",
+        "h_idx": 12,
+        "child": "more",
+        "t_idx": 10,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "500",
+        "h_idx": 12,
+        "child": "than",
+        "t_idx": 11,
+        "r": "quantmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "people",
+        "h_idx": 13,
+        "child": "500",
+        "t_idx": 12,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "people",
+        "t_idx": 13,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "people",
+        "h_idx": 13,
+        "child": "injured",
+        "t_idx": 14,
+        "r": "acl"
+      },
+      {
+        "title": "PakQuake",
+        "head": "far",
+        "h_idx": 16,
+        "child": "so",
+        "t_idx": 15,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "injured",
+        "h_idx": 14,
+        "child": "far",
+        "t_idx": 16,
+        "r": "advmod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "injured",
+        "h_idx": 14,
+        "child": "in",
+        "t_idx": 17,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "in",
+        "h_idx": 17,
+        "child": "AJK",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "prayers",
+        "h_idx": 20,
+        "child": "3",
+        "t_idx": 19,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "prayers",
+        "t_idx": 20,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "are",
+        "t_idx": 21,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": "with",
+        "t_idx": 22,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "people",
+        "h_idx": 25,
+        "child": "the",
+        "t_idx": 23,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "people",
+        "h_idx": 25,
+        "child": "affected",
+        "t_idx": 24,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "with",
+        "h_idx": 22,
+        "child": "people",
+        "t_idx": 25,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "are",
+        "h_idx": 21,
+        "child": ".",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "shook",
+        "h_idx": 32,
+        "child": "earthquake",
+        "t_idx": 27,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 27,
+        "child": "of",
+        "t_idx": 28,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "magnitude",
+        "h_idx": 30,
+        "child": "5.8",
+        "t_idx": 29,
+        "r": "nummod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "of",
+        "h_idx": 28,
+        "child": "magnitude",
+        "t_idx": 30,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "earthquake",
+        "h_idx": 27,
+        "child": "s",
+        "t_idx": 31,
+        "r": "appos"
+      },
+      {
+        "title": "PakQuake",
+        "head": "shook",
+        "h_idx": 32,
+        "child": "shook",
+        "t_idx": 32,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 34,
+        "child": "different",
+        "t_idx": 33,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "shook",
+        "h_idx": 32,
+        "child": "parts",
+        "t_idx": 34,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 34,
+        "child": "of",
+        "t_idx": 35,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jammu",
+        "h_idx": 37,
+        "child": "azad",
+        "t_idx": 36,
+        "r": "compound"
+      },
+      {
+        "title": "PakQuake",
+        "head": "of",
+        "h_idx": 35,
+        "child": "jammu",
+        "t_idx": 37,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jammu",
+        "h_idx": 37,
+        "child": "and",
+        "t_idx": 38,
+        "r": "cc"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jammu",
+        "h_idx": 37,
+        "child": "Kashmir",
+        "t_idx": 39,
+        "r": "conj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jammu",
+        "h_idx": 37,
+        "child": "(",
+        "t_idx": 40,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "jammu",
+        "h_idx": 37,
+        "child": "AJK",
+        "t_idx": 41,
+        "r": "appos"
+      },
+      {
+        "title": "PakQuake",
+        "head": "parts",
+        "h_idx": 34,
+        "child": ")",
+        "t_idx": 42,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "shook",
+        "h_idx": 32,
+        "child": "to",
+        "t_idx": 43,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "to",
+        "h_idx": 43,
+        "child": "subs",
+        "t_idx": 44,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "subs",
+        "h_idx": 44,
+        "child": "of",
+        "t_idx": 45,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "of",
+        "h_idx": 45,
+        "child": "lahore",
+        "t_idx": 46,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "shook",
+        "h_idx": 32,
+        "child": ".",
+        "t_idx": 47,
+        "r": "punct"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "priority",
+        "t_idx": 48,
+        "r": "nsubj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "is",
+        "t_idx": 49,
+        "r": "aux"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "restoring",
+        "t_idx": 50,
+        "r": "ROOT"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "power",
+        "t_idx": 51,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "from",
+        "t_idx": 52,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "from",
+        "h_idx": 52,
+        "child": "mangla",
+        "t_idx": 53,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "and",
+        "t_idx": 54,
+        "r": "cc"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": "repairing",
+        "t_idx": 55,
+        "r": "conj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "repairing",
+        "h_idx": 55,
+        "child": "damage",
+        "t_idx": 56,
+        "r": "dobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "damage",
+        "h_idx": 56,
+        "child": "to",
+        "t_idx": 57,
+        "r": "prep"
+      },
+      {
+        "title": "PakQuake",
+        "head": "road",
+        "h_idx": 60,
+        "child": "this",
+        "t_idx": 58,
+        "r": "det"
+      },
+      {
+        "title": "PakQuake",
+        "head": "road",
+        "h_idx": 60,
+        "child": "main",
+        "t_idx": 59,
+        "r": "amod"
+      },
+      {
+        "title": "PakQuake",
+        "head": "to",
+        "h_idx": 57,
+        "child": "road",
+        "t_idx": 60,
+        "r": "pobj"
+      },
+      {
+        "title": "PakQuake",
+        "head": "restoring",
+        "h_idx": 50,
+        "child": ".",
+        "t_idx": 61,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 3,
+        "name": "AJK",
+        "sent_id": 0,
+        "pos": [
+          18,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          18
+        ],
+        "preceding_text": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in",
+        "following_text": "3 prayers are with the affected people .",
+        "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in",
+        "mention": "AJK",
+        "context_right": "3 prayers are with the affected people .",
+        "wikipedia_id": 2745,
+        "entity_name": "Azad Kashmir",
+        "score": 4.600965976715088,
+        "url": "https://en.wikipedia.org/wiki?curid=2745",
+        "wikidata_id": "Q200130"
+      },
+      {
+        "mention_id": 6,
+        "name": "azad jammu and Kashmir",
+        "sent_id": 1,
+        "pos": [
+          9,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          36,
+          37,
+          38,
+          39
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of",
+        "following_text": "( AJK ) to subs of lahore .",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "earthquake of 5.8 magnitude s shook different parts of",
+        "mention": "azad jammu and Kashmir",
+        "context_right": "( ajk ) to subs of lahore .",
+        "wikipedia_id": 2745,
+        "entity_name": "Azad Kashmir",
+        "score": 11.52342414855957,
+        "url": "https://en.wikipedia.org/wiki?curid=2745",
+        "wikidata_id": "Q200130"
+      },
+      {
+        "mention_id": 7,
+        "name": "AJK",
+        "sent_id": 1,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          41
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir (",
+        "following_text": ") to subs of lahore .",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "earthquake of 5.8 magnitude s shook different parts of azad jammu and kashmir (",
+        "mention": "AJK",
+        "context_right": ") to subs of lahore .",
+        "wikipedia_id": 2745,
+        "entity_name": "Azad Kashmir",
+        "score": 10.205413818359375,
+        "url": "https://en.wikipedia.org/wiki?curid=2745",
+        "wikidata_id": "Q200130"
+      },
+      {
+        "mention_id": 8,
+        "name": "lahore",
+        "sent_id": 1,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "GPE",
+        "token_index": [
+          46
+        ],
+        "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of",
+        "following_text": ".",
+        "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 8,
+        "context_left": "earthquake of 5.8 magnitude s shook different parts of azad jammu and kashmir ( ajk ) to subs of",
+        "mention": "lahore",
+        "context_right": ".",
+        "wikipedia_id": 125315,
+        "entity_name": "Lahore",
+        "score": 9.446599960327148,
+        "url": "https://en.wikipedia.org/wiki?curid=125315",
+        "wikidata_id": "Q11739"
+      },
+      {
+        "mention_id": 9,
+        "name": "mangla",
+        "sent_id": 2,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          53
+        ],
+        "preceding_text": "priority is restoring power from",
+        "following_text": "and repairing damage to this main road .",
+        "full_sentence": "priority is restoring power from mangla and repairing damage to this main road .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 9,
+        "context_left": "priority is restoring power from",
+        "mention": "mangla",
+        "context_right": "and repairing damage to this main road .",
+        "wikipedia_id": 1497733,
+        "entity_name": "Mangla",
+        "score": 8.815625190734863,
+        "url": "https://en.wikipedia.org/wiki?curid=1497733",
+        "wikidata_id": "Q9296477"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 3,
+          "name": "AJK",
+          "sent_id": 0,
+          "pos": [
+            18,
+            19
+          ],
+          "type": "GPE",
+          "token_index": [
+            18
+          ],
+          "preceding_text": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in",
+          "following_text": "3 prayers are with the affected people .",
+          "full_sentence": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in AJK 3 prayers are with the affected people .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "death toll from yesterday earthquake has rose to 37 with more than 500 people injured so far in",
+          "mention": "AJK",
+          "context_right": "3 prayers are with the affected people .",
+          "wikipedia_id": 2745,
+          "entity_name": "Azad Kashmir",
+          "score": 4.600965976715088,
+          "url": "https://en.wikipedia.org/wiki?curid=2745",
+          "wikidata_id": "Q200130"
+        },
+        {
+          "mention_id": 6,
+          "name": "azad jammu and Kashmir",
+          "sent_id": 1,
+          "pos": [
+            9,
+            13
+          ],
+          "type": "GPE",
+          "token_index": [
+            36,
+            37,
+            38,
+            39
+          ],
+          "preceding_text": "earthquake of 5.8 magnitude s shook different parts of",
+          "following_text": "( AJK ) to subs of lahore .",
+          "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "earthquake of 5.8 magnitude s shook different parts of",
+          "mention": "azad jammu and Kashmir",
+          "context_right": "( ajk ) to subs of lahore .",
+          "wikipedia_id": 2745,
+          "entity_name": "Azad Kashmir",
+          "score": 11.52342414855957,
+          "url": "https://en.wikipedia.org/wiki?curid=2745",
+          "wikidata_id": "Q200130"
+        },
+        {
+          "mention_id": 7,
+          "name": "AJK",
+          "sent_id": 1,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            41
+          ],
+          "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir (",
+          "following_text": ") to subs of lahore .",
+          "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "earthquake of 5.8 magnitude s shook different parts of azad jammu and kashmir (",
+          "mention": "AJK",
+          "context_right": ") to subs of lahore .",
+          "wikipedia_id": 2745,
+          "entity_name": "Azad Kashmir",
+          "score": 10.205413818359375,
+          "url": "https://en.wikipedia.org/wiki?curid=2745",
+          "wikidata_id": "Q200130"
+        }
+      ],
+      [
+        {
+          "mention_id": 8,
+          "name": "lahore",
+          "sent_id": 1,
+          "pos": [
+            19,
+            20
+          ],
+          "type": "GPE",
+          "token_index": [
+            46
+          ],
+          "preceding_text": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of",
+          "following_text": ".",
+          "full_sentence": "earthquake of 5.8 magnitude s shook different parts of azad jammu and Kashmir ( AJK ) to subs of lahore .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 8,
+          "context_left": "earthquake of 5.8 magnitude s shook different parts of azad jammu and kashmir ( ajk ) to subs of",
+          "mention": "lahore",
+          "context_right": ".",
+          "wikipedia_id": 125315,
+          "entity_name": "Lahore",
+          "score": 9.446599960327148,
+          "url": "https://en.wikipedia.org/wiki?curid=125315",
+          "wikidata_id": "Q11739"
+        }
+      ],
+      [
+        {
+          "mention_id": 9,
+          "name": "mangla",
+          "sent_id": 2,
+          "pos": [
+            5,
+            6
+          ],
+          "type": "GPE",
+          "token_index": [
+            53
+          ],
+          "preceding_text": "priority is restoring power from",
+          "following_text": "and repairing damage to this main road .",
+          "full_sentence": "priority is restoring power from mangla and repairing damage to this main road .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 9,
+          "context_left": "priority is restoring power from",
+          "mention": "mangla",
+          "context_right": "and repairing damage to this main road .",
+          "wikipedia_id": 1497733,
+          "entity_name": "Mangla",
+          "score": 8.815625190734863,
+          "url": "https://en.wikipedia.org/wiki?curid=1497733",
+          "wikidata_id": "Q9296477"
+        }
+      ]
+    ],
+    "ent_relation": []
+  },
+  "humman_summary": {
+    "title": "PakQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "doc_name": "Harda",
+  "doc_id": "Harda",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Harda",
+  "system_name": "t5-large",
+  "article": {
+    "title": "Harda",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "Harda",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "Harda",
+    "text": "death toll rises to 24 in the twin train derails in harda, madhya Pradesh. kamayani express and janata express derail at harda following flash floods.",
+    "sents": [
+      [
+        "death",
+        "toll",
+        "rises",
+        "to",
+        "24",
+        "in",
+        "the",
+        "twin",
+        "train",
+        "derails",
+        "in",
+        "harda",
+        ",",
+        "madhya",
+        "Pradesh",
+        "."
+      ],
+      [
+        "kamayani",
+        "express",
+        "and",
+        "janata",
+        "express",
+        "derail",
+        "at",
+        "harda",
+        "following",
+        "flash",
+        "floods",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "24",
+        "sent_id": 0,
+        "pos": [
+          4,
+          5
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          4
+        ],
+        "preceding_text": "death toll rises to",
+        "following_text": "in the twin train derails in harda , madhya Pradesh .",
+        "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "harda",
+        "sent_id": 0,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "GPE",
+        "token_index": [
+          11
+        ],
+        "preceding_text": "death toll rises to 24 in the twin train derails in",
+        "following_text": ", madhya Pradesh .",
+        "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "madhya Pradesh",
+        "sent_id": 0,
+        "pos": [
+          13,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          13,
+          14
+        ],
+        "preceding_text": "death toll rises to 24 in the twin train derails in harda ,",
+        "following_text": ".",
+        "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "kamayani express",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "PRODUCT",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "and janata express derail at harda following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "janata express",
+        "sent_id": 1,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PRODUCT",
+        "token_index": [
+          19,
+          20
+        ],
+        "preceding_text": "kamayani express and",
+        "following_text": "derail at harda following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "harda",
+        "sent_id": 1,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          23
+        ],
+        "preceding_text": "kamayani express and janata express derail at",
+        "following_text": "following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Harda",
+        "head": "toll",
+        "h_idx": 1,
+        "child": "death",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "Harda",
+        "head": "rises",
+        "h_idx": 2,
+        "child": "toll",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "Harda",
+        "head": "rises",
+        "h_idx": 2,
+        "child": "rises",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "Harda",
+        "head": "rises",
+        "h_idx": 2,
+        "child": "to",
+        "t_idx": 3,
+        "r": "prep"
+      },
+      {
+        "title": "Harda",
+        "head": "to",
+        "h_idx": 3,
+        "child": "24",
+        "t_idx": 4,
+        "r": "pobj"
+      },
+      {
+        "title": "Harda",
+        "head": "rises",
+        "h_idx": 2,
+        "child": "in",
+        "t_idx": 5,
+        "r": "prep"
+      },
+      {
+        "title": "Harda",
+        "head": "derails",
+        "h_idx": 9,
+        "child": "the",
+        "t_idx": 6,
+        "r": "det"
+      },
+      {
+        "title": "Harda",
+        "head": "train",
+        "h_idx": 8,
+        "child": "twin",
+        "t_idx": 7,
+        "r": "amod"
+      },
+      {
+        "title": "Harda",
+        "head": "derails",
+        "h_idx": 9,
+        "child": "train",
+        "t_idx": 8,
+        "r": "compound"
+      },
+      {
+        "title": "Harda",
+        "head": "in",
+        "h_idx": 5,
+        "child": "derails",
+        "t_idx": 9,
+        "r": "pobj"
+      },
+      {
+        "title": "Harda",
+        "head": "derails",
+        "h_idx": 9,
+        "child": "in",
+        "t_idx": 10,
+        "r": "prep"
+      },
+      {
+        "title": "Harda",
+        "head": "in",
+        "h_idx": 10,
+        "child": "harda",
+        "t_idx": 11,
+        "r": "pobj"
+      },
+      {
+        "title": "Harda",
+        "head": "harda",
+        "h_idx": 11,
+        "child": ",",
+        "t_idx": 12,
+        "r": "punct"
+      },
+      {
+        "title": "Harda",
+        "head": "Pradesh",
+        "h_idx": 14,
+        "child": "madhya",
+        "t_idx": 13,
+        "r": "compound"
+      },
+      {
+        "title": "Harda",
+        "head": "harda",
+        "h_idx": 11,
+        "child": "Pradesh",
+        "t_idx": 14,
+        "r": "appos"
+      },
+      {
+        "title": "Harda",
+        "head": "rises",
+        "h_idx": 2,
+        "child": ".",
+        "t_idx": 15,
+        "r": "punct"
+      },
+      {
+        "title": "Harda",
+        "head": "express",
+        "h_idx": 17,
+        "child": "kamayani",
+        "t_idx": 16,
+        "r": "nmod"
+      },
+      {
+        "title": "Harda",
+        "head": "derail",
+        "h_idx": 21,
+        "child": "express",
+        "t_idx": 17,
+        "r": "nsubj"
+      },
+      {
+        "title": "Harda",
+        "head": "express",
+        "h_idx": 17,
+        "child": "and",
+        "t_idx": 18,
+        "r": "cc"
+      },
+      {
+        "title": "Harda",
+        "head": "express",
+        "h_idx": 20,
+        "child": "janata",
+        "t_idx": 19,
+        "r": "compound"
+      },
+      {
+        "title": "Harda",
+        "head": "express",
+        "h_idx": 17,
+        "child": "express",
+        "t_idx": 20,
+        "r": "conj"
+      },
+      {
+        "title": "Harda",
+        "head": "derail",
+        "h_idx": 21,
+        "child": "derail",
+        "t_idx": 21,
+        "r": "ROOT"
+      },
+      {
+        "title": "Harda",
+        "head": "derail",
+        "h_idx": 21,
+        "child": "at",
+        "t_idx": 22,
+        "r": "prep"
+      },
+      {
+        "title": "Harda",
+        "head": "at",
+        "h_idx": 22,
+        "child": "harda",
+        "t_idx": 23,
+        "r": "pobj"
+      },
+      {
+        "title": "Harda",
+        "head": "derail",
+        "h_idx": 21,
+        "child": "following",
+        "t_idx": 24,
+        "r": "prep"
+      },
+      {
+        "title": "Harda",
+        "head": "floods",
+        "h_idx": 26,
+        "child": "flash",
+        "t_idx": 25,
+        "r": "compound"
+      },
+      {
+        "title": "Harda",
+        "head": "following",
+        "h_idx": 24,
+        "child": "floods",
+        "t_idx": 26,
+        "r": "pobj"
+      },
+      {
+        "title": "Harda",
+        "head": "derail",
+        "h_idx": 21,
+        "child": ".",
+        "t_idx": 27,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 1,
+        "name": "harda",
+        "sent_id": 0,
+        "pos": [
+          11,
+          12
+        ],
+        "type": "GPE",
+        "token_index": [
+          11
+        ],
+        "preceding_text": "death toll rises to 24 in the twin train derails in",
+        "following_text": ", madhya Pradesh .",
+        "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "death toll rises to 24 in the twin train derails in",
+        "mention": "harda",
+        "context_right": ", madhya pradesh .",
+        "wikipedia_id": 918055,
+        "entity_name": "Harda",
+        "score": 10.991534233093262,
+        "url": "https://en.wikipedia.org/wiki?curid=918055",
+        "wikidata_id": "Q1707802"
+      },
+      {
+        "mention_id": 2,
+        "name": "madhya Pradesh",
+        "sent_id": 0,
+        "pos": [
+          13,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          13,
+          14
+        ],
+        "preceding_text": "death toll rises to 24 in the twin train derails in harda ,",
+        "following_text": ".",
+        "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "death toll rises to 24 in the twin train derails in harda ,",
+        "mention": "madhya Pradesh",
+        "context_right": ".",
+        "wikipedia_id": 47945,
+        "entity_name": "Madhya Pradesh",
+        "score": 10.365921974182129,
+        "url": "https://en.wikipedia.org/wiki?curid=47945",
+        "wikidata_id": "Q1188"
+      },
+      {
+        "mention_id": 3,
+        "name": "kamayani express",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "PRODUCT",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "and janata express derail at harda following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "",
+        "mention": "kamayani express",
+        "context_right": "and janata express derail at harda following flash floods .",
+        "wikipedia_id": 46655002,
+        "entity_name": "Kamayani Express",
+        "score": 11.585684776306152,
+        "url": "https://en.wikipedia.org/wiki?curid=46655002",
+        "wikidata_id": "Q19892417"
+      },
+      {
+        "mention_id": 4,
+        "name": "janata express",
+        "sent_id": 1,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PRODUCT",
+        "token_index": [
+          19,
+          20
+        ],
+        "preceding_text": "kamayani express and",
+        "following_text": "derail at harda following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "kamayani express and",
+        "mention": "janata express",
+        "context_right": "derail at harda following flash floods .",
+        "wikipedia_id": 28124886,
+        "entity_name": "Bhopal Janata Express",
+        "score": 0.9771547317504883,
+        "url": "https://en.wikipedia.org/wiki?curid=28124886",
+        "wikidata_id": "Q4902003"
+      },
+      {
+        "mention_id": 5,
+        "name": "harda",
+        "sent_id": 1,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          23
+        ],
+        "preceding_text": "kamayani express and janata express derail at",
+        "following_text": "following flash floods .",
+        "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 5,
+        "context_left": "kamayani express and janata express derail at",
+        "mention": "harda",
+        "context_right": "following flash floods .",
+        "wikipedia_id": 918055,
+        "entity_name": "Harda",
+        "score": 8.702160835266113,
+        "url": "https://en.wikipedia.org/wiki?curid=918055",
+        "wikidata_id": "Q1707802"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 1,
+          "name": "harda",
+          "sent_id": 0,
+          "pos": [
+            11,
+            12
+          ],
+          "type": "GPE",
+          "token_index": [
+            11
+          ],
+          "preceding_text": "death toll rises to 24 in the twin train derails in",
+          "following_text": ", madhya Pradesh .",
+          "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "death toll rises to 24 in the twin train derails in",
+          "mention": "harda",
+          "context_right": ", madhya pradesh .",
+          "wikipedia_id": 918055,
+          "entity_name": "Harda",
+          "score": 10.991534233093262,
+          "url": "https://en.wikipedia.org/wiki?curid=918055",
+          "wikidata_id": "Q1707802"
+        },
+        {
+          "mention_id": 5,
+          "name": "harda",
+          "sent_id": 1,
+          "pos": [
+            7,
+            8
+          ],
+          "type": "GPE",
+          "token_index": [
+            23
+          ],
+          "preceding_text": "kamayani express and janata express derail at",
+          "following_text": "following flash floods .",
+          "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 5,
+          "context_left": "kamayani express and janata express derail at",
+          "mention": "harda",
+          "context_right": "following flash floods .",
+          "wikipedia_id": 918055,
+          "entity_name": "Harda",
+          "score": 8.702160835266113,
+          "url": "https://en.wikipedia.org/wiki?curid=918055",
+          "wikidata_id": "Q1707802"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "madhya Pradesh",
+          "sent_id": 0,
+          "pos": [
+            13,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            13,
+            14
+          ],
+          "preceding_text": "death toll rises to 24 in the twin train derails in harda ,",
+          "following_text": ".",
+          "full_sentence": "death toll rises to 24 in the twin train derails in harda , madhya Pradesh .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "death toll rises to 24 in the twin train derails in harda ,",
+          "mention": "madhya Pradesh",
+          "context_right": ".",
+          "wikipedia_id": 47945,
+          "entity_name": "Madhya Pradesh",
+          "score": 10.365921974182129,
+          "url": "https://en.wikipedia.org/wiki?curid=47945",
+          "wikidata_id": "Q1188"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "kamayani express",
+          "sent_id": 1,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "PRODUCT",
+          "token_index": [
+            16,
+            17
+          ],
+          "preceding_text": "",
+          "following_text": "and janata express derail at harda following flash floods .",
+          "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "",
+          "mention": "kamayani express",
+          "context_right": "and janata express derail at harda following flash floods .",
+          "wikipedia_id": 46655002,
+          "entity_name": "Kamayani Express",
+          "score": 11.585684776306152,
+          "url": "https://en.wikipedia.org/wiki?curid=46655002",
+          "wikidata_id": "Q19892417"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "janata express",
+          "sent_id": 1,
+          "pos": [
+            3,
+            5
+          ],
+          "type": "PRODUCT",
+          "token_index": [
+            19,
+            20
+          ],
+          "preceding_text": "kamayani express and",
+          "following_text": "derail at harda following flash floods .",
+          "full_sentence": "kamayani express and janata express derail at harda following flash floods .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "kamayani express and",
+          "mention": "janata express",
+          "context_right": "derail at harda following flash floods .",
+          "wikipedia_id": 28124886,
+          "entity_name": "Bhopal Janata Express",
+          "score": 0.9771547317504883,
+          "url": "https://en.wikipedia.org/wiki?curid=28124886",
+          "wikidata_id": "Q4902003"
+        }
+      ]
+    ],
+    "ent_relation": []
+  },
+  "humman_summary": {
+    "title": "Harda",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

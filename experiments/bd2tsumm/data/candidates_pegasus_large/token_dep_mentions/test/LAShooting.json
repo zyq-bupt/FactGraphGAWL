@@ -1,0 +1,988 @@
+{
+  "doc_name": "LAShooting",
+  "doc_id": "LAShooting",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "LAShooting",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "LAShooting",
+    "text": "URL gossip Suspect in custody after Los Angeles Airport shooting; multiple victims reported - USER, USER URL sp4zee Stay alert, Multiple People Shot at LAX; Shooter in Custody | KTLA 5 URL URL RT USER: Sources tell CBS that suspect in shooting was an off-duty TSA agent &gt;&gt; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack, in LAX it took mins to get the shooter!",
+    "sents": [
+      [
+        "URL",
+        "gossip"
+      ],
+      [
+        "Suspect",
+        "in",
+        "custody",
+        "after",
+        "Los",
+        "Angeles",
+        "Airport",
+        "shooting",
+        ";",
+        "multiple",
+        "victims",
+        "reported",
+        "-",
+        "USER",
+        ",",
+        "USER",
+        "URL",
+        "sp4zee",
+        "Stay",
+        "alert",
+        ",",
+        "Multiple",
+        "People",
+        "Shot",
+        "at",
+        "LAX",
+        ";",
+        "Shooter",
+        "in",
+        "Custody",
+        "|"
+      ],
+      [
+        "KTLA",
+        "5",
+        "URL",
+        "URL",
+        "RT",
+        "USER",
+        ":"
+      ],
+      [
+        "Sources",
+        "tell",
+        "CBS",
+        "that",
+        "suspect",
+        "in",
+        "shooting",
+        "was",
+        "an",
+        "off",
+        "-",
+        "duty",
+        "TSA",
+        "agent",
+        "&",
+        "gt;&gt",
+        ";",
+        "URL",
+        "LAX",
+        "Shooting",
+        "The",
+        "LAX",
+        "shooting",
+        "gives",
+        "me",
+        "the",
+        "chilly",
+        "feeling",
+        "I",
+        "got",
+        "during",
+        "LAX",
+        "GhettoAttack",
+        ",",
+        "in",
+        "LAX",
+        "it",
+        "took",
+        "mins",
+        "to",
+        "get",
+        "the",
+        "shooter",
+        "!"
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Los Angeles Airport",
+        "sent_id": 1,
+        "pos": [
+          4,
+          7
+        ],
+        "type": "FAC",
+        "token_index": [
+          6,
+          7,
+          8
+        ],
+        "preceding_text": "Suspect in custody after",
+        "following_text": "shooting ; multiple victims reported - USER , USER URL sp4zee Stay alert , Multiple People Shot at LAX ; Shooter in Custody |",
+        "full_sentence": "Suspect in custody after Los Angeles Airport shooting ; multiple victims reported - USER , USER URL sp4zee Stay alert , Multiple People Shot at LAX ; Shooter in Custody |",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "USER",
+        "sent_id": 1,
+        "pos": [
+          15,
+          16
+        ],
+        "type": "PERSON",
+        "token_index": [
+          17
+        ],
+        "preceding_text": "Suspect in custody after Los Angeles Airport shooting ; multiple victims reported - USER ,",
+        "following_text": "URL sp4zee Stay alert , Multiple People Shot at LAX ; Shooter in Custody |",
+        "full_sentence": "Suspect in custody after Los Angeles Airport shooting ; multiple victims reported - USER , USER URL sp4zee Stay alert , Multiple People Shot at LAX ; Shooter in Custody |",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "LAX",
+        "sent_id": 1,
+        "pos": [
+          25,
+          26
+        ],
+        "type": "FAC",
+        "token_index": [
+          27
+        ],
+        "preceding_text": "Suspect in custody after Los Angeles Airport shooting ; multiple victims reported - USER , USER URL sp4zee Stay alert , Multiple People Shot at",
+        "following_text": "; Shooter in Custody |",
+        "full_sentence": "Suspect in custody after Los Angeles Airport shooting ; multiple victims reported - USER , USER URL sp4zee Stay alert , Multiple People Shot at LAX ; Shooter in Custody |",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "KTLA 5",
+        "sent_id": 2,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "ORG",
+        "token_index": [
+          33,
+          34
+        ],
+        "preceding_text": "",
+        "following_text": "URL URL RT USER :",
+        "full_sentence": "KTLA 5 URL URL RT USER :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "CBS",
+        "sent_id": 3,
+        "pos": [
+          2,
+          3
+        ],
+        "type": "ORG",
+        "token_index": [
+          42
+        ],
+        "preceding_text": "Sources tell",
+        "following_text": "that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "TSA",
+        "sent_id": 3,
+        "pos": [
+          12,
+          13
+        ],
+        "type": "ORG",
+        "token_index": [
+          52
+        ],
+        "preceding_text": "Sources tell CBS that suspect in shooting was an off - duty",
+        "following_text": "agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "LAX",
+        "sent_id": 3,
+        "pos": [
+          21,
+          22
+        ],
+        "type": "FAC",
+        "token_index": [
+          61
+        ],
+        "preceding_text": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The",
+        "following_text": "shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "LAX GhettoAttack",
+        "sent_id": 3,
+        "pos": [
+          31,
+          33
+        ],
+        "type": "FAC",
+        "token_index": [
+          71,
+          72
+        ],
+        "preceding_text": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during",
+        "following_text": ", in LAX it took mins to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "LAX",
+        "sent_id": 3,
+        "pos": [
+          35,
+          36
+        ],
+        "type": "FAC",
+        "token_index": [
+          75
+        ],
+        "preceding_text": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in",
+        "following_text": "it took mins to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "mins",
+        "sent_id": 3,
+        "pos": [
+          38,
+          39
+        ],
+        "type": "TIME",
+        "token_index": [
+          78
+        ],
+        "preceding_text": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took",
+        "following_text": "to get the shooter !",
+        "full_sentence": "Sources tell CBS that suspect in shooting was an off - duty TSA agent & gt;&gt ; URL LAX Shooting The LAX shooting gives me the chilly feeling I got during LAX GhettoAttack , in LAX it took mins to get the shooter !",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "LAShooting",
+        "head": "gossip",
+        "h_idx": 1,
+        "child": "URL",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "gossip",
+        "h_idx": 1,
+        "child": "gossip",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "Suspect",
+        "t_idx": 2,
+        "r": "dep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Suspect",
+        "h_idx": 2,
+        "child": "in",
+        "t_idx": 3,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "in",
+        "h_idx": 3,
+        "child": "custody",
+        "t_idx": 4,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Suspect",
+        "h_idx": 2,
+        "child": "after",
+        "t_idx": 5,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Angeles",
+        "h_idx": 7,
+        "child": "Los",
+        "t_idx": 6,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Airport",
+        "h_idx": 8,
+        "child": "Angeles",
+        "t_idx": 7,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "shooting",
+        "h_idx": 9,
+        "child": "Airport",
+        "t_idx": 8,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "after",
+        "h_idx": 5,
+        "child": "shooting",
+        "t_idx": 9,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Suspect",
+        "h_idx": 2,
+        "child": ";",
+        "t_idx": 10,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "victims",
+        "h_idx": 12,
+        "child": "multiple",
+        "t_idx": 11,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "victims",
+        "t_idx": 12,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "reported",
+        "t_idx": 13,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "-",
+        "t_idx": 14,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "USER",
+        "t_idx": 15,
+        "r": "npadvmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": ",",
+        "t_idx": 16,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": "USER",
+        "t_idx": 17,
+        "r": "appos"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": "URL",
+        "t_idx": 18,
+        "r": "appos"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shot",
+        "h_idx": 25,
+        "child": "sp4zee",
+        "t_idx": 19,
+        "r": "npadvmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shot",
+        "h_idx": 25,
+        "child": "Stay",
+        "t_idx": 20,
+        "r": "acl"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Stay",
+        "h_idx": 20,
+        "child": "alert",
+        "t_idx": 21,
+        "r": "acomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shot",
+        "h_idx": 25,
+        "child": ",",
+        "t_idx": 22,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "People",
+        "h_idx": 24,
+        "child": "Multiple",
+        "t_idx": 23,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shot",
+        "h_idx": 25,
+        "child": "People",
+        "t_idx": 24,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": "Shot",
+        "t_idx": 25,
+        "r": "acl"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shot",
+        "h_idx": 25,
+        "child": "at",
+        "t_idx": 26,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "at",
+        "h_idx": 26,
+        "child": "LAX",
+        "t_idx": 27,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": ";",
+        "t_idx": 28,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 15,
+        "child": "Shooter",
+        "t_idx": 29,
+        "r": "appos"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shooter",
+        "h_idx": 29,
+        "child": "in",
+        "t_idx": 30,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "in",
+        "h_idx": 30,
+        "child": "Custody",
+        "t_idx": 31,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "reported",
+        "h_idx": 13,
+        "child": "|",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "KTLA",
+        "h_idx": 33,
+        "child": "KTLA",
+        "t_idx": 33,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "KTLA",
+        "h_idx": 33,
+        "child": "5",
+        "t_idx": 34,
+        "r": "nummod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 38,
+        "child": "URL",
+        "t_idx": 35,
+        "r": "nmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 38,
+        "child": "URL",
+        "t_idx": 36,
+        "r": "nmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 38,
+        "child": "RT",
+        "t_idx": 37,
+        "r": "nmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "KTLA",
+        "h_idx": 33,
+        "child": "USER",
+        "t_idx": 38,
+        "r": "appos"
+      },
+      {
+        "title": "LAShooting",
+        "head": "USER",
+        "h_idx": 38,
+        "child": ":",
+        "t_idx": 39,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "Sources",
+        "t_idx": 40,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "tell",
+        "t_idx": 41,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "CBS",
+        "t_idx": 42,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "was",
+        "h_idx": 47,
+        "child": "that",
+        "t_idx": 43,
+        "r": "mark"
+      },
+      {
+        "title": "LAShooting",
+        "head": "was",
+        "h_idx": 47,
+        "child": "suspect",
+        "t_idx": 44,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "suspect",
+        "h_idx": 44,
+        "child": "in",
+        "t_idx": 45,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "in",
+        "h_idx": 45,
+        "child": "shooting",
+        "t_idx": 46,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "was",
+        "t_idx": 47,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 53,
+        "child": "an",
+        "t_idx": 48,
+        "r": "det"
+      },
+      {
+        "title": "LAShooting",
+        "head": "duty",
+        "h_idx": 51,
+        "child": "off",
+        "t_idx": 49,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "duty",
+        "h_idx": 51,
+        "child": "-",
+        "t_idx": 50,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 53,
+        "child": "duty",
+        "t_idx": 51,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 53,
+        "child": "TSA",
+        "t_idx": 52,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "was",
+        "h_idx": 47,
+        "child": "agent",
+        "t_idx": 53,
+        "r": "attr"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "&",
+        "t_idx": 54,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "&",
+        "h_idx": 54,
+        "child": "gt;&gt",
+        "t_idx": 55,
+        "r": "nmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": ";",
+        "t_idx": 56,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "URL",
+        "t_idx": 57,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "Shooting",
+        "h_idx": 59,
+        "child": "LAX",
+        "t_idx": 58,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "URL",
+        "h_idx": 57,
+        "child": "Shooting",
+        "t_idx": 59,
+        "r": "appos"
+      },
+      {
+        "title": "LAShooting",
+        "head": "shooting",
+        "h_idx": 62,
+        "child": "The",
+        "t_idx": 60,
+        "r": "det"
+      },
+      {
+        "title": "LAShooting",
+        "head": "shooting",
+        "h_idx": 62,
+        "child": "LAX",
+        "t_idx": 61,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "gives",
+        "h_idx": 63,
+        "child": "shooting",
+        "t_idx": 62,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "gives",
+        "t_idx": 63,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "gives",
+        "h_idx": 63,
+        "child": "me",
+        "t_idx": 64,
+        "r": "dative"
+      },
+      {
+        "title": "LAShooting",
+        "head": "feeling",
+        "h_idx": 67,
+        "child": "the",
+        "t_idx": 65,
+        "r": "det"
+      },
+      {
+        "title": "LAShooting",
+        "head": "feeling",
+        "h_idx": 67,
+        "child": "chilly",
+        "t_idx": 66,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "gives",
+        "h_idx": 63,
+        "child": "feeling",
+        "t_idx": 67,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "got",
+        "h_idx": 69,
+        "child": "I",
+        "t_idx": 68,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "feeling",
+        "h_idx": 67,
+        "child": "got",
+        "t_idx": 69,
+        "r": "relcl"
+      },
+      {
+        "title": "LAShooting",
+        "head": "got",
+        "h_idx": 69,
+        "child": "during",
+        "t_idx": 70,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "GhettoAttack",
+        "h_idx": 72,
+        "child": "LAX",
+        "t_idx": 71,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "during",
+        "h_idx": 70,
+        "child": "GhettoAttack",
+        "t_idx": 72,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": ",",
+        "t_idx": 73,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "in",
+        "t_idx": 74,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "in",
+        "h_idx": 74,
+        "child": "LAX",
+        "t_idx": 75,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "it",
+        "t_idx": 76,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 41,
+        "child": "took",
+        "t_idx": 77,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "mins",
+        "t_idx": 78,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "get",
+        "h_idx": 80,
+        "child": "to",
+        "t_idx": 79,
+        "r": "aux"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "get",
+        "t_idx": 80,
+        "r": "xcomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "shooter",
+        "h_idx": 82,
+        "child": "the",
+        "t_idx": 81,
+        "r": "det"
+      },
+      {
+        "title": "LAShooting",
+        "head": "get",
+        "h_idx": 80,
+        "child": "shooter",
+        "t_idx": 82,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "took",
+        "h_idx": 77,
+        "child": "!",
+        "t_idx": 83,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

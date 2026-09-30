@@ -1,0 +1,9 @@
+{
+  "variant": "S2-K_PT",
+  "backend": "real",
+  "higher_is_better": true,
+  "treat_as_distance": false,
+  "kernel": "kernel.gawl.compute_gawl_kernel_v2 via long_context.scoring.score_article_candidate",
+  "n_ok": 26,
+  "n_failed": 0
+}

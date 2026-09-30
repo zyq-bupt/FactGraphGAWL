@@ -1,0 +1,1217 @@
+{
+  "doc_name": "Hagupit",
+  "doc_id": "Hagupit",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Hagupit",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "Hagupit",
+    "text": "\"USER: Half a million leave homes in Philippines to avoid Typhoon Hagiput URL URL Typhoon Hagupit triggers massive evacuation in Philippines URL RT USER: Powerful Typhoon Typh has more than half a million people evacuating the Philippines: URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html Thousands flee as typhoon Typh barrels toward Calbayog city URL Typhoon RubyPH Evacuations underway as 500,000 people flee barrels toward typhoon RubyPH.",
+    "sents": [
+      [
+        "\"",
+        "USER",
+        ":",
+        "Half",
+        "a",
+        "million",
+        "leave",
+        "homes",
+        "in",
+        "Philippines",
+        "to",
+        "avoid",
+        "Typhoon",
+        "Hagiput",
+        "URL"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "Typhoon",
+        "Hagupit",
+        "triggers",
+        "massive",
+        "evacuation",
+        "in",
+        "Philippines"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "RT",
+        "USER",
+        ":",
+        "Powerful",
+        "Typhoon",
+        "Typh",
+        "has",
+        "more",
+        "than",
+        "half",
+        "a",
+        "million",
+        "people",
+        "evacuating",
+        "the",
+        "Philippines",
+        ":",
+        "URL",
+        "http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html"
+      ],
+      [
+        "Thousands",
+        "flee",
+        "as",
+        "typhoon",
+        "Typh",
+        "barrels",
+        "toward",
+        "Calbayog",
+        "city",
+        "URL"
+      ],
+      [
+        "Typhoon",
+        "RubyPH",
+        "Evacuations",
+        "underway",
+        "as",
+        "500,000",
+        "people",
+        "flee",
+        "barrels",
+        "toward",
+        "typhoon",
+        "RubyPH",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Half a million",
+        "sent_id": 0,
+        "pos": [
+          3,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          3,
+          4,
+          5
+        ],
+        "preceding_text": "\" USER :",
+        "following_text": "leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Philippines",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "\" USER : Half a million leave homes in",
+        "following_text": "to avoid Typhoon Hagiput URL",
+        "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Typhoon Hagiput",
+        "sent_id": 0,
+        "pos": [
+          12,
+          14
+        ],
+        "type": "EVENT",
+        "token_index": [
+          12,
+          13
+        ],
+        "preceding_text": "\" USER : Half a million leave homes in Philippines to avoid",
+        "following_text": "URL",
+        "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Typhoon Hagupit",
+        "sent_id": 2,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "triggers massive evacuation in Philippines",
+        "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Philippines",
+        "sent_id": 2,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          22
+        ],
+        "preceding_text": "Typhoon Hagupit triggers massive evacuation in",
+        "following_text": "",
+        "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "Typhoon Typh",
+        "sent_id": 4,
+        "pos": [
+          4,
+          6
+        ],
+        "type": "EVENT",
+        "token_index": [
+          28,
+          29
+        ],
+        "preceding_text": "RT USER : Powerful",
+        "following_text": "has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "full_sentence": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "more than half a million",
+        "sent_id": 4,
+        "pos": [
+          7,
+          12
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "preceding_text": "RT USER : Powerful Typhoon Typh has",
+        "following_text": "people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "full_sentence": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Philippines",
+        "sent_id": 4,
+        "pos": [
+          15,
+          16
+        ],
+        "type": "GPE",
+        "token_index": [
+          39
+        ],
+        "preceding_text": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the",
+        "following_text": ": URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "full_sentence": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "Thousands",
+        "sent_id": 5,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          43
+        ],
+        "preceding_text": "",
+        "following_text": "flee as typhoon Typh barrels toward Calbayog city URL",
+        "full_sentence": "Thousands flee as typhoon Typh barrels toward Calbayog city URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "Calbayog",
+        "sent_id": 5,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          50
+        ],
+        "preceding_text": "Thousands flee as typhoon Typh barrels toward",
+        "following_text": "city URL",
+        "full_sentence": "Thousands flee as typhoon Typh barrels toward Calbayog city URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "Typhoon RubyPH",
+        "sent_id": 6,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          53,
+          54
+        ],
+        "preceding_text": "",
+        "following_text": "Evacuations underway as 500,000 people flee barrels toward typhoon RubyPH .",
+        "full_sentence": "Typhoon RubyPH Evacuations underway as 500,000 people flee barrels toward typhoon RubyPH .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "500,000",
+        "sent_id": 6,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          58
+        ],
+        "preceding_text": "Typhoon RubyPH Evacuations underway as",
+        "following_text": "people flee barrels toward typhoon RubyPH .",
+        "full_sentence": "Typhoon RubyPH Evacuations underway as 500,000 people flee barrels toward typhoon RubyPH .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 1,
+        "child": "\"",
+        "t_idx": 0,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 1,
+        "child": "USER",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 1,
+        "child": ":",
+        "t_idx": 2,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 5,
+        "child": "Half",
+        "t_idx": 3,
+        "r": "quantmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 5,
+        "child": "a",
+        "t_idx": 4,
+        "r": "quantmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "leave",
+        "h_idx": 6,
+        "child": "million",
+        "t_idx": 5,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 1,
+        "child": "leave",
+        "t_idx": 6,
+        "r": "acl"
+      },
+      {
+        "title": "Hagupit",
+        "head": "leave",
+        "h_idx": 6,
+        "child": "homes",
+        "t_idx": 7,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "homes",
+        "h_idx": 7,
+        "child": "in",
+        "t_idx": 8,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "in",
+        "h_idx": 8,
+        "child": "Philippines",
+        "t_idx": 9,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "avoid",
+        "h_idx": 11,
+        "child": "to",
+        "t_idx": 10,
+        "r": "aux"
+      },
+      {
+        "title": "Hagupit",
+        "head": "leave",
+        "h_idx": 6,
+        "child": "avoid",
+        "t_idx": 11,
+        "r": "advcl"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Hagiput",
+        "h_idx": 13,
+        "child": "Typhoon",
+        "t_idx": 12,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "avoid",
+        "h_idx": 11,
+        "child": "Hagiput",
+        "t_idx": 13,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 1,
+        "child": "URL",
+        "t_idx": 14,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "URL",
+        "h_idx": 15,
+        "child": "URL",
+        "t_idx": 15,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Hagupit",
+        "h_idx": 17,
+        "child": "Typhoon",
+        "t_idx": 16,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "triggers",
+        "h_idx": 18,
+        "child": "Hagupit",
+        "t_idx": 17,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "triggers",
+        "h_idx": 18,
+        "child": "triggers",
+        "t_idx": 18,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "evacuation",
+        "h_idx": 20,
+        "child": "massive",
+        "t_idx": 19,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "triggers",
+        "h_idx": 18,
+        "child": "evacuation",
+        "t_idx": 20,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "evacuation",
+        "h_idx": 20,
+        "child": "in",
+        "t_idx": 21,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "in",
+        "h_idx": 21,
+        "child": "Philippines",
+        "t_idx": 22,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "URL",
+        "h_idx": 23,
+        "child": "URL",
+        "t_idx": 23,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": "RT",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": "USER",
+        "t_idx": 25,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": ":",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Typh",
+        "h_idx": 29,
+        "child": "Powerful",
+        "t_idx": 27,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Typh",
+        "h_idx": 29,
+        "child": "Typhoon",
+        "t_idx": 28,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "has",
+        "h_idx": 30,
+        "child": "Typh",
+        "t_idx": 29,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": "has",
+        "t_idx": 30,
+        "r": "acl"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 35,
+        "child": "more",
+        "t_idx": 31,
+        "r": "amod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 35,
+        "child": "than",
+        "t_idx": 32,
+        "r": "quantmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 35,
+        "child": "half",
+        "t_idx": 33,
+        "r": "quantmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "million",
+        "h_idx": 35,
+        "child": "a",
+        "t_idx": 34,
+        "r": "quantmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "people",
+        "h_idx": 36,
+        "child": "million",
+        "t_idx": 35,
+        "r": "nummod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "evacuating",
+        "h_idx": 37,
+        "child": "people",
+        "t_idx": 36,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "has",
+        "h_idx": 30,
+        "child": "evacuating",
+        "t_idx": 37,
+        "r": "ccomp"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Philippines",
+        "h_idx": 39,
+        "child": "the",
+        "t_idx": 38,
+        "r": "det"
+      },
+      {
+        "title": "Hagupit",
+        "head": "evacuating",
+        "h_idx": 37,
+        "child": "Philippines",
+        "t_idx": 39,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": ":",
+        "t_idx": 40,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "USER",
+        "h_idx": 25,
+        "child": "URL",
+        "t_idx": 41,
+        "r": "appos"
+      },
+      {
+        "title": "Hagupit",
+        "head": "URL",
+        "h_idx": 41,
+        "child": "http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "t_idx": 42,
+        "r": "appos"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 44,
+        "child": "Thousands",
+        "t_idx": 43,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 44,
+        "child": "flee",
+        "t_idx": 44,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "barrels",
+        "h_idx": 48,
+        "child": "as",
+        "t_idx": 45,
+        "r": "mark"
+      },
+      {
+        "title": "Hagupit",
+        "head": "Typh",
+        "h_idx": 47,
+        "child": "typhoon",
+        "t_idx": 46,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "barrels",
+        "h_idx": 48,
+        "child": "Typh",
+        "t_idx": 47,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 44,
+        "child": "barrels",
+        "t_idx": 48,
+        "r": "advcl"
+      },
+      {
+        "title": "Hagupit",
+        "head": "barrels",
+        "h_idx": 48,
+        "child": "toward",
+        "t_idx": 49,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "city",
+        "h_idx": 51,
+        "child": "Calbayog",
+        "t_idx": 50,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "toward",
+        "h_idx": 49,
+        "child": "city",
+        "t_idx": 51,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 44,
+        "child": "URL",
+        "t_idx": 52,
+        "r": "punct"
+      },
+      {
+        "title": "Hagupit",
+        "head": "RubyPH",
+        "h_idx": 54,
+        "child": "Typhoon",
+        "t_idx": 53,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "underway",
+        "h_idx": 56,
+        "child": "RubyPH",
+        "t_idx": 54,
+        "r": "npadvmod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "underway",
+        "h_idx": 56,
+        "child": "Evacuations",
+        "t_idx": 55,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "underway",
+        "h_idx": 56,
+        "child": "underway",
+        "t_idx": 56,
+        "r": "ROOT"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 60,
+        "child": "as",
+        "t_idx": 57,
+        "r": "mark"
+      },
+      {
+        "title": "Hagupit",
+        "head": "people",
+        "h_idx": 59,
+        "child": "500,000",
+        "t_idx": 58,
+        "r": "nummod"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 60,
+        "child": "people",
+        "t_idx": 59,
+        "r": "nsubj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "underway",
+        "h_idx": 56,
+        "child": "flee",
+        "t_idx": 60,
+        "r": "advcl"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 60,
+        "child": "barrels",
+        "t_idx": 61,
+        "r": "dobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "flee",
+        "h_idx": 60,
+        "child": "toward",
+        "t_idx": 62,
+        "r": "prep"
+      },
+      {
+        "title": "Hagupit",
+        "head": "RubyPH",
+        "h_idx": 64,
+        "child": "typhoon",
+        "t_idx": 63,
+        "r": "compound"
+      },
+      {
+        "title": "Hagupit",
+        "head": "toward",
+        "h_idx": 62,
+        "child": "RubyPH",
+        "t_idx": 64,
+        "r": "pobj"
+      },
+      {
+        "title": "Hagupit",
+        "head": "underway",
+        "h_idx": 56,
+        "child": ".",
+        "t_idx": 65,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 1,
+        "name": "Philippines",
+        "sent_id": 0,
+        "pos": [
+          9,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          9
+        ],
+        "preceding_text": "\" USER : Half a million leave homes in",
+        "following_text": "to avoid Typhoon Hagiput URL",
+        "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "\" user : half a million leave homes in",
+        "mention": "Philippines",
+        "context_right": "to avoid typhoon hagiput url",
+        "wikipedia_id": 23440,
+        "entity_name": "Philippines",
+        "score": 8.325989723205566,
+        "url": "https://en.wikipedia.org/wiki?curid=23440",
+        "wikidata_id": "Q928"
+      },
+      {
+        "mention_id": 2,
+        "name": "Typhoon Hagiput",
+        "sent_id": 0,
+        "pos": [
+          12,
+          14
+        ],
+        "type": "EVENT",
+        "token_index": [
+          12,
+          13
+        ],
+        "preceding_text": "\" USER : Half a million leave homes in Philippines to avoid",
+        "following_text": "URL",
+        "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "\" user : half a million leave homes in philippines to avoid",
+        "mention": "Typhoon Hagiput",
+        "context_right": "url",
+        "wikipedia_id": 19430367,
+        "entity_name": "Typhoon Hagupit (2008)",
+        "score": 1.0399938821792603,
+        "url": "https://en.wikipedia.org/wiki?curid=19430367",
+        "wikidata_id": "Q1015738"
+      },
+      {
+        "mention_id": 3,
+        "name": "Typhoon Hagupit",
+        "sent_id": 2,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          16,
+          17
+        ],
+        "preceding_text": "",
+        "following_text": "triggers massive evacuation in Philippines",
+        "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "",
+        "mention": "Typhoon Hagupit",
+        "context_right": "triggers massive evacuation in philippines",
+        "wikipedia_id": 44562259,
+        "entity_name": "Typhoon Hagupit (2014)",
+        "score": 11.002696990966797,
+        "url": "https://en.wikipedia.org/wiki?curid=44562259",
+        "wikidata_id": "Q18600816"
+      },
+      {
+        "mention_id": 4,
+        "name": "Philippines",
+        "sent_id": 2,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          22
+        ],
+        "preceding_text": "Typhoon Hagupit triggers massive evacuation in",
+        "following_text": "",
+        "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "typhoon hagupit triggers massive evacuation in",
+        "mention": "Philippines",
+        "context_right": "",
+        "wikipedia_id": 23440,
+        "entity_name": "Philippines",
+        "score": 9.153374671936035,
+        "url": "https://en.wikipedia.org/wiki?curid=23440",
+        "wikidata_id": "Q928"
+      },
+      {
+        "mention_id": 7,
+        "name": "Philippines",
+        "sent_id": 4,
+        "pos": [
+          15,
+          16
+        ],
+        "type": "GPE",
+        "token_index": [
+          39
+        ],
+        "preceding_text": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the",
+        "following_text": ": URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "full_sentence": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "rt user : powerful typhoon typh has more than half a million people evacuating the",
+        "mention": "Philippines",
+        "context_right": ": url http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+        "wikipedia_id": 23440,
+        "entity_name": "Philippines",
+        "score": 7.975771903991699,
+        "url": "https://en.wikipedia.org/wiki?curid=23440",
+        "wikidata_id": "Q928"
+      },
+      {
+        "mention_id": 9,
+        "name": "Calbayog",
+        "sent_id": 5,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "GPE",
+        "token_index": [
+          50
+        ],
+        "preceding_text": "Thousands flee as typhoon Typh barrels toward",
+        "following_text": "city URL",
+        "full_sentence": "Thousands flee as typhoon Typh barrels toward Calbayog city URL",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 9,
+        "context_left": "thousands flee as typhoon typh barrels toward",
+        "mention": "Calbayog",
+        "context_right": "city url",
+        "wikipedia_id": 2123470,
+        "entity_name": "Calbayog",
+        "score": 10.659200668334961,
+        "url": "https://en.wikipedia.org/wiki?curid=2123470",
+        "wikidata_id": "Q577336"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 1,
+          "name": "Philippines",
+          "sent_id": 0,
+          "pos": [
+            9,
+            10
+          ],
+          "type": "GPE",
+          "token_index": [
+            9
+          ],
+          "preceding_text": "\" USER : Half a million leave homes in",
+          "following_text": "to avoid Typhoon Hagiput URL",
+          "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "\" user : half a million leave homes in",
+          "mention": "Philippines",
+          "context_right": "to avoid typhoon hagiput url",
+          "wikipedia_id": 23440,
+          "entity_name": "Philippines",
+          "score": 8.325989723205566,
+          "url": "https://en.wikipedia.org/wiki?curid=23440",
+          "wikidata_id": "Q928"
+        },
+        {
+          "mention_id": 4,
+          "name": "Philippines",
+          "sent_id": 2,
+          "pos": [
+            6,
+            7
+          ],
+          "type": "GPE",
+          "token_index": [
+            22
+          ],
+          "preceding_text": "Typhoon Hagupit triggers massive evacuation in",
+          "following_text": "",
+          "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "typhoon hagupit triggers massive evacuation in",
+          "mention": "Philippines",
+          "context_right": "",
+          "wikipedia_id": 23440,
+          "entity_name": "Philippines",
+          "score": 9.153374671936035,
+          "url": "https://en.wikipedia.org/wiki?curid=23440",
+          "wikidata_id": "Q928"
+        },
+        {
+          "mention_id": 7,
+          "name": "Philippines",
+          "sent_id": 4,
+          "pos": [
+            15,
+            16
+          ],
+          "type": "GPE",
+          "token_index": [
+            39
+          ],
+          "preceding_text": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the",
+          "following_text": ": URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+          "full_sentence": "RT USER : Powerful Typhoon Typh has more than half a million people evacuating the Philippines : URL http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "rt user : powerful typhoon typh has more than half a million people evacuating the",
+          "mention": "Philippines",
+          "context_right": ": url http://www.bbc.co.uk/news/world-news/bbc-news-super-typhoon-hagupit-triggers-massive-evacuation-in-philippines.html",
+          "wikipedia_id": 23440,
+          "entity_name": "Philippines",
+          "score": 7.975771903991699,
+          "url": "https://en.wikipedia.org/wiki?curid=23440",
+          "wikidata_id": "Q928"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "Typhoon Hagiput",
+          "sent_id": 0,
+          "pos": [
+            12,
+            14
+          ],
+          "type": "EVENT",
+          "token_index": [
+            12,
+            13
+          ],
+          "preceding_text": "\" USER : Half a million leave homes in Philippines to avoid",
+          "following_text": "URL",
+          "full_sentence": "\" USER : Half a million leave homes in Philippines to avoid Typhoon Hagiput URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "\" user : half a million leave homes in philippines to avoid",
+          "mention": "Typhoon Hagiput",
+          "context_right": "url",
+          "wikipedia_id": 19430367,
+          "entity_name": "Typhoon Hagupit (2008)",
+          "score": 1.0399938821792603,
+          "url": "https://en.wikipedia.org/wiki?curid=19430367",
+          "wikidata_id": "Q1015738"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "Typhoon Hagupit",
+          "sent_id": 2,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "EVENT",
+          "token_index": [
+            16,
+            17
+          ],
+          "preceding_text": "",
+          "following_text": "triggers massive evacuation in Philippines",
+          "full_sentence": "Typhoon Hagupit triggers massive evacuation in Philippines",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "",
+          "mention": "Typhoon Hagupit",
+          "context_right": "triggers massive evacuation in philippines",
+          "wikipedia_id": 44562259,
+          "entity_name": "Typhoon Hagupit (2014)",
+          "score": 11.002696990966797,
+          "url": "https://en.wikipedia.org/wiki?curid=44562259",
+          "wikidata_id": "Q18600816"
+        }
+      ],
+      [
+        {
+          "mention_id": 9,
+          "name": "Calbayog",
+          "sent_id": 5,
+          "pos": [
+            7,
+            8
+          ],
+          "type": "GPE",
+          "token_index": [
+            50
+          ],
+          "preceding_text": "Thousands flee as typhoon Typh barrels toward",
+          "following_text": "city URL",
+          "full_sentence": "Thousands flee as typhoon Typh barrels toward Calbayog city URL",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 9,
+          "context_left": "thousands flee as typhoon typh barrels toward",
+          "mention": "Calbayog",
+          "context_right": "city url",
+          "wikipedia_id": 2123470,
+          "entity_name": "Calbayog",
+          "score": 10.659200668334961,
+          "url": "https://en.wikipedia.org/wiki?curid=2123470",
+          "wikidata_id": "Q577336"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "Hagupit",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

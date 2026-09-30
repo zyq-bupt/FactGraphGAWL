@@ -1,0 +1,1047 @@
+{
+  "doc_name": "USFlood",
+  "doc_id": "USFlood",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "USFlood",
+  "system_name": "t5-large",
+  "article": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "abstract": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  },
+  "candidate": {
+    "title": "USFlood",
+    "text": "user has approved more than $8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska. john deere dealers are donating $60,000 towards aiding farmers and communities affected by flooding. tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning.",
+    "sents": [
+      [
+        "user",
+        "has",
+        "approved",
+        "more",
+        "than",
+        "$",
+        "8",
+        "million",
+        "in",
+        "individual",
+        "and",
+        "household",
+        "disaster",
+        "assistance",
+        "to",
+        "those",
+        "hit",
+        "hardest",
+        "by",
+        "winter",
+        "storm",
+        "and",
+        "flooding",
+        "conditions",
+        "in",
+        "Nebraska",
+        "."
+      ],
+      [
+        "john",
+        "deere",
+        "dealers",
+        "are",
+        "donating",
+        "$",
+        "60,000",
+        "towards",
+        "aiding",
+        "farmers",
+        "and",
+        "communities",
+        "affected",
+        "by",
+        "flooding",
+        "."
+      ],
+      [
+        "tornado",
+        "drill",
+        "will",
+        "take",
+        "place",
+        "in",
+        "Iowa",
+        "and",
+        "Nebraska",
+        "during",
+        "the",
+        "10",
+        "o’clock",
+        "hour",
+        "this",
+        "morning",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "user",
+        "sent_id": 0,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "ORG",
+        "token_index": [
+          0
+        ],
+        "preceding_text": "",
+        "following_text": "has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "more than $8 million",
+        "sent_id": 0,
+        "pos": [
+          3,
+          8
+        ],
+        "type": "MONEY",
+        "token_index": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "preceding_text": "user has approved",
+        "following_text": "in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "winter",
+        "sent_id": 0,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "DATE",
+        "token_index": [
+          19
+        ],
+        "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by",
+        "following_text": "storm and flooding conditions in Nebraska .",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Nebraska",
+        "sent_id": 0,
+        "pos": [
+          25,
+          26
+        ],
+        "type": "GPE",
+        "token_index": [
+          25
+        ],
+        "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in",
+        "following_text": ".",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "john deere",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "ORG",
+        "token_index": [
+          27,
+          28
+        ],
+        "preceding_text": "",
+        "following_text": "dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "full_sentence": "john deere dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "60,000",
+        "sent_id": 1,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "MONEY",
+        "token_index": [
+          33
+        ],
+        "preceding_text": "john deere dealers are donating $",
+        "following_text": "towards aiding farmers and communities affected by flooding .",
+        "full_sentence": "john deere dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Iowa",
+        "sent_id": 2,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          49
+        ],
+        "preceding_text": "tornado drill will take place in",
+        "following_text": "and Nebraska during the 10 o’clock hour this morning .",
+        "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Nebraska",
+        "sent_id": 2,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "tornado drill will take place in Iowa and",
+        "following_text": "during the 10 o’clock hour this morning .",
+        "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "the 10 o’clock hour",
+        "sent_id": 2,
+        "pos": [
+          10,
+          14
+        ],
+        "type": "TIME",
+        "token_index": [
+          53,
+          54,
+          55,
+          56
+        ],
+        "preceding_text": "tornado drill will take place in Iowa and Nebraska during",
+        "following_text": "this morning .",
+        "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "USFlood",
+        "head": "approved",
+        "h_idx": 2,
+        "child": "user",
+        "t_idx": 0,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "approved",
+        "h_idx": 2,
+        "child": "has",
+        "t_idx": 1,
+        "r": "aux"
+      },
+      {
+        "title": "USFlood",
+        "head": "approved",
+        "h_idx": 2,
+        "child": "approved",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "USFlood",
+        "head": "million",
+        "h_idx": 7,
+        "child": "more",
+        "t_idx": 3,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "million",
+        "h_idx": 7,
+        "child": "than",
+        "t_idx": 4,
+        "r": "quantmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "million",
+        "h_idx": 7,
+        "child": "$",
+        "t_idx": 5,
+        "r": "quantmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "million",
+        "h_idx": 7,
+        "child": "8",
+        "t_idx": 6,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "approved",
+        "h_idx": 2,
+        "child": "million",
+        "t_idx": 7,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "million",
+        "h_idx": 7,
+        "child": "in",
+        "t_idx": 8,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "assistance",
+        "h_idx": 13,
+        "child": "individual",
+        "t_idx": 9,
+        "r": "amod"
+      },
+      {
+        "title": "USFlood",
+        "head": "individual",
+        "h_idx": 9,
+        "child": "and",
+        "t_idx": 10,
+        "r": "cc"
+      },
+      {
+        "title": "USFlood",
+        "head": "individual",
+        "h_idx": 9,
+        "child": "household",
+        "t_idx": 11,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "assistance",
+        "h_idx": 13,
+        "child": "disaster",
+        "t_idx": 12,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "in",
+        "h_idx": 8,
+        "child": "assistance",
+        "t_idx": 13,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "assistance",
+        "h_idx": 13,
+        "child": "to",
+        "t_idx": 14,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "to",
+        "h_idx": 14,
+        "child": "those",
+        "t_idx": 15,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "those",
+        "h_idx": 15,
+        "child": "hit",
+        "t_idx": 16,
+        "r": "acl"
+      },
+      {
+        "title": "USFlood",
+        "head": "hit",
+        "h_idx": 16,
+        "child": "hardest",
+        "t_idx": 17,
+        "r": "advmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "hit",
+        "h_idx": 16,
+        "child": "by",
+        "t_idx": 18,
+        "r": "agent"
+      },
+      {
+        "title": "USFlood",
+        "head": "storm",
+        "h_idx": 20,
+        "child": "winter",
+        "t_idx": 19,
+        "r": "nmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "conditions",
+        "h_idx": 23,
+        "child": "storm",
+        "t_idx": 20,
+        "r": "nmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "storm",
+        "h_idx": 20,
+        "child": "and",
+        "t_idx": 21,
+        "r": "cc"
+      },
+      {
+        "title": "USFlood",
+        "head": "storm",
+        "h_idx": 20,
+        "child": "flooding",
+        "t_idx": 22,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "by",
+        "h_idx": 18,
+        "child": "conditions",
+        "t_idx": 23,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "conditions",
+        "h_idx": 23,
+        "child": "in",
+        "t_idx": 24,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "in",
+        "h_idx": 24,
+        "child": "Nebraska",
+        "t_idx": 25,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "approved",
+        "h_idx": 2,
+        "child": ".",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "deere",
+        "h_idx": 28,
+        "child": "john",
+        "t_idx": 27,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "dealers",
+        "h_idx": 29,
+        "child": "deere",
+        "t_idx": 28,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "dealers",
+        "t_idx": 29,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "are",
+        "t_idx": 30,
+        "r": "aux"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "donating",
+        "t_idx": 31,
+        "r": "ROOT"
+      },
+      {
+        "title": "USFlood",
+        "head": "60,000",
+        "h_idx": 33,
+        "child": "$",
+        "t_idx": 32,
+        "r": "nmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "60,000",
+        "t_idx": 33,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": "towards",
+        "t_idx": 34,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "towards",
+        "h_idx": 34,
+        "child": "aiding",
+        "t_idx": 35,
+        "r": "pcomp"
+      },
+      {
+        "title": "USFlood",
+        "head": "aiding",
+        "h_idx": 35,
+        "child": "farmers",
+        "t_idx": 36,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "farmers",
+        "h_idx": 36,
+        "child": "and",
+        "t_idx": 37,
+        "r": "cc"
+      },
+      {
+        "title": "USFlood",
+        "head": "farmers",
+        "h_idx": 36,
+        "child": "communities",
+        "t_idx": 38,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "farmers",
+        "h_idx": 36,
+        "child": "affected",
+        "t_idx": 39,
+        "r": "acl"
+      },
+      {
+        "title": "USFlood",
+        "head": "affected",
+        "h_idx": 39,
+        "child": "by",
+        "t_idx": 40,
+        "r": "agent"
+      },
+      {
+        "title": "USFlood",
+        "head": "by",
+        "h_idx": 40,
+        "child": "flooding",
+        "t_idx": 41,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "donating",
+        "h_idx": 31,
+        "child": ".",
+        "t_idx": 42,
+        "r": "punct"
+      },
+      {
+        "title": "USFlood",
+        "head": "drill",
+        "h_idx": 44,
+        "child": "tornado",
+        "t_idx": 43,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "drill",
+        "t_idx": 44,
+        "r": "nsubj"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "will",
+        "t_idx": 45,
+        "r": "aux"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "take",
+        "t_idx": 46,
+        "r": "ROOT"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "place",
+        "t_idx": 47,
+        "r": "dobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "in",
+        "t_idx": 48,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "in",
+        "h_idx": 48,
+        "child": "Iowa",
+        "t_idx": 49,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "Iowa",
+        "h_idx": 49,
+        "child": "and",
+        "t_idx": 50,
+        "r": "cc"
+      },
+      {
+        "title": "USFlood",
+        "head": "Iowa",
+        "h_idx": 49,
+        "child": "Nebraska",
+        "t_idx": 51,
+        "r": "conj"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": "during",
+        "t_idx": 52,
+        "r": "prep"
+      },
+      {
+        "title": "USFlood",
+        "head": "hour",
+        "h_idx": 56,
+        "child": "the",
+        "t_idx": 53,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "hour",
+        "h_idx": 56,
+        "child": "10",
+        "t_idx": 54,
+        "r": "nummod"
+      },
+      {
+        "title": "USFlood",
+        "head": "hour",
+        "h_idx": 56,
+        "child": "o’clock",
+        "t_idx": 55,
+        "r": "compound"
+      },
+      {
+        "title": "USFlood",
+        "head": "during",
+        "h_idx": 52,
+        "child": "hour",
+        "t_idx": 56,
+        "r": "pobj"
+      },
+      {
+        "title": "USFlood",
+        "head": "morning",
+        "h_idx": 58,
+        "child": "this",
+        "t_idx": 57,
+        "r": "det"
+      },
+      {
+        "title": "USFlood",
+        "head": "hour",
+        "h_idx": 56,
+        "child": "morning",
+        "t_idx": 58,
+        "r": "npadvmod"
+      },
+      {
+        "title": "USFlood",
+        "head": "take",
+        "h_idx": 46,
+        "child": ".",
+        "t_idx": 59,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 2,
+        "name": "winter",
+        "sent_id": 0,
+        "pos": [
+          19,
+          20
+        ],
+        "type": "DATE",
+        "token_index": [
+          19
+        ],
+        "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by",
+        "following_text": "storm and flooding conditions in Nebraska .",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by",
+        "mention": "winter",
+        "context_right": "storm and flooding conditions in nebraska .",
+        "wikipedia_id": 34061,
+        "entity_name": "Winter",
+        "score": 9.570106506347656,
+        "url": "https://en.wikipedia.org/wiki?curid=34061",
+        "wikidata_id": "Q1311"
+      },
+      {
+        "mention_id": 3,
+        "name": "Nebraska",
+        "sent_id": 0,
+        "pos": [
+          25,
+          26
+        ],
+        "type": "GPE",
+        "token_index": [
+          25
+        ],
+        "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in",
+        "following_text": ".",
+        "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in",
+        "mention": "Nebraska",
+        "context_right": ".",
+        "wikipedia_id": 21647,
+        "entity_name": "Nebraska",
+        "score": 9.342787742614746,
+        "url": "https://en.wikipedia.org/wiki?curid=21647",
+        "wikidata_id": "Q1553"
+      },
+      {
+        "mention_id": 4,
+        "name": "john deere",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "ORG",
+        "token_index": [
+          27,
+          28
+        ],
+        "preceding_text": "",
+        "following_text": "dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "full_sentence": "john deere dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "",
+        "mention": "john deere",
+        "context_right": "dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+        "wikipedia_id": 432397,
+        "entity_name": "John Deere",
+        "score": 11.84830379486084,
+        "url": "https://en.wikipedia.org/wiki?curid=432397",
+        "wikidata_id": "Q496302"
+      },
+      {
+        "mention_id": 6,
+        "name": "Iowa",
+        "sent_id": 2,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          49
+        ],
+        "preceding_text": "tornado drill will take place in",
+        "following_text": "and Nebraska during the 10 o’clock hour this morning .",
+        "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "tornado drill will take place in",
+        "mention": "Iowa",
+        "context_right": "and nebraska during the 10 o’clock hour this morning .",
+        "wikipedia_id": 26810748,
+        "entity_name": "Iowa",
+        "score": 10.140302658081055,
+        "url": "https://en.wikipedia.org/wiki?curid=26810748",
+        "wikidata_id": "Q1546"
+      },
+      {
+        "mention_id": 7,
+        "name": "Nebraska",
+        "sent_id": 2,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "tornado drill will take place in Iowa and",
+        "following_text": "during the 10 o’clock hour this morning .",
+        "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "tornado drill will take place in iowa and",
+        "mention": "Nebraska",
+        "context_right": "during the 10 o’clock hour this morning .",
+        "wikipedia_id": 21647,
+        "entity_name": "Nebraska",
+        "score": 9.451047897338867,
+        "url": "https://en.wikipedia.org/wiki?curid=21647",
+        "wikidata_id": "Q1553"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 2,
+          "name": "winter",
+          "sent_id": 0,
+          "pos": [
+            19,
+            20
+          ],
+          "type": "DATE",
+          "token_index": [
+            19
+          ],
+          "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by",
+          "following_text": "storm and flooding conditions in Nebraska .",
+          "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by",
+          "mention": "winter",
+          "context_right": "storm and flooding conditions in nebraska .",
+          "wikipedia_id": 34061,
+          "entity_name": "Winter",
+          "score": 9.570106506347656,
+          "url": "https://en.wikipedia.org/wiki?curid=34061",
+          "wikidata_id": "Q1311"
+        }
+      ],
+      [
+        {
+          "mention_id": 3,
+          "name": "Nebraska",
+          "sent_id": 0,
+          "pos": [
+            25,
+            26
+          ],
+          "type": "GPE",
+          "token_index": [
+            25
+          ],
+          "preceding_text": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in",
+          "following_text": ".",
+          "full_sentence": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in Nebraska .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "user has approved more than $ 8 million in individual and household disaster assistance to those hit hardest by winter storm and flooding conditions in",
+          "mention": "Nebraska",
+          "context_right": ".",
+          "wikipedia_id": 21647,
+          "entity_name": "Nebraska",
+          "score": 9.342787742614746,
+          "url": "https://en.wikipedia.org/wiki?curid=21647",
+          "wikidata_id": "Q1553"
+        },
+        {
+          "mention_id": 7,
+          "name": "Nebraska",
+          "sent_id": 2,
+          "pos": [
+            8,
+            9
+          ],
+          "type": "GPE",
+          "token_index": [
+            51
+          ],
+          "preceding_text": "tornado drill will take place in Iowa and",
+          "following_text": "during the 10 o’clock hour this morning .",
+          "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "tornado drill will take place in iowa and",
+          "mention": "Nebraska",
+          "context_right": "during the 10 o’clock hour this morning .",
+          "wikipedia_id": 21647,
+          "entity_name": "Nebraska",
+          "score": 9.451047897338867,
+          "url": "https://en.wikipedia.org/wiki?curid=21647",
+          "wikidata_id": "Q1553"
+        }
+      ],
+      [
+        {
+          "mention_id": 4,
+          "name": "john deere",
+          "sent_id": 1,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "ORG",
+          "token_index": [
+            27,
+            28
+          ],
+          "preceding_text": "",
+          "following_text": "dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+          "full_sentence": "john deere dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "",
+          "mention": "john deere",
+          "context_right": "dealers are donating $ 60,000 towards aiding farmers and communities affected by flooding .",
+          "wikipedia_id": 432397,
+          "entity_name": "John Deere",
+          "score": 11.84830379486084,
+          "url": "https://en.wikipedia.org/wiki?curid=432397",
+          "wikidata_id": "Q496302"
+        }
+      ],
+      [
+        {
+          "mention_id": 6,
+          "name": "Iowa",
+          "sent_id": 2,
+          "pos": [
+            6,
+            7
+          ],
+          "type": "GPE",
+          "token_index": [
+            49
+          ],
+          "preceding_text": "tornado drill will take place in",
+          "following_text": "and Nebraska during the 10 o’clock hour this morning .",
+          "full_sentence": "tornado drill will take place in Iowa and Nebraska during the 10 o’clock hour this morning .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "tornado drill will take place in",
+          "mention": "Iowa",
+          "context_right": "and nebraska during the 10 o’clock hour this morning .",
+          "wikipedia_id": 26810748,
+          "entity_name": "Iowa",
+          "score": 10.140302658081055,
+          "url": "https://en.wikipedia.org/wiki?curid=26810748",
+          "wikidata_id": "Q1546"
+        }
+      ]
+    ],
+    "ent_relation": []
+  },
+  "humman_summary": {
+    "title": "USFlood",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": [],
+    "ent_relation": []
+  }
+}

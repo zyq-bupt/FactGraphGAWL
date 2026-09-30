@@ -1,0 +1,30 @@
+mode: both
+max_model_tokens: 1024
+overlap_tokens: 256
+sentence_boundary: true
+merge_entities_by_kb_id: true
+infer_cross_window_relations: false
+cache_local_graphs: true
+domain: GovReport
+exclude_human1: true
+require_success: true
+tokenizer_path: /root/autodl-fs/zyq/models/t5-large
+dreeam_dir: /root/autodl-fs/zyq/unisumeval_data_gawl/dreeam_result/test
+labels_jsonl: /root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2_processed.jsonl
+output_dir: experiments/results/long_context_govreport
+cache_dir: experiments/results/long_context_govreport/cache
+seed: 20260818
+bootstrap_n: 10000
+limit: null
+score_tol: 1.0e-06
+wTT: 1.0
+wTM: 1.0
+wME: 0.5
+wEE: 0.0
+wl_t: 1
+use_emb_labels: false
+use_node_labels: true
+use_edge_labels: 2
+config_hash: 15a0daeda5c8b881
+tokenizer_note: /root/autodl-fs/zyq/models/t5-large; model_max_length=1000000000000000019884624838656;
+  effective cap=1024

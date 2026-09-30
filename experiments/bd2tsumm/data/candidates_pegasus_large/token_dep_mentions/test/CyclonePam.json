@@ -1,0 +1,1536 @@
+{
+  "doc_name": "CyclonePam",
+  "doc_id": "CyclonePam",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "CyclonePam",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "CyclonePam",
+    "text": "URL NEWS RT USER: An anguised mother has told of how she has not heard from her daughter since a tropical cyclone tore through Vanuatu URL USER URL The Hague Weather - Jaylene tells of how her house was ripped apart by Cyclone Pam while 10 people were in inside URL Cyclone devastation forcing Vanuatu to start anew, president says: An aerial view of damaged houses in seen on March 16, 2015 in PortVila return home to Sydney CyclonePam url USER RT: Oxfam Australia: 90% of housing in Vanuatu's capital city'seriously damaged' by CyclonePam' URL Give Aid to Victims of Disastrous Cyclone URL USER Cyclone damages the island of Vanuatu - URL USER VIDEO: Cyclone Pam Devastates Vanuatu.",
+    "sents": [
+      [
+        "URL",
+        "NEWS",
+        "RT",
+        "USER",
+        ":"
+      ],
+      [
+        "An",
+        "anguised",
+        "mother",
+        "has",
+        "told",
+        "of",
+        "how",
+        "she",
+        "has",
+        "not",
+        "heard",
+        "from",
+        "her",
+        "daughter",
+        "since",
+        "a",
+        "tropical",
+        "cyclone",
+        "tore",
+        "through",
+        "Vanuatu",
+        "URL"
+      ],
+      [
+        "USER",
+        "URL"
+      ],
+      [
+        "The",
+        "Hague",
+        "Weather",
+        "-"
+      ],
+      [
+        "Jaylene",
+        "tells",
+        "of",
+        "how",
+        "her",
+        "house",
+        "was",
+        "ripped",
+        "apart",
+        "by",
+        "Cyclone",
+        "Pam",
+        "while",
+        "10",
+        "people",
+        "were",
+        "in",
+        "inside",
+        "URL"
+      ],
+      [
+        "Cyclone",
+        "devastation",
+        "forcing",
+        "Vanuatu",
+        "to",
+        "start",
+        "anew",
+        ",",
+        "president",
+        "says",
+        ":"
+      ],
+      [
+        "An",
+        "aerial",
+        "view",
+        "of",
+        "damaged",
+        "houses",
+        "in",
+        "seen",
+        "on",
+        "March",
+        "16",
+        ",",
+        "2015",
+        "in",
+        "PortVila",
+        "return",
+        "home",
+        "to",
+        "Sydney",
+        "CyclonePam"
+      ],
+      [
+        "url"
+      ],
+      [
+        "USER"
+      ],
+      [
+        "RT"
+      ],
+      [
+        ":"
+      ],
+      [
+        "Oxfam",
+        "Australia",
+        ":",
+        "90",
+        "%",
+        "of",
+        "housing",
+        "in",
+        "Vanuatu",
+        "'s",
+        "capital",
+        "city'seriously",
+        "damaged",
+        "'",
+        "by",
+        "CyclonePam",
+        "'"
+      ],
+      [
+        "URL"
+      ],
+      [
+        "Give",
+        "Aid",
+        "to",
+        "Victims",
+        "of",
+        "Disastrous",
+        "Cyclone",
+        "URL"
+      ],
+      [
+        "USER",
+        "Cyclone",
+        "damages",
+        "the",
+        "island",
+        "of",
+        "Vanuatu",
+        "-",
+        "URL"
+      ],
+      [
+        "USER",
+        "VIDEO",
+        ":",
+        "Cyclone",
+        "Pam",
+        "Devastates",
+        "Vanuatu",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "Vanuatu",
+        "sent_id": 1,
+        "pos": [
+          20,
+          21
+        ],
+        "type": "GPE",
+        "token_index": [
+          25
+        ],
+        "preceding_text": "An anguised mother has told of how she has not heard from her daughter since a tropical cyclone tore through",
+        "following_text": "URL",
+        "full_sentence": "An anguised mother has told of how she has not heard from her daughter since a tropical cyclone tore through Vanuatu URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "Jaylene",
+        "sent_id": 4,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          33
+        ],
+        "preceding_text": "",
+        "following_text": "tells of how her house was ripped apart by Cyclone Pam while 10 people were in inside URL",
+        "full_sentence": "Jaylene tells of how her house was ripped apart by Cyclone Pam while 10 people were in inside URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "Cyclone Pam",
+        "sent_id": 4,
+        "pos": [
+          10,
+          12
+        ],
+        "type": "EVENT",
+        "token_index": [
+          43,
+          44
+        ],
+        "preceding_text": "Jaylene tells of how her house was ripped apart by",
+        "following_text": "while 10 people were in inside URL",
+        "full_sentence": "Jaylene tells of how her house was ripped apart by Cyclone Pam while 10 people were in inside URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "10",
+        "sent_id": 4,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          46
+        ],
+        "preceding_text": "Jaylene tells of how her house was ripped apart by Cyclone Pam while",
+        "following_text": "people were in inside URL",
+        "full_sentence": "Jaylene tells of how her house was ripped apart by Cyclone Pam while 10 people were in inside URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Vanuatu",
+        "sent_id": 5,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          55
+        ],
+        "preceding_text": "Cyclone devastation forcing",
+        "following_text": "to start anew , president says :",
+        "full_sentence": "Cyclone devastation forcing Vanuatu to start anew , president says :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "March 16, 2015",
+        "sent_id": 6,
+        "pos": [
+          9,
+          13
+        ],
+        "type": "DATE",
+        "token_index": [
+          72,
+          73,
+          74,
+          75
+        ],
+        "preceding_text": "An aerial view of damaged houses in seen on",
+        "following_text": "in PortVila return home to Sydney CyclonePam",
+        "full_sentence": "An aerial view of damaged houses in seen on March 16 , 2015 in PortVila return home to Sydney CyclonePam",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "PortVila",
+        "sent_id": 6,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          77
+        ],
+        "preceding_text": "An aerial view of damaged houses in seen on March 16 , 2015 in",
+        "following_text": "return home to Sydney CyclonePam",
+        "full_sentence": "An aerial view of damaged houses in seen on March 16 , 2015 in PortVila return home to Sydney CyclonePam",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Sydney",
+        "sent_id": 6,
+        "pos": [
+          18,
+          19
+        ],
+        "type": "GPE",
+        "token_index": [
+          81
+        ],
+        "preceding_text": "An aerial view of damaged houses in seen on March 16 , 2015 in PortVila return home to",
+        "following_text": "CyclonePam",
+        "full_sentence": "An aerial view of damaged houses in seen on March 16 , 2015 in PortVila return home to Sydney CyclonePam",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "Oxfam",
+        "sent_id": 11,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "ORG",
+        "token_index": [
+          87
+        ],
+        "preceding_text": "",
+        "following_text": "Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "full_sentence": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "Australia",
+        "sent_id": 11,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          88
+        ],
+        "preceding_text": "Oxfam",
+        "following_text": ": 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "full_sentence": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "90%",
+        "sent_id": 11,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "PERCENT",
+        "token_index": [
+          90,
+          91
+        ],
+        "preceding_text": "Oxfam Australia :",
+        "following_text": "of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "full_sentence": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "Vanuatu",
+        "sent_id": 11,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          95
+        ],
+        "preceding_text": "Oxfam Australia : 90 % of housing in",
+        "following_text": "'s capital city'seriously damaged ' by CyclonePam '",
+        "full_sentence": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "CyclonePam",
+        "sent_id": 11,
+        "pos": [
+          15,
+          16
+        ],
+        "type": "EVENT",
+        "token_index": [
+          102
+        ],
+        "preceding_text": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by",
+        "following_text": "'",
+        "full_sentence": "Oxfam Australia : 90 % of housing in Vanuatu 's capital city'seriously damaged ' by CyclonePam '",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 13,
+        "name": "Vanuatu",
+        "sent_id": 14,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          119
+        ],
+        "preceding_text": "USER Cyclone damages the island of",
+        "following_text": "- URL",
+        "full_sentence": "USER Cyclone damages the island of Vanuatu - URL",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 14,
+        "name": "Cyclone Pam",
+        "sent_id": 15,
+        "pos": [
+          3,
+          5
+        ],
+        "type": "EVENT",
+        "token_index": [
+          125,
+          126
+        ],
+        "preceding_text": "USER VIDEO :",
+        "following_text": "Devastates Vanuatu .",
+        "full_sentence": "USER VIDEO : Cyclone Pam Devastates Vanuatu .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 15,
+        "name": "Vanuatu",
+        "sent_id": 15,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "GPE",
+        "token_index": [
+          128
+        ],
+        "preceding_text": "USER VIDEO : Cyclone Pam Devastates",
+        "following_text": ".",
+        "full_sentence": "USER VIDEO : Cyclone Pam Devastates Vanuatu .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "CyclonePam",
+        "head": "NEWS",
+        "h_idx": 1,
+        "child": "URL",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "NEWS",
+        "h_idx": 1,
+        "child": "NEWS",
+        "t_idx": 1,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "USER",
+        "h_idx": 3,
+        "child": "RT",
+        "t_idx": 2,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "NEWS",
+        "h_idx": 1,
+        "child": "USER",
+        "t_idx": 3,
+        "r": "appos"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "USER",
+        "h_idx": 3,
+        "child": ":",
+        "t_idx": 4,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "mother",
+        "h_idx": 7,
+        "child": "An",
+        "t_idx": 5,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "mother",
+        "h_idx": 7,
+        "child": "anguised",
+        "t_idx": 6,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "told",
+        "h_idx": 9,
+        "child": "mother",
+        "t_idx": 7,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "told",
+        "h_idx": 9,
+        "child": "has",
+        "t_idx": 8,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "told",
+        "h_idx": 9,
+        "child": "told",
+        "t_idx": 9,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "told",
+        "h_idx": 9,
+        "child": "of",
+        "t_idx": 10,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "how",
+        "t_idx": 11,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "she",
+        "t_idx": 12,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "has",
+        "t_idx": 13,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "not",
+        "t_idx": 14,
+        "r": "neg"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 10,
+        "child": "heard",
+        "t_idx": 15,
+        "r": "pcomp"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "from",
+        "t_idx": 16,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "daughter",
+        "h_idx": 18,
+        "child": "her",
+        "t_idx": 17,
+        "r": "poss"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "from",
+        "h_idx": 16,
+        "child": "daughter",
+        "t_idx": 18,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tore",
+        "h_idx": 23,
+        "child": "since",
+        "t_idx": 19,
+        "r": "mark"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "cyclone",
+        "h_idx": 22,
+        "child": "a",
+        "t_idx": 20,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "cyclone",
+        "h_idx": 22,
+        "child": "tropical",
+        "t_idx": 21,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tore",
+        "h_idx": 23,
+        "child": "cyclone",
+        "t_idx": 22,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "heard",
+        "h_idx": 15,
+        "child": "tore",
+        "t_idx": 23,
+        "r": "advcl"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tore",
+        "h_idx": 23,
+        "child": "through",
+        "t_idx": 24,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "through",
+        "h_idx": 24,
+        "child": "Vanuatu",
+        "t_idx": 25,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "told",
+        "h_idx": 9,
+        "child": "URL",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "URL",
+        "h_idx": 28,
+        "child": "USER",
+        "t_idx": 27,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "URL",
+        "h_idx": 28,
+        "child": "URL",
+        "t_idx": 28,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Hague",
+        "h_idx": 30,
+        "child": "The",
+        "t_idx": 29,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Hague",
+        "h_idx": 30,
+        "child": "Hague",
+        "t_idx": 30,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Hague",
+        "h_idx": 30,
+        "child": "Weather",
+        "t_idx": 31,
+        "r": "appos"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Weather",
+        "h_idx": 31,
+        "child": "-",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tells",
+        "h_idx": 34,
+        "child": "Jaylene",
+        "t_idx": 33,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tells",
+        "h_idx": 34,
+        "child": "tells",
+        "t_idx": 34,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tells",
+        "h_idx": 34,
+        "child": "of",
+        "t_idx": 35,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "how",
+        "t_idx": 36,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "house",
+        "h_idx": 38,
+        "child": "her",
+        "t_idx": 37,
+        "r": "poss"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "house",
+        "t_idx": 38,
+        "r": "nsubjpass"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "was",
+        "t_idx": 39,
+        "r": "auxpass"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 35,
+        "child": "ripped",
+        "t_idx": 40,
+        "r": "pcomp"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "apart",
+        "t_idx": 41,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "by",
+        "t_idx": 42,
+        "r": "agent"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Pam",
+        "h_idx": 44,
+        "child": "Cyclone",
+        "t_idx": 43,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "by",
+        "h_idx": 42,
+        "child": "Pam",
+        "t_idx": 44,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "were",
+        "h_idx": 48,
+        "child": "while",
+        "t_idx": 45,
+        "r": "mark"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "people",
+        "h_idx": 47,
+        "child": "10",
+        "t_idx": 46,
+        "r": "nummod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "were",
+        "h_idx": 48,
+        "child": "people",
+        "t_idx": 47,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "ripped",
+        "h_idx": 40,
+        "child": "were",
+        "t_idx": 48,
+        "r": "advcl"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "were",
+        "h_idx": 48,
+        "child": "in",
+        "t_idx": 49,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "were",
+        "h_idx": 48,
+        "child": "inside",
+        "t_idx": 50,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "tells",
+        "h_idx": 34,
+        "child": "URL",
+        "t_idx": 51,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "devastation",
+        "h_idx": 53,
+        "child": "Cyclone",
+        "t_idx": 52,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "forcing",
+        "h_idx": 54,
+        "child": "devastation",
+        "t_idx": 53,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "says",
+        "h_idx": 61,
+        "child": "forcing",
+        "t_idx": 54,
+        "r": "ccomp"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "forcing",
+        "h_idx": 54,
+        "child": "Vanuatu",
+        "t_idx": 55,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "start",
+        "h_idx": 57,
+        "child": "to",
+        "t_idx": 56,
+        "r": "aux"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "forcing",
+        "h_idx": 54,
+        "child": "start",
+        "t_idx": 57,
+        "r": "xcomp"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "start",
+        "h_idx": 57,
+        "child": "anew",
+        "t_idx": 58,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "says",
+        "h_idx": 61,
+        "child": ",",
+        "t_idx": 59,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "says",
+        "h_idx": 61,
+        "child": "president",
+        "t_idx": 60,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "says",
+        "h_idx": 61,
+        "child": "says",
+        "t_idx": 61,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "says",
+        "h_idx": 61,
+        "child": ":",
+        "t_idx": 62,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "view",
+        "h_idx": 65,
+        "child": "An",
+        "t_idx": 63,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "view",
+        "h_idx": 65,
+        "child": "aerial",
+        "t_idx": 64,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "view",
+        "t_idx": 65,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "view",
+        "h_idx": 65,
+        "child": "of",
+        "t_idx": 66,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "houses",
+        "h_idx": 68,
+        "child": "damaged",
+        "t_idx": 67,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 66,
+        "child": "houses",
+        "t_idx": 68,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "in",
+        "t_idx": 69,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "seen",
+        "t_idx": 70,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "on",
+        "t_idx": 71,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "on",
+        "h_idx": 71,
+        "child": "March",
+        "t_idx": 72,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "March",
+        "h_idx": 72,
+        "child": "16",
+        "t_idx": 73,
+        "r": "nummod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "March",
+        "h_idx": 72,
+        "child": ",",
+        "t_idx": 74,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "March",
+        "h_idx": 72,
+        "child": "2015",
+        "t_idx": 75,
+        "r": "npadvmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "in",
+        "t_idx": 76,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "in",
+        "h_idx": 76,
+        "child": "PortVila",
+        "t_idx": 77,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "return",
+        "t_idx": 78,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "return",
+        "h_idx": 78,
+        "child": "home",
+        "t_idx": 79,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "return",
+        "h_idx": 78,
+        "child": "to",
+        "t_idx": 80,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "to",
+        "h_idx": 80,
+        "child": "Sydney",
+        "t_idx": 81,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "seen",
+        "h_idx": 70,
+        "child": "CyclonePam",
+        "t_idx": 82,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "url",
+        "h_idx": 83,
+        "child": "url",
+        "t_idx": 83,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "USER",
+        "h_idx": 84,
+        "child": "USER",
+        "t_idx": 84,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "RT",
+        "h_idx": 85,
+        "child": "RT",
+        "t_idx": 85,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": ":",
+        "h_idx": 86,
+        "child": ":",
+        "t_idx": 86,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "Oxfam",
+        "t_idx": 87,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Oxfam",
+        "h_idx": 87,
+        "child": "Australia",
+        "t_idx": 88,
+        "r": "appos"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Oxfam",
+        "h_idx": 87,
+        "child": ":",
+        "t_idx": 89,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "%",
+        "h_idx": 91,
+        "child": "90",
+        "t_idx": 90,
+        "r": "nummod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "%",
+        "t_idx": 91,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "%",
+        "h_idx": 91,
+        "child": "of",
+        "t_idx": 92,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 92,
+        "child": "housing",
+        "t_idx": 93,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "housing",
+        "h_idx": 93,
+        "child": "in",
+        "t_idx": 94,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "city'seriously",
+        "h_idx": 98,
+        "child": "Vanuatu",
+        "t_idx": 95,
+        "r": "poss"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Vanuatu",
+        "h_idx": 95,
+        "child": "'s",
+        "t_idx": 96,
+        "r": "case"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "city'seriously",
+        "h_idx": 98,
+        "child": "capital",
+        "t_idx": 97,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "city'seriously",
+        "t_idx": 98,
+        "r": "advmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "damaged",
+        "t_idx": 99,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "'",
+        "t_idx": 100,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "by",
+        "t_idx": 101,
+        "r": "agent"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "by",
+        "h_idx": 101,
+        "child": "CyclonePam",
+        "t_idx": 102,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damaged",
+        "h_idx": 99,
+        "child": "'",
+        "t_idx": 103,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "URL",
+        "h_idx": 104,
+        "child": "URL",
+        "t_idx": 104,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Give",
+        "h_idx": 105,
+        "child": "Give",
+        "t_idx": 105,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Give",
+        "h_idx": 105,
+        "child": "Aid",
+        "t_idx": 106,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Give",
+        "h_idx": 105,
+        "child": "to",
+        "t_idx": 107,
+        "r": "dative"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "to",
+        "h_idx": 107,
+        "child": "Victims",
+        "t_idx": 108,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Victims",
+        "h_idx": 108,
+        "child": "of",
+        "t_idx": 109,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Cyclone",
+        "h_idx": 111,
+        "child": "Disastrous",
+        "t_idx": 110,
+        "r": "amod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 109,
+        "child": "Cyclone",
+        "t_idx": 111,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Give",
+        "h_idx": 105,
+        "child": "URL",
+        "t_idx": 112,
+        "r": "npadvmod"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Cyclone",
+        "h_idx": 114,
+        "child": "USER",
+        "t_idx": 113,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damages",
+        "h_idx": 115,
+        "child": "Cyclone",
+        "t_idx": 114,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damages",
+        "h_idx": 115,
+        "child": "damages",
+        "t_idx": 115,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "island",
+        "h_idx": 117,
+        "child": "the",
+        "t_idx": 116,
+        "r": "det"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damages",
+        "h_idx": 115,
+        "child": "island",
+        "t_idx": 117,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "island",
+        "h_idx": 117,
+        "child": "of",
+        "t_idx": 118,
+        "r": "prep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "of",
+        "h_idx": 118,
+        "child": "Vanuatu",
+        "t_idx": 119,
+        "r": "pobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damages",
+        "h_idx": 115,
+        "child": "-",
+        "t_idx": 120,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "damages",
+        "h_idx": 115,
+        "child": "URL",
+        "t_idx": 121,
+        "r": "dep"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "VIDEO",
+        "h_idx": 123,
+        "child": "USER",
+        "t_idx": 122,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "VIDEO",
+        "h_idx": 123,
+        "child": "VIDEO",
+        "t_idx": 123,
+        "r": "ROOT"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "VIDEO",
+        "h_idx": 123,
+        "child": ":",
+        "t_idx": 124,
+        "r": "punct"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Pam",
+        "h_idx": 126,
+        "child": "Cyclone",
+        "t_idx": 125,
+        "r": "compound"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Devastates",
+        "h_idx": 127,
+        "child": "Pam",
+        "t_idx": 126,
+        "r": "nsubj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "VIDEO",
+        "h_idx": 123,
+        "child": "Devastates",
+        "t_idx": 127,
+        "r": "acl"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "Devastates",
+        "h_idx": 127,
+        "child": "Vanuatu",
+        "t_idx": 128,
+        "r": "dobj"
+      },
+      {
+        "title": "CyclonePam",
+        "head": "VIDEO",
+        "h_idx": 123,
+        "child": ".",
+        "t_idx": 129,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "CyclonePam",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

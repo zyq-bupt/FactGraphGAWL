@@ -1,0 +1,42 @@
+"""KP-LLM prompts."""
+
+EXTRACTOR_PROMPT = """Extract up to {max_keyphrases} salient factual keyphrases from the summary.
+Focus on entities, events, actions, dates, locations, numbers, quantities,
+causal relations, and other phrases that carry factual information.
+Return only the keyphrases separated by " | ". Do not explain.
+
+Summary:
+{generated_summary}
+
+Keyphrases:"""
+
+# For non-instruction T5 / DisT5 checkpoints (t5-base style).
+DIST5_EXTRACTOR_PROMPT = """extract keyphrases: {generated_summary}"""
+
+CHECKER_SYSTEM_PROMPT = """You are a factual consistency evaluator. Determine whether the factual
+information associated with a specified keyphrase in a summary sentence is
+supported by the source document. Use only the source document. Do not rely on
+outside knowledge. Distinguish lack of evidence from explicit contradiction.
+Return valid JSON only."""
+
+CHECKER_USER_PROMPT = """SOURCE DOCUMENT:
+{source_document}
+
+SUMMARY SENTENCE:
+{containing_summary_sentence}
+
+KEYPHRASE TO CHECK:
+{keyphrase}
+
+Classify the factual information associated with the keyphrase as exactly one
+of the following:
+- SUPPORTED: it can be inferred from the source document;
+- CONTRADICTED: the source document provides conflicting information;
+- NOT_ENOUGH_INFORMATION: the source document does not provide enough evidence.
+
+Return this JSON object:
+{{
+  "label": "SUPPORTED | CONTRADICTED | NOT_ENOUGH_INFORMATION",
+  "evidence": "a short source excerpt or an empty string",
+  "reason": "a concise explanation"
+}}"""

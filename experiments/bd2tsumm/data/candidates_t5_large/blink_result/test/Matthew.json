@@ -1,0 +1,668 @@
+{
+  "doc_name": "Matthew",
+  "doc_id": "Matthew",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "Matthew",
+  "system_name": "t5-large",
+  "article": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "Matthew",
+    "text": "hurricane matthew slams haiti and cuba with 230 kph winds. over 1.24m people affected in grand anse &amp; sud. 350,000 estimated to be in need of assistance.",
+    "sents": [
+      [
+        "hurricane",
+        "matthew",
+        "slams",
+        "haiti",
+        "and",
+        "cuba",
+        "with",
+        "230",
+        "kph",
+        "winds",
+        "."
+      ],
+      [
+        "over",
+        "1.24",
+        "m",
+        "people",
+        "affected",
+        "in",
+        "grand",
+        "anse",
+        "&",
+        "amp",
+        ";",
+        "sud",
+        ".",
+        "350,000",
+        "estimated",
+        "to",
+        "be",
+        "in",
+        "need",
+        "of",
+        "assistance",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "hurricane matthew",
+        "sent_id": 0,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          0,
+          1
+        ],
+        "preceding_text": "",
+        "following_text": "slams haiti and cuba with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "haiti",
+        "sent_id": 0,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          3
+        ],
+        "preceding_text": "hurricane matthew slams",
+        "following_text": "and cuba with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "cuba",
+        "sent_id": 0,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          5
+        ],
+        "preceding_text": "hurricane matthew slams haiti and",
+        "following_text": "with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "230 kph",
+        "sent_id": 0,
+        "pos": [
+          7,
+          9
+        ],
+        "type": "QUANTITY",
+        "token_index": [
+          7,
+          8
+        ],
+        "preceding_text": "hurricane matthew slams haiti and cuba with",
+        "following_text": "winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "over 1.24",
+        "sent_id": 1,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          11,
+          12
+        ],
+        "preceding_text": "",
+        "following_text": "m people affected in grand anse & amp ; sud . 350,000 estimated to be in need of assistance .",
+        "full_sentence": "over 1.24 m people affected in grand anse & amp ; sud . 350,000 estimated to be in need of assistance .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "grand anse &",
+        "sent_id": 1,
+        "pos": [
+          6,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          17,
+          18,
+          19
+        ],
+        "preceding_text": "over 1.24 m people affected in",
+        "following_text": "amp ; sud . 350,000 estimated to be in need of assistance .",
+        "full_sentence": "over 1.24 m people affected in grand anse & amp ; sud . 350,000 estimated to be in need of assistance .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "sud.",
+        "sent_id": 1,
+        "pos": [
+          11,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          22,
+          23
+        ],
+        "preceding_text": "over 1.24 m people affected in grand anse & amp ;",
+        "following_text": "350,000 estimated to be in need of assistance .",
+        "full_sentence": "over 1.24 m people affected in grand anse & amp ; sud . 350,000 estimated to be in need of assistance .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "350,000",
+        "sent_id": 1,
+        "pos": [
+          13,
+          14
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          24
+        ],
+        "preceding_text": "over 1.24 m people affected in grand anse & amp ; sud .",
+        "following_text": "estimated to be in need of assistance .",
+        "full_sentence": "over 1.24 m people affected in grand anse & amp ; sud . 350,000 estimated to be in need of assistance .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "Matthew",
+        "head": "matthew",
+        "h_idx": 1,
+        "child": "hurricane",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "slams",
+        "h_idx": 2,
+        "child": "matthew",
+        "t_idx": 1,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "slams",
+        "h_idx": 2,
+        "child": "slams",
+        "t_idx": 2,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "slams",
+        "h_idx": 2,
+        "child": "haiti",
+        "t_idx": 3,
+        "r": "dobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "haiti",
+        "h_idx": 3,
+        "child": "and",
+        "t_idx": 4,
+        "r": "cc"
+      },
+      {
+        "title": "Matthew",
+        "head": "haiti",
+        "h_idx": 3,
+        "child": "cuba",
+        "t_idx": 5,
+        "r": "conj"
+      },
+      {
+        "title": "Matthew",
+        "head": "slams",
+        "h_idx": 2,
+        "child": "with",
+        "t_idx": 6,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "kph",
+        "h_idx": 8,
+        "child": "230",
+        "t_idx": 7,
+        "r": "nummod"
+      },
+      {
+        "title": "Matthew",
+        "head": "winds",
+        "h_idx": 9,
+        "child": "kph",
+        "t_idx": 8,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "with",
+        "h_idx": 6,
+        "child": "winds",
+        "t_idx": 9,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "slams",
+        "h_idx": 2,
+        "child": ".",
+        "t_idx": 10,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "1.24",
+        "h_idx": 12,
+        "child": "over",
+        "t_idx": 11,
+        "r": "quantmod"
+      },
+      {
+        "title": "Matthew",
+        "head": "m",
+        "h_idx": 13,
+        "child": "1.24",
+        "t_idx": 12,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "people",
+        "h_idx": 14,
+        "child": "m",
+        "t_idx": 13,
+        "r": "nummod"
+      },
+      {
+        "title": "Matthew",
+        "head": "affected",
+        "h_idx": 15,
+        "child": "people",
+        "t_idx": 14,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": "affected",
+        "t_idx": 15,
+        "r": "ccomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "affected",
+        "h_idx": 15,
+        "child": "in",
+        "t_idx": 16,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "anse",
+        "h_idx": 18,
+        "child": "grand",
+        "t_idx": 17,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "&",
+        "h_idx": 19,
+        "child": "anse",
+        "t_idx": 18,
+        "r": "compound"
+      },
+      {
+        "title": "Matthew",
+        "head": "in",
+        "h_idx": 16,
+        "child": "&",
+        "t_idx": 19,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "in",
+        "h_idx": 16,
+        "child": "amp",
+        "t_idx": 20,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": ";",
+        "t_idx": 21,
+        "r": "punct"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": "sud",
+        "t_idx": 22,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": ".",
+        "t_idx": 23,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": "350,000",
+        "t_idx": 24,
+        "r": "nsubj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": "estimated",
+        "t_idx": 25,
+        "r": "ROOT"
+      },
+      {
+        "title": "Matthew",
+        "head": "be",
+        "h_idx": 27,
+        "child": "to",
+        "t_idx": 26,
+        "r": "aux"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": "be",
+        "t_idx": 27,
+        "r": "xcomp"
+      },
+      {
+        "title": "Matthew",
+        "head": "be",
+        "h_idx": 27,
+        "child": "in",
+        "t_idx": 28,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "in",
+        "h_idx": 28,
+        "child": "need",
+        "t_idx": 29,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "need",
+        "h_idx": 29,
+        "child": "of",
+        "t_idx": 30,
+        "r": "prep"
+      },
+      {
+        "title": "Matthew",
+        "head": "of",
+        "h_idx": 30,
+        "child": "assistance",
+        "t_idx": 31,
+        "r": "pobj"
+      },
+      {
+        "title": "Matthew",
+        "head": "estimated",
+        "h_idx": 25,
+        "child": ".",
+        "t_idx": 32,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "hurricane matthew",
+        "sent_id": 0,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "EVENT",
+        "token_index": [
+          0,
+          1
+        ],
+        "preceding_text": "",
+        "following_text": "slams haiti and cuba with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "",
+        "mention": "hurricane matthew",
+        "context_right": "slams haiti and cuba with 230 kph winds .",
+        "wikipedia_id": 51730127,
+        "entity_name": "Hurricane Matthew",
+        "score": 11.847853660583496,
+        "url": "https://en.wikipedia.org/wiki?curid=51730127",
+        "wikidata_id": "Q27058656"
+      },
+      {
+        "mention_id": 1,
+        "name": "haiti",
+        "sent_id": 0,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          3
+        ],
+        "preceding_text": "hurricane matthew slams",
+        "following_text": "and cuba with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "hurricane matthew slams",
+        "mention": "haiti",
+        "context_right": "and cuba with 230 kph winds .",
+        "wikipedia_id": 13373,
+        "entity_name": "Haiti",
+        "score": 8.557585716247559,
+        "url": "https://en.wikipedia.org/wiki?curid=13373",
+        "wikidata_id": "Q790"
+      },
+      {
+        "mention_id": 2,
+        "name": "cuba",
+        "sent_id": 0,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          5
+        ],
+        "preceding_text": "hurricane matthew slams haiti and",
+        "following_text": "with 230 kph winds .",
+        "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 2,
+        "context_left": "hurricane matthew slams haiti and",
+        "mention": "cuba",
+        "context_right": "with 230 kph winds .",
+        "wikipedia_id": 5042481,
+        "entity_name": "Cuba",
+        "score": 7.730736255645752,
+        "url": "https://en.wikipedia.org/wiki?curid=5042481",
+        "wikidata_id": "Q241"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "hurricane matthew",
+          "sent_id": 0,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "EVENT",
+          "token_index": [
+            0,
+            1
+          ],
+          "preceding_text": "",
+          "following_text": "slams haiti and cuba with 230 kph winds .",
+          "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "",
+          "mention": "hurricane matthew",
+          "context_right": "slams haiti and cuba with 230 kph winds .",
+          "wikipedia_id": 51730127,
+          "entity_name": "Hurricane Matthew",
+          "score": 11.847853660583496,
+          "url": "https://en.wikipedia.org/wiki?curid=51730127",
+          "wikidata_id": "Q27058656"
+        }
+      ],
+      [
+        {
+          "mention_id": 1,
+          "name": "haiti",
+          "sent_id": 0,
+          "pos": [
+            3,
+            4
+          ],
+          "type": "GPE",
+          "token_index": [
+            3
+          ],
+          "preceding_text": "hurricane matthew slams",
+          "following_text": "and cuba with 230 kph winds .",
+          "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "hurricane matthew slams",
+          "mention": "haiti",
+          "context_right": "and cuba with 230 kph winds .",
+          "wikipedia_id": 13373,
+          "entity_name": "Haiti",
+          "score": 8.557585716247559,
+          "url": "https://en.wikipedia.org/wiki?curid=13373",
+          "wikidata_id": "Q790"
+        }
+      ],
+      [
+        {
+          "mention_id": 2,
+          "name": "cuba",
+          "sent_id": 0,
+          "pos": [
+            5,
+            6
+          ],
+          "type": "GPE",
+          "token_index": [
+            5
+          ],
+          "preceding_text": "hurricane matthew slams haiti and",
+          "following_text": "with 230 kph winds .",
+          "full_sentence": "hurricane matthew slams haiti and cuba with 230 kph winds .",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 2,
+          "context_left": "hurricane matthew slams haiti and",
+          "mention": "cuba",
+          "context_right": "with 230 kph winds .",
+          "wikipedia_id": 5042481,
+          "entity_name": "Cuba",
+          "score": 7.730736255645752,
+          "url": "https://en.wikipedia.org/wiki?curid=5042481",
+          "wikidata_id": "Q241"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "Matthew",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

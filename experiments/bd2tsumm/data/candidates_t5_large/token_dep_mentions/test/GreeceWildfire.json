@@ -1,0 +1,537 @@
+{
+  "doc_name": "GreeceWildfire",
+  "doc_id": "GreeceWildfire",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "GreeceWildfire",
+  "system_name": "t5-large",
+  "article": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "GreeceWildfire",
+    "text": "wildfires in greece have killed up to 65 people and injured more than 150. 187 people hospitalized with injuries, including 23 chlildren. residents trapped in seaside villages only one way to escape flames fled into sea.",
+    "sents": [
+      [
+        "wildfires",
+        "in",
+        "greece",
+        "have",
+        "killed",
+        "up",
+        "to",
+        "65",
+        "people",
+        "and",
+        "injured",
+        "more",
+        "than",
+        "150",
+        "."
+      ],
+      [
+        "187",
+        "people",
+        "hospitalized",
+        "with",
+        "injuries",
+        ",",
+        "including",
+        "23",
+        "chlildren",
+        "."
+      ],
+      [
+        "residents",
+        "trapped",
+        "in",
+        "seaside",
+        "villages",
+        "only",
+        "one",
+        "way",
+        "to",
+        "escape",
+        "flames",
+        "fled",
+        "into",
+        "sea",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "greece",
+        "sent_id": 0,
+        "pos": [
+          2,
+          3
+        ],
+        "type": "GPE",
+        "token_index": [
+          2
+        ],
+        "preceding_text": "wildfires in",
+        "following_text": "have killed up to 65 people and injured more than 150 .",
+        "full_sentence": "wildfires in greece have killed up to 65 people and injured more than 150 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "up to 65",
+        "sent_id": 0,
+        "pos": [
+          5,
+          8
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          5,
+          6,
+          7
+        ],
+        "preceding_text": "wildfires in greece have killed",
+        "following_text": "people and injured more than 150 .",
+        "full_sentence": "wildfires in greece have killed up to 65 people and injured more than 150 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "more than 150",
+        "sent_id": 0,
+        "pos": [
+          11,
+          14
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          11,
+          12,
+          13
+        ],
+        "preceding_text": "wildfires in greece have killed up to 65 people and injured",
+        "following_text": ".",
+        "full_sentence": "wildfires in greece have killed up to 65 people and injured more than 150 .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "187",
+        "sent_id": 1,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          15
+        ],
+        "preceding_text": "",
+        "following_text": "people hospitalized with injuries , including 23 chlildren .",
+        "full_sentence": "187 people hospitalized with injuries , including 23 chlildren .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "23",
+        "sent_id": 1,
+        "pos": [
+          7,
+          8
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          22
+        ],
+        "preceding_text": "187 people hospitalized with injuries , including",
+        "following_text": "chlildren .",
+        "full_sentence": "187 people hospitalized with injuries , including 23 chlildren .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "chlildren",
+        "sent_id": 1,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "PERSON",
+        "token_index": [
+          23
+        ],
+        "preceding_text": "187 people hospitalized with injuries , including 23",
+        "following_text": ".",
+        "full_sentence": "187 people hospitalized with injuries , including 23 chlildren .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "only one",
+        "sent_id": 2,
+        "pos": [
+          5,
+          7
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          30,
+          31
+        ],
+        "preceding_text": "residents trapped in seaside villages",
+        "following_text": "way to escape flames fled into sea .",
+        "full_sentence": "residents trapped in seaside villages only one way to escape flames fled into sea .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "wildfires",
+        "t_idx": 0,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "wildfires",
+        "h_idx": 0,
+        "child": "in",
+        "t_idx": 1,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "in",
+        "h_idx": 1,
+        "child": "greece",
+        "t_idx": 2,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "have",
+        "t_idx": 3,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "killed",
+        "t_idx": 4,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "65",
+        "h_idx": 7,
+        "child": "up",
+        "t_idx": 5,
+        "r": "quantmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "65",
+        "h_idx": 7,
+        "child": "to",
+        "t_idx": 6,
+        "r": "quantmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "people",
+        "h_idx": 8,
+        "child": "65",
+        "t_idx": 7,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "people",
+        "t_idx": 8,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "and",
+        "t_idx": 9,
+        "r": "cc"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": "injured",
+        "t_idx": 10,
+        "r": "conj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "injured",
+        "h_idx": 10,
+        "child": "more",
+        "t_idx": 11,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "more",
+        "h_idx": 11,
+        "child": "than",
+        "t_idx": 12,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "than",
+        "h_idx": 12,
+        "child": "150",
+        "t_idx": 13,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "killed",
+        "h_idx": 4,
+        "child": ".",
+        "t_idx": 14,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "people",
+        "h_idx": 16,
+        "child": "187",
+        "t_idx": 15,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": "people",
+        "t_idx": 16,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": "hospitalized",
+        "t_idx": 17,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": "with",
+        "t_idx": 18,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "with",
+        "h_idx": 18,
+        "child": "injuries",
+        "t_idx": 19,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": ",",
+        "t_idx": 20,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": "including",
+        "t_idx": 21,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "chlildren",
+        "h_idx": 23,
+        "child": "23",
+        "t_idx": 22,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "including",
+        "h_idx": 21,
+        "child": "chlildren",
+        "t_idx": 23,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "hospitalized",
+        "h_idx": 17,
+        "child": ".",
+        "t_idx": 24,
+        "r": "punct"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fled",
+        "h_idx": 36,
+        "child": "residents",
+        "t_idx": 25,
+        "r": "nsubj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "residents",
+        "h_idx": 25,
+        "child": "trapped",
+        "t_idx": 26,
+        "r": "acl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "trapped",
+        "h_idx": 26,
+        "child": "in",
+        "t_idx": 27,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "villages",
+        "h_idx": 29,
+        "child": "seaside",
+        "t_idx": 28,
+        "r": "compound"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "in",
+        "h_idx": 27,
+        "child": "villages",
+        "t_idx": 29,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "one",
+        "h_idx": 31,
+        "child": "only",
+        "t_idx": 30,
+        "r": "advmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "way",
+        "h_idx": 32,
+        "child": "one",
+        "t_idx": 31,
+        "r": "nummod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "trapped",
+        "h_idx": 26,
+        "child": "way",
+        "t_idx": 32,
+        "r": "npadvmod"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "escape",
+        "h_idx": 34,
+        "child": "to",
+        "t_idx": 33,
+        "r": "aux"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "way",
+        "h_idx": 32,
+        "child": "escape",
+        "t_idx": 34,
+        "r": "relcl"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "escape",
+        "h_idx": 34,
+        "child": "flames",
+        "t_idx": 35,
+        "r": "dobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fled",
+        "h_idx": 36,
+        "child": "fled",
+        "t_idx": 36,
+        "r": "ROOT"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fled",
+        "h_idx": 36,
+        "child": "into",
+        "t_idx": 37,
+        "r": "prep"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "into",
+        "h_idx": 37,
+        "child": "sea",
+        "t_idx": 38,
+        "r": "pobj"
+      },
+      {
+        "title": "GreeceWildfire",
+        "head": "fled",
+        "h_idx": 36,
+        "child": ".",
+        "t_idx": 39,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "GreeceWildfire",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

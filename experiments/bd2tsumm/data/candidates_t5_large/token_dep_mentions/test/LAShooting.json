@@ -1,0 +1,575 @@
+{
+  "doc_name": "LAShooting",
+  "doc_id": "LAShooting",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "LAShooting",
+  "system_name": "t5-large",
+  "article": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "abstract": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  },
+  "candidate": {
+    "title": "LAShooting",
+    "text": "shooter is an off-duty tsa agent, law enforcement source tells user. suspect texted his brother to tell him he was suicidal, sources say. 23-year-old suspect named to us media as los angeles resident paul ciancia.",
+    "sents": [
+      [
+        "shooter",
+        "is",
+        "an",
+        "off",
+        "-",
+        "duty",
+        "tsa",
+        "agent",
+        ",",
+        "law",
+        "enforcement",
+        "source",
+        "tells",
+        "user",
+        "."
+      ],
+      [
+        "suspect",
+        "texted",
+        "his",
+        "brother",
+        "to",
+        "tell",
+        "him",
+        "he",
+        "was",
+        "suicidal",
+        ",",
+        "sources",
+        "say",
+        "."
+      ],
+      [
+        "23",
+        "-",
+        "year",
+        "-",
+        "old",
+        "suspect",
+        "named",
+        "to",
+        "us",
+        "media",
+        "as",
+        "los",
+        "angeles",
+        "resident",
+        "paul",
+        "ciancia",
+        "."
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "shooter",
+        "sent_id": 0,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          0
+        ],
+        "preceding_text": "",
+        "following_text": "is an off - duty tsa agent , law enforcement source tells user .",
+        "full_sentence": "shooter is an off - duty tsa agent , law enforcement source tells user .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "tsa",
+        "sent_id": 0,
+        "pos": [
+          6,
+          7
+        ],
+        "type": "ORG",
+        "token_index": [
+          6
+        ],
+        "preceding_text": "shooter is an off - duty",
+        "following_text": "agent , law enforcement source tells user .",
+        "full_sentence": "shooter is an off - duty tsa agent , law enforcement source tells user .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "23-year-old",
+        "sent_id": 2,
+        "pos": [
+          0,
+          5
+        ],
+        "type": "DATE",
+        "token_index": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "preceding_text": "",
+        "following_text": "suspect named to us media as los angeles resident paul ciancia .",
+        "full_sentence": "23 - year - old suspect named to us media as los angeles resident paul ciancia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "us media",
+        "sent_id": 2,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "ORG",
+        "token_index": [
+          37,
+          38
+        ],
+        "preceding_text": "23 - year - old suspect named to",
+        "following_text": "as los angeles resident paul ciancia .",
+        "full_sentence": "23 - year - old suspect named to us media as los angeles resident paul ciancia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "los angeles",
+        "sent_id": 2,
+        "pos": [
+          11,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          40,
+          41
+        ],
+        "preceding_text": "23 - year - old suspect named to us media as",
+        "following_text": "resident paul ciancia .",
+        "full_sentence": "23 - year - old suspect named to us media as los angeles resident paul ciancia .",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "paul ciancia",
+        "sent_id": 2,
+        "pos": [
+          14,
+          16
+        ],
+        "type": "PERSON",
+        "token_index": [
+          43,
+          44
+        ],
+        "preceding_text": "23 - year - old suspect named to us media as los angeles resident",
+        "following_text": ".",
+        "full_sentence": "23 - year - old suspect named to us media as los angeles resident paul ciancia .",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "LAShooting",
+        "head": "is",
+        "h_idx": 1,
+        "child": "shooter",
+        "t_idx": 0,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": "is",
+        "t_idx": 1,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 7,
+        "child": "an",
+        "t_idx": 2,
+        "r": "det"
+      },
+      {
+        "title": "LAShooting",
+        "head": "duty",
+        "h_idx": 5,
+        "child": "off",
+        "t_idx": 3,
+        "r": "nmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "duty",
+        "h_idx": 5,
+        "child": "-",
+        "t_idx": 4,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 7,
+        "child": "duty",
+        "t_idx": 5,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "agent",
+        "h_idx": 7,
+        "child": "tsa",
+        "t_idx": 6,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "is",
+        "h_idx": 1,
+        "child": "agent",
+        "t_idx": 7,
+        "r": "attr"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": ",",
+        "t_idx": 8,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "enforcement",
+        "h_idx": 10,
+        "child": "law",
+        "t_idx": 9,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "source",
+        "h_idx": 11,
+        "child": "enforcement",
+        "t_idx": 10,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": "source",
+        "t_idx": 11,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": "tells",
+        "t_idx": 12,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": "user",
+        "t_idx": 13,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tells",
+        "h_idx": 12,
+        "child": ".",
+        "t_idx": 14,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "texted",
+        "h_idx": 16,
+        "child": "suspect",
+        "t_idx": 15,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "say",
+        "h_idx": 27,
+        "child": "texted",
+        "t_idx": 16,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "brother",
+        "h_idx": 18,
+        "child": "his",
+        "t_idx": 17,
+        "r": "poss"
+      },
+      {
+        "title": "LAShooting",
+        "head": "texted",
+        "h_idx": 16,
+        "child": "brother",
+        "t_idx": 18,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 20,
+        "child": "to",
+        "t_idx": 19,
+        "r": "aux"
+      },
+      {
+        "title": "LAShooting",
+        "head": "texted",
+        "h_idx": 16,
+        "child": "tell",
+        "t_idx": 20,
+        "r": "advcl"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 20,
+        "child": "him",
+        "t_idx": 21,
+        "r": "dobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "was",
+        "h_idx": 23,
+        "child": "he",
+        "t_idx": 22,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "tell",
+        "h_idx": 20,
+        "child": "was",
+        "t_idx": 23,
+        "r": "ccomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "was",
+        "h_idx": 23,
+        "child": "suicidal",
+        "t_idx": 24,
+        "r": "acomp"
+      },
+      {
+        "title": "LAShooting",
+        "head": "say",
+        "h_idx": 27,
+        "child": ",",
+        "t_idx": 25,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "say",
+        "h_idx": 27,
+        "child": "sources",
+        "t_idx": 26,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "say",
+        "h_idx": 27,
+        "child": "say",
+        "t_idx": 27,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "say",
+        "h_idx": 27,
+        "child": ".",
+        "t_idx": 28,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "year",
+        "h_idx": 31,
+        "child": "23",
+        "t_idx": 29,
+        "r": "nummod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "year",
+        "h_idx": 31,
+        "child": "-",
+        "t_idx": 30,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "old",
+        "h_idx": 33,
+        "child": "year",
+        "t_idx": 31,
+        "r": "npadvmod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "old",
+        "h_idx": 33,
+        "child": "-",
+        "t_idx": 32,
+        "r": "punct"
+      },
+      {
+        "title": "LAShooting",
+        "head": "suspect",
+        "h_idx": 34,
+        "child": "old",
+        "t_idx": 33,
+        "r": "amod"
+      },
+      {
+        "title": "LAShooting",
+        "head": "named",
+        "h_idx": 35,
+        "child": "suspect",
+        "t_idx": 34,
+        "r": "nsubj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "named",
+        "h_idx": 35,
+        "child": "named",
+        "t_idx": 35,
+        "r": "ROOT"
+      },
+      {
+        "title": "LAShooting",
+        "head": "named",
+        "h_idx": 35,
+        "child": "to",
+        "t_idx": 36,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "media",
+        "h_idx": 38,
+        "child": "us",
+        "t_idx": 37,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "to",
+        "h_idx": 36,
+        "child": "media",
+        "t_idx": 38,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "named",
+        "h_idx": 35,
+        "child": "as",
+        "t_idx": 39,
+        "r": "prep"
+      },
+      {
+        "title": "LAShooting",
+        "head": "angeles",
+        "h_idx": 41,
+        "child": "los",
+        "t_idx": 40,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "resident",
+        "h_idx": 42,
+        "child": "angeles",
+        "t_idx": 41,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "ciancia",
+        "h_idx": 44,
+        "child": "resident",
+        "t_idx": 42,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "ciancia",
+        "h_idx": 44,
+        "child": "paul",
+        "t_idx": 43,
+        "r": "compound"
+      },
+      {
+        "title": "LAShooting",
+        "head": "as",
+        "h_idx": 39,
+        "child": "ciancia",
+        "t_idx": 44,
+        "r": "pobj"
+      },
+      {
+        "title": "LAShooting",
+        "head": "named",
+        "h_idx": 35,
+        "child": ".",
+        "t_idx": 45,
+        "r": "punct"
+      }
+    ]
+  },
+  "humman_summary": {
+    "title": "LAShooting",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": []
+  }
+}

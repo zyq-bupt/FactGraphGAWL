@@ -1,148 +1,161 @@
 # FactGraphGAWL
 
-## 摘要
-事实图构建与 GAWL 方法改进。
+事实图构建与 GAWL 方法改进，用于摘要事实性评估。
 
----
+## 目录结构
 
-## 🧩 `construc_graph.py`
-**输入：**
-```
-autodl-fs/zyq/data_gawl/dreeam_result/
-```
-
-**输出：**
-```
-autodl-fs/zyq/data_gawl/factgraph_result/
-```
-
-**功能说明：**  
-该脚本用于将 `dreeam_result` 转换为图结构 `factgraph_result`。  
-在 dreeam 阶段，虽然已经得到了 token、mention、entity 及其间的 relation，但尚未形成完整的图结构。  
-本脚本重新组织这些信息，生成 `graph_without_emb`。
-
----
-
-## 🔠 `get_token_EMB.py`
-**输入：**
-```
-autodl-fs/zyq/data_gawl/factgraph_result/
-```
-
-**输出：**
-```
-autodl-fs/zyq/data_gawl/factgraph_result_withemb/
+```text
+FactGraphGAWL/
+├── config.py                 # 数据与模型路径配置
+├── common/                   # 共享 IO / 工具
+├── build/                    # 建图与节点 embedding
+│   └── graph_embedding/
+├── kernel/                   # GAWL 核、边权重、图格式转换
+├── eval/                     # 分数合并与相关性评估
+├── baselines/                # LLM 基线（Direct-LLM / KP-LLM）
+│   ├── llm_direct/           # ChatGPT-ZS/Star, ERNIE-ZS/Star
+│   └── kp_llm/               # T5 关键词 + LLM 逐项核验
+├── configs/                  # direct_llm.yaml / kp_llm.yaml
+├── scripts/                  # 运行与参数扫描脚本
+├── notebooks/                # 分析与画图
+├── experiments/
+│   ├── logs/                 # 扫描运行日志（gitignore）
+│   ├── results/              # results*.csv, PTresult*.txt, llm/kp 输出
+│   └── figures/
+├── data/
+│   ├── samples/
+│   └── debug/
+├── tests/
+└── archive/                  # 旧副本与临时脚本（不参与主流程）
 ```
 
-**功能说明：**  
-为节点添加 embedding，加载 `pegasus-xsum` 预训练模型。  
-节点 embedding 取自其所在句子的上下文嵌入。  
-同一词汇在原文与摘要中可能有不同的 embedding，可用于 PT 图核相似度方法。
+## 流水线概览
 
-**小技巧：**  
-学习到一个新的映射方法，可将自定义分词与模型 tokenizer 的分词对应起来（见代码 63–77 行）：
+1. **建图** — `python -m build.construct_graph`  
+   输入：`dreeam_result/` → 输出：`factgraph_result/`（路径见 `config.py`）
+
+2. **节点 embedding** — `python -m build.get_token_EMB`  
+   使用 Pegasus-XSum，为节点写入上下文 embedding。
+
+3. **图相似度（GAWL）** — `python -m kernel.gawl`  
+   比较原文图与摘要图，输出相似度；DeFacto 上统计内在/外在错误判别。
+
+4. **合并与评测** — `python -m eval.edit2`、`python -m eval.evaluators_benchmark`
+
+一键串联（norm 变体）：
+
+```bash
+bash scripts/run.sh
+```
+
+## GAWL 改进要点
+
+相对原始 GAWL（[Nikolentzos & Vazirgiannis, 2023](https://github.com/giannisnik/gawl)）：
+
+1. **节点标签**：用单词替代度数（`compute_gawl_kernel`）
+2. **小图标签频率**：直接使用小图频率
+3. **边类型加权**（关键，`compute_gawl_kernel_v2`）
+
+| 大类 | 含义 | 典型关系 |
+|------|------|----------|
+| token-token | 依存 | nsubj, obj |
+| token-mention | token–提及 | RELATED_TO |
+| mention-entity | 提及–实体 | BELONGS_TO |
+| entity-entity | 实体关系 | P17, P27 |
+
+命令行权重与结果标签：
+
+```bash
+python -m kernel.gawl --wTT 1.5 --wTM 2.25 --wME 0.25 --wEE 0.5 --result-tag 1
+# 结果追加到 experiments/results/PTresult_1.txt
+```
+
+参数说明：
 
 ```python
-sents = [["I", "love", "programming"]]
-
-# 假设 tokenizer 将 "programming" 分成 "program" + "ming"
-# [["I", "love", "program", "ming"]]
-encoding['input_ids'] = [101, 146, 1568, 30767, 2561, 102]
-encoding.word_ids(batch_index=0)
-# 输出: [None, 0, 1, 2, 3, 3, None]
-# 表示编码出的第4和第5个 embedding 映射到 sents 的第3个单词。
+use_node_labels = True   # 单词作为节点 label
+use_edge_labels = 2      # 0: 无边权; 1: 小类; 2: 大类
 ```
 
----
+## 参数扫描
 
-## 🧮 `gawl.py`
-主函数，用于计算两个图的相似性。
+```bash
+bash scripts/run_params.sh    # → experiments/logs/run1, results.csv, --result-tag 1
+bash scripts/run_params_2.sh  # → run2 / results2.csv / tag 2
+bash scripts/run_params_3.sh  # → run3 / results3.csv / tag 3
+```
 
+脚本会自动将仓库根加入 `PYTHONPATH`，请在任意目录执行均可。
 
+## LLM 基线（Direct-LLM + KP-LLM）
 
-### 一、GAWL 改进内容
-在原始 GAWL 方法基础上，进行了三项改进：
+新增五个事实一致性评价基线，**不改动**现有 GAWL / FactGraph 流程。
 
-1. **节点标签改进**  
-   将节点 label 由度数替换为单词。  
-   （注意：未剔除停用词，因为方法对结构敏感，涉及多层邻居聚合，若删除中间关系或单词可能影响性能。）  
-   → 对应函数：`compute_gawl_kernel`
-
-2. **小图标签频率改进**  
-   直接使用小图 *j* 的 label 频率。  
-   虽然提升不大，但该修改更符合摘要任务逻辑。  
-   原因：原本的 `min()` 函数已默认以小图为基准。
-
-3. **边类型加权改进（关键）**  
-   → 对应函数：`compute_gawl_kernel_v2`
-
-#### 边类型设计
-| 类型 | 描述 |
+| 方法 | 说明 |
 |------|------|
-| **大类** | T-T = 1，T-M = 2，M-E = 3，E-E = 1.5。<br>其中：<br>nsubj、obj 属于 token-token；<br>RELATED_TO 属于 token-mention；<br>BELONGS_TO 属于 mention-entity；<br>P17、P27 属于 entity-entity。<br>文件：`edge_label_type.txt` 记录每条边的大类。 |
-| **小类** | `edge_label.txt` 中存储了具体子类型（如 nsubj、obj、RELATED_TO、BELONGS_TO、P17、P27 等）。目前每个小类出现一次计权重为 1。 |
+| ChatGPT-ZS | 二分类 yes/no（Luo et al., 2023 prompt） |
+| ChatGPT-Star | 1–5 星评分（Wang et al., 2023 prompt） |
+| ERNIE-ZS / ERNIE-Star | 与上相同 prompt，后端换 ERNIE |
+| KP-LLM | FLAN-T5 抽关键词 → LLM 逐项核验 → 支持率聚合（见 `KP-LLM_baseline_implementation.md`） |
 
-> 📎 方法细节见论文附录或飞书文档：[FactGraphGAWL文档](https://mu85k14jge.feishu.cn/docx/LDNvdEKL7oh3itxnC4WcK87OnId?from=from_copylink)  
-> 参考原论文：[Nikolentzos & Vazirgiannis, 2023](https://github.com/giannisnik/gawl)(Nikolentzos G, Vazirgiannis M. Graph alignment kernels using weisfeiler and leman hierarchies[C]//International Conference on Artificial Intelligence and Statistics. PMLR, 2023: 2019-2034.)
+环境变量：
 
----
+```bash
+# ChatGPT / KP-LLM 检查器：默认走智增增 https://api.zhizengzeng.com/v1
+export OPENAI_API_KEY=你的智增增key
+# 可选覆盖：export OPENAI_BASE_URL=https://api.zhizengzeng.com/v1
+# 可选：export CHATGPT_MODEL=gpt-3.5-turbo
 
-### 二、函数流程与参数说明
+# ERNIE 也默认走智增增，模型默认 ernie-3.5-128k
+# 可选：export ERNIE_MODEL=ernie-3.5-128k
+# 若单独设了 ERNIE_API_KEY 则优先用它，否则复用 OPENAI_API_KEY
+```
+
+先用少量样本冒烟（推荐 `--limit 2`）：
+
+```bash
+python scripts/run_direct_llm.py \
+  --method ChatGPT-ZS \
+  --input data/samples/updated_processed_with_factgraph_filled.jsonl \
+  --limit 2
+
+python scripts/run_direct_llm.py --method ChatGPT-Star --input ... --limit 2
+python scripts/run_direct_llm.py --method ERNIE-ZS --input ... --limit 2
+python scripts/run_direct_llm.py --method ERNIE-Star --input ... --limit 2
+
+python scripts/run_kp_llm.py \
+  --input data/samples/updated_processed_with_factgraph_filled.jsonl \
+  --output experiments/results/kp_llm/predictions_sample.jsonl \
+  --limit 2
+```
+
+评价（与人工分相关 / 二分类指标）：
+
+```bash
+python scripts/evaluate_llm_baselines.py \
+  --predictions experiments/results/llm_baselines/predictions_ChatGPT-ZS.jsonl \
+  --labels data/samples/updated_processed_with_factgraph_filled.jsonl \
+  --output experiments/results/llm_baselines/metrics_ChatGPT-ZS.json
+```
+
+无 API 的单元测试：
+
+```bash
+python -c "from tests.test_llm_baselines import *; test_parse_zs_yes_no(); test_parse_star(); test_normalize_keyphrases(); test_align_exact_and_overlap(); test_aggregate_support_rate(); test_split_sentences_nonempty(); print('ok')"
+```
+
+配置见 `configs/direct_llm.yaml`、`configs/kp_llm.yaml`。
+
+## 数据
+
+- **Defacto / UniSumEval 主数据**：路径在 `config.py`（默认 `/root/autodl-fs/zyq/...`）
+- 百度网盘备份：https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw 提取码 `2tns`
+- 仓库内样例：`data/samples/updated_processed_with_factgraph_filled.jsonl`
+
+注意不同数据集键名：
+
 ```python
-use_node_labels = True  # True 表示使用单词作为节点 label。后续可继续改进，用embedding作为label。
-use_edge_labels = 1     # 0: 不使用边权重；1: 使用小类权重(edge_minor_type_weights)；2: 使用大类权重(edge_major_type_weights)
+keys = ["article", "candidate", "humman_summary"]  # DeFacto
+# UniSum 键名不同，见代码
 ```
 
----
-
-## 📁 输入文件说明
-**Defacto 数据集：**
-```
-data_gawl
-```
-
-下载链接（百度网盘）：
-> 链接：[https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw](https://pan.baidu.com/s/1j7Z4mjbtc3Me1BKXxxSekw)  
-> 提取码：`2tns`
-
----
-
-## ⚙️ 其他注意事项
-```python
-keys = ["article", "candidate", "humman_summary"]
-# 注意！UniSum 的键名不同！
-```
-
----
-
-## 📊 UniSumEval上与人类得分的相关性评估
-
-### `gawl.py`
-**输出路径：**
-```
-/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL/test
-```
-
----
-
-## 🧾 `edit2.py`
-**输入：**
-```python
-merged_file = "/root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2.jsonl"
-docs_directory = "/root/autodl-fs/zyq/unisumeval_data_gawl/factgraphGAWL/test/"
-```
-
-**输出：**
-```
-/root/autodl-fs/zyq/unisumeval_data_gawl/merged_file2_processed.jsonl
-```
-
-**功能：**  
-将上一步得到的得分与原始文件进行合并。
-
----
-
-## 📈 `evaluators_benchmark.py`
-评估脚本，用于验证模型在不同任务上的表现。
-
----

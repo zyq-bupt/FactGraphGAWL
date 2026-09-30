@@ -1,0 +1,1743 @@
+{
+  "doc_name": "MexicoQuake",
+  "doc_id": "MexicoQuake",
+  "has_error": false,
+  "intrinsic_error": "unknow",
+  "extrinsic_error": "unknow",
+  "event_id": "MexicoQuake",
+  "system_name": "pegasus-large",
+  "article": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "abstract": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  },
+  "candidate": {
+    "title": "MexicoQuake",
+    "text": "Rescue workers &amp; Tributes To Share After The Horrific Earthquake MexicoCity USER: USER memlook More than 3,800 buildings damaged in Mexico City earthquake: Mexico City, Mexico — Mexico USER Mexico needs your help, please, we suffered a great earthquake that left us wounded RT USER: You can also donate to WE ARE ONE MEXICO fundraiser PLEASE DONATE USER and SHARE WAOXMEXICO RT USER : Dear friends, I started a fundraiser to help patients with cancer affected by Mexicos earthquake, anything helps!",
+    "sents": [
+      [
+        "Rescue",
+        "workers",
+        "&",
+        "amp",
+        ";",
+        "Tributes",
+        "To",
+        "Share",
+        "After",
+        "The",
+        "Horrific",
+        "Earthquake",
+        "MexicoCity"
+      ],
+      [
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "USER",
+        "memlook",
+        "More",
+        "than",
+        "3,800",
+        "buildings",
+        "damaged",
+        "in",
+        "Mexico",
+        "City",
+        "earthquake",
+        ":"
+      ],
+      [
+        "Mexico",
+        "City",
+        ",",
+        "Mexico",
+        "—",
+        "Mexico",
+        "USER"
+      ],
+      [
+        "Mexico",
+        "needs",
+        "your",
+        "help",
+        ",",
+        "please",
+        ",",
+        "we",
+        "suffered",
+        "a",
+        "great",
+        "earthquake",
+        "that",
+        "left",
+        "us",
+        "wounded"
+      ],
+      [
+        "RT"
+      ],
+      [
+        "USER"
+      ],
+      [
+        ":"
+      ],
+      [
+        "You",
+        "can",
+        "also",
+        "donate",
+        "to",
+        "WE",
+        "ARE",
+        "ONE",
+        "MEXICO",
+        "fundraiser"
+      ],
+      [
+        "PLEASE",
+        "DONATE",
+        "USER",
+        "and",
+        "SHARE",
+        "WAOXMEXICO"
+      ],
+      [
+        "RT",
+        "USER",
+        ":"
+      ],
+      [
+        "Dear",
+        "friends",
+        ",",
+        "I",
+        "started",
+        "a",
+        "fundraiser",
+        "to",
+        "help",
+        "patients",
+        "with",
+        "cancer",
+        "affected",
+        "by",
+        "Mexicos",
+        "earthquake",
+        ",",
+        "anything",
+        "helps",
+        "!"
+      ]
+    ],
+    "mentions": [
+      {
+        "mention_id": 0,
+        "name": "MexicoCity",
+        "sent_id": 0,
+        "pos": [
+          12,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          12
+        ],
+        "preceding_text": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake",
+        "following_text": "",
+        "full_sentence": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake MexicoCity",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 1,
+        "name": "USER",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          15
+        ],
+        "preceding_text": "",
+        "following_text": "memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 2,
+        "name": "More than 3,800",
+        "sent_id": 3,
+        "pos": [
+          2,
+          5
+        ],
+        "type": "CARDINAL",
+        "token_index": [
+          17,
+          18,
+          19
+        ],
+        "preceding_text": "USER memlook",
+        "following_text": "buildings damaged in Mexico City earthquake :",
+        "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 3,
+        "name": "Mexico City",
+        "sent_id": 3,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          23,
+          24
+        ],
+        "preceding_text": "USER memlook More than 3,800 buildings damaged in",
+        "following_text": "earthquake :",
+        "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 4,
+        "name": "Mexico City",
+        "sent_id": 4,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          27,
+          28
+        ],
+        "preceding_text": "",
+        "following_text": ", Mexico — Mexico USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 5,
+        "name": "Mexico",
+        "sent_id": 4,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "Mexico City ,",
+        "following_text": "— Mexico USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 6,
+        "name": "Mexico",
+        "sent_id": 4,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          32
+        ],
+        "preceding_text": "Mexico City , Mexico —",
+        "following_text": "USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 7,
+        "name": "Mexico",
+        "sent_id": 5,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          34
+        ],
+        "preceding_text": "",
+        "following_text": "needs your help , please , we suffered a great earthquake that left us wounded",
+        "full_sentence": "Mexico needs your help , please , we suffered a great earthquake that left us wounded",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 8,
+        "name": "USER",
+        "sent_id": 7,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "USER",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 9,
+        "name": "MEXICO",
+        "sent_id": 9,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          61
+        ],
+        "preceding_text": "You can also donate to WE ARE ONE",
+        "following_text": "fundraiser",
+        "full_sentence": "You can also donate to WE ARE ONE MEXICO fundraiser",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 10,
+        "name": "WAOXMEXICO",
+        "sent_id": 10,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          68
+        ],
+        "preceding_text": "PLEASE DONATE USER and SHARE",
+        "following_text": "",
+        "full_sentence": "PLEASE DONATE USER and SHARE WAOXMEXICO",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 11,
+        "name": "USER",
+        "sent_id": 11,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "PERSON",
+        "token_index": [
+          70
+        ],
+        "preceding_text": "RT",
+        "following_text": ":",
+        "full_sentence": "RT USER :",
+        "label": "unknown",
+        "label_id": -1
+      },
+      {
+        "mention_id": 12,
+        "name": "Mexicos",
+        "sent_id": 12,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          86
+        ],
+        "preceding_text": "Dear friends , I started a fundraiser to help patients with cancer affected by",
+        "following_text": "earthquake , anything helps !",
+        "full_sentence": "Dear friends , I started a fundraiser to help patients with cancer affected by Mexicos earthquake , anything helps !",
+        "label": "unknown",
+        "label_id": -1
+      }
+    ],
+    "parse_trees": [
+      {
+        "title": "MexicoQuake",
+        "head": "workers",
+        "h_idx": 1,
+        "child": "Rescue",
+        "t_idx": 0,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Tributes",
+        "h_idx": 5,
+        "child": "workers",
+        "t_idx": 1,
+        "r": "dep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "workers",
+        "h_idx": 1,
+        "child": "&",
+        "t_idx": 2,
+        "r": "cc"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "workers",
+        "h_idx": 1,
+        "child": "amp",
+        "t_idx": 3,
+        "r": "dep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "workers",
+        "h_idx": 1,
+        "child": ";",
+        "t_idx": 4,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Tributes",
+        "h_idx": 5,
+        "child": "Tributes",
+        "t_idx": 5,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Share",
+        "h_idx": 7,
+        "child": "To",
+        "t_idx": 6,
+        "r": "aux"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Tributes",
+        "h_idx": 5,
+        "child": "Share",
+        "t_idx": 7,
+        "r": "relcl"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Share",
+        "h_idx": 7,
+        "child": "After",
+        "t_idx": 8,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Earthquake",
+        "h_idx": 11,
+        "child": "The",
+        "t_idx": 9,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Earthquake",
+        "h_idx": 11,
+        "child": "Horrific",
+        "t_idx": 10,
+        "r": "amod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "After",
+        "h_idx": 8,
+        "child": "Earthquake",
+        "t_idx": 11,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "Tributes",
+        "h_idx": 5,
+        "child": "MexicoCity",
+        "t_idx": 12,
+        "r": "npadvmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "USER",
+        "h_idx": 13,
+        "child": "USER",
+        "t_idx": 13,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": ":",
+        "h_idx": 14,
+        "child": ":",
+        "t_idx": 14,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "memlook",
+        "h_idx": 16,
+        "child": "USER",
+        "t_idx": 15,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "buildings",
+        "h_idx": 20,
+        "child": "memlook",
+        "t_idx": 16,
+        "r": "dep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "3,800",
+        "h_idx": 19,
+        "child": "More",
+        "t_idx": 17,
+        "r": "amod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "3,800",
+        "h_idx": 19,
+        "child": "than",
+        "t_idx": 18,
+        "r": "quantmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "buildings",
+        "h_idx": 20,
+        "child": "3,800",
+        "t_idx": 19,
+        "r": "nummod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "buildings",
+        "h_idx": 20,
+        "child": "buildings",
+        "t_idx": 20,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "buildings",
+        "h_idx": 20,
+        "child": "damaged",
+        "t_idx": 21,
+        "r": "acl"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "damaged",
+        "h_idx": 21,
+        "child": "in",
+        "t_idx": 22,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 24,
+        "child": "Mexico",
+        "t_idx": 23,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 25,
+        "child": "City",
+        "t_idx": 24,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "in",
+        "h_idx": 22,
+        "child": "earthquake",
+        "t_idx": 25,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "buildings",
+        "h_idx": 20,
+        "child": ":",
+        "t_idx": 26,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "Mexico",
+        "t_idx": 27,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "City",
+        "t_idx": 28,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": ",",
+        "t_idx": 29,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "Mexico",
+        "t_idx": 30,
+        "r": "appos"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "—",
+        "t_idx": 31,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "Mexico",
+        "t_idx": 32,
+        "r": "appos"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "City",
+        "h_idx": 28,
+        "child": "USER",
+        "t_idx": 33,
+        "r": "appos"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "needs",
+        "h_idx": 35,
+        "child": "Mexico",
+        "t_idx": 34,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": "needs",
+        "t_idx": 35,
+        "r": "ccomp"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "help",
+        "h_idx": 37,
+        "child": "your",
+        "t_idx": 36,
+        "r": "poss"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "needs",
+        "h_idx": 35,
+        "child": "help",
+        "t_idx": 37,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": ",",
+        "t_idx": 38,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": "please",
+        "t_idx": 39,
+        "r": "intj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": ",",
+        "t_idx": 40,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": "we",
+        "t_idx": 41,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": "suffered",
+        "t_idx": 42,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 45,
+        "child": "a",
+        "t_idx": 43,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 45,
+        "child": "great",
+        "t_idx": 44,
+        "r": "amod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "suffered",
+        "h_idx": 42,
+        "child": "earthquake",
+        "t_idx": 45,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "left",
+        "h_idx": 47,
+        "child": "that",
+        "t_idx": 46,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 45,
+        "child": "left",
+        "t_idx": 47,
+        "r": "relcl"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "left",
+        "h_idx": 47,
+        "child": "us",
+        "t_idx": 48,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "left",
+        "h_idx": 47,
+        "child": "wounded",
+        "t_idx": 49,
+        "r": "oprd"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "RT",
+        "h_idx": 50,
+        "child": "RT",
+        "t_idx": 50,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "USER",
+        "h_idx": 51,
+        "child": "USER",
+        "t_idx": 51,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": ":",
+        "h_idx": 52,
+        "child": ":",
+        "t_idx": 52,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donate",
+        "h_idx": 56,
+        "child": "You",
+        "t_idx": 53,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donate",
+        "h_idx": 56,
+        "child": "can",
+        "t_idx": 54,
+        "r": "aux"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donate",
+        "h_idx": 56,
+        "child": "also",
+        "t_idx": 55,
+        "r": "advmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donate",
+        "h_idx": 56,
+        "child": "donate",
+        "t_idx": 56,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "donate",
+        "h_idx": 56,
+        "child": "to",
+        "t_idx": 57,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "ARE",
+        "h_idx": 59,
+        "child": "WE",
+        "t_idx": 58,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "to",
+        "h_idx": 57,
+        "child": "ARE",
+        "t_idx": 59,
+        "r": "pcomp"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "ARE",
+        "h_idx": 59,
+        "child": "ONE",
+        "t_idx": 60,
+        "r": "attr"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "ARE",
+        "h_idx": 59,
+        "child": "MEXICO",
+        "t_idx": 61,
+        "r": "attr"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "ARE",
+        "h_idx": 59,
+        "child": "fundraiser",
+        "t_idx": 62,
+        "r": "attr"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "PLEASE",
+        "t_idx": 63,
+        "r": "intj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "DONATE",
+        "t_idx": 64,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "USER",
+        "t_idx": 65,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "and",
+        "t_idx": 66,
+        "r": "cc"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "SHARE",
+        "t_idx": 67,
+        "r": "conj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "DONATE",
+        "h_idx": 64,
+        "child": "WAOXMEXICO",
+        "t_idx": 68,
+        "r": "npadvmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "USER",
+        "h_idx": 70,
+        "child": "RT",
+        "t_idx": 69,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "USER",
+        "h_idx": 70,
+        "child": "USER",
+        "t_idx": 70,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "USER",
+        "h_idx": 70,
+        "child": ":",
+        "t_idx": 71,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "friends",
+        "h_idx": 73,
+        "child": "Dear",
+        "t_idx": 72,
+        "r": "amod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "started",
+        "h_idx": 76,
+        "child": "friends",
+        "t_idx": 73,
+        "r": "npadvmod"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "started",
+        "h_idx": 76,
+        "child": ",",
+        "t_idx": 74,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "started",
+        "h_idx": 76,
+        "child": "I",
+        "t_idx": 75,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "helps",
+        "h_idx": 90,
+        "child": "started",
+        "t_idx": 76,
+        "r": "ccomp"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "fundraiser",
+        "h_idx": 78,
+        "child": "a",
+        "t_idx": 77,
+        "r": "det"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "started",
+        "h_idx": 76,
+        "child": "fundraiser",
+        "t_idx": 78,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "help",
+        "h_idx": 80,
+        "child": "to",
+        "t_idx": 79,
+        "r": "aux"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "fundraiser",
+        "h_idx": 78,
+        "child": "help",
+        "t_idx": 80,
+        "r": "relcl"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "help",
+        "h_idx": 80,
+        "child": "patients",
+        "t_idx": 81,
+        "r": "dobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "patients",
+        "h_idx": 81,
+        "child": "with",
+        "t_idx": 82,
+        "r": "prep"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "with",
+        "h_idx": 82,
+        "child": "cancer",
+        "t_idx": 83,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "patients",
+        "h_idx": 81,
+        "child": "affected",
+        "t_idx": 84,
+        "r": "acl"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "affected",
+        "h_idx": 84,
+        "child": "by",
+        "t_idx": 85,
+        "r": "agent"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "earthquake",
+        "h_idx": 87,
+        "child": "Mexicos",
+        "t_idx": 86,
+        "r": "compound"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "by",
+        "h_idx": 85,
+        "child": "earthquake",
+        "t_idx": 87,
+        "r": "pobj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "helps",
+        "h_idx": 90,
+        "child": ",",
+        "t_idx": 88,
+        "r": "punct"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "helps",
+        "h_idx": 90,
+        "child": "anything",
+        "t_idx": 89,
+        "r": "nsubj"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "helps",
+        "h_idx": 90,
+        "child": "helps",
+        "t_idx": 90,
+        "r": "ROOT"
+      },
+      {
+        "title": "MexicoQuake",
+        "head": "helps",
+        "h_idx": 90,
+        "child": "!",
+        "t_idx": 91,
+        "r": "punct"
+      }
+    ],
+    "el_results": [
+      {
+        "mention_id": 0,
+        "name": "MexicoCity",
+        "sent_id": 0,
+        "pos": [
+          12,
+          13
+        ],
+        "type": "GPE",
+        "token_index": [
+          12
+        ],
+        "preceding_text": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake",
+        "following_text": "",
+        "full_sentence": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake MexicoCity",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 0,
+        "context_left": "rescue workers & amp ; tributes to share after the horrific earthquake",
+        "mention": "MexicoCity",
+        "context_right": "",
+        "wikipedia_id": 18987,
+        "entity_name": "Mexico City",
+        "score": 1.4242215156555176,
+        "url": "https://en.wikipedia.org/wiki?curid=18987",
+        "wikidata_id": "Q1489"
+      },
+      {
+        "mention_id": 1,
+        "name": "USER",
+        "sent_id": 3,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          15
+        ],
+        "preceding_text": "",
+        "following_text": "memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 1,
+        "context_left": "",
+        "mention": "USER",
+        "context_right": "memlook more than 3,800 buildings damaged in mexico city earthquake :",
+        "wikipedia_id": 16301990,
+        "entity_name": "User (computing)",
+        "score": 5.860386848449707,
+        "url": "https://en.wikipedia.org/wiki?curid=16301990",
+        "wikidata_id": "Q278368"
+      },
+      {
+        "mention_id": 3,
+        "name": "Mexico City",
+        "sent_id": 3,
+        "pos": [
+          8,
+          10
+        ],
+        "type": "GPE",
+        "token_index": [
+          23,
+          24
+        ],
+        "preceding_text": "USER memlook More than 3,800 buildings damaged in",
+        "following_text": "earthquake :",
+        "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 3,
+        "context_left": "user memlook more than 3,800 buildings damaged in",
+        "mention": "Mexico City",
+        "context_right": "earthquake :",
+        "wikipedia_id": 18987,
+        "entity_name": "Mexico City",
+        "score": 9.737236976623535,
+        "url": "https://en.wikipedia.org/wiki?curid=18987",
+        "wikidata_id": "Q1489"
+      },
+      {
+        "mention_id": 4,
+        "name": "Mexico City",
+        "sent_id": 4,
+        "pos": [
+          0,
+          2
+        ],
+        "type": "GPE",
+        "token_index": [
+          27,
+          28
+        ],
+        "preceding_text": "",
+        "following_text": ", Mexico — Mexico USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 4,
+        "context_left": "",
+        "mention": "Mexico City",
+        "context_right": ", mexico — mexico user",
+        "wikipedia_id": 18987,
+        "entity_name": "Mexico City",
+        "score": 10.985108375549316,
+        "url": "https://en.wikipedia.org/wiki?curid=18987",
+        "wikidata_id": "Q1489"
+      },
+      {
+        "mention_id": 5,
+        "name": "Mexico",
+        "sent_id": 4,
+        "pos": [
+          3,
+          4
+        ],
+        "type": "GPE",
+        "token_index": [
+          30
+        ],
+        "preceding_text": "Mexico City ,",
+        "following_text": "— Mexico USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 5,
+        "context_left": "mexico city ,",
+        "mention": "Mexico",
+        "context_right": "— mexico user",
+        "wikipedia_id": 3966054,
+        "entity_name": "Mexico",
+        "score": 7.461777210235596,
+        "url": "https://en.wikipedia.org/wiki?curid=3966054",
+        "wikidata_id": "Q96"
+      },
+      {
+        "mention_id": 6,
+        "name": "Mexico",
+        "sent_id": 4,
+        "pos": [
+          5,
+          6
+        ],
+        "type": "GPE",
+        "token_index": [
+          32
+        ],
+        "preceding_text": "Mexico City , Mexico —",
+        "following_text": "USER",
+        "full_sentence": "Mexico City , Mexico — Mexico USER",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 6,
+        "context_left": "mexico city , mexico —",
+        "mention": "Mexico",
+        "context_right": "user",
+        "wikipedia_id": 3966054,
+        "entity_name": "Mexico",
+        "score": 6.843555927276611,
+        "url": "https://en.wikipedia.org/wiki?curid=3966054",
+        "wikidata_id": "Q96"
+      },
+      {
+        "mention_id": 7,
+        "name": "Mexico",
+        "sent_id": 5,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "GPE",
+        "token_index": [
+          34
+        ],
+        "preceding_text": "",
+        "following_text": "needs your help , please , we suffered a great earthquake that left us wounded",
+        "full_sentence": "Mexico needs your help , please , we suffered a great earthquake that left us wounded",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 7,
+        "context_left": "",
+        "mention": "Mexico",
+        "context_right": "needs your help , please , we suffered a great earthquake that left us wounded",
+        "wikipedia_id": 3966054,
+        "entity_name": "Mexico",
+        "score": 6.260528564453125,
+        "url": "https://en.wikipedia.org/wiki?curid=3966054",
+        "wikidata_id": "Q96"
+      },
+      {
+        "mention_id": 8,
+        "name": "USER",
+        "sent_id": 7,
+        "pos": [
+          0,
+          1
+        ],
+        "type": "PERSON",
+        "token_index": [
+          51
+        ],
+        "preceding_text": "",
+        "following_text": "",
+        "full_sentence": "USER",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 8,
+        "context_left": "",
+        "mention": "USER",
+        "context_right": "",
+        "wikipedia_id": 16301990,
+        "entity_name": "User (computing)",
+        "score": 5.221663951873779,
+        "url": "https://en.wikipedia.org/wiki?curid=16301990",
+        "wikidata_id": "Q278368"
+      },
+      {
+        "mention_id": 9,
+        "name": "MEXICO",
+        "sent_id": 9,
+        "pos": [
+          8,
+          9
+        ],
+        "type": "GPE",
+        "token_index": [
+          61
+        ],
+        "preceding_text": "You can also donate to WE ARE ONE",
+        "following_text": "fundraiser",
+        "full_sentence": "You can also donate to WE ARE ONE MEXICO fundraiser",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 9,
+        "context_left": "you can also donate to we are one",
+        "mention": "MEXICO",
+        "context_right": "fundraiser",
+        "wikipedia_id": 3966054,
+        "entity_name": "Mexico",
+        "score": 6.89309549331665,
+        "url": "https://en.wikipedia.org/wiki?curid=3966054",
+        "wikidata_id": "Q96"
+      },
+      {
+        "mention_id": 11,
+        "name": "USER",
+        "sent_id": 11,
+        "pos": [
+          1,
+          2
+        ],
+        "type": "PERSON",
+        "token_index": [
+          70
+        ],
+        "preceding_text": "RT",
+        "following_text": ":",
+        "full_sentence": "RT USER :",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 11,
+        "context_left": "rt",
+        "mention": "USER",
+        "context_right": ":",
+        "wikipedia_id": 16301990,
+        "entity_name": "User (computing)",
+        "score": 2.8826797008514404,
+        "url": "https://en.wikipedia.org/wiki?curid=16301990",
+        "wikidata_id": "Q278368"
+      },
+      {
+        "mention_id": 12,
+        "name": "Mexicos",
+        "sent_id": 12,
+        "pos": [
+          14,
+          15
+        ],
+        "type": "GPE",
+        "token_index": [
+          86
+        ],
+        "preceding_text": "Dear friends , I started a fundraiser to help patients with cancer affected by",
+        "following_text": "earthquake , anything helps !",
+        "full_sentence": "Dear friends , I started a fundraiser to help patients with cancer affected by Mexicos earthquake , anything helps !",
+        "label": "unknown",
+        "label_id": -1,
+        "id": 12,
+        "context_left": "dear friends , i started a fundraiser to help patients with cancer affected by",
+        "mention": "Mexicos",
+        "context_right": "earthquake , anything helps !",
+        "wikipedia_id": 3966054,
+        "entity_name": "Mexico",
+        "score": 3.2771856784820557,
+        "url": "https://en.wikipedia.org/wiki?curid=3966054",
+        "wikidata_id": "Q96"
+      }
+    ],
+    "vertexSet": [
+      [
+        {
+          "mention_id": 0,
+          "name": "MexicoCity",
+          "sent_id": 0,
+          "pos": [
+            12,
+            13
+          ],
+          "type": "GPE",
+          "token_index": [
+            12
+          ],
+          "preceding_text": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake",
+          "following_text": "",
+          "full_sentence": "Rescue workers & amp ; Tributes To Share After The Horrific Earthquake MexicoCity",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 0,
+          "context_left": "rescue workers & amp ; tributes to share after the horrific earthquake",
+          "mention": "MexicoCity",
+          "context_right": "",
+          "wikipedia_id": 18987,
+          "entity_name": "Mexico City",
+          "score": 1.4242215156555176,
+          "url": "https://en.wikipedia.org/wiki?curid=18987",
+          "wikidata_id": "Q1489"
+        },
+        {
+          "mention_id": 3,
+          "name": "Mexico City",
+          "sent_id": 3,
+          "pos": [
+            8,
+            10
+          ],
+          "type": "GPE",
+          "token_index": [
+            23,
+            24
+          ],
+          "preceding_text": "USER memlook More than 3,800 buildings damaged in",
+          "following_text": "earthquake :",
+          "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 3,
+          "context_left": "user memlook more than 3,800 buildings damaged in",
+          "mention": "Mexico City",
+          "context_right": "earthquake :",
+          "wikipedia_id": 18987,
+          "entity_name": "Mexico City",
+          "score": 9.737236976623535,
+          "url": "https://en.wikipedia.org/wiki?curid=18987",
+          "wikidata_id": "Q1489"
+        },
+        {
+          "mention_id": 4,
+          "name": "Mexico City",
+          "sent_id": 4,
+          "pos": [
+            0,
+            2
+          ],
+          "type": "GPE",
+          "token_index": [
+            27,
+            28
+          ],
+          "preceding_text": "",
+          "following_text": ", Mexico — Mexico USER",
+          "full_sentence": "Mexico City , Mexico — Mexico USER",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 4,
+          "context_left": "",
+          "mention": "Mexico City",
+          "context_right": ", mexico — mexico user",
+          "wikipedia_id": 18987,
+          "entity_name": "Mexico City",
+          "score": 10.985108375549316,
+          "url": "https://en.wikipedia.org/wiki?curid=18987",
+          "wikidata_id": "Q1489"
+        }
+      ],
+      [
+        {
+          "mention_id": 1,
+          "name": "USER",
+          "sent_id": 3,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "PERSON",
+          "token_index": [
+            15
+          ],
+          "preceding_text": "",
+          "following_text": "memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+          "full_sentence": "USER memlook More than 3,800 buildings damaged in Mexico City earthquake :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 1,
+          "context_left": "",
+          "mention": "USER",
+          "context_right": "memlook more than 3,800 buildings damaged in mexico city earthquake :",
+          "wikipedia_id": 16301990,
+          "entity_name": "User (computing)",
+          "score": 5.860386848449707,
+          "url": "https://en.wikipedia.org/wiki?curid=16301990",
+          "wikidata_id": "Q278368"
+        },
+        {
+          "mention_id": 8,
+          "name": "USER",
+          "sent_id": 7,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "PERSON",
+          "token_index": [
+            51
+          ],
+          "preceding_text": "",
+          "following_text": "",
+          "full_sentence": "USER",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 8,
+          "context_left": "",
+          "mention": "USER",
+          "context_right": "",
+          "wikipedia_id": 16301990,
+          "entity_name": "User (computing)",
+          "score": 5.221663951873779,
+          "url": "https://en.wikipedia.org/wiki?curid=16301990",
+          "wikidata_id": "Q278368"
+        },
+        {
+          "mention_id": 11,
+          "name": "USER",
+          "sent_id": 11,
+          "pos": [
+            1,
+            2
+          ],
+          "type": "PERSON",
+          "token_index": [
+            70
+          ],
+          "preceding_text": "RT",
+          "following_text": ":",
+          "full_sentence": "RT USER :",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 11,
+          "context_left": "rt",
+          "mention": "USER",
+          "context_right": ":",
+          "wikipedia_id": 16301990,
+          "entity_name": "User (computing)",
+          "score": 2.8826797008514404,
+          "url": "https://en.wikipedia.org/wiki?curid=16301990",
+          "wikidata_id": "Q278368"
+        }
+      ],
+      [
+        {
+          "mention_id": 5,
+          "name": "Mexico",
+          "sent_id": 4,
+          "pos": [
+            3,
+            4
+          ],
+          "type": "GPE",
+          "token_index": [
+            30
+          ],
+          "preceding_text": "Mexico City ,",
+          "following_text": "— Mexico USER",
+          "full_sentence": "Mexico City , Mexico — Mexico USER",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 5,
+          "context_left": "mexico city ,",
+          "mention": "Mexico",
+          "context_right": "— mexico user",
+          "wikipedia_id": 3966054,
+          "entity_name": "Mexico",
+          "score": 7.461777210235596,
+          "url": "https://en.wikipedia.org/wiki?curid=3966054",
+          "wikidata_id": "Q96"
+        },
+        {
+          "mention_id": 6,
+          "name": "Mexico",
+          "sent_id": 4,
+          "pos": [
+            5,
+            6
+          ],
+          "type": "GPE",
+          "token_index": [
+            32
+          ],
+          "preceding_text": "Mexico City , Mexico —",
+          "following_text": "USER",
+          "full_sentence": "Mexico City , Mexico — Mexico USER",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 6,
+          "context_left": "mexico city , mexico —",
+          "mention": "Mexico",
+          "context_right": "user",
+          "wikipedia_id": 3966054,
+          "entity_name": "Mexico",
+          "score": 6.843555927276611,
+          "url": "https://en.wikipedia.org/wiki?curid=3966054",
+          "wikidata_id": "Q96"
+        },
+        {
+          "mention_id": 7,
+          "name": "Mexico",
+          "sent_id": 5,
+          "pos": [
+            0,
+            1
+          ],
+          "type": "GPE",
+          "token_index": [
+            34
+          ],
+          "preceding_text": "",
+          "following_text": "needs your help , please , we suffered a great earthquake that left us wounded",
+          "full_sentence": "Mexico needs your help , please , we suffered a great earthquake that left us wounded",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 7,
+          "context_left": "",
+          "mention": "Mexico",
+          "context_right": "needs your help , please , we suffered a great earthquake that left us wounded",
+          "wikipedia_id": 3966054,
+          "entity_name": "Mexico",
+          "score": 6.260528564453125,
+          "url": "https://en.wikipedia.org/wiki?curid=3966054",
+          "wikidata_id": "Q96"
+        },
+        {
+          "mention_id": 9,
+          "name": "MEXICO",
+          "sent_id": 9,
+          "pos": [
+            8,
+            9
+          ],
+          "type": "GPE",
+          "token_index": [
+            61
+          ],
+          "preceding_text": "You can also donate to WE ARE ONE",
+          "following_text": "fundraiser",
+          "full_sentence": "You can also donate to WE ARE ONE MEXICO fundraiser",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 9,
+          "context_left": "you can also donate to we are one",
+          "mention": "MEXICO",
+          "context_right": "fundraiser",
+          "wikipedia_id": 3966054,
+          "entity_name": "Mexico",
+          "score": 6.89309549331665,
+          "url": "https://en.wikipedia.org/wiki?curid=3966054",
+          "wikidata_id": "Q96"
+        },
+        {
+          "mention_id": 12,
+          "name": "Mexicos",
+          "sent_id": 12,
+          "pos": [
+            14,
+            15
+          ],
+          "type": "GPE",
+          "token_index": [
+            86
+          ],
+          "preceding_text": "Dear friends , I started a fundraiser to help patients with cancer affected by",
+          "following_text": "earthquake , anything helps !",
+          "full_sentence": "Dear friends , I started a fundraiser to help patients with cancer affected by Mexicos earthquake , anything helps !",
+          "label": "unknown",
+          "label_id": -1,
+          "id": 12,
+          "context_left": "dear friends , i started a fundraiser to help patients with cancer affected by",
+          "mention": "Mexicos",
+          "context_right": "earthquake , anything helps !",
+          "wikipedia_id": 3966054,
+          "entity_name": "Mexico",
+          "score": 3.2771856784820557,
+          "url": "https://en.wikipedia.org/wiki?curid=3966054",
+          "wikidata_id": "Q96"
+        }
+      ]
+    ]
+  },
+  "humman_summary": {
+    "title": "MexicoQuake",
+    "text": "",
+    "sents": [],
+    "mentions": [],
+    "parse_trees": [],
+    "vertexSet": []
+  }
+}

@@ -1,0 +1,3 @@
+system_name,n_events,n_events_universe,coverage,complete_coverage,in_main_ranking,compkg_mean,compkg_rank,rouge1_mean,rouge1_rank,rouge2_mean,rouge2_rank,rougeL_mean,rougeL_rank
+pegasus-large,13,13,1,True,True,0.010345157888262568,1,0.24950068469951109,1,0.073083333205438472,1,0.14399005258154973,1
+t5-large,13,13,1,True,True,0.0049990526799744868,2,0.16728290322321282,2,0.046458814167577675,2,0.10420146467986754,2
